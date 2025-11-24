@@ -1,0 +1,23 @@
+{
+  "vulnerable": {
+    "idx": 194994,
+    "project": "tensorflow",
+    "commit_id": "c79ccba517dbb1a0ccb9b01ee3bd2a63748b60dd",
+    "commit_url": "https://github.com/tensorflow/tensorflow/commit/c79ccba517dbb1a0ccb9b01ee3bd2a63748b60dd",
+    "commit_message": "Fix memory leak when a graph node is invalid.\n\nIf a graph node is invalid but a kernel is created then we set the kernel back to `nullptr` but we forget to delete it. Hence, we get a memory leak.\n\nPiperOrigin-RevId: 408968108\nChange-Id: I1d8a9d0d8988ed5e08be8b9f2004ce1b4cd11b7c",
+    "cve": "CVE-2022-23578",
+    "cve_desc": "Tensorflow is an Open Source Machine Learning Framework. If a graph node is invalid, TensorFlow can leak memory in the implementation of `ImmutableExecutorState::Initialize`. Here, we set `item->kernel` to `nullptr` but it is a simple `OpKernel*` pointer so the memory that was previously allocated to it would leak. The fix will be included in TensorFlow 2.8.0. We will also cherrypick this commit on TensorFlow 2.7.1, TensorFlow 2.6.3, and TensorFlow 2.5.3, as these are also affected and still in supported range.",
+    "cwe": [
+      "CWE-401"
+    ],
+    "nvd_url": "https://nvd.nist.gov/vuln/detail/CVE-2022-23578",
+    "file_name": "immutable_executor_state.cc",
+    "func_hash": 105248557138287586060572648585871722551,
+    "file_hash": 234046012522402227954780787024760975669
+  },
+  "fixed": {
+    "idx": 218852,
+    "func_hash": 156764801773187472412077288460661715117,
+    "file_hash": 208458315060777566057381971058447382110
+  }
+}

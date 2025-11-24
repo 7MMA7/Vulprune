@@ -1,0 +1,5 @@
+extracted_vulnerabilities/pair_210636_438876/mkiss_fixed.c:1:0: style: The function 'mkiss_close' is never used. [unusedFunction]
+static void mkiss_close(struct tty_struct *tty)
+^
+nofile:0:0: information: Active checkers: 113/592 (use --checkers-report=<filename> to see details) [checkersReport]
+

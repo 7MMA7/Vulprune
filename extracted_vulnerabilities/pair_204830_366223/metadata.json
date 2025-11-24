@@ -1,0 +1,23 @@
+{
+  "vulnerable": {
+    "idx": 204830,
+    "project": "linux",
+    "commit_id": "427215d85e8d1476da1a86b8d67aceb485eb3631",
+    "commit_url": "https://github.com/torvalds/linux/commit/427215d85e8d1476da1a86b8d67aceb485eb3631",
+    "commit_message": "ovl: prevent private clone if bind mount is not allowed\n\nAdd the following checks from __do_loopback() to clone_private_mount() as\nwell:\n\n - verify that the mount is in the current namespace\n\n - verify that there are no locked children\n\nReported-by: Alois Wohlschlager <alois1@gmx-topmail.de>\nFixes: c771d683a62e (\"vfs: introduce clone_private_mount()\")\nCc: <stable@vger.kernel.org> # v3.18\nSigned-off-by: Miklos Szeredi <mszeredi@redhat.com>",
+    "cve": "CVE-2021-3732",
+    "cve_desc": "A flaw was found in the Linux kernel's OverlayFS subsystem in the way the user mounts the TmpFS filesystem with OverlayFS. This flaw allows a local user to gain access to hidden files that should not be accessible.",
+    "cwe": [
+      "CWE-200"
+    ],
+    "nvd_url": "https://nvd.nist.gov/vuln/detail/CVE-2021-3732",
+    "file_name": "namespace.c",
+    "func_hash": 260474936923487005378622883442342647421,
+    "file_hash": 336414911625449496230254298040232985694
+  },
+  "fixed": {
+    "idx": 366223,
+    "func_hash": 181653158150363696384647639482948263222,
+    "file_hash": 152664695598789977004881235289769073267
+  }
+}

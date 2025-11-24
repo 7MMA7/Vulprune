@@ -1,0 +1,23 @@
+{
+  "vulnerable": {
+    "idx": 204351,
+    "project": "squirrel",
+    "commit_id": "23a0620658714b996d20da3d4dd1a0dcf9b0bd98",
+    "commit_url": "https://github.com/albertodemichelis/squirrel/commit/23a0620658714b996d20da3d4dd1a0dcf9b0bd98",
+    "commit_message": "check max member count in class",
+    "cve": "CVE-2021-41556",
+    "cve_desc": "sqclass.cpp in Squirrel through 2.2.5 and 3.x through 3.1 allows an out-of-bounds read (in the core interpreter) that can lead to Code Execution. If a victim executes an attacker-controlled squirrel script, it is possible for the attacker to break out of the squirrel script sandbox even if all dangerous functionality such as File System functions has been disabled. An attacker might abuse this bug to target (for example) Cloud services that allow customization via SquirrelScripts, or distribute malware through video games that embed a Squirrel Engine.",
+    "cwe": [
+      "CWE-125"
+    ],
+    "nvd_url": "https://nvd.nist.gov/vuln/detail/CVE-2021-41556",
+    "file_name": "sqclass.cpp",
+    "func_hash": 269872855469648419079058130898644045027,
+    "file_hash": 75131817582394814638781750834830258905
+  },
+  "fixed": {
+    "idx": 357668,
+    "func_hash": 114176109037888032181151333197990654093,
+    "file_hash": 129356662613675265537572681929065618991
+  }
+}

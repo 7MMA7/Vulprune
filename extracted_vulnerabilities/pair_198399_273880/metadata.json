@@ -1,0 +1,23 @@
+{
+  "vulnerable": {
+    "idx": 198399,
+    "project": "uftpd",
+    "commit_id": "0fb2c031ce0ace07cc19cd2cb2143c4b5a63c9dd",
+    "commit_url": "https://github.com/troglobit/uftpd/commit/0fb2c031ce0ace07cc19cd2cb2143c4b5a63c9dd",
+    "commit_message": "FTP: Fix buffer overflow in PORT parser, reported by Aaron Esau\n\nSigned-off-by: Joachim Nilsson <troglobit@gmail.com>",
+    "cve": "CVE-2020-20276",
+    "cve_desc": "An unauthenticated stack-based buffer overflow vulnerability in common.c's handle_PORT in uftpd FTP server versions 2.10 and earlier can be abused to cause a crash and could potentially lead to remote code execution.",
+    "cwe": [
+      "CWE-787"
+    ],
+    "nvd_url": "https://nvd.nist.gov/vuln/detail/CVE-2020-20276",
+    "file_name": "ftpcmd.c",
+    "func_hash": 5389607465091397932741652441661168107,
+    "file_hash": 13134413350440209021234166619599968419
+  },
+  "fixed": {
+    "idx": 273880,
+    "func_hash": 215142570245126978636842618721615711400,
+    "file_hash": 153621949674732808138354001734428365570
+  }
+}

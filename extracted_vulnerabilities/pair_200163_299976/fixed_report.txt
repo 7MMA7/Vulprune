@@ -1,0 +1,5 @@
+extracted_vulnerabilities/pair_200163_299976/hid-elo_fixed.c:1:0: style: The function 'elo_probe' is never used. [unusedFunction]
+static int elo_probe(struct hid_device *hdev, const struct hid_device_id *id)
+^
+nofile:0:0: information: Active checkers: 113/592 (use --checkers-report=<filename> to see details) [checkersReport]
+

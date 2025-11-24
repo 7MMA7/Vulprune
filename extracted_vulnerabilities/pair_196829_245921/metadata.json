@@ -1,0 +1,23 @@
+{
+  "vulnerable": {
+    "idx": 196829,
+    "project": "tensorflow",
+    "commit_id": "9a133d73ae4b4664d22bd1aa6d654fec13c52ee1",
+    "commit_url": "https://github.com/tensorflow/tensorflow/commit/9a133d73ae4b4664d22bd1aa6d654fec13c52ee1",
+    "commit_message": "Prevent segfault in `GetSessionHandle{,V2}`.\n\nIn eager mode, session state is null.\n\nPiperOrigin-RevId: 332548597\nChange-Id: If094812c2e094044220b9ba28f7d7601be042f38",
+    "cve": "CVE-2020-15204",
+    "cve_desc": "In eager mode, TensorFlow before versions 1.15.4, 2.0.3, 2.1.2, 2.2.1 and 2.3.1 does not set the session state. Hence, calling `tf.raw_ops.GetSessionHandle` or `tf.raw_ops.GetSessionHandleV2` results in a null pointer dereference In linked snippet, in eager mode, `ctx->session_state()` returns `nullptr`. Since code immediately dereferences this, we get a segmentation fault. The issue is patched in commit 9a133d73ae4b4664d22bd1aa6d654fec13c52ee1, and is released in TensorFlow versions 1.15.4, 2.0.3, 2.1.2, 2.2.1, or 2.3.1.",
+    "cwe": [
+      "CWE-476"
+    ],
+    "nvd_url": "https://nvd.nist.gov/vuln/detail/CVE-2020-15204",
+    "file_name": "session_ops.cc",
+    "func_hash": 265136132776865637405047291994320353020,
+    "file_hash": 301236181949638816884177571060128580318
+  },
+  "fixed": {
+    "idx": 245921,
+    "func_hash": 297244264653800469833284157710994110214,
+    "file_hash": 303341858564051211151362713951438565129
+  }
+}

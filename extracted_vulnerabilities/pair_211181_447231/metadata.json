@@ -1,0 +1,23 @@
+{
+  "vulnerable": {
+    "idx": 211181,
+    "project": "php-src",
+    "commit_id": "a72cd07f2983dc43a6bb35209dc4687852e53c09",
+    "commit_url": "http://git.php.net/?p=php-src.git;a=commit;h=a72cd07f2983dc43a6bb35209dc4687852e53c09",
+    "commit_message": "Fixed bug #68665 (Invalid free)",
+    "cve": "CVE-2014-9426",
+    "cve_desc": "The apprentice_load function in libmagic/apprentice.c in the Fileinfo component in PHP through 5.6.4 attempts to perform a free operation on a stack-based character array, which allows remote attackers to cause a denial of service (memory corruption or application crash) or possibly have unspecified other impact via unknown vectors.  NOTE: this is disputed by the vendor because the standard erealloc behavior makes the free operation unreachable",
+    "cwe": [
+      "CWE-17"
+    ],
+    "nvd_url": "https://nvd.nist.gov/vuln/detail/CVE-2014-9426",
+    "file_name": "apprentice.c",
+    "func_hash": 215852170840415887446784967790257485070,
+    "file_hash": 136822894511518552455761565191570256868
+  },
+  "fixed": {
+    "idx": 447231,
+    "func_hash": 156454401926797998343757810189411499663,
+    "file_hash": 133128407981065524680771127461274572868
+  }
+}

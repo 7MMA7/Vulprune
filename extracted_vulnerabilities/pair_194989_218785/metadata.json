@@ -1,0 +1,23 @@
+{
+  "vulnerable": {
+    "idx": 194989,
+    "project": "ImageMagick6",
+    "commit_id": "450949ed017f009b399c937cf362f0058eacc5fa",
+    "commit_url": "https://github.com/ImageMagick/ImageMagick6/commit/450949ed017f009b399c937cf362f0058eacc5fa",
+    "commit_message": "Pull request: https://github.com/ImageMagick/ImageMagick/pull/4963",
+    "cve": "CVE-2022-32545",
+    "cve_desc": "A vulnerability was found in ImageMagick, causing an outside the range of representable values of type 'unsigned char' at coders/psd.c, when crafted or untrusted input is processed. This leads to a negative impact to application availability or other problems related to undefined behavior.",
+    "cwe": [
+      "CWE-190"
+    ],
+    "nvd_url": "https://nvd.nist.gov/vuln/detail/CVE-2022-32545",
+    "file_name": "psd.c",
+    "func_hash": 50584299779312396054491404176852470969,
+    "file_hash": 159316916509494023086155162326374999236
+  },
+  "fixed": {
+    "idx": 218785,
+    "func_hash": 177518249272594340059836567736761123364,
+    "file_hash": 226732625250511916284298083592366716300
+  }
+}

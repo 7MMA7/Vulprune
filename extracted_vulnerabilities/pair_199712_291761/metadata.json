@@ -1,0 +1,23 @@
+{
+  "vulnerable": {
+    "idx": 199712,
+    "project": "linux",
+    "commit_id": "8700af2cc18c919b2a83e74e0479038fd113c15d",
+    "commit_url": "https://github.com/torvalds/linux/commit/8700af2cc18c919b2a83e74e0479038fd113c15d",
+    "commit_message": "RDMA/rtrs-clt: Fix possible double free in error case\n\nCallback function rtrs_clt_dev_release() for put_device() calls kfree(clt)\nto free memory. We shouldn't call kfree(clt) again, and we can't use the\nclt after kfree too.\n\nReplace device_register() with device_initialize() and device_add() so that\ndev_set_name can() be used appropriately.\n\nMove mutex_destroy() to the release function so it can be called in\nthe alloc_clt err path.\n\nFixes: eab098246625 (\"RDMA/rtrs-clt: Refactor the failure cases in alloc_clt\")\nLink: https://lore.kernel.org/r/20220217030929.323849-1-haris.iqbal@ionos.com\nReported-by: Miaoqian Lin <linmq006@gmail.com>\nSigned-off-by: Md Haris Iqbal <haris.iqbal@ionos.com>\nReviewed-by: Jack Wang <jinpu.wang@ionos.com>\nSigned-off-by: Jason Gunthorpe <jgg@nvidia.com>",
+    "cve": "CVE-2022-29156",
+    "cve_desc": "drivers/infiniband/ulp/rtrs/rtrs-clt.c in the Linux kernel before 5.16.12 has a double free related to rtrs_clt_dev_release.",
+    "cwe": [
+      "CWE-415"
+    ],
+    "nvd_url": "https://nvd.nist.gov/vuln/detail/CVE-2022-29156",
+    "file_name": "rtrs-clt.c",
+    "func_hash": 64652297556654438298355501352205556509,
+    "file_hash": 149775209474441169700962555059878991264
+  },
+  "fixed": {
+    "idx": 291761,
+    "func_hash": 280791422344483990445186805760516988921,
+    "file_hash": 123062054699569722257369072160789726422
+  }
+}

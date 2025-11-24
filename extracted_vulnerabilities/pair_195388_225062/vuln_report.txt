@@ -1,0 +1,26 @@
+extracted_vulnerabilities/pair_195388_225062/fe-connect_vuln.c:1:1: portability: Omitted return type of function 'PQconnectPoll' defaults to int, this is not supported by ISO C99 and later standards. [returnImplicitInt]
+PQconnectPoll(PGconn *conn)
+^
+extracted_vulnerabilities/pair_195388_225062/fe-connect_vuln.c:986:11: style: Local variable 'res' shadows outer variable [shadowVariable]
+    int   res;
+          ^
+extracted_vulnerabilities/pair_195388_225062/fe-connect_vuln.c:5:14: note: Shadowed declaration
+ PGresult   *res;
+             ^
+extracted_vulnerabilities/pair_195388_225062/fe-connect_vuln.c:986:11: note: Shadow variable
+    int   res;
+          ^
+extracted_vulnerabilities/pair_195388_225062/fe-connect_vuln.c:1478:15: style: Variable 'val' can be declared as pointer to const [constVariablePointer]
+     char    *val = PQgetvalue(res, 0, 0);
+              ^
+extracted_vulnerabilities/pair_195388_225062/fe-connect_vuln.c:1545:15: style: Variable 'val' can be declared as pointer to const [constVariablePointer]
+     char    *val = PQgetvalue(res, 0, 0);
+              ^
+extracted_vulnerabilities/pair_195388_225062/fe-connect_vuln.c:2:1: information: Limiting ValueFlow analysis in function 'PQconnectPoll' since it is too complex. Please specify --check-level=exhaustive to perform full analysis. [checkLevelNormal]
+{
+^
+extracted_vulnerabilities/pair_195388_225062/fe-connect_vuln.c:1:0: style: The function 'PQconnectPoll' is never used. [unusedFunction]
+PQconnectPoll(PGconn *conn)
+^
+nofile:0:0: information: Active checkers: 113/592 (use --checkers-report=<filename> to see details) [checkersReport]
+

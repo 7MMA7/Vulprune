@@ -1,0 +1,23 @@
+{
+  "vulnerable": {
+    "idx": 196316,
+    "project": "barebox",
+    "commit_id": "0a9f9a7410681e55362f8311537ebc7be9ad0fbe",
+    "commit_url": "https://github.com/saschahauer/barebox/commit/0a9f9a7410681e55362f8311537ebc7be9ad0fbe",
+    "commit_message": "crypto: digest: use crypto_memneq()\n\nWhen verifying a digest it is important not to leak timing information\nthrough memcmp(). Use crypto_memneq() instead.\n\nSigned-off-by: Sascha Hauer <s.hauer@pengutronix.de>",
+    "cve": "CVE-2021-37847",
+    "cve_desc": "crypto/digest.c in Pengutronix barebox through 2021.07.0 leaks timing information because memcmp is used during digest verification.",
+    "cwe": [
+      "CWE-200"
+    ],
+    "nvd_url": "https://nvd.nist.gov/vuln/detail/CVE-2021-37847",
+    "file_name": "digest.c",
+    "func_hash": 71480685616976545176363965575731858659,
+    "file_hash": 309636649404648894565051311749383985179
+  },
+  "fixed": {
+    "idx": 238322,
+    "func_hash": 320239189684468072245266956547158344510,
+    "file_hash": 195235961590850585727206932057971391683
+  }
+}

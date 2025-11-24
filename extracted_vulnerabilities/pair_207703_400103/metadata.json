@@ -1,0 +1,23 @@
+{
+  "vulnerable": {
+    "idx": 207703,
+    "project": "EternalTerminal",
+    "commit_id": "900348bb8bc96e1c7ba4888ac8480f643c43d3c3",
+    "commit_url": "https://github.com/MisterTea/EternalTerminal/commit/900348bb8bc96e1c7ba4888ac8480f643c43d3c3",
+    "commit_message": "red fixes (#468)\n\n* red fixes\n\n* remove magic number",
+    "cve": "CVE-2022-24950",
+    "cve_desc": "A race condition exists in Eternal Terminal prior to version 6.2.0 that allows an authenticated attacker to hijack other users' SSH authorization socket, enabling the attacker to login to other systems as the targeted users. The bug is in UserTerminalRouter::getInfoForId().",
+    "cwe": [
+      "CWE-362"
+    ],
+    "nvd_url": "https://nvd.nist.gov/vuln/detail/CVE-2022-24950",
+    "file_name": "PipeSocketHandler.cpp",
+    "func_hash": 148534117660985776148799839801292812152,
+    "file_hash": 83158573064577402992437694952965778259
+  },
+  "fixed": {
+    "idx": 400103,
+    "func_hash": 36125659257824603505725557266857282888,
+    "file_hash": 231978839420872719355627255082595640778
+  }
+}

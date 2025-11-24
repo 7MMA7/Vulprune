@@ -1,0 +1,5 @@
+extracted_vulnerabilities/pair_210620_438686/virtio_rpmsg_bus_fixed.c:1:0: style: The function 'rpmsg_virtio_add_ctrl_dev' is never used. [unusedFunction]
+static struct rpmsg_device *rpmsg_virtio_add_ctrl_dev(struct virtio_device *vdev)
+^
+nofile:0:0: information: Active checkers: 113/592 (use --checkers-report=<filename> to see details) [checkersReport]
+

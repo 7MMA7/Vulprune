@@ -1,0 +1,23 @@
+{
+  "vulnerable": {
+    "idx": 197518,
+    "project": "tensorflow",
+    "commit_id": "098e7762d909bac47ce1dbabe6dfd06294cb9d58",
+    "commit_url": "https://github.com/tensorflow/tensorflow/commit/098e7762d909bac47ce1dbabe6dfd06294cb9d58",
+    "commit_message": "Fix tf.raw_ops.QuantizeAndDequantizeV4Grad vulnerability with invalid input_min or input_max.\n\nCheck that argument is actually a scalar before treating it as such.\n\nPiperOrigin-RevId: 445198280",
+    "cve": "CVE-2022-29192",
+    "cve_desc": "TensorFlow is an open source platform for machine learning. Prior to versions 2.9.0, 2.8.1, 2.7.2, and 2.6.4, the implementation of `tf.raw_ops.QuantizeAndDequantizeV4Grad` does not fully validate the input arguments. This results in a `CHECK`-failure which can be used to trigger a denial of service attack. Versions 2.9.0, 2.8.1, 2.7.2, and 2.6.4 contain a patch for this issue.",
+    "cwe": [
+      "CWE-703"
+    ],
+    "nvd_url": "https://nvd.nist.gov/vuln/detail/CVE-2022-29192",
+    "file_name": "quantize_and_dequantize_op.cc",
+    "func_hash": 234673676615434385684756936171703208879,
+    "file_hash": 339380707229520344979853528458088260159
+  },
+  "fixed": {
+    "idx": 259732,
+    "func_hash": 287418587934128745776529470108188021327,
+    "file_hash": 149077864405379849027595796830913818555
+  }
+}

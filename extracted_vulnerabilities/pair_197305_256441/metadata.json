@@ -1,0 +1,23 @@
+{
+  "vulnerable": {
+    "idx": 197305,
+    "project": "pjproject",
+    "commit_id": "11559e49e65bdf00922ad5ae28913ec6a198d508",
+    "commit_url": "https://github.com/pjsip/pjproject/commit/11559e49e65bdf00922ad5ae28913ec6a198d508",
+    "commit_message": "Merge pull request from GHSA-vhxv-phmx-g52q\n\n* Prevent OOB read/write when parsing RTCP FB RPSI\n\n* Add log information\n\n* Modification based on comments.",
+    "cve": "CVE-2022-24786",
+    "cve_desc": "PJSIP is a free and open source multimedia communication library written in C. PJSIP versions 2.12 and prior do not parse incoming RTCP feedback RPSI (Reference Picture Selection Indication) packet, but any app that directly uses pjmedia_rtcp_fb_parse_rpsi() will be affected. A patch is available in the `master` branch of the `pjsip/pjproject` GitHub repository. There are currently no known workarounds.",
+    "cwe": [
+      "CWE-200"
+    ],
+    "nvd_url": "https://nvd.nist.gov/vuln/detail/CVE-2022-24786",
+    "file_name": "rtcp_fb.c",
+    "func_hash": 36256848360171648205913357387602986017,
+    "file_hash": 8904386284990700433551187598162654514
+  },
+  "fixed": {
+    "idx": 256441,
+    "func_hash": 124069603564950829711267554809235900949,
+    "file_hash": 331052800319582176026781515649325160782
+  }
+}

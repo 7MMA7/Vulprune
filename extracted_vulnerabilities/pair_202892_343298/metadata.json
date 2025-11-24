@@ -1,0 +1,23 @@
+{
+  "vulnerable": {
+    "idx": 202892,
+    "project": "pure-ftpd",
+    "commit_id": "37ad222868e52271905b94afea4fc780d83294b4",
+    "commit_url": "https://github.com/jedisct1/pure-ftpd/commit/37ad222868e52271905b94afea4fc780d83294b4",
+    "commit_message": "Initialize the max upload file size when quotas are enabled\n\nDue to an unwanted check, files causing the quota to be exceeded\nwere deleted after the upload, but not during the upload.\n\nThe bug was introduced in 2009 in version 1.0.23\n\nSpotted by @DroidTest, thanks!",
+    "cve": "CVE-2021-40524",
+    "cve_desc": "In Pure-FTPd before 1.0.50, an incorrect max_filesize quota mechanism in the server allows attackers to upload files of unbounded size, which may lead to denial of service or a server hang. This occurs because a certain greater-than-zero test does not anticipate an initial -1 value. (Versions 1.0.23 through 1.0.49 are affected.)",
+    "cwe": [
+      "CWE-434"
+    ],
+    "nvd_url": "https://nvd.nist.gov/vuln/detail/CVE-2021-40524",
+    "file_name": "ftpd.c",
+    "func_hash": 206214968854253605299556693579818029977,
+    "file_hash": 235084351397611292950237183012549023004
+  },
+  "fixed": {
+    "idx": 343298,
+    "func_hash": 189507601171684383524883387321805614234,
+    "file_hash": 102895278505023286855651896148239525136
+  }
+}

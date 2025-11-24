@@ -1,0 +1,23 @@
+{
+  "vulnerable": {
+    "idx": 201382,
+    "project": "gerbv",
+    "commit_id": "672214abb47a802fc000125996e6e0a46c623a4e",
+    "commit_url": "https://github.com/gerbv/gerbv/commit/672214abb47a802fc000125996e6e0a46c623a4e",
+    "commit_message": "Add test to demonstrate buffer overrun",
+    "cve": "CVE-2021-40391",
+    "cve_desc": "An out-of-bounds write vulnerability exists in the drill format T-code tool number functionality of Gerbv 2.7.0, dev (commit b5f1eacd), and the forked version of Gerbv (commit 71493260). A specially-crafted drill file can lead to code execution. An attacker can provide a malicious file to trigger this vulnerability.",
+    "cwe": [
+      "CWE-787"
+    ],
+    "nvd_url": "https://nvd.nist.gov/vuln/detail/CVE-2021-40391",
+    "file_name": "drill.c",
+    "func_hash": 185752158214328372341115505036759500651,
+    "file_hash": 62463866492734341751893387181625909179
+  },
+  "fixed": {
+    "idx": 318781,
+    "func_hash": 295658284034771468073191411727984025582,
+    "file_hash": 33522367220484611799947615316913326815
+  }
+}

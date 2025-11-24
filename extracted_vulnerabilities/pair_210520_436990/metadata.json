@@ -1,0 +1,23 @@
+{
+  "vulnerable": {
+    "idx": 210520,
+    "project": "vim",
+    "commit_id": "8eba2bd291b347e3008aa9e565652d51ad638cfa",
+    "commit_url": "https://github.com/vim/vim/commit/8eba2bd291b347e3008aa9e565652d51ad638cfa",
+    "commit_message": "patch 8.2.5151: reading beyond the end of the line with lisp indenting\n\nProblem:    Reading beyond the end of the line with lisp indenting.\nSolution:   Avoid going over the NUL at the end of the line.",
+    "cve": "CVE-2022-2183",
+    "cve_desc": "Out-of-bounds Read in GitHub repository vim/vim prior to 8.2.",
+    "cwe": [
+      "CWE-125"
+    ],
+    "nvd_url": "https://nvd.nist.gov/vuln/detail/CVE-2022-2183",
+    "file_name": "indent.c",
+    "func_hash": 285577847836020601306828905018553438405,
+    "file_hash": 245226379140826048087051552287940041760
+  },
+  "fixed": {
+    "idx": 436990,
+    "func_hash": 309369228494831536830069160339652260754,
+    "file_hash": 124492176625563887995731103684583862461
+  }
+}

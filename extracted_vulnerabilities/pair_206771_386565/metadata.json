@@ -1,0 +1,23 @@
+{
+  "vulnerable": {
+    "idx": 206771,
+    "project": "qcad",
+    "commit_id": "1eeffc5daf5a06cf6213ffc19e95923cdebb2eb8",
+    "commit_url": "https://github.com/qcad/qcad/commit/1eeffc5daf5a06cf6213ffc19e95923cdebb2eb8",
+    "commit_message": "check vertexIndex which might be -1 for broken DXF",
+    "cve": "CVE-2021-21897",
+    "cve_desc": "A code execution vulnerability exists in the DL_Dxf::handleLWPolylineData functionality of Ribbonsoft dxflib 3.17.0. A specially-crafted .dxf file can lead to a heap buffer overflow. An attacker can provide a malicious file to trigger this vulnerability.",
+    "cwe": [
+      "CWE-191"
+    ],
+    "nvd_url": "https://nvd.nist.gov/vuln/detail/CVE-2021-21897",
+    "file_name": "dl_dxf.cpp",
+    "func_hash": 109412697930486379897697175336143106380,
+    "file_hash": 313944639125792713455398286070640568043
+  },
+  "fixed": {
+    "idx": 386565,
+    "func_hash": 66825183138389317029314964036422106221,
+    "file_hash": 181081005270076491555487324786328968837
+  }
+}

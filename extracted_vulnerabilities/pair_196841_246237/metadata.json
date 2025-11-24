@@ -1,0 +1,23 @@
+{
+  "vulnerable": {
+    "idx": 196841,
+    "project": "furnace",
+    "commit_id": "0eb02422d5161767e9983bdaa5c429762d3477ce",
+    "commit_url": "https://github.com/tildearrow/furnace/commit/0eb02422d5161767e9983bdaa5c429762d3477ce",
+    "commit_message": "fix possible pattern crash\n\nissue #325",
+    "cve": "CVE-2022-1289",
+    "cve_desc": "A denial of service vulnerability was found in tildearrow Furnace. It has been classified as problematic. This is due to an incomplete fix of CVE-2022-1211. It is possible to initiate the attack remotely but it requires user interaction. The issue got fixed with the patch 0eb02422d5161767e9983bdaa5c429762d3477ce.",
+    "cwe": [
+      "CWE-703"
+    ],
+    "nvd_url": "https://nvd.nist.gov/vuln/detail/CVE-2022-1289",
+    "file_name": "pattern.cpp",
+    "func_hash": 17036366544095628794236625993100848883,
+    "file_hash": 65197606135408680585944772278654686188
+  },
+  "fixed": {
+    "idx": 246237,
+    "func_hash": 128714146198604784815522114188273080778,
+    "file_hash": 168724633676180669300352035041454609320
+  }
+}

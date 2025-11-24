@@ -1,0 +1,23 @@
+{
+  "vulnerable": {
+    "idx": 195095,
+    "project": "e2guardian",
+    "commit_id": "eae46a7e2a57103aadca903c4a24cca94dc502a2",
+    "commit_url": "https://github.com/e2guardian/e2guardian/commit/eae46a7e2a57103aadca903c4a24cca94dc502a2",
+    "commit_message": "Fix bug #707 cert hostnames not being checked\n- only happened when openssl v1.1 is used",
+    "cve": "CVE-2021-44273",
+    "cve_desc": "e2guardian v5.4.x <= v5.4.3r is affected by missing SSL certificate validation in the SSL MITM engine. In standalone mode (i.e., acting as a proxy or a transparent proxy), with SSL MITM enabled, e2guardian, if built with OpenSSL v1.1.x, did not validate hostnames in certificates of the web servers that it connected to, and thus was itself vulnerable to MITM attacks.",
+    "cwe": [
+      "CWE-295"
+    ],
+    "nvd_url": "https://nvd.nist.gov/vuln/detail/CVE-2021-44273",
+    "file_name": "Socket.cpp",
+    "func_hash": 285364534121786496260977042144971081331,
+    "file_hash": 283084154597152068392957992825637904487
+  },
+  "fixed": {
+    "idx": 221678,
+    "func_hash": 137664252347139284732164058213112105028,
+    "file_hash": 316707147744091371767800459911917453562
+  }
+}

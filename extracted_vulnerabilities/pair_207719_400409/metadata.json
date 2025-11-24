@@ -1,0 +1,23 @@
+{
+  "vulnerable": {
+    "idx": 207719,
+    "project": "vim",
+    "commit_id": "e98c88c44c308edaea5994b8ad4363e65030968c",
+    "commit_url": "https://github.com/vim/vim/commit/e98c88c44c308edaea5994b8ad4363e65030968c",
+    "commit_message": "patch 9.0.0218: reading before the start of the line\n\nProblem:    Reading before the start of the line.\nSolution:   When displaying \"$\" check the column is not negative.",
+    "cve": "CVE-2022-2845",
+    "cve_desc": "Improper Validation of Specified Quantity in Input in GitHub repository vim/vim prior to 9.0.0218.",
+    "cwe": [
+      "CWE-787"
+    ],
+    "nvd_url": "https://nvd.nist.gov/vuln/detail/CVE-2022-2845",
+    "file_name": "edit.c",
+    "func_hash": 56781688432244503822784219524894149055,
+    "file_hash": 251788010034679613424556948955874474953
+  },
+  "fixed": {
+    "idx": 400409,
+    "func_hash": 125832747032800290670744012264167596321,
+    "file_hash": 91657375912486719968624749742093008286
+  }
+}

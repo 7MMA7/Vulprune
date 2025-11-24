@@ -1,0 +1,23 @@
+{
+  "vulnerable": {
+    "idx": 197499,
+    "project": "gpac",
+    "commit_id": "dc7de8d3d604426c7a6e628d90cb9fb88e7b4c2c",
+    "commit_url": "https://github.com/gpac/gpac/commit/dc7de8d3d604426c7a6e628d90cb9fb88e7b4c2c",
+    "commit_message": "fixed #2212",
+    "cve": "CVE-2022-2453",
+    "cve_desc": "Use After Free in GitHub repository gpac/gpac prior to 2.1-DEV.",
+    "cwe": [
+      "CWE-416"
+    ],
+    "nvd_url": "https://nvd.nist.gov/vuln/detail/CVE-2022-2453",
+    "file_name": "field_decode.c",
+    "func_hash": 181633592491715085539951152559525218380,
+    "file_hash": 27053036293524314453415412309723108309
+  },
+  "fixed": {
+    "idx": 259515,
+    "func_hash": 87913328330334973477048870942232615519,
+    "file_hash": 151388572550638562891846673305217274829
+  }
+}

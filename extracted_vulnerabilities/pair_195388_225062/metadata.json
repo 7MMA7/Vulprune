@@ -1,0 +1,23 @@
+{
+  "vulnerable": {
+    "idx": 195388,
+    "project": "postgres",
+    "commit_id": "160c0258802d10b0600d7671b1bbea55d8e17d45",
+    "commit_url": "https://github.com/postgres/postgres/commit/160c0258802d10b0600d7671b1bbea55d8e17d45",
+    "commit_message": "libpq: reject extraneous data after SSL or GSS encryption handshake.\n\nlibpq collects up to a bufferload of data whenever it reads data from\nthe socket.  When SSL or GSS encryption is requested during startup,\nany additional data received with the server's yes-or-no reply\nremained in the buffer, and would be treated as already-decrypted data\nonce the encryption handshake completed.  Thus, a man-in-the-middle\nwith the ability to inject data into the TCP connection could stuff\nsome cleartext data into the start of a supposedly encryption-protected\ndatabase session.\n\nThis could probably be abused to inject faked responses to the\nclient's first few queries, although other details of libpq's behavior\nmake that harder than it sounds.  A different line of attack is to\nexfiltrate the client's password, or other sensitive data that might\nbe sent early in the session.  That has been shown to be possible with\na server vulnerable to CVE-2021-23214.\n\nTo fix, throw a protocol-violation error if the internal buffer\nis not empty after the encryption handshake.\n\nOur thanks to Jacob Champion for reporting this problem.\n\nSecurity: CVE-2021-23222",
+    "cve": "CVE-2021-23222",
+    "cve_desc": "A man-in-the-middle attacker can inject false responses to the client's first few queries, despite the use of SSL certificate verification and encryption.",
+    "cwe": [
+      "CWE-522"
+    ],
+    "nvd_url": "https://nvd.nist.gov/vuln/detail/CVE-2021-23222",
+    "file_name": "fe-connect.c",
+    "func_hash": 145605680477709719969453491383463044279,
+    "file_hash": 157537093140020562394962573075779914657
+  },
+  "fixed": {
+    "idx": 225062,
+    "func_hash": 278272236215939964516135269002509515902,
+    "file_hash": 18951971958069127999109334280610413251
+  }
+}

@@ -1,0 +1,8 @@
+extracted_vulnerabilities/pair_204534_361303/connect_fixed.c:1:1: portability: Omitted return type of function 'stl_remove_degenerate' defaults to int, this is not supported by ISO C99 and later standards. [returnImplicitInt]
+stl_remove_degenerate(stl_file *stl, int facet) {
+^
+extracted_vulnerabilities/pair_204534_361303/connect_fixed.c:1:0: style: The function 'stl_remove_degenerate' is never used. [unusedFunction]
+stl_remove_degenerate(stl_file *stl, int facet) {
+^
+nofile:0:0: information: Active checkers: 113/592 (use --checkers-report=<filename> to see details) [checkersReport]
+

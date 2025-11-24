@@ -1,0 +1,20 @@
+extracted_vulnerabilities/pair_214003_474462/corre_fixed.c:1:1: portability: Omitted return type of function 'HandleCoRREBPP' defaults to int, this is not supported by ISO C99 and later standards. [returnImplicitInt]
+HandleCoRREBPP (rfbClient* client, int rx, int ry, int rw, int rh)
+^
+extracted_vulnerabilities/pair_214003_474462/corre_fixed.c:7:9: style: The scope of the variable 'x' can be reduced. [variableScope]
+    int x, y, w, h;
+        ^
+extracted_vulnerabilities/pair_214003_474462/corre_fixed.c:7:12: style: The scope of the variable 'y' can be reduced. [variableScope]
+    int x, y, w, h;
+           ^
+extracted_vulnerabilities/pair_214003_474462/corre_fixed.c:7:15: style: The scope of the variable 'w' can be reduced. [variableScope]
+    int x, y, w, h;
+              ^
+extracted_vulnerabilities/pair_214003_474462/corre_fixed.c:7:18: style: The scope of the variable 'h' can be reduced. [variableScope]
+    int x, y, w, h;
+                 ^
+extracted_vulnerabilities/pair_214003_474462/corre_fixed.c:1:0: style: The function 'HandleCoRREBPP' is never used. [unusedFunction]
+HandleCoRREBPP (rfbClient* client, int rx, int ry, int rw, int rh)
+^
+nofile:0:0: information: Active checkers: 113/592 (use --checkers-report=<filename> to see details) [checkersReport]
+

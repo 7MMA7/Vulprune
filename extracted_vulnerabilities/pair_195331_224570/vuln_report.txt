@@ -1,0 +1,5 @@
+extracted_vulnerabilities/pair_195331_224570/common_shape_fns_vuln.cc:1:0: style: The function 'ConcatShapeHelper' is never used. [unusedFunction]
+Status ConcatShapeHelper(InferenceContext* c, int start_value_index,
+^
+nofile:0:0: information: Active checkers: 172/592 (use --checkers-report=<filename> to see details) [checkersReport]
+

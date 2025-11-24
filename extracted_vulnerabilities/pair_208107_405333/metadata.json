@@ -1,0 +1,23 @@
+{
+  "vulnerable": {
+    "idx": 208107,
+    "project": "linux",
+    "commit_id": "f85daf0e725358be78dfd208dea5fd665d8cb901",
+    "commit_url": "https://github.com/torvalds/linux/commit/f85daf0e725358be78dfd208dea5fd665d8cb901",
+    "commit_message": "xfrm: xfrm_policy: fix a possible double xfrm_pols_put() in xfrm_bundle_lookup()\n\nxfrm_policy_lookup() will call xfrm_pol_hold_rcu() to get a refcount of\npols[0]. This refcount can be dropped in xfrm_expand_policies() when\nxfrm_expand_policies() return error. pols[0]'s refcount is balanced in\nhere. But xfrm_bundle_lookup() will also call xfrm_pols_put() with\nnum_pols == 1 to drop this refcount when xfrm_expand_policies() return\nerror.\n\nThis patch also fix an illegal address access. pols[0] will save a error\npoint when xfrm_policy_lookup fails. This lead to xfrm_pols_put to resolve\nan illegal address in xfrm_bundle_lookup's error path.\n\nFix these by setting num_pols = 0 in xfrm_expand_policies()'s error path.\n\nFixes: 80c802f3073e (\"xfrm: cache bundles instead of policies for outgoing flows\")\nSigned-off-by: Hangyu Hua <hbh25y@gmail.com>\nSigned-off-by: Steffen Klassert <steffen.klassert@secunet.com>",
+    "cve": "CVE-2022-36879",
+    "cve_desc": "An issue was discovered in the Linux kernel through 5.18.14. xfrm_expand_policies in net/xfrm/xfrm_policy.c can cause a refcount to be dropped twice.",
+    "cwe": [
+      "CWE-703"
+    ],
+    "nvd_url": "https://nvd.nist.gov/vuln/detail/CVE-2022-36879",
+    "file_name": "xfrm_policy.c",
+    "func_hash": 251684023315514826982518858194996142213,
+    "file_hash": 240690312801703995044299112379503581676
+  },
+  "fixed": {
+    "idx": 405333,
+    "func_hash": 29732626654088535700777069321150029090,
+    "file_hash": 264724924246430289692801756816591917107
+  }
+}

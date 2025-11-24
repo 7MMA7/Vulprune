@@ -1,0 +1,23 @@
+{
+  "vulnerable": {
+    "idx": 198927,
+    "project": "radare2",
+    "commit_id": "0a557045476a2969c7079aec9eeb29d02f2809c6",
+    "commit_url": "https://github.com/radareorg/radare2/commit/0a557045476a2969c7079aec9eeb29d02f2809c6",
+    "commit_message": "Fix oobread and unaligned casts in the NE entrypoint logic ##crash\n\n* Reported by @hmsec via huntr.dev\n* Reproducer: nepocaligns\n* BountyID: ec538fa4-06c6-4050-a141-f60153ddeaac",
+    "cve": "CVE-2022-1297",
+    "cve_desc": "Out-of-bounds Read in r_bin_ne_get_entrypoints function in GitHub repository radareorg/radare2 prior to 5.6.8. This vulnerability may allow attackers to read sensitive information or cause a crash.",
+    "cwe": [
+      "CWE-125"
+    ],
+    "nvd_url": "https://nvd.nist.gov/vuln/detail/CVE-2022-1297",
+    "file_name": "ne.c",
+    "func_hash": 128571297919304348712196386626162050665,
+    "file_hash": 267767472176864232009512780125221207666
+  },
+  "fixed": {
+    "idx": 285157,
+    "func_hash": 178596264562074967520508544999708304050,
+    "file_hash": 100978875788089844508151411517959063917
+  }
+}

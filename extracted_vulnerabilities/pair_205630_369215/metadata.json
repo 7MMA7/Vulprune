@@ -1,0 +1,23 @@
+{
+  "vulnerable": {
+    "idx": 205630,
+    "project": "linux",
+    "commit_id": "32452a3eb8b64e01e2be717f518c0be046975b9d",
+    "commit_url": "https://github.com/torvalds/linux/commit/32452a3eb8b64e01e2be717f518c0be046975b9d",
+    "commit_message": "io_uring: fix uninitialized field in rw io_kiocb\n\nio_rw_init_file does not initialize kiocb->private, so when iocb_bio_iopoll\nreads kiocb->private it can contain uninitialized data.\n\nFixes: 3e08773c3841 (\"block: switch polling to be bio based\")\nSigned-off-by: Joseph Ravichandran <jravi@mit.edu>\nSigned-off-by: Jens Axboe <axboe@kernel.dk>",
+    "cve": "CVE-2022-29968",
+    "cve_desc": "An issue was discovered in the Linux kernel through 5.17.5. io_rw_init_file in fs/io_uring.c lacks initialization of kiocb->private.",
+    "cwe": [
+      "CWE-94"
+    ],
+    "nvd_url": "https://nvd.nist.gov/vuln/detail/CVE-2022-29968",
+    "file_name": "io_uring.c",
+    "func_hash": 85149610434779656690730201934331639704,
+    "file_hash": 148301731450961138992553369142373286456
+  },
+  "fixed": {
+    "idx": 369215,
+    "func_hash": 263180021211529326245362863666357731272,
+    "file_hash": 302939069770693315001046423619225683925
+  }
+}

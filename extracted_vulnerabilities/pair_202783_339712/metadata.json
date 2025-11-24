@@ -1,0 +1,23 @@
+{
+  "vulnerable": {
+    "idx": 202783,
+    "project": "php-src",
+    "commit_id": "37da90248deb2188e8ee50e4753ad6340679b425",
+    "commit_url": "http://git.php.net/?p=php-src.git;a=commitdiff;h=37da90248deb2188e8ee50e4753ad6340679b425",
+    "commit_message": "Added missing allocation checks",
+    "cve": "CVE-2009-0689",
+    "cve_desc": "Array index error in the (1) dtoa implementation in dtoa.c (aka pdtoa.c) and the (2) gdtoa (aka new dtoa) implementation in gdtoa/misc.c in libc, as used in multiple operating systems and products including in FreeBSD 6.4 and 7.2, NetBSD 5.0, OpenBSD 4.5, Mozilla Firefox 3.0.x before 3.0.15 and 3.5.x before 3.5.4, K-Meleon 1.5.3, SeaMonkey 1.1.8, and other products, allows context-dependent attackers to cause a denial of service (application crash) and possibly execute arbitrary code via a large precision value in the format argument to a printf function, which triggers incorrect memory allocation and a heap-based buffer overflow during conversion to a floating-point number.",
+    "cwe": [
+      "CWE-119"
+    ],
+    "nvd_url": "https://nvd.nist.gov/vuln/detail/CVE-2009-0689",
+    "file_name": "zend_strtod.c",
+    "func_hash": 233883423838019694196347564918158945680,
+    "file_hash": 162225586697792700551271623353891886066
+  },
+  "fixed": {
+    "idx": 339712,
+    "func_hash": 126877960775748554954774287335252576908,
+    "file_hash": 330178516637592595167149550690737234647
+  }
+}

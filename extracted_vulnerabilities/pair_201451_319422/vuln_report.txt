@@ -1,0 +1,20 @@
+extracted_vulnerabilities/pair_201451_319422/cin_vuln.c:31:6: style: The scope of the variable 'q' can be reduced. [variableScope]
+    *q;
+     ^
+extracted_vulnerabilities/pair_201451_319422/cin_vuln.c:31:6: style: Variable 'q' can be declared as pointer to const [constVariablePointer]
+    *q;
+     ^
+extracted_vulnerabilities/pair_201451_319422/cin_vuln.c:59:12: style: Variable 'image' is assigned a value that is never used. [unreadVariable]
+      image=DestroyImageList(image);
+           ^
+extracted_vulnerabilities/pair_201451_319422/cin_vuln.c:338:14: style: Variable 'profile' is assigned a value that is never used. [unreadVariable]
+      profile=DestroyStringInfo(profile);
+             ^
+extracted_vulnerabilities/pair_201451_319422/cin_vuln.c:385:9: style: Variable 'status' is assigned a value that is never used. [unreadVariable]
+  status=SetQuantumPad(image,quantum_info,0);
+        ^
+extracted_vulnerabilities/pair_201451_319422/cin_vuln.c:1:0: style: The function 'ReadCINImage' is never used. [unusedFunction]
+static Image *ReadCINImage(const ImageInfo *image_info,ExceptionInfo *exception)
+^
+nofile:0:0: information: Active checkers: 113/592 (use --checkers-report=<filename> to see details) [checkersReport]
+

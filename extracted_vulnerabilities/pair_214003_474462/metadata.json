@@ -1,0 +1,23 @@
+{
+  "vulnerable": {
+    "idx": 214003,
+    "project": "libvncserver",
+    "commit_id": "7b1ef0ffc4815cab9a96c7278394152bdc89dc4d",
+    "commit_url": "https://github.com/LibVNC/libvncserver/commit/7b1ef0ffc4815cab9a96c7278394152bdc89dc4d",
+    "commit_message": "LibVNCClient: really fix #250",
+    "cve": "CVE-2018-20020",
+    "cve_desc": "LibVNC before commit 7b1ef0ffc4815cab9a96c7278394152bdc89dc4d contains heap out-of-bound write vulnerability inside structure in VNC client code that can result remote code execution",
+    "cwe": [
+      "CWE-787"
+    ],
+    "nvd_url": "https://nvd.nist.gov/vuln/detail/CVE-2018-20020",
+    "file_name": "corre.c",
+    "func_hash": 237803274447948071871623859823888407579,
+    "file_hash": 261775603875912977761086457849276889433
+  },
+  "fixed": {
+    "idx": 474462,
+    "func_hash": 270120955611228778905999334086826608945,
+    "file_hash": 95538594092483864981062945399271614171
+  }
+}

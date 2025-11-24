@@ -1,0 +1,23 @@
+{
+  "vulnerable": {
+    "idx": 197593,
+    "project": "njs",
+    "commit_id": "ad48705bf1f04b4221a5f5b07715ac48b3160d53",
+    "commit_url": "https://github.com/nginx/njs/commit/ad48705bf1f04b4221a5f5b07715ac48b3160d53",
+    "commit_message": "Fixed frame allocation from an awaited frame.\n\nnjs_function_frame_save() is used to save the awaited frame when \"await\"\ninstruction is encountered. The saving was done as a memcpy() of\nexisting runtime frame.\n\nnjs_function_frame_alloc() is used to alloc a new function frame, this\nfunction tries to use a spare preallocated memory from the previous\nframe first.  Previously, this function might result in \"use-after-free\"\nwhen invoked from a restored frame saved with njs_function_frame_save().\nBecause njs_function_frame_save() left pointers to the spare memory of\nthe original frame which may be already free when saved frame is\nrestored.\n\nThe fix is to erase fields for the spare memory from the saved frame.\n\nThis closes #469 issue on Github.",
+    "cve": "CVE-2022-27007",
+    "cve_desc": "nginx njs 0.7.2 is affected suffers from Use-after-free in njs_function_frame_alloc() when it try to invoke from a restored frame saved with njs_function_frame_save().",
+    "cwe": [
+      "CWE-416"
+    ],
+    "nvd_url": "https://nvd.nist.gov/vuln/detail/CVE-2022-27007",
+    "file_name": "njs_function.c",
+    "func_hash": 163196677430813133926152837345587363595,
+    "file_hash": 84952023387586829721392975850477495397
+  },
+  "fixed": {
+    "idx": 261769,
+    "func_hash": 189837450352856196976094747096042569901,
+    "file_hash": 202672725562392231743366783746381682256
+  }
+}

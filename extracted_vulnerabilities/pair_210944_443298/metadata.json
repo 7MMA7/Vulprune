@@ -1,0 +1,23 @@
+{
+  "vulnerable": {
+    "idx": 210944,
+    "project": "vim",
+    "commit_id": "35d21c6830fc2d68aca838424a0e786821c5891c",
+    "commit_url": "https://github.com/vim/vim/commit/35d21c6830fc2d68aca838424a0e786821c5891c",
+    "commit_message": "patch 9.0.0360: crash when invalid line number on :for is ignored\n\nProblem:    Crash when invalid line number on :for is ignored.\nSolution:   Do not check breakpoint for non-existing line.",
+    "cve": "CVE-2022-3099",
+    "cve_desc": "Use After Free in GitHub repository vim/vim prior to 9.0.0360.",
+    "cwe": [
+      "CWE-416"
+    ],
+    "nvd_url": "https://nvd.nist.gov/vuln/detail/CVE-2022-3099",
+    "file_name": "ex_docmd.c",
+    "func_hash": 18276376041085945144974490585203596149,
+    "file_hash": 295000933203185103325291624331253822836
+  },
+  "fixed": {
+    "idx": 443298,
+    "func_hash": 107220537599644166410978014776219092852,
+    "file_hash": 211799171285121877769856078715751754157
+  }
+}

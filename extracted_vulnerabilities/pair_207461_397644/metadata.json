@@ -1,0 +1,23 @@
+{
+  "vulnerable": {
+    "idx": 207461,
+    "project": "autotrace",
+    "commit_id": "e96bffadc25ff0ba0e10745f8012efcc5f920ea9",
+    "commit_url": "https://github.com/autotrace/autotrace/commit/e96bffadc25ff0ba0e10745f8012efcc5f920ea9",
+    "commit_message": "input-bmp: Increase header buffer in some cases\n\nSigned-off-by: Peter Lemenkov <lemenkov@gmail.com>",
+    "cve": "CVE-2022-32323",
+    "cve_desc": "AutoTrace v0.40.0 was discovered to contain a heap overflow via the ReadImage function at input-bmp.c:660.",
+    "cwe": [
+      "CWE-787"
+    ],
+    "nvd_url": "https://nvd.nist.gov/vuln/detail/CVE-2022-32323",
+    "file_name": "input-bmp.c",
+    "func_hash": 217805098145205715295086602544452101199,
+    "file_hash": 38605146891124325135879659140059354528
+  },
+  "fixed": {
+    "idx": 397644,
+    "func_hash": 18153038985911000449594893666433988306,
+    "file_hash": 29852375577809733693857999744439179756
+  }
+}

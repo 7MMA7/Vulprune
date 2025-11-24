@@ -1,0 +1,23 @@
+{
+  "vulnerable": {
+    "idx": 195908,
+    "project": "linux",
+    "commit_id": "e4571b8c5e9ffa1e85c0c671995bd4dcc5c75091",
+    "commit_url": "https://github.com/torvalds/linux/commit/e4571b8c5e9ffa1e85c0c671995bd4dcc5c75091",
+    "commit_message": "btrfs: fix NULL pointer dereference when deleting device by invalid id\n\n[BUG]\nIt's easy to trigger NULL pointer dereference, just by removing a\nnon-existing device id:\n\n # mkfs.btrfs -f -m single -d single /dev/test/scratch1 \\\n\t\t\t\t     /dev/test/scratch2\n # mount /dev/test/scratch1 /mnt/btrfs\n # btrfs device remove 3 /mnt/btrfs\n\nThen we have the following kernel NULL pointer dereference:\n\n BUG: kernel NULL pointer dereference, address: 0000000000000000\n #PF: supervisor read access in kernel mode\n #PF: error_code(0x0000) - not-present page\n PGD 0 P4D 0\n Oops: 0000 [#1] PREEMPT SMP NOPTI\n CPU: 9 PID: 649 Comm: btrfs Not tainted 5.14.0-rc3-custom+ #35\n Hardware name: QEMU Standard PC (Q35 + ICH9, 2009), BIOS 0.0.0 02/06/2015\n RIP: 0010:btrfs_rm_device+0x4de/0x6b0 [btrfs]\n  btrfs_ioctl+0x18bb/0x3190 [btrfs]\n  ? lock_is_held_type+0xa5/0x120\n  ? find_held_lock.constprop.0+0x2b/0x80\n  ? do_user_addr_fault+0x201/0x6a0\n  ? lock_release+0xd2/0x2d0\n  ? __x64_sys_ioctl+0x83/0xb0\n  __x64_sys_ioctl+0x83/0xb0\n  do_syscall_64+0x3b/0x90\n  entry_SYSCALL_64_after_hwframe+0x44/0xae\n\n[CAUSE]\nCommit a27a94c2b0c7 (\"btrfs: Make btrfs_find_device_by_devspec return\nbtrfs_device directly\") moves the \"missing\" device path check into\nbtrfs_rm_device().\n\nBut btrfs_rm_device() itself can have case where it only receives\n@devid, with NULL as @device_path.\n\nIn that case, calling strcmp() on NULL will trigger the NULL pointer\ndereference.\n\nBefore that commit, we handle the \"missing\" case inside\nbtrfs_find_device_by_devspec(), which will not check @device_path at all\nif @devid is provided, thus no way to trigger the bug.\n\n[FIX]\nBefore calling strcmp(), also make sure @device_path is not NULL.\n\nFixes: a27a94c2b0c7 (\"btrfs: Make btrfs_find_device_by_devspec return btrfs_device directly\")\nCC: stable@vger.kernel.org # 5.4+\nReported-by: butt3rflyh4ck <butterflyhuangxx@gmail.com>\nReviewed-by: Anand Jain <anand.jain@oracle.com>\nSigned-off-by: Qu Wenruo <wqu@suse.com>\nReviewed-by: David Sterba <dsterba@suse.com>\nSigned-off-by: David Sterba <dsterba@suse.com>",
+    "cve": "CVE-2021-3739",
+    "cve_desc": "A NULL pointer dereference flaw was found in the btrfs_rm_device function in fs/btrfs/volumes.c in the Linux Kernel, where triggering the bug requires \u2018CAP_SYS_ADMIN\u2019. This flaw allows a local attacker to crash the system or leak kernel internal information. The highest threat from this vulnerability is to system availability.",
+    "cwe": [
+      "CWE-703"
+    ],
+    "nvd_url": "https://nvd.nist.gov/vuln/detail/CVE-2021-3739",
+    "file_name": "volumes.c",
+    "func_hash": 109862119097507194285189243526662049352,
+    "file_hash": 327977751785202812455417482244318484271
+  },
+  "fixed": {
+    "idx": 234731,
+    "func_hash": 150119639172350576972778244740451645198,
+    "file_hash": 142275211219518353290156650917746742888
+  }
+}

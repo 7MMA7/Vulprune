@@ -1,0 +1,23 @@
+{
+  "vulnerable": {
+    "idx": 195328,
+    "project": "gpac",
+    "commit_id": "30ac5e5236b790accd1f25347eebf2dc8c6c1bcb",
+    "commit_url": "https://github.com/gpac/gpac/commit/30ac5e5236b790accd1f25347eebf2dc8c6c1bcb",
+    "commit_message": "fixed #1897",
+    "cve": "CVE-2021-40574",
+    "cve_desc": "The binary MP4Box in Gpac 1.0.1 has a double-free vulnerability in the gf_text_get_utf8_line function in load_text.c, which allows attackers to cause a denial of service, even code execution and escalation of privileges.",
+    "cwe": [
+      "CWE-415"
+    ],
+    "nvd_url": "https://nvd.nist.gov/vuln/detail/CVE-2021-40574",
+    "file_name": "load_text.c",
+    "func_hash": 117427486429117846714647428036887377373,
+    "file_hash": 196742273187479774331460388493063544419
+  },
+  "fixed": {
+    "idx": 224472,
+    "func_hash": 206448432363907113546512643676658303982,
+    "file_hash": 270779576910744156479880021794579702395
+  }
+}

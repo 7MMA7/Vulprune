@@ -1,0 +1,23 @@
+{
+  "vulnerable": {
+    "idx": 196705,
+    "project": "tensorflow",
+    "commit_id": "11ced8467eccad9c7cb94867708be8fa5c66c730",
+    "commit_url": "https://github.com/tensorflow/tensorflow/commit/11ced8467eccad9c7cb94867708be8fa5c66c730",
+    "commit_message": "Fix UB in SparseTensorDenseAdd\n\nAdded more input validation to avoid nullptr dereferencing and array index\nout of bounds issues.\n\nPiperOrigin-RevId: 446192704",
+    "cve": "CVE-2022-29206",
+    "cve_desc": "TensorFlow is an open source platform for machine learning. Prior to versions 2.9.0, 2.8.1, 2.7.2, and 2.6.4, the implementation of `tf.raw_ops.SparseTensorDenseAdd` does not fully validate the input arguments. In this case, a reference gets bound to a `nullptr` during kernel execution. This is undefined behavior. Versions 2.9.0, 2.8.1, 2.7.2, and 2.6.4 contain a patch for this issue.",
+    "cwe": [
+      "CWE-20"
+    ],
+    "nvd_url": "https://nvd.nist.gov/vuln/detail/CVE-2022-29206",
+    "file_name": "sparse_tensor_dense_add_op.cc",
+    "func_hash": 308425823880781073775676879611190785715,
+    "file_hash": 91198918327439956509177796541242214319
+  },
+  "fixed": {
+    "idx": 242926,
+    "func_hash": 310798775905628265586866839597720584207,
+    "file_hash": 106434963445193170812694157920438487376
+  }
+}

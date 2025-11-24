@@ -1,0 +1,23 @@
+{
+  "vulnerable": {
+    "idx": 199767,
+    "project": "hexchat",
+    "commit_id": "4e061a43b3453a9856d34250c3913175c45afe9d",
+    "commit_url": "https://github.com/hexchat/hexchat/commit/4e061a43b3453a9856d34250c3913175c45afe9d",
+    "commit_message": "Clean up handling CAP LS",
+    "cve": "CVE-2016-2087",
+    "cve_desc": "Directory traversal vulnerability in the client in HexChat 2.11.0 allows remote IRC servers to read or modify arbitrary files via a .. (dot dot) in the server name.",
+    "cwe": [
+      "CWE-22"
+    ],
+    "nvd_url": "https://nvd.nist.gov/vuln/detail/CVE-2016-2087",
+    "file_name": "inbound.c",
+    "func_hash": 289376674180826741553106169575003472652,
+    "file_hash": 202497518967624726910452754426675896941
+  },
+  "fixed": {
+    "idx": 292205,
+    "func_hash": 298030143557811243277605801674004119778,
+    "file_hash": 316287172279434102312310467592869221678
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "vulnerable": {
+    "idx": 198499,
+    "project": "micro-ecc",
+    "commit_id": "1b5f5cea5145c96dd8791b9b2c41424fc74c2172",
+    "commit_url": "https://github.com/kmackay/micro-ecc/commit/1b5f5cea5145c96dd8791b9b2c41424fc74c2172",
+    "commit_message": "Fix for #168",
+    "cve": "CVE-2020-27209",
+    "cve_desc": "The ECDSA operation of the micro-ecc library 1.0 is vulnerable to simple power analysis attacks which allows an adversary to extract the private ECC key.",
+    "cwe": [
+      "CWE-415"
+    ],
+    "nvd_url": "https://nvd.nist.gov/vuln/detail/CVE-2020-27209",
+    "file_name": "uECC.c",
+    "func_hash": 250707445511654521220716932779019293116,
+    "file_hash": 221730154760089899908262595980065132519
+  },
+  "fixed": {
+    "idx": 275987,
+    "func_hash": 118273926663441096280456772911326940472,
+    "file_hash": 232283246719977371910544173978221438887
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "vulnerable": {
+    "idx": 212144,
+    "project": "libmobi",
+    "commit_id": "c78e186739b50d156cb3da5d08d70294f0490853",
+    "commit_url": "https://github.com/bfabiszewski/libmobi/commit/c78e186739b50d156cb3da5d08d70294f0490853",
+    "commit_message": "Fix potential out-of-buffer read while parsing corrupt file, closes #38",
+    "cve": "CVE-2021-3888",
+    "cve_desc": "libmobi is vulnerable to Use of Out-of-range Pointer Offset",
+    "cwe": [
+      "CWE-119"
+    ],
+    "nvd_url": "https://nvd.nist.gov/vuln/detail/CVE-2021-3888",
+    "file_name": "read.c",
+    "func_hash": 272789865299199789225315738205107270064,
+    "file_hash": 34500817876088764790813749563983010190
+  },
+  "fixed": {
+    "idx": 455177,
+    "func_hash": 211530049158768490793426546245477731217,
+    "file_hash": 228295168827515416887178420817040616622
+  }
+}

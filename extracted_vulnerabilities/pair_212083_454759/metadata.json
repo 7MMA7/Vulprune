@@ -1,0 +1,23 @@
+{
+  "vulnerable": {
+    "idx": 212083,
+    "project": "linux",
+    "commit_id": "690b2549b19563ec5ad53e5c82f6a944d910086e",
+    "commit_url": "https://github.com/torvalds/linux/commit/690b2549b19563ec5ad53e5c82f6a944d910086e",
+    "commit_message": "i2c: ismt: prevent memory corruption in ismt_access()\n\nThe \"data->block[0]\" variable comes from the user and is a number\nbetween 0-255.  It needs to be capped to prevent writing beyond the end\nof dma_buffer[].\n\nFixes: 5e9a97b1f449 (\"i2c: ismt: Adding support for I2C_SMBUS_BLOCK_PROC_CALL\")\nReported-and-tested-by: Zheyu Ma <zheyuma97@gmail.com>\nSigned-off-by: Dan Carpenter <dan.carpenter@oracle.com>\nReviewed-by: Mika Westerberg <mika.westerberg@linux.intel.com>\nSigned-off-by: Linus Torvalds <torvalds@linux-foundation.org>",
+    "cve": "CVE-2022-3077",
+    "cve_desc": "A buffer overflow vulnerability was found in the Linux kernel Intel\u2019s iSMT SMBus host controller driver in the way it handled the I2C_SMBUS_BLOCK_PROC_CALL case (via the ioctl I2C_SMBUS) with malicious input data. This flaw could allow a local user to crash the system.",
+    "cwe": [
+      "CWE-703"
+    ],
+    "nvd_url": "https://nvd.nist.gov/vuln/detail/CVE-2022-3077",
+    "file_name": "i2c-ismt.c",
+    "func_hash": 91513236317351842038056466223233835211,
+    "file_hash": 22364513944485151173045885792643538357
+  },
+  "fixed": {
+    "idx": 454759,
+    "func_hash": 337152422880524025166312472003442952073,
+    "file_hash": 51244111268212170404918431081464078764
+  }
+}

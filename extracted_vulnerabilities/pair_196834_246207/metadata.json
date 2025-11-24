@@ -1,0 +1,23 @@
+{
+  "vulnerable": {
+    "idx": 196834,
+    "project": "tensorflow",
+    "commit_id": "701cfaca222a82afbeeb17496bd718baa65a67d2",
+    "commit_url": "https://github.com/tensorflow/tensorflow/commit/701cfaca222a82afbeeb17496bd718baa65a67d2",
+    "commit_message": "Fix heap out of bounds error in tf.raw_ops.SparseCountSparseOutput shape inference when it is called with invalid inputs, and add a test for it.\n\nPiperOrigin-RevId: 405766415\nChange-Id: I77d244ef35f351ef7b6f821efd959cac2c66db24",
+    "cve": "CVE-2021-41210",
+    "cve_desc": "TensorFlow is an open source platform for machine learning. In affected versions the shape inference functions for `SparseCountSparseOutput` can trigger a read outside of bounds of heap allocated array. The fix will be included in TensorFlow 2.7.0. We will also cherrypick this commit on TensorFlow 2.6.1, TensorFlow 2.5.2, and TensorFlow 2.4.4, as these are also affected and still in supported range.",
+    "cwe": [
+      "CWE-125"
+    ],
+    "nvd_url": "https://nvd.nist.gov/vuln/detail/CVE-2021-41210",
+    "file_name": "count_ops.cc",
+    "func_hash": 288638774639466658606082764141579193752,
+    "file_hash": 285251304555239344227100279342018211632
+  },
+  "fixed": {
+    "idx": 246207,
+    "func_hash": 271491902662668268509988539707707762247,
+    "file_hash": 129709593460413124359725410007396484757
+  }
+}

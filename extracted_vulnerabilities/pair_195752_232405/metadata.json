@@ -1,0 +1,23 @@
+{
+  "vulnerable": {
+    "idx": 195752,
+    "project": "tensorflow",
+    "commit_id": "02cc160e29d20631de3859c6653184e3f876b9d7",
+    "commit_url": "https://github.com/tensorflow/tensorflow/commit/02cc160e29d20631de3859c6653184e3f876b9d7",
+    "commit_message": "Prevent nullptr deref in SparseTensorSliceDataset\n\nThe arguments must determine a valid sparse tensor. This means that when indices are empty then the values must be empty too (and the reverse).\n\nAlso added test, by modifying existing test with empty sparse tensor to now run with an invalid sparse tensor input.\n\nPiperOrigin-RevId: 388562757\nChange-Id: Id8b54cd7c2316025b4f9a77292c8fb5344d17609",
+    "cve": "CVE-2021-37647",
+    "cve_desc": "TensorFlow is an end-to-end open source platform for machine learning. When a user does not supply arguments that determine a valid sparse tensor, `tf.raw_ops.SparseTensorSliceDataset` implementation can be made to dereference a null pointer. The [implementation](https://github.com/tensorflow/tensorflow/blob/8d72537c6abf5a44103b57b9c2e22c14f5f49698/tensorflow/core/kernels/data/sparse_tensor_slice_dataset_op.cc#L240-L251) has some argument validation but fails to consider the case when either `indices` or `values` are provided for an empty sparse tensor when the other is not. If `indices` is empty, then [code that performs validation](https://github.com/tensorflow/tensorflow/blob/8d72537c6abf5a44103b57b9c2e22c14f5f49698/tensorflow/core/kernels/data/sparse_tensor_slice_dataset_op.cc#L260-L261) (i.e., checking that the indices are monotonically increasing) results in a null pointer dereference. If `indices` as provided by the user is empty, then `indices` in the C++ code above is backed by an empty `std::vector`, hence calling `indices->dim_size(0)` results in null pointer dereferencing (same as calling `std::vector::at()` on an empty vector). We have patched the issue in GitHub commit 02cc160e29d20631de3859c6653184e3f876b9d7. The fix will be included in TensorFlow 2.6.0. We will also cherrypick this commit on TensorFlow 2.5.1, TensorFlow 2.4.3, and TensorFlow 2.3.4, as these are also affected and still in supported range.",
+    "cwe": [
+      "CWE-476"
+    ],
+    "nvd_url": "https://nvd.nist.gov/vuln/detail/CVE-2021-37647",
+    "file_name": "sparse_tensor_slice_dataset_op.cc",
+    "func_hash": 111818826187244494245403789873500831419,
+    "file_hash": 152047584060469134260687844063366554733
+  },
+  "fixed": {
+    "idx": 232405,
+    "func_hash": 126239557450594194918340916106898261954,
+    "file_hash": 188414793374606504588915566744198162485
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "vulnerable": {
+    "idx": 198010,
+    "project": "radare2",
+    "commit_id": "193f4fe01d7f626e2ea937450f2e0c4604420e9d",
+    "commit_url": "https://github.com/radareorg/radare2/commit/193f4fe01d7f626e2ea937450f2e0c4604420e9d",
+    "commit_message": "Fix integer overflow in string search causing oobread ##crash\n\n* Reported by @greatergoodest via huntrdev\n* BountyID: 8a3dc5cb-08b3-4807-82b2-77f08c137a04\n* Reproducer bfileovf",
+    "cve": "CVE-2022-1899",
+    "cve_desc": "Out-of-bounds Read in GitHub repository radareorg/radare2 prior to 5.7.0.",
+    "cwe": [
+      "CWE-125"
+    ],
+    "nvd_url": "https://nvd.nist.gov/vuln/detail/CVE-2022-1899",
+    "file_name": "bfile.c",
+    "func_hash": 327958810043229005935201535284879314576,
+    "file_hash": 285505404053025817812791776020239027950
+  },
+  "fixed": {
+    "idx": 267985,
+    "func_hash": 198406980128053005896085428351460738080,
+    "file_hash": 44900440862235442449646494909197314048
+  }
+}

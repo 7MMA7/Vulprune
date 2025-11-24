@@ -1,0 +1,23 @@
+{
+  "vulnerable": {
+    "idx": 197359,
+    "project": "tensorflow",
+    "commit_id": "68867bf01239d9e1048f98cbad185bf4761bedd3",
+    "commit_url": "https://github.com/tensorflow/tensorflow/commit/68867bf01239d9e1048f98cbad185bf4761bedd3",
+    "commit_message": "Prevent unitialized variable use in grappler.\n\nPiperOrigin-RevId: 399702928\nChange-Id: Id7e75451fbff297692dfb687f60ea04b25c96b24",
+    "cve": "CVE-2021-41225",
+    "cve_desc": "TensorFlow is an open source platform for machine learning. In affected versions TensorFlow's Grappler optimizer has a use of unitialized variable. If the `train_nodes` vector (obtained from the saved model that gets optimized) does not contain a `Dequeue` node, then `dequeue_node` is left unitialized. The fix will be included in TensorFlow 2.7.0. We will also cherrypick this commit on TensorFlow 2.6.1, TensorFlow 2.5.2, and TensorFlow 2.4.4, as these are also affected and still in supported range.",
+    "cwe": [
+      "CWE-703"
+    ],
+    "nvd_url": "https://nvd.nist.gov/vuln/detail/CVE-2021-41225",
+    "file_name": "auto_parallel.cc",
+    "func_hash": 251567762309539032923316029186493191559,
+    "file_hash": 291637818016549468794962575194747709507
+  },
+  "fixed": {
+    "idx": 257461,
+    "func_hash": 239400794091887748487635505232463109682,
+    "file_hash": 250375078296494886105234781412804054984
+  }
+}

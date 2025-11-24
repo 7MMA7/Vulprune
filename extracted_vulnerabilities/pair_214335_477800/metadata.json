@@ -1,0 +1,23 @@
+{
+  "vulnerable": {
+    "idx": 214335,
+    "project": "ceph",
+    "commit_id": "be7679007c3dfab3e19c22c38c36ccac91828e3b",
+    "commit_url": "https://github.com/ceph/ceph/commit/be7679007c3dfab3e19c22c38c36ccac91828e3b",
+    "commit_message": "rgw: reject control characters in response-header actions\n\nS3 GetObject permits overriding response header values, but those inputs\nneed to be validated to insure only characters that are valid in an HTTP\nheader value are present.\n\nCredit: Initial vulnerability discovery by William Bowling (@wcbowling)\nCredit: Further vulnerability discovery by Robin H. Johnson <rjohnson@digitalocean.com>\nSigned-off-by: Robin H. Johnson <rjohnson@digitalocean.com>",
+    "cve": "CVE-2020-1760",
+    "cve_desc": "A flaw was found in the Ceph Object Gateway, where it supports request sent by an anonymous user in Amazon S3. This flaw could lead to potential XSS attacks due to the lack of proper neutralization of untrusted input.",
+    "cwe": [
+      "CWE-79"
+    ],
+    "nvd_url": "https://nvd.nist.gov/vuln/detail/CVE-2020-1760",
+    "file_name": "rgw_rest_s3.cc",
+    "func_hash": 252320959275346519647300715417843120718,
+    "file_hash": 121704064633287557349192949015382644860
+  },
+  "fixed": {
+    "idx": 477800,
+    "func_hash": 262581748288231212684344001949485433363,
+    "file_hash": 18601801279536370570230302891439737230
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "vulnerable": {
+    "idx": 195720,
+    "project": "mvfst",
+    "commit_id": "a67083ff4b8dcbb7ee2839da6338032030d712b0",
+    "commit_url": "https://github.com/facebookincubator/mvfst/commit/a67083ff4b8dcbb7ee2839da6338032030d712b0",
+    "commit_message": "Close connection if we derive an extra 1-rtt write cipher\n\nSummary: Fixes CVE-2021-24029\n\nReviewed By: mjoras, lnicco\n\nDifferential Revision: D26613890\n\nfbshipit-source-id: 19bb2be2c731808144e1a074ece313fba11f1945",
+    "cve": "CVE-2021-24029",
+    "cve_desc": "A packet of death scenario is possible in mvfst via a specially crafted message during a QUIC session, which causes a crash via a failed assertion. Per QUIC specification, this particular message should be treated as a connection error. This issue affects mvfst versions prior to commit a67083ff4b8dcbb7ee2839da6338032030d712b0 and proxygen versions prior to v2021.03.15.00.",
+    "cwe": [
+      "CWE-703"
+    ],
+    "nvd_url": "https://nvd.nist.gov/vuln/detail/CVE-2021-24029",
+    "file_name": "ServerStateMachine.cpp",
+    "func_hash": 43735419078414129480912957086830640484,
+    "file_hash": 9223824505720776904271246874049398430
+  },
+  "fixed": {
+    "idx": 231710,
+    "func_hash": 131573153342571823274301341051505058759,
+    "file_hash": 204614198627642259228820961859917931421
+  }
+}

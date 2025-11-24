@@ -1,0 +1,5 @@
+extracted_vulnerabilities/pair_215073_483053/cgroup-v1_fixed.c:1:0: style: The function 'cgroup_release_agent_write' is never used. [unusedFunction]
+static ssize_t cgroup_release_agent_write(struct kernfs_open_file *of,
+^
+nofile:0:0: information: Active checkers: 113/592 (use --checkers-report=<filename> to see details) [checkersReport]
+

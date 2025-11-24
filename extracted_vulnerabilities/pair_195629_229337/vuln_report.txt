@@ -1,0 +1,5 @@
+extracted_vulnerabilities/pair_195629_229337/execute_vuln.cc:1:0: style: The function 'GetDeviceForInput' is never used. [unusedFunction]
+Status GetDeviceForInput(const EagerOperation& op, const EagerContext& ctx,
+^
+nofile:0:0: information: Active checkers: 172/592 (use --checkers-report=<filename> to see details) [checkersReport]
+

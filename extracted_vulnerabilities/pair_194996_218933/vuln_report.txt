@@ -1,0 +1,5 @@
+extracted_vulnerabilities/pair_194996_218933/loader_util_vuln.cc:1:0: style: The function 'GetInitOp' is never used. [unusedFunction]
+Status GetInitOp(const string& export_dir, const MetaGraphDef& meta_graph_def,
+^
+nofile:0:0: information: Active checkers: 172/592 (use --checkers-report=<filename> to see details) [checkersReport]
+

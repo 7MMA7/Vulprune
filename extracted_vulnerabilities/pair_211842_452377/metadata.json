@@ -1,0 +1,23 @@
+{
+  "vulnerable": {
+    "idx": 211842,
+    "project": "vim",
+    "commit_id": "4e889f98e95ac05d7c8bd3ee933ab4d47820fdfa",
+    "commit_url": "https://github.com/vim/vim/commit/4e889f98e95ac05d7c8bd3ee933ab4d47820fdfa",
+    "commit_message": "patch 8.2.4436: crash with weird 'vartabstop' value\n\nProblem:    Crash with weird 'vartabstop' value.\nSolution:   Check for running into the end of the line.",
+    "cve": "CVE-2022-0714",
+    "cve_desc": "Heap-based Buffer Overflow in GitHub repository vim/vim prior to 8.2.4436.",
+    "cwe": [
+      "CWE-787"
+    ],
+    "nvd_url": "https://nvd.nist.gov/vuln/detail/CVE-2022-0714",
+    "file_name": "indent.c",
+    "func_hash": 104434622616430304167109103842435027722,
+    "file_hash": 225104819640164774379021828754456921804
+  },
+  "fixed": {
+    "idx": 452377,
+    "func_hash": 281315459122812097070130024816280546627,
+    "file_hash": 175343284041603087029849272826009468440
+  }
+}

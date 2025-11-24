@@ -1,0 +1,8 @@
+extracted_vulnerabilities/pair_206670_384677/protocol-handshake-newstyle_vuln.c:1:1: portability: Omitted return type of function 'negotiate_handshake_newstyle_options' defaults to int, this is not supported by ISO C99 and later standards. [returnImplicitInt]
+negotiate_handshake_newstyle_options (void)
+^
+extracted_vulnerabilities/pair_206670_384677/protocol-handshake-newstyle_vuln.c:1:0: style: The function 'negotiate_handshake_newstyle_options' is never used. [unusedFunction]
+negotiate_handshake_newstyle_options (void)
+^
+nofile:0:0: information: Active checkers: 113/592 (use --checkers-report=<filename> to see details) [checkersReport]
+

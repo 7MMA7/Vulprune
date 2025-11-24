@@ -1,0 +1,23 @@
+{
+  "vulnerable": {
+    "idx": 200113,
+    "project": "ImageMagick",
+    "commit_id": "389ecc365a7c61404ba078a72c3fa5a3cf1b4101",
+    "commit_url": "https://github.com/ImageMagick/ImageMagick/commit/389ecc365a7c61404ba078a72c3fa5a3cf1b4101",
+    "commit_message": "https://github.com/ImageMagick/ImageMagick/issues/1221",
+    "cve": "CVE-2018-14551",
+    "cve_desc": "The ReadMATImageV4 function in coders/mat.c in ImageMagick 7.0.8-7 uses an uninitialized variable, leading to memory corruption.",
+    "cwe": [
+      "CWE-787"
+    ],
+    "nvd_url": "https://nvd.nist.gov/vuln/detail/CVE-2018-14551",
+    "file_name": "mat.c",
+    "func_hash": 285338942932126464684406061663699404409,
+    "file_hash": 152895055268444149031499537279657208937
+  },
+  "fixed": {
+    "idx": 299319,
+    "func_hash": 27945736353263207032658277682673712117,
+    "file_hash": 197422043282011428208750932279920042610
+  }
+}

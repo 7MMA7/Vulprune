@@ -1,0 +1,23 @@
+{
+  "vulnerable": {
+    "idx": 208505,
+    "project": "tor",
+    "commit_id": "57e35ad3d91724882c345ac709666a551a977f0f",
+    "commit_url": "https://gitweb.torproject.org/tor.git/commitdiff/57e35ad3d91724882c345ac709666a551a977f0f",
+    "commit_message": "Avoid possible segfault when handling networkstatus vote with bad flavor\n\nFix for 6530; fix on 0.2.2.6-alpha.",
+    "cve": "CVE-2012-3517",
+    "cve_desc": "Use-after-free vulnerability in dns.c in Tor before 0.2.2.38 might allow remote attackers to cause a denial of service (daemon crash) via vectors related to failed DNS requests.",
+    "cwe": [
+      "CWE-399"
+    ],
+    "nvd_url": "https://nvd.nist.gov/vuln/detail/CVE-2012-3517",
+    "file_name": "routerparse.c",
+    "func_hash": 297795787979009632344281497591388902899,
+    "file_hash": 22420103474128049345359193080521452725
+  },
+  "fixed": {
+    "idx": 411896,
+    "func_hash": 32476189085047846654485357461000169303,
+    "file_hash": 74078993205863755729749320619386018823
+  }
+}

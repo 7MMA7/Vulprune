@@ -1,0 +1,23 @@
+{
+  "vulnerable": {
+    "idx": 204243,
+    "project": "vim",
+    "commit_id": "fe6fb267e6ee5c5da2f41889e4e0e0ac5bf4b89d",
+    "commit_url": "https://github.com/vim/vim/commit/fe6fb267e6ee5c5da2f41889e4e0e0ac5bf4b89d",
+    "commit_message": "patch 8.2.4206: condition with many \"(\" causes a crash\n\nProblem:    Condition with many \"(\" causes a crash.\nSolution:   Limit recursion to 1000.",
+    "cve": "CVE-2022-0351",
+    "cve_desc": "Access of Memory Location Before Start of Buffer in GitHub repository vim/vim prior to 8.2.",
+    "cwe": [
+      "CWE-787"
+    ],
+    "nvd_url": "https://nvd.nist.gov/vuln/detail/CVE-2022-0351",
+    "file_name": "eval.c",
+    "func_hash": 36727009233023880586835574908835910206,
+    "file_hash": 215532001349875821306945607465028796767
+  },
+  "fixed": {
+    "idx": 355649,
+    "func_hash": 324139368658301016034800923930937563014,
+    "file_hash": 208824404078014502397565483410500490043
+  }
+}

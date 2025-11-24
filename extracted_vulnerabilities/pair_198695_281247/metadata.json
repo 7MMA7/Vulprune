@@ -1,0 +1,23 @@
+{
+  "vulnerable": {
+    "idx": 198695,
+    "project": "MilkyTracker",
+    "commit_id": "fd607a3439fcdd0992e5efded3c16fc79c804e34",
+    "commit_url": "https://github.com/milkytracker/MilkyTracker/commit/fd607a3439fcdd0992e5efded3c16fc79c804e34",
+    "commit_message": "Fix #184: Heap overflow in S3M loader",
+    "cve": "CVE-2019-14464",
+    "cve_desc": "XMFile::read in XMFile.cpp in milkyplay in MilkyTracker 1.02.00 has a heap-based buffer overflow.",
+    "cwe": [
+      "CWE-787"
+    ],
+    "nvd_url": "https://nvd.nist.gov/vuln/detail/CVE-2019-14464",
+    "file_name": "LoaderS3M.cpp",
+    "func_hash": 83839366626583868665259951755341094581,
+    "file_hash": 183144652101625968491560243513367539209
+  },
+  "fixed": {
+    "idx": 281247,
+    "func_hash": 43770452708802506727115709874913360488,
+    "file_hash": 201031335875612039718425244532999180036
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "vulnerable": {
+    "idx": 195670,
+    "project": "pjproject",
+    "commit_id": "856f87c2e97a27b256482dbe0d748b1194355a21",
+    "commit_url": "https://github.com/pjsip/pjproject/commit/856f87c2e97a27b256482dbe0d748b1194355a21",
+    "commit_message": "Merge pull request from GHSA-5x45-qp78-g4p4\n\n* Prevent infinite loop in scanning xml content\n\n* Simplify scanning method\n\n* Optimization",
+    "cve": "CVE-2022-24763",
+    "cve_desc": "PJSIP is a free and open source multimedia communication library written in the C language. Versions 2.12 and prior contain a denial-of-service vulnerability that affects PJSIP users that consume PJSIP's XML parsing in their apps. Users are advised to update. There are no known workarounds.",
+    "cwe": [
+      "CWE-703"
+    ],
+    "nvd_url": "https://nvd.nist.gov/vuln/detail/CVE-2022-24763",
+    "file_name": "xml.c",
+    "func_hash": 277240174945375908655928995975016589842,
+    "file_hash": 319030018310003515806173873266013713455
+  },
+  "fixed": {
+    "idx": 230394,
+    "func_hash": 333353357538572797993178277028111202319,
+    "file_hash": 137943726532385231053862962299057228575
+  }
+}

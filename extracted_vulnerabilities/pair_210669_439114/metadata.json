@@ -1,0 +1,23 @@
+{
+  "vulnerable": {
+    "idx": 210669,
+    "project": "ImageMagick6",
+    "commit_id": "210474b2fac6a661bfa7ed563213920e93e76395",
+    "commit_url": "https://github.com/ImageMagick/ImageMagick6/commit/210474b2fac6a661bfa7ed563213920e93e76395",
+    "commit_message": "Fix ultra rare but potential memory-leak",
+    "cve": "CVE-2019-13133",
+    "cve_desc": "ImageMagick before 7.0.8-50 has a memory leak vulnerability in the function ReadBMPImage in coders/bmp.c.",
+    "cwe": [
+      "CWE-401"
+    ],
+    "nvd_url": "https://nvd.nist.gov/vuln/detail/CVE-2019-13133",
+    "file_name": "bmp.c",
+    "func_hash": 30229592861865697728644210229360552083,
+    "file_hash": 87642086170701008397384161090320956088
+  },
+  "fixed": {
+    "idx": 439114,
+    "func_hash": 31482023248196761538245576709415402386,
+    "file_hash": 138018406162232274943459037643327051251
+  }
+}

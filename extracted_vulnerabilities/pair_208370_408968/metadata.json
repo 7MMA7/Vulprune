@@ -1,0 +1,23 @@
+{
+  "vulnerable": {
+    "idx": 208370,
+    "project": "vim",
+    "commit_id": "806d037671e133bd28a7864248763f643967973a",
+    "commit_url": "https://github.com/vim/vim/commit/806d037671e133bd28a7864248763f643967973a",
+    "commit_message": "patch 8.2.4218: illegal memory access with bracketed paste in Ex mode\n\nProblem:    Illegal memory access with bracketed paste in Ex mode.\nSolution:   Reserve space for the trailing NUL.",
+    "cve": "CVE-2022-0392",
+    "cve_desc": "Heap-based Buffer Overflow in GitHub repository vim prior to 8.2.",
+    "cwe": [
+      "CWE-787"
+    ],
+    "nvd_url": "https://nvd.nist.gov/vuln/detail/CVE-2022-0392",
+    "file_name": "edit.c",
+    "func_hash": 304493990488783960232843007629982350455,
+    "file_hash": 253330379214920739736877102106471261423
+  },
+  "fixed": {
+    "idx": 408968,
+    "func_hash": 237228533852438658740165650986586610988,
+    "file_hash": 72953735620149631855784875265490970900
+  }
+}

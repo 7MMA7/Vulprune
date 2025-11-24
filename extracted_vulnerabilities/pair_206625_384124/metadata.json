@@ -1,0 +1,23 @@
+{
+  "vulnerable": {
+    "idx": 206625,
+    "project": "raptor",
+    "commit_id": "590681e546cd9aa18d57dc2ea1858cb734a3863f",
+    "commit_url": "https://github.com/dajobe/raptor/commit/590681e546cd9aa18d57dc2ea1858cb734a3863f",
+    "commit_message": "Calcualte max nspace declarations correctly for XML writer\n\n(raptor_xml_writer_start_element_common): Calculate max including for\neach attribute a potential name and value.\n\nFixes Issues #0000617 http://bugs.librdf.org/mantis/view.php?id=617\nand #0000618 http://bugs.librdf.org/mantis/view.php?id=618",
+    "cve": "CVE-2017-18926",
+    "cve_desc": "raptor_xml_writer_start_element_common in raptor_xml_writer.c in Raptor RDF Syntax Library 2.0.15 miscalculates the maximum nspace declarations for the XML writer, leading to heap-based buffer overflows (sometimes seen in raptor_qname_format_as_xml).",
+    "cwe": [
+      "CWE-787"
+    ],
+    "nvd_url": "https://nvd.nist.gov/vuln/detail/CVE-2017-18926",
+    "file_name": "raptor_xml_writer.c",
+    "func_hash": 183974089624650942434351568312452779610,
+    "file_hash": 303005196227120175198140448209688194758
+  },
+  "fixed": {
+    "idx": 384124,
+    "func_hash": 82963305933956175677502497774267767451,
+    "file_hash": 139112831165877018854969912519011883099
+  }
+}

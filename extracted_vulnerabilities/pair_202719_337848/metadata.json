@@ -1,0 +1,23 @@
+{
+  "vulnerable": {
+    "idx": 202719,
+    "project": "linux",
+    "commit_id": "a2d859e3fc97e79d907761550dbc03ff1b36479c",
+    "commit_url": "https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=a2d859e3fc97e79d907761550dbc03ff1b36479c",
+    "commit_message": "sctp: account stream padding length for reconf chunk\n\nsctp_make_strreset_req() makes repeated calls to sctp_addto_chunk()\nwhich will automatically account for padding on each call. inreq and\noutreq are already 4 bytes aligned, but the payload is not and doing\nSCTP_PAD4(a + b) (which _sctp_make_chunk() did implicitly here) is\ndifferent from SCTP_PAD4(a) + SCTP_PAD4(b) and not enough. It led to\npossible attempt to use more buffer than it was allocated and triggered\na BUG_ON.\n\nCc: Vlad Yasevich <vyasevich@gmail.com>\nCc: Neil Horman <nhorman@tuxdriver.com>\nCc: Greg KH <gregkh@linuxfoundation.org>\nFixes: cc16f00f6529 (\"sctp: add support for generating stream reconf ssn reset request chunk\")\nReported-by: Eiichi Tsukata <eiichi.tsukata@nutanix.com>\nSigned-off-by: Eiichi Tsukata <eiichi.tsukata@nutanix.com>\nSigned-off-by: Marcelo Ricardo Leitner <marcelo.leitner@gmail.com>\nSigned-off-by: Marcelo Ricardo Leitner <mleitner@redhat.com>\nReviewed-by: Xin Long <lucien.xin@gmail.com>\nLink: https://lore.kernel.org/r/b97c1f8b0c7ff79ac4ed206fc2c49d3612e0850c.1634156849.git.mleitner@redhat.com\nSigned-off-by: Jakub Kicinski <kuba@kernel.org>",
+    "cve": "CVE-2022-0322",
+    "cve_desc": "A flaw was found in the sctp_make_strreset_req function in net/sctp/sm_make_chunk.c in the SCTP network protocol in the Linux kernel with a local user privilege access. In this flaw, an attempt to use more buffer than is allocated triggers a BUG_ON issue, leading to a denial of service (DOS).",
+    "cwe": [
+      "CWE-704"
+    ],
+    "nvd_url": "https://nvd.nist.gov/vuln/detail/CVE-2022-0322",
+    "file_name": "sm_make_chunk.c",
+    "func_hash": 215335113411495657240056321729109595636,
+    "file_hash": 110519816461895113606911923370921219323
+  },
+  "fixed": {
+    "idx": 337848,
+    "func_hash": 175020260748921031996578395052444557756,
+    "file_hash": 72489321105602052766082993841220689495
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "vulnerable": {
+    "idx": 212834,
+    "project": "rsyslog",
+    "commit_id": "0381a0de64a5a048c3d48b79055bd9848d0c7fc2",
+    "commit_url": "https://github.com/rsyslog/rsyslog/commit/0381a0de64a5a048c3d48b79055bd9848d0c7fc2",
+    "commit_message": "imptcp: fix Segmentation Fault when octet count is to high",
+    "cve": "CVE-2018-16881",
+    "cve_desc": "A denial of service vulnerability was found in rsyslog in the imptcp module. An attacker could send a specially crafted message to the imptcp socket, which would cause rsyslog to crash. Versions before 8.27.0 are vulnerable.",
+    "cwe": [
+      "CWE-190"
+    ],
+    "nvd_url": "https://nvd.nist.gov/vuln/detail/CVE-2018-16881",
+    "file_name": "imptcp.c",
+    "func_hash": 175845780697344678841951403700990960175,
+    "file_hash": 66608949268386945207139768258979939814
+  },
+  "fixed": {
+    "idx": 462409,
+    "func_hash": 319180109338452321529530788318348241217,
+    "file_hash": 222511081390723120608536252618686301143
+  }
+}

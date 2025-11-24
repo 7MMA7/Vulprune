@@ -1,0 +1,23 @@
+{
+  "vulnerable": {
+    "idx": 202748,
+    "project": "ImageMagick",
+    "commit_id": "fbb5e1c8211c4e88ecc367e784b79d457c300d6d",
+    "commit_url": "https://github.com/ImageMagick/ImageMagick/commit/fbb5e1c8211c4e88ecc367e784b79d457c300d6d",
+    "commit_message": "...",
+    "cve": "CVE-2017-11170",
+    "cve_desc": "The ReadTGAImage function in coders\\tga.c in ImageMagick 7.0.5-6 has a memory leak vulnerability that can cause memory exhaustion via invalid colors data in the header of a TGA or VST file.",
+    "cwe": [
+      "CWE-772"
+    ],
+    "nvd_url": "https://nvd.nist.gov/vuln/detail/CVE-2017-11170",
+    "file_name": "tga.c",
+    "func_hash": 95115433929731884744054008378657506459,
+    "file_hash": 229955351147198147579545037524450823231
+  },
+  "fixed": {
+    "idx": 338747,
+    "func_hash": 175791113381074585644433899536597352981,
+    "file_hash": 184535518978867885654371830775021710506
+  }
+}

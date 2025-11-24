@@ -1,0 +1,23 @@
+{
+  "vulnerable": {
+    "idx": 211126,
+    "project": "libmobi",
+    "commit_id": "612562bc1ea38f1708b044e7a079c47a05b1291d",
+    "commit_url": "https://github.com/bfabiszewski/libmobi/commit/612562bc1ea38f1708b044e7a079c47a05b1291d",
+    "commit_message": "Fix: index entry label not being zero-terminated with corrupt input",
+    "cve": "CVE-2022-1987",
+    "cve_desc": "Buffer Over-read in GitHub repository bfabiszewski/libmobi prior to 0.11.",
+    "cwe": [
+      "CWE-125"
+    ],
+    "nvd_url": "https://nvd.nist.gov/vuln/detail/CVE-2022-1987",
+    "file_name": "index.c",
+    "func_hash": 251371537702901623564985735187675051869,
+    "file_hash": 309095437889005741044332361577356993393
+  },
+  "fixed": {
+    "idx": 446279,
+    "func_hash": 15245136244377426883811242014385645170,
+    "file_hash": 108195340824579059268746364836110051712
+  }
+}

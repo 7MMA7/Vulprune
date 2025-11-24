@@ -1,0 +1,23 @@
+{
+  "vulnerable": {
+    "idx": 211877,
+    "project": "libexpat",
+    "commit_id": "a2fe525e660badd64b6c557c2b1ec26ddc07f6e4",
+    "commit_url": "https://github.com/libexpat/libexpat/commit/a2fe525e660badd64b6c557c2b1ec26ddc07f6e4",
+    "commit_message": "lib: Protect against malicious namespace declarations (CVE-2022-25236)",
+    "cve": "CVE-2022-25236",
+    "cve_desc": "xmlparse.c in Expat (aka libexpat) before 2.4.5 allows attackers to insert namespace-separator characters into namespace URIs.",
+    "cwe": [
+      "CWE-668"
+    ],
+    "nvd_url": "https://nvd.nist.gov/vuln/detail/CVE-2022-25236",
+    "file_name": "xmlparse.c",
+    "func_hash": 22295362737021887331084829836677682659,
+    "file_hash": 64970761866861782031621044957132437337
+  },
+  "fixed": {
+    "idx": 453109,
+    "func_hash": 180909609780994811991308792390157424153,
+    "file_hash": 39872007825496999526918942248087494728
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "vulnerable": {
+    "idx": 211699,
+    "project": "gnulib",
+    "commit_id": "2d1bd71ec70a31b01d01b734faa66bb1ed28961f",
+    "commit_url": "http://git.savannah.gnu.org/cgit/gnulib.git/commit/?id=2d1bd71ec70a31b01d01b734faa66bb1ed28961f",
+    "commit_message": "glob: fix heap buffer overflow\n\n* lib/glob.c (glob): Fix off-by-one error introduced into\nglibc in commit dd7d45e838a42b0ed470c44b55901ea98d0c2bab\ndated 1997-10-29 20:33:40.  Problem reported by Tim R\u00fchsen in:\nhttps://sourceware.org/bugzilla/show_bug.cgi?id=22320\nFix suggested by Bruno Haible.",
+    "cve": "CVE-2017-15670",
+    "cve_desc": "The GNU C Library (aka glibc or libc6) before 2.27 contains an off-by-one error leading to a heap-based buffer overflow in the glob function in glob.c, related to the processing of home directories using the ~ operator followed by a long string.",
+    "cwe": [
+      "CWE-119"
+    ],
+    "nvd_url": "https://nvd.nist.gov/vuln/detail/CVE-2017-15670",
+    "file_name": "glob.c",
+    "func_hash": 298881576183169213772402868020196569538,
+    "file_hash": 266244104923592097115880749593499653391
+  },
+  "fixed": {
+    "idx": 450812,
+    "func_hash": 117294583205769293929285722462366033294,
+    "file_hash": 86657842076081720969928155936908511288
+  }
+}

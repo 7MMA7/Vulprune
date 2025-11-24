@@ -1,0 +1,23 @@
+extracted_vulnerabilities/pair_207990_404192/pcre2_jit_compile_vuln.c:94:5: style: inconclusive: Statements following 'break' will never be executed. [unreachableCode]
+    CASE_ITERATOR_PRIVATE_DATA_1
+    ^
+extracted_vulnerabilities/pair_207990_404192/pcre2_jit_compile_vuln.c:103:5: style: inconclusive: Statements following 'break' will never be executed. [unreachableCode]
+    CASE_ITERATOR_PRIVATE_DATA_2A
+    ^
+extracted_vulnerabilities/pair_207990_404192/pcre2_jit_compile_vuln.c:112:5: style: inconclusive: Statements following 'break' will never be executed. [unreachableCode]
+    CASE_ITERATOR_PRIVATE_DATA_2B
+    ^
+extracted_vulnerabilities/pair_207990_404192/pcre2_jit_compile_vuln.c:121:5: style: inconclusive: Statements following 'break' will never be executed. [unreachableCode]
+    CASE_ITERATOR_TYPE_PRIVATE_DATA_1
+    ^
+extracted_vulnerabilities/pair_207990_404192/pcre2_jit_compile_vuln.c:127:5: style: inconclusive: Statements following 'break' will never be executed. [unreachableCode]
+    CASE_ITERATOR_TYPE_PRIVATE_DATA_2A
+    ^
+extracted_vulnerabilities/pair_207990_404192/pcre2_jit_compile_vuln.c:133:5: style: inconclusive: Statements following 'break' will never be executed. [unreachableCode]
+    CASE_ITERATOR_TYPE_PRIVATE_DATA_2B
+    ^
+extracted_vulnerabilities/pair_207990_404192/pcre2_jit_compile_vuln.c:1:0: style: The function 'get_recurse_data_length' is never used. [unusedFunction]
+static int get_recurse_data_length(compiler_common *common, PCRE2_SPTR cc, PCRE2_SPTR ccend,
+^
+nofile:0:0: information: Active checkers: 113/592 (use --checkers-report=<filename> to see details) [checkersReport]
+

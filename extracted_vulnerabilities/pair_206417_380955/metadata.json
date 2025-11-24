@@ -1,0 +1,23 @@
+{
+  "vulnerable": {
+    "idx": 206417,
+    "project": "vim",
+    "commit_id": "0971c7a4e537ea120a6bb2195960be8d0815e97b",
+    "commit_url": "https://github.com/vim/vim/commit/0971c7a4e537ea120a6bb2195960be8d0815e97b",
+    "commit_message": "patch 8.2.5162: reading before the start of the line with BS in Replace mode\n\nProblem:    Reading before the start of the line with BS in Replace mode.\nSolution:   Check the cursor column is more than zero.",
+    "cve": "CVE-2022-2207",
+    "cve_desc": "Heap-based Buffer Overflow in GitHub repository vim/vim prior to 8.2.",
+    "cwe": [
+      "CWE-787"
+    ],
+    "nvd_url": "https://nvd.nist.gov/vuln/detail/CVE-2022-2207",
+    "file_name": "edit.c",
+    "func_hash": 172194519756788339453675041357999010208,
+    "file_hash": 334216402611901751671385717284214475763
+  },
+  "fixed": {
+    "idx": 380955,
+    "func_hash": 64259932111379563055532506605085485351,
+    "file_hash": 91657375912486719968624749742093008286
+  }
+}

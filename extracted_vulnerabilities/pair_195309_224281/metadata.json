@@ -1,0 +1,23 @@
+{
+  "vulnerable": {
+    "idx": 195309,
+    "project": "squid",
+    "commit_id": "5e2ea2b13bd98f53e29964ca26bb0d602a8a12b9",
+    "commit_url": "https://github.com/squid-cache/squid/commit/5e2ea2b13bd98f53e29964ca26bb0d602a8a12b9",
+    "commit_message": "Improve handling of Gopher responses (#1022)",
+    "cve": "CVE-2021-46784",
+    "cve_desc": "In Squid 3.x through 3.5.28, 4.x through 4.17, and 5.x before 5.6, due to improper buffer management, a Denial of Service can occur when processing long Gopher server responses.",
+    "cwe": [
+      "CWE-400"
+    ],
+    "nvd_url": "https://nvd.nist.gov/vuln/detail/CVE-2021-46784",
+    "file_name": "gopher.cc",
+    "func_hash": 274182330078791984686066092776381139807,
+    "file_hash": 53940162348551394934251092714566998881
+  },
+  "fixed": {
+    "idx": 224281,
+    "func_hash": 21640942922320975299915998505575451737,
+    "file_hash": 190939052563115961351574589449206812826
+  }
+}

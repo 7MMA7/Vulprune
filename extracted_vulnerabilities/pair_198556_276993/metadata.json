@@ -1,0 +1,23 @@
+{
+  "vulnerable": {
+    "idx": 198556,
+    "project": "mruby",
+    "commit_id": "da48e7dbb20024c198493b8724adae1b842083aa",
+    "commit_url": "https://github.com/mruby/mruby/commit/da48e7dbb20024c198493b8724adae1b842083aa",
+    "commit_message": "fiber.c: should pack 15+ arguments in an array.",
+    "cve": "CVE-2022-0890",
+    "cve_desc": "NULL Pointer Dereference in GitHub repository mruby/mruby prior to 3.2.",
+    "cwe": [
+      "CWE-703"
+    ],
+    "nvd_url": "https://nvd.nist.gov/vuln/detail/CVE-2022-0890",
+    "file_name": "fiber.c",
+    "func_hash": 47008074931842386485122959067604053158,
+    "file_hash": 246157146670999327331490014943475085458
+  },
+  "fixed": {
+    "idx": 276993,
+    "func_hash": 103355671348819190033706386778999083640,
+    "file_hash": 198318116371258140758763628769197309767
+  }
+}

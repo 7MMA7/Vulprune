@@ -1,0 +1,83 @@
+extracted_vulnerabilities/pair_211845_452391/tiff_fixed.c:3:1: information: Limiting ValueFlow analysis in function 'ReadTIFFImage' since it is too complex. Please specify --check-level=exhaustive to perform full analysis. [checkLevelNormal]
+{
+^
+extracted_vulnerabilities/pair_211845_452391/tiff_fixed.c:436:11: style: The scope of the variable 'range' can be reduced. [variableScope]
+          range;
+          ^
+extracted_vulnerabilities/pair_211845_452391/tiff_fixed.c:433:11: style: Local variable 'tiff_status' shadows outer variable [shadowVariable]
+          tiff_status;
+          ^
+extracted_vulnerabilities/pair_211845_452391/tiff_fixed.c:29:5: note: Shadowed declaration
+    tiff_status = 0;
+    ^
+extracted_vulnerabilities/pair_211845_452391/tiff_fixed.c:433:11: note: Shadow variable
+          tiff_status;
+          ^
+extracted_vulnerabilities/pair_211845_452391/tiff_fixed.c:561:11: style: Local variable 'value' shadows outer variable [shadowVariable]
+          value[MaxTextExtent];
+          ^
+extracted_vulnerabilities/pair_211845_452391/tiff_fixed.c:75:5: note: Shadowed declaration
+    value = 0;
+    ^
+extracted_vulnerabilities/pair_211845_452391/tiff_fixed.c:561:11: note: Shadow variable
+          value[MaxTextExtent];
+          ^
+extracted_vulnerabilities/pair_211845_452391/tiff_fixed.c:661:13: style: Local variable 'status' shadows outer variable [shadowVariable]
+            status;
+            ^
+extracted_vulnerabilities/pair_211845_452391/tiff_fixed.c:35:5: note: Shadowed declaration
+    status;
+    ^
+extracted_vulnerabilities/pair_211845_452391/tiff_fixed.c:661:13: note: Shadow variable
+            status;
+            ^
+extracted_vulnerabilities/pair_211845_452391/tiff_fixed.c:913:12: style: Local variable 'pixels' shadows outer variable [shadowVariable]
+          *pixels;
+           ^
+extracted_vulnerabilities/pair_211845_452391/tiff_fixed.c:83:6: note: Shadowed declaration
+    *pixels;
+     ^
+extracted_vulnerabilities/pair_211845_452391/tiff_fixed.c:913:12: note: Shadow variable
+          *pixels;
+           ^
+extracted_vulnerabilities/pair_211845_452391/tiff_fixed.c:70:17: style: Variable 'photometric' is assigned a value that is never used. [unreadVariable]
+    photometric = 0,
+                ^
+extracted_vulnerabilities/pair_211845_452391/tiff_fixed.c:102:12: style: Variable 'image' is assigned a value that is never used. [unreadVariable]
+      image=DestroyImageList(image);
+           ^
+extracted_vulnerabilities/pair_211845_452391/tiff_fixed.c:113:12: style: Variable 'image' is assigned a value that is never used. [unreadVariable]
+      image=DestroyImageList(image);
+           ^
+extracted_vulnerabilities/pair_211845_452391/tiff_fixed.c:119:12: style: Variable 'image' is assigned a value that is never used. [unreadVariable]
+      image=DestroyImageList(image);
+           ^
+extracted_vulnerabilities/pair_211845_452391/tiff_fixed.c:137:22: style: Variable 'image' is assigned a value that is never used. [unreadVariable]
+                image=DestroyImageList(image);
+                     ^
+extracted_vulnerabilities/pair_211845_452391/tiff_fixed.c:144:22: style: Variable 'image' is assigned a value that is never used. [unreadVariable]
+                image=DestroyImageList(image);
+                     ^
+extracted_vulnerabilities/pair_211845_452391/tiff_fixed.c:613:12: style: Variable 'pad' is assigned a value that is never used. [unreadVariable]
+        pad=(size_t) MagickMax((ssize_t) samples_per_pixel-1,0);
+           ^
+extracted_vulnerabilities/pair_211845_452391/tiff_fixed.c:929:25: style: Variable 'generic_info' is assigned a value that is never used. [unreadVariable]
+            generic_info=RelinquishVirtualMemory(generic_info);
+                        ^
+extracted_vulnerabilities/pair_211845_452391/tiff_fixed.c:375:14: style: The scope of the variable 'sampling_factor' can be reduced. [variableScope]
+             sampling_factor[MaxTextExtent];
+             ^
+extracted_vulnerabilities/pair_211845_452391/tiff_fixed.c:378:14: style: Local variable 'tiff_status' shadows outer variable [shadowVariable]
+             tiff_status;
+             ^
+extracted_vulnerabilities/pair_211845_452391/tiff_fixed.c:29:5: note: Shadowed declaration
+    tiff_status = 0;
+    ^
+extracted_vulnerabilities/pair_211845_452391/tiff_fixed.c:378:14: note: Shadow variable
+             tiff_status;
+             ^
+extracted_vulnerabilities/pair_211845_452391/tiff_fixed.c:1:0: style: The function 'ReadTIFFImage' is never used. [unusedFunction]
+static Image *ReadTIFFImage(const ImageInfo *image_info,
+^
+nofile:0:0: information: Active checkers: 113/592 (use --checkers-report=<filename> to see details) [checkersReport]
+

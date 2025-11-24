@@ -1,0 +1,44 @@
+extracted_vulnerabilities/pair_211179_447053/image_fixed.cpp:22:22: warning: Identical condition 'tooBig', second condition is always false [identicalConditionAfterEarlyExit]
+                if ( tooBig ) out << Internal::indent(depth) << "dirLength = " << dirLength << std::endl;
+                     ^
+extracted_vulnerabilities/pair_211179_447053/image_fixed.cpp:18:18: note: If condition 'tooBig' is true, the function will return/exit
+            if ( tooBig ) throw Error(55);
+                 ^
+extracted_vulnerabilities/pair_211179_447053/image_fixed.cpp:22:22: note: Testing identical condition 'tooBig'
+                if ( tooBig ) out << Internal::indent(depth) << "dirLength = " << dirLength << std::endl;
+                     ^
+extracted_vulnerabilities/pair_211179_447053/image_fixed.cpp:137:46: style: C-style pointer casting [cstyleCast]
+                        const char* chars = (const char*) &bytes[0] ;
+                                             ^
+extracted_vulnerabilities/pair_211179_447053/image_fixed.cpp:160:28: style: C-style pointer casting [cstyleCast]
+                    out << (char*) buf.pData_;
+                           ^
+extracted_vulnerabilities/pair_211179_447053/image_fixed.cpp:163:32: style: C-style pointer casting [cstyleCast]
+                    out.write((const char*)buf.pData_,count);
+                               ^
+extracted_vulnerabilities/pair_211179_447053/image_fixed.cpp:45:21: style: Consecutive return, break, continue, goto or throw statements are unnecessary. [duplicateBreak]
+                    break; // break from for loop
+                    ^
+extracted_vulnerabilities/pair_211179_447053/image_fixed.cpp:48:29: style: The scope of the variable 'sp' can be reduced. [variableScope]
+                std::string sp  = "" ; // output spacer
+                            ^
+extracted_vulnerabilities/pair_211179_447053/image_fixed.cpp:120:38: style: Local variable 'offset' shadows outer variable [shadowVariable]
+                            uint32_t offset = byteSwap4(buf,k*size,bSwap);
+                                     ^
+extracted_vulnerabilities/pair_211179_447053/image_fixed.cpp:38:26: note: Shadowed declaration
+                uint32_t offset = byteSwap4(dir,8,bSwap);
+                         ^
+extracted_vulnerabilities/pair_211179_447053/image_fixed.cpp:120:38: note: Shadow variable
+                            uint32_t offset = byteSwap4(buf,k*size,bSwap);
+                                     ^
+extracted_vulnerabilities/pair_211179_447053/image_fixed.cpp:143:35: style: Local variable 'bytes' shadows outer variable [shadowVariable]
+                            byte* bytes=new byte[count-jump] ;  // allocate memory
+                                  ^
+extracted_vulnerabilities/pair_211179_447053/image_fixed.cpp:136:34: note: Shadowed declaration
+                        byte     bytes[20]          ;
+                                 ^
+extracted_vulnerabilities/pair_211179_447053/image_fixed.cpp:143:35: note: Shadow variable
+                            byte* bytes=new byte[count-jump] ;  // allocate memory
+                                  ^
+nofile:0:0: information: Active checkers: 172/592 (use --checkers-report=<filename> to see details) [checkersReport]
+

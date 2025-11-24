@@ -1,0 +1,23 @@
+{
+  "vulnerable": {
+    "idx": 197223,
+    "project": "njs",
+    "commit_id": "ab1702c7af9959366a5ddc4a75b4357d4e9ebdc1",
+    "commit_url": "https://github.com/nginx/njs/commit/ab1702c7af9959366a5ddc4a75b4357d4e9ebdc1",
+    "commit_message": "Fixed typo while calculating module path length.\n\nThe issue was introduced in 77c398f26d7e (not released yet).",
+    "cve": "CVE-2022-29379",
+    "cve_desc": "Nginx NJS v0.7.3 was discovered to contain a stack overflow in the function njs_default_module_loader at /src/njs/src/njs_module.c. NOTE: multiple third parties dispute this report, e.g., the behavior is only found in unreleased development code that was not part of the 0.7.2, 0.7.3, or 0.7.4 release",
+    "cwe": [
+      "CWE-787"
+    ],
+    "nvd_url": "https://nvd.nist.gov/vuln/detail/CVE-2022-29379",
+    "file_name": "njs_module.c",
+    "func_hash": 236847431367932249474325490160608146650,
+    "file_hash": 230069477074111336405443824718201036517
+  },
+  "fixed": {
+    "idx": 255574,
+    "func_hash": 78973632734119439539784178182699583703,
+    "file_hash": 205736021540779021398705962921872486789
+  }
+}

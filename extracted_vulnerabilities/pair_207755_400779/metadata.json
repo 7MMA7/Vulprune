@@ -1,0 +1,23 @@
+{
+  "vulnerable": {
+    "idx": 207755,
+    "project": "php-src",
+    "commit_id": "095cbc48a8f0090f3b0abc6155f2b61943c9eafb",
+    "commit_url": "http://git.php.net/?p=php-src.git;a=commitdiff;h=095cbc48a8f0090f3b0abc6155f2b61943c9eafb",
+    "commit_message": "Fix segfault in older versions of OpenSSL (before 0.9.8i)",
+    "cve": "CVE-2012-6113",
+    "cve_desc": "The openssl_encrypt function in ext/openssl/openssl.c in PHP 5.3.9 through 5.3.13 does not initialize a certain variable, which allows remote attackers to obtain sensitive information from process memory by providing zero bytes of input data.",
+    "cwe": [
+      "CWE-200"
+    ],
+    "nvd_url": "https://nvd.nist.gov/vuln/detail/CVE-2012-6113",
+    "file_name": "openssl.c",
+    "func_hash": 90779826180799829793304692194705605906,
+    "file_hash": 64204082198714090575154286576472678758
+  },
+  "fixed": {
+    "idx": 400779,
+    "func_hash": 39006034581830174999253498846151645941,
+    "file_hash": 57276947425832893910697869677062470849
+  }
+}

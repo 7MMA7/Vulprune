@@ -1,0 +1,23 @@
+{
+  "vulnerable": {
+    "idx": 197824,
+    "project": "gpac",
+    "commit_id": "c535bad50d5812d27ee5b22b54371bddec411514",
+    "commit_url": "https://github.com/gpac/gpac/commit/c535bad50d5812d27ee5b22b54371bddec411514",
+    "commit_message": "fixed #2194",
+    "cve": "CVE-2022-1795",
+    "cve_desc": "Use After Free in GitHub repository gpac/gpac prior to v2.1.0-DEV.",
+    "cwe": [
+      "CWE-416"
+    ],
+    "nvd_url": "https://nvd.nist.gov/vuln/detail/CVE-2022-1795",
+    "file_name": "memory_decoder.c",
+    "func_hash": 227330749119032349040137878791232526501,
+    "file_hash": 144617483436873036933597599292760665537
+  },
+  "fixed": {
+    "idx": 264657,
+    "func_hash": 121103708905571280232350867601982124843,
+    "file_hash": 38461926007506254402005076671567829745
+  }
+}

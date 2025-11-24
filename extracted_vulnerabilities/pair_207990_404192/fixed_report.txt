@@ -1,0 +1,77 @@
+extracted_vulnerabilities/pair_207990_404192/pcre2_jit_compile_fixed.c:112:5: style: inconclusive: Statements following 'break' will never be executed. [unreachableCode]
+    CASE_ITERATOR_PRIVATE_DATA_1
+    ^
+extracted_vulnerabilities/pair_207990_404192/pcre2_jit_compile_fixed.c:122:5: style: inconclusive: Statements following 'break' will never be executed. [unreachableCode]
+    CASE_ITERATOR_PRIVATE_DATA_2A
+    ^
+extracted_vulnerabilities/pair_207990_404192/pcre2_jit_compile_fixed.c:135:5: style: inconclusive: Statements following 'break' will never be executed. [unreachableCode]
+    CASE_ITERATOR_PRIVATE_DATA_2B
+    ^
+extracted_vulnerabilities/pair_207990_404192/pcre2_jit_compile_fixed.c:148:5: style: inconclusive: Statements following 'break' will never be executed. [unreachableCode]
+    CASE_ITERATOR_TYPE_PRIVATE_DATA_1
+    ^
+extracted_vulnerabilities/pair_207990_404192/pcre2_jit_compile_fixed.c:155:5: style: inconclusive: Statements following 'break' will never be executed. [unreachableCode]
+    CASE_ITERATOR_TYPE_PRIVATE_DATA_2A
+    ^
+extracted_vulnerabilities/pair_207990_404192/pcre2_jit_compile_fixed.c:165:5: style: inconclusive: Statements following 'break' will never be executed. [unreachableCode]
+    CASE_ITERATOR_TYPE_PRIVATE_DATA_2B
+    ^
+extracted_vulnerabilities/pair_207990_404192/pcre2_jit_compile_fixed.c:113:5: style: Local variable 'offset' shadows outer variable [shadowVariable]
+    offset = PRIVATE_DATA(cc);
+    ^
+extracted_vulnerabilities/pair_207990_404192/pcre2_jit_compile_fixed.c:5:11: note: Shadowed declaration
+int size, offset;
+          ^
+extracted_vulnerabilities/pair_207990_404192/pcre2_jit_compile_fixed.c:113:5: note: Shadow variable
+    offset = PRIVATE_DATA(cc);
+    ^
+extracted_vulnerabilities/pair_207990_404192/pcre2_jit_compile_fixed.c:123:5: style: Local variable 'offset' shadows outer variable [shadowVariable]
+    offset = PRIVATE_DATA(cc);
+    ^
+extracted_vulnerabilities/pair_207990_404192/pcre2_jit_compile_fixed.c:5:11: note: Shadowed declaration
+int size, offset;
+          ^
+extracted_vulnerabilities/pair_207990_404192/pcre2_jit_compile_fixed.c:123:5: note: Shadow variable
+    offset = PRIVATE_DATA(cc);
+    ^
+extracted_vulnerabilities/pair_207990_404192/pcre2_jit_compile_fixed.c:136:5: style: Local variable 'offset' shadows outer variable [shadowVariable]
+    offset = PRIVATE_DATA(cc);
+    ^
+extracted_vulnerabilities/pair_207990_404192/pcre2_jit_compile_fixed.c:5:11: note: Shadowed declaration
+int size, offset;
+          ^
+extracted_vulnerabilities/pair_207990_404192/pcre2_jit_compile_fixed.c:136:5: note: Shadow variable
+    offset = PRIVATE_DATA(cc);
+    ^
+extracted_vulnerabilities/pair_207990_404192/pcre2_jit_compile_fixed.c:149:5: style: Local variable 'offset' shadows outer variable [shadowVariable]
+    offset = PRIVATE_DATA(cc);
+    ^
+extracted_vulnerabilities/pair_207990_404192/pcre2_jit_compile_fixed.c:5:11: note: Shadowed declaration
+int size, offset;
+          ^
+extracted_vulnerabilities/pair_207990_404192/pcre2_jit_compile_fixed.c:149:5: note: Shadow variable
+    offset = PRIVATE_DATA(cc);
+    ^
+extracted_vulnerabilities/pair_207990_404192/pcre2_jit_compile_fixed.c:156:5: style: Local variable 'offset' shadows outer variable [shadowVariable]
+    offset = PRIVATE_DATA(cc);
+    ^
+extracted_vulnerabilities/pair_207990_404192/pcre2_jit_compile_fixed.c:5:11: note: Shadowed declaration
+int size, offset;
+          ^
+extracted_vulnerabilities/pair_207990_404192/pcre2_jit_compile_fixed.c:156:5: note: Shadow variable
+    offset = PRIVATE_DATA(cc);
+    ^
+extracted_vulnerabilities/pair_207990_404192/pcre2_jit_compile_fixed.c:166:5: style: Local variable 'offset' shadows outer variable [shadowVariable]
+    offset = PRIVATE_DATA(cc);
+    ^
+extracted_vulnerabilities/pair_207990_404192/pcre2_jit_compile_fixed.c:5:11: note: Shadowed declaration
+int size, offset;
+          ^
+extracted_vulnerabilities/pair_207990_404192/pcre2_jit_compile_fixed.c:166:5: note: Shadow variable
+    offset = PRIVATE_DATA(cc);
+    ^
+extracted_vulnerabilities/pair_207990_404192/pcre2_jit_compile_fixed.c:1:0: style: The function 'get_recurse_data_length' is never used. [unusedFunction]
+static int get_recurse_data_length(compiler_common *common, PCRE2_SPTR cc, PCRE2_SPTR ccend,
+^
+nofile:0:0: information: Active checkers: 113/592 (use --checkers-report=<filename> to see details) [checkersReport]
+

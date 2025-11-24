@@ -1,0 +1,23 @@
+{
+  "vulnerable": {
+    "idx": 214948,
+    "project": "nagioscore",
+    "commit_id": "b1a92a3b52d292ccb601e77a0b29cb1e67ac9d76",
+    "commit_url": "https://github.com/NagiosEnterprises/nagioscore/commit/b1a92a3b52d292ccb601e77a0b29cb1e67ac9d76",
+    "commit_message": "merge accidental master PR (#553) into maint and fix changelog\nmerge conflict",
+    "cve": "CVE-2018-13441",
+    "cve_desc": "qh_help in Nagios Core version 4.4.1 and earlier is prone to a NULL pointer dereference vulnerability, which allows attacker to cause a local denial-of-service condition by sending a crafted payload to the listening UNIX socket.",
+    "cwe": [
+      "CWE-476"
+    ],
+    "nvd_url": "https://nvd.nist.gov/vuln/detail/CVE-2018-13441",
+    "file_name": "query-handler.c",
+    "func_hash": 94205848469413247134990431510795041073,
+    "file_hash": 69411467652185615530893490033539842403
+  },
+  "fixed": {
+    "idx": 481787,
+    "func_hash": 205155132129673453942496407625358391443,
+    "file_hash": 275184931270866221094094086326042798019
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "vulnerable": {
+    "idx": 213998,
+    "project": "libtpms",
+    "commit_id": "ea62fd9679f8c6fc5e79471b33cfbd8227bfed72",
+    "commit_url": "https://github.com/stefanberger/libtpms/commit/ea62fd9679f8c6fc5e79471b33cfbd8227bfed72",
+    "commit_message": "tpm2: Initialize a whole OBJECT before using it\n\nInitialize a whole OBJECT before using it. This is necessary since\nan OBJECT may also be used as a HASH_OBJECT via the ANY_OBJECT\nunion and that HASH_OBJECT can leave bad size inidicators in TPM2B\nbuffer in the OBJECT. To get rid of this problem we reset the whole\nOBJECT to 0 before using it. This is as if the memory for the\nOBJECT was just initialized.\n\nSigned-off-by: Stefan Berger <stefanb@linux.ibm.com>",
+    "cve": "CVE-2021-3746",
+    "cve_desc": "A flaw was found in the libtpms code that may cause access beyond the boundary of internal buffers. The vulnerability is triggered by specially-crafted TPM2 command packets that then trigger the issue when the state of the TPM2's volatile state is written. The highest threat from this vulnerability is to system availability. This issue affects libtpms versions before 0.8.5, before 0.7.9 and before 0.6.6.",
+    "cwe": [
+      "CWE-119"
+    ],
+    "nvd_url": "https://nvd.nist.gov/vuln/detail/CVE-2021-3746",
+    "file_name": "Object.c",
+    "func_hash": 267307307566893737550652048570735094605,
+    "file_hash": 21721239087984404174741324804041111077
+  },
+  "fixed": {
+    "idx": 474434,
+    "func_hash": 327698206124968939324347029407328822774,
+    "file_hash": 122617348389867631937316179213551374827
+  }
+}

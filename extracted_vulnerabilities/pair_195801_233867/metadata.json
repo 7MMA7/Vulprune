@@ -1,0 +1,23 @@
+{
+  "vulnerable": {
+    "idx": 195801,
+    "project": "php-src",
+    "commit_id": "0c8a2a2cd1056b7dc403eacb5d2c0eec6ce47c6f",
+    "commit_url": "https://github.com/php/php-src/commit/0c8a2a2cd1056b7dc403eacb5d2c0eec6ce47c6f",
+    "commit_message": "Fix for bug #72790 and bug #72799\n\n(cherry picked from commit a14fdb9746262549bbbb96abb87338bacd147e1b)\n\nConflicts:\n\text/wddx/wddx.c",
+    "cve": "CVE-2016-7132",
+    "cve_desc": "ext/wddx/wddx.c in PHP before 5.6.25 and 7.x before 7.0.10 allows remote attackers to cause a denial of service (NULL pointer dereference and application crash) or possibly have unspecified other impact via an invalid wddxPacket XML document that is mishandled in a wddx_deserialize call, as demonstrated by a stray element inside a boolean element, leading to incorrect pop processing.",
+    "cwe": [
+      "CWE-476"
+    ],
+    "nvd_url": "https://nvd.nist.gov/vuln/detail/CVE-2016-7132",
+    "file_name": "wddx.c",
+    "func_hash": 195456627139063255714886732829389598772,
+    "file_hash": 202333767268853724294318351879930678985
+  },
+  "fixed": {
+    "idx": 233867,
+    "func_hash": 31470175015119113662948688342343260077,
+    "file_hash": 138061260196786413886706259778202745956
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "vulnerable": {
+    "idx": 195909,
+    "project": "ImageMagick",
+    "commit_id": "d072ed6aff835c174e856ce3a428163c0da9e8f4",
+    "commit_url": "https://github.com/ImageMagick/ImageMagick/commit/d072ed6aff835c174e856ce3a428163c0da9e8f4",
+    "commit_message": "Skip MNG CLIP chunk with out-of-range object IDs",
+    "cve": "CVE-2017-13139",
+    "cve_desc": "In ImageMagick before 6.9.9-0 and 7.x before 7.0.6-1, the ReadOneMNGImage function in coders/png.c has an out-of-bounds read with the MNG CLIP chunk.",
+    "cwe": [
+      "CWE-125"
+    ],
+    "nvd_url": "https://nvd.nist.gov/vuln/detail/CVE-2017-13139",
+    "file_name": "png.c",
+    "func_hash": 112335411773175147602521832461985951659,
+    "file_hash": 320300249685897026258566713334395171716
+  },
+  "fixed": {
+    "idx": 234875,
+    "func_hash": 158627527242372232555718474097358340968,
+    "file_hash": 308141979970390112779858157014940687903
+  }
+}

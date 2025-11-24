@@ -1,0 +1,23 @@
+{
+  "vulnerable": {
+    "idx": 195409,
+    "project": "gpac",
+    "commit_id": "64a2e1b799352ac7d7aad1989bc06e7b0f2b01db",
+    "commit_url": "https://github.com/gpac/gpac/commit/64a2e1b799352ac7d7aad1989bc06e7b0f2b01db",
+    "commit_message": "fixed #2092",
+    "cve": "CVE-2021-4043",
+    "cve_desc": "NULL Pointer Dereference in GitHub repository gpac/gpac prior to 1.1.0.",
+    "cwe": [
+      "CWE-476"
+    ],
+    "nvd_url": "https://nvd.nist.gov/vuln/detail/CVE-2021-4043",
+    "file_name": "box_code_base.c",
+    "func_hash": 37642310110270321687625000100653046485,
+    "file_hash": 212802147696207025803784466432150384318
+  },
+  "fixed": {
+    "idx": 226029,
+    "func_hash": 265612189453593240220286582640125308421,
+    "file_hash": 49851003819063672326837979869211393199
+  }
+}

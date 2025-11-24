@@ -1,0 +1,23 @@
+{
+  "vulnerable": {
+    "idx": 210620,
+    "project": "linux",
+    "commit_id": "1680939e9ecf7764fba8689cfb3429c2fe2bb23c",
+    "commit_url": "https://github.com/torvalds/linux/commit/1680939e9ecf7764fba8689cfb3429c2fe2bb23c",
+    "commit_message": "rpmsg: virtio: Fix possible double free in rpmsg_virtio_add_ctrl_dev()\n\nvch will be free in virtio_rpmsg_release_device() when\nrpmsg_ctrldev_register_device() fails. There is no need to call\nkfree() again.\n\nFixes: c486682ae1e2 (\"rpmsg: virtio: Register the rpmsg_char device\")\nSigned-off-by: Hangyu Hua <hbh25y@gmail.com>\nTested-by: Arnaud Pouliquen <arnaud.pouliquen@foss.st.com>\nLink: https://lore.kernel.org/r/20220426060536.15594-3-hbh25y@gmail.com\nSigned-off-by: Mathieu Poirier <mathieu.poirier@linaro.org>",
+    "cve": "CVE-2022-34494",
+    "cve_desc": "rpmsg_virtio_add_ctrl_dev in drivers/rpmsg/virtio_rpmsg_bus.c in the Linux kernel before 5.18.4 has a double free.",
+    "cwe": [
+      "CWE-415"
+    ],
+    "nvd_url": "https://nvd.nist.gov/vuln/detail/CVE-2022-34494",
+    "file_name": "virtio_rpmsg_bus.c",
+    "func_hash": 150406368149549050043918111917098327944,
+    "file_hash": 336962103599370684764332520718550760249
+  },
+  "fixed": {
+    "idx": 438686,
+    "func_hash": 314874178327010725718086387225453172923,
+    "file_hash": 58817315653971019678120939707169466841
+  }
+}

@@ -1,0 +1,8 @@
+extracted_vulnerabilities/pair_211110_446058/tif_lzw_vuln.c:1:1: portability: Omitted return type of function 'LZWDecodeCompat' defaults to int, this is not supported by ISO C99 and later standards. [returnImplicitInt]
+LZWDecodeCompat(TIFF* tif, uint8* op0, tmsize_t occ0, uint16 s)
+^
+extracted_vulnerabilities/pair_211110_446058/tif_lzw_vuln.c:1:0: style: The function 'LZWDecodeCompat' is never used. [unusedFunction]
+LZWDecodeCompat(TIFF* tif, uint8* op0, tmsize_t occ0, uint16 s)
+^
+nofile:0:0: information: Active checkers: 113/592 (use --checkers-report=<filename> to see details) [checkersReport]
+

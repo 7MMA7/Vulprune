@@ -1,0 +1,11 @@
+extracted_vulnerabilities/pair_204115_353015/schema_init_fixed.c:1:1: portability: Omitted return type of function 'issuerAndThisUpdateCheck' defaults to int, this is not supported by ISO C99 and later standards. [returnImplicitInt]
+issuerAndThisUpdateCheck(
+^
+extracted_vulnerabilities/pair_204115_353015/schema_init_fixed.c:2:17: style: Parameter 'in' can be declared as pointer to const [constParameterPointer]
+ struct berval *in,
+                ^
+extracted_vulnerabilities/pair_204115_353015/schema_init_fixed.c:1:0: style: The function 'issuerAndThisUpdateCheck' is never used. [unusedFunction]
+issuerAndThisUpdateCheck(
+^
+nofile:0:0: information: Active checkers: 113/592 (use --checkers-report=<filename> to see details) [checkersReport]
+

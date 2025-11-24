@@ -1,0 +1,23 @@
+{
+  "vulnerable": {
+    "idx": 208411,
+    "project": "vim",
+    "commit_id": "27efc62f5d86afcb2ecb7565587fe8dea4b036fe",
+    "commit_url": "https://github.com/vim/vim/commit/27efc62f5d86afcb2ecb7565587fe8dea4b036fe",
+    "commit_message": "patch 9.0.0018: going over the end of the typahead\n\nProblem:    Going over the end of the typahead.\nSolution:   Put a NUL after the typeahead.",
+    "cve": "CVE-2022-2285",
+    "cve_desc": "Integer Overflow or Wraparound in GitHub repository vim/vim prior to 9.0.",
+    "cwe": [
+      "CWE-787"
+    ],
+    "nvd_url": "https://nvd.nist.gov/vuln/detail/CVE-2022-2285",
+    "file_name": "term.c",
+    "func_hash": 196889976171376146553776878857496634863,
+    "file_hash": 255079853890988870585830908048537470004
+  },
+  "fixed": {
+    "idx": 409515,
+    "func_hash": 105354748681163651663383549655228844664,
+    "file_hash": 113564079834188954277061754674630069521
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "vulnerable": {
+    "idx": 211700,
+    "project": "linux",
+    "commit_id": "4fbcc1a4cb20fe26ad0225679c536c80f1648221",
+    "commit_url": "https://github.com/torvalds/linux/commit/4fbcc1a4cb20fe26ad0225679c536c80f1648221",
+    "commit_message": "nfc: st21nfca: Fix potential buffer overflows in EVT_TRANSACTION\n\nIt appears that there are some buffer overflows in EVT_TRANSACTION.\nThis happens because the length parameters that are passed to memcpy\ncome directly from skb->data and are not guarded in any way.\n\nSigned-off-by: Jordy Zomer <jordy@pwning.systems>\nReviewed-by: Krzysztof Kozlowski <krzysztof.kozlowski@canonical.com>\nSigned-off-by: David S. Miller <davem@davemloft.net>",
+    "cve": "CVE-2022-26490",
+    "cve_desc": "st21nfca_connectivity_event_received in drivers/nfc/st21nfca/se.c in the Linux kernel through 5.16.12 has EVT_TRANSACTION buffer overflows because of untrusted length parameters.",
+    "cwe": [
+      "CWE-120"
+    ],
+    "nvd_url": "https://nvd.nist.gov/vuln/detail/CVE-2022-26490",
+    "file_name": "se.c",
+    "func_hash": 253634808738614127513017365541725702270,
+    "file_hash": 262088554020527485810277505080130104803
+  },
+  "fixed": {
+    "idx": 450830,
+    "func_hash": 192395528803862067074725666985010866676,
+    "file_hash": 50941829261793889476158524684428564511
+  }
+}

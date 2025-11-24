@@ -1,0 +1,23 @@
+{
+  "vulnerable": {
+    "idx": 197135,
+    "project": "linux",
+    "commit_id": "505d9dcb0f7ddf9d075e729523a33d38642ae680",
+    "commit_url": "https://github.com/torvalds/linux/commit/505d9dcb0f7ddf9d075e729523a33d38642ae680",
+    "commit_message": "crypto: ccp - fix resource leaks in ccp_run_aes_gcm_cmd()\n\nThere are three bugs in this code:\n\n1) If we ccp_init_data() fails for &src then we need to free aad.\n   Use goto e_aad instead of goto e_ctx.\n2) The label to free the &final_wa was named incorrectly as \"e_tag\" but\n   it should have been \"e_final_wa\".  One error path leaked &final_wa.\n3) The &tag was leaked on one error path.  In that case, I added a free\n   before the goto because the resource was local to that block.\n\nFixes: 36cf515b9bbe (\"crypto: ccp - Enable support for AES GCM on v5 CCPs\")\nReported-by: \"minihanshen(\u6c88\u660e\u822a)\" <minihanshen@tencent.com>\nSigned-off-by: Dan Carpenter <dan.carpenter@oracle.com>\nReviewed-by: John Allen <john.allen@amd.com>\nTested-by: John Allen <john.allen@amd.com>\nSigned-off-by: Herbert Xu <herbert@gondor.apana.org.au>",
+    "cve": "CVE-2021-3744",
+    "cve_desc": "A memory leak flaw was found in the Linux kernel in the ccp_run_aes_gcm_cmd() function in drivers/crypto/ccp/ccp-ops.c, which allows attackers to cause a denial of service (memory consumption). This vulnerability is similar with the older CVE-2019-18808.",
+    "cwe": [
+      "CWE-703"
+    ],
+    "nvd_url": "https://nvd.nist.gov/vuln/detail/CVE-2021-3744",
+    "file_name": "ccp-ops.c",
+    "func_hash": 164338035268758054525512134234222500237,
+    "file_hash": 220238669007539960746784666211129167889
+  },
+  "fixed": {
+    "idx": 253699,
+    "func_hash": 192342382845429506037482636536985801583,
+    "file_hash": 212296156007927081336268591305304160676
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "vulnerable": {
+    "idx": 197239,
+    "project": "tensorflow",
+    "commit_id": "203214568f5bc237603dbab6e1fd389f1572f5c9",
+    "commit_url": "https://github.com/tensorflow/tensorflow/commit/203214568f5bc237603dbab6e1fd389f1572f5c9",
+    "commit_message": "Reorganize and add more validation to MKL requantization\n\nPiperOrigin-RevId: 387901341\nChange-Id: I2515b9034c64e113db0bcec8337d30643ab0a0f1",
+    "cve": "CVE-2021-37665",
+    "cve_desc": "TensorFlow is an end-to-end open source platform for machine learning. In affected versions due to incomplete validation in MKL implementation of requantization, an attacker can trigger undefined behavior via binding a reference to a null pointer or can access data outside the bounds of heap allocated arrays. The [implementation](https://github.com/tensorflow/tensorflow/blob/460e000de3a83278fb00b61a16d161b1964f15f4/tensorflow/core/kernels/mkl/mkl_requantization_range_per_channel_op.cc) does not validate the dimensions of the `input` tensor. A similar issue occurs in `MklRequantizePerChannelOp`. The [implementation](https://github.com/tensorflow/tensorflow/blob/460e000de3a83278fb00b61a16d161b1964f15f4/tensorflow/core/kernels/mkl/mkl_requantize_per_channel_op.cc) does not perform full validation for all the input arguments. We have patched the issue in GitHub commit 9e62869465573cb2d9b5053f1fa02a81fce21d69 and in the Github commit 203214568f5bc237603dbab6e1fd389f1572f5c9. The fix will be included in TensorFlow 2.6.0. We will also cherrypick this commit on TensorFlow 2.5.1, TensorFlow 2.4.3, and TensorFlow 2.3.4, as these are also affected and still in supported range.",
+    "cwe": [
+      "CWE-20"
+    ],
+    "nvd_url": "https://nvd.nist.gov/vuln/detail/CVE-2021-37665",
+    "file_name": "mkl_requantize_per_channel_op.cc",
+    "func_hash": 324241400481110766657474950076141174434,
+    "file_hash": 251676487738280920031977890166955496760
+  },
+  "fixed": {
+    "idx": 255787,
+    "func_hash": 201878661619754288848170161353082339443,
+    "file_hash": 305646743359625407590451757209165637710
+  }
+}

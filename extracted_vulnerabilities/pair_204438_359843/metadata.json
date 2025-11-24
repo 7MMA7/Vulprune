@@ -1,0 +1,23 @@
+{
+  "vulnerable": {
+    "idx": 204438,
+    "project": "ImageMagick",
+    "commit_id": "716496e6df0add89e9679d6da9c0afca814cfe49",
+    "commit_url": "https://github.com/ImageMagick/ImageMagick/commit/716496e6df0add89e9679d6da9c0afca814cfe49",
+    "commit_message": "do not attempt to write a null image list (thanks to Vinay Rohila)",
+    "cve": "CVE-2022-2719",
+    "cve_desc": "In ImageMagick, a crafted file could trigger an assertion failure when a call to WriteImages was made in MagickWand/operation.c, due to a NULL image list. This could potentially cause a denial of service. This was fixed in upstream ImageMagick version 7.1.0-30.",
+    "cwe": [
+      "CWE-617"
+    ],
+    "nvd_url": "https://nvd.nist.gov/vuln/detail/CVE-2022-2719",
+    "file_name": "operation.c",
+    "func_hash": 310441418553941793285963012286957612842,
+    "file_hash": 209735039697633444699043395330012675070
+  },
+  "fixed": {
+    "idx": 359843,
+    "func_hash": 579576062025196307167021581529787649,
+    "file_hash": 114606754670284270817581814822080534295
+  }
+}

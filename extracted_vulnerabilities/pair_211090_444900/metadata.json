@@ -1,0 +1,23 @@
+{
+  "vulnerable": {
+    "idx": 211090,
+    "project": "cifs-utils",
+    "commit_id": "f6eae44a3d05b6515a59651e6bed8b6dde689aec",
+    "commit_url": "http://git.samba.org/?p=cifs-utils.git;a=commitdiff;h=f6eae44a3d05b6515a59651e6bed8b6dde689aec",
+    "commit_message": "mtab: handle ENOSPC/EFBIG condition properly when altering mtab\n\nIt's possible that when mount.cifs goes to append the mtab that there\nwon't be enough space to do so, and the mntent won't be appended to the\nfile in its entirety.\n\nAdd a my_endmntent routine that will fflush and then fsync the FILE if\nthat succeeds. If either fails then it will truncate the file back to\nits provided size. It will then call endmntent unconditionally.\n\nHave add_mtab call fstat on the opened mtab file in order to get the\nsize of the file before it has been appended. Assuming that that\nsucceeds, use my_endmntent to ensure that the file is not corrupted\nbefore closing it. It's possible that we'll have a small race window\nwhere the mtab is incorrect, but it should be quickly corrected.\n\nThis was reported some time ago as CVE-2011-1678:\n\n    http://openwall.com/lists/oss-security/2011/03/04/9\n\n...and it seems to fix the reproducer that I was able to come up with.\n\nSigned-off-by: Jeff Layton <jlayton@samba.org>\nReviewed-by: Suresh Jayaraman <sjayaraman@suse.de>",
+    "cve": "CVE-2011-1678",
+    "cve_desc": "smbfs in Samba 3.5.8 and earlier attempts to use (1) mount.cifs to append to the /etc/mtab file and (2) umount.cifs to append to the /etc/mtab.tmp file without first checking whether resource limits would interfere, which allows local users to trigger corruption of the /etc/mtab file via a process with a small RLIMIT_FSIZE value, a related issue to CVE-2011-1089.",
+    "cwe": [
+      "CWE-20"
+    ],
+    "nvd_url": "https://nvd.nist.gov/vuln/detail/CVE-2011-1678",
+    "file_name": "mount.cifs.c",
+    "func_hash": 273553685691100796690999653932620048883,
+    "file_hash": 178835896677030263209716239403402725405
+  },
+  "fixed": {
+    "idx": 444900,
+    "func_hash": 145620494366436562739751095487223645254,
+    "file_hash": 77793306769877718806811810196619780209
+  }
+}

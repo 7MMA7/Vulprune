@@ -1,0 +1,23 @@
+{
+  "vulnerable": {
+    "idx": 202082,
+    "project": "radare2",
+    "commit_id": "ecc44b6a2f18ee70ac133365de0e509d26d5e168",
+    "commit_url": "https://github.com/radareorg/radare2/commit/ecc44b6a2f18ee70ac133365de0e509d26d5e168",
+    "commit_message": "Fix oobread in java parser ##crash\n\n* Reported by @bet4it via @huntrdev\n* BountyID c8f4c2de-7d96-4ad4-857a-c099effca2d6\n* Reproducer: bootstrap.class",
+    "cve": "CVE-2022-1452",
+    "cve_desc": "Out-of-bounds Read in r_bin_java_bootstrap_methods_attr_new function in GitHub repository radareorg/radare2 prior to 5.7.0. The bug causes the program reads data past the end 2f the intented buffer. Typically, this can allow attackers to read sensitive information from other memory locations or cause a crash. More details see [CWE-125: Out-of-bounds read](https://cwe.mitre.org/data/definitions/125.html).",
+    "cwe": [
+      "CWE-125"
+    ],
+    "nvd_url": "https://nvd.nist.gov/vuln/detail/CVE-2022-1452",
+    "file_name": "class.c",
+    "func_hash": 121022317607075696066263684863636152093,
+    "file_hash": 47177688403428674570419012647523968387
+  },
+  "fixed": {
+    "idx": 328836,
+    "func_hash": 161704709334478835269694958839919177798,
+    "file_hash": 14172744137787125285025549785651095579
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "vulnerable": {
+    "idx": 195296,
+    "project": "uWebSockets",
+    "commit_id": "03fca626a95130ab80f86adada54b29d27242759",
+    "commit_url": "https://github.com/uWebSockets/uWebSockets/commit/03fca626a95130ab80f86adada54b29d27242759",
+    "commit_message": "Fix overflow of triggered topics",
+    "cve": "CVE-2020-36406",
+    "cve_desc": "uWebSockets 18.11.0 and 18.12.0 has a stack-based buffer overflow in uWS::TopicTree::trimTree (called from uWS::TopicTree::unsubscribeAll). NOTE: the vendor's position is that this is \"a minor issue or not even an issue at all\" because the developer of an application (that uses uWebSockets) should not be allowing the large number of triggered topics to accumulate",
+    "cwe": [
+      "CWE-787"
+    ],
+    "nvd_url": "https://nvd.nist.gov/vuln/detail/CVE-2020-36406",
+    "file_name": "TopicTree.h",
+    "func_hash": 134169268379037550524482088626348972483,
+    "file_hash": 203813195164088557620454025257855576407
+  },
+  "fixed": {
+    "idx": 224208,
+    "func_hash": 239871427944982498561615868059507506120,
+    "file_hash": 110499788872538385962916215167459222787
+  }
+}

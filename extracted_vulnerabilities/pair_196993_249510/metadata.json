@@ -1,0 +1,23 @@
+{
+  "vulnerable": {
+    "idx": 196993,
+    "project": "libjxl",
+    "commit_id": "7dfa400ded53919d986c5d3d23446a09e0cf481b",
+    "commit_url": "https://github.com/libjxl/libjxl/commit/7dfa400ded53919d986c5d3d23446a09e0cf481b",
+    "commit_message": "Fix handling of APNG with 0 delay_den (#313)",
+    "cve": "CVE-2021-36692",
+    "cve_desc": "libjxl v0.3.7 is affected by a Divide By Zero in issue in lib/extras/codec_apng.cc jxl::DecodeImageAPNG(). When encoding a malicous APNG file using cjxl, an attacker can trigger a denial of service.",
+    "cwe": [
+      "CWE-369"
+    ],
+    "nvd_url": "https://nvd.nist.gov/vuln/detail/CVE-2021-36692",
+    "file_name": "codec_apng.cc",
+    "func_hash": 313851366023244520296960010326993371914,
+    "file_hash": 303923165706235443177070807550807665571
+  },
+  "fixed": {
+    "idx": 249510,
+    "func_hash": 120159629770079906091018300159930359241,
+    "file_hash": 71568842210478250977539605329835891073
+  }
+}

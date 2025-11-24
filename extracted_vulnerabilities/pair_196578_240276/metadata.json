@@ -1,0 +1,23 @@
+{
+  "vulnerable": {
+    "idx": 196578,
+    "project": "vim",
+    "commit_id": "44db8213d38c39877d2148eff6a72f4beccfb94e",
+    "commit_url": "https://github.com/vim/vim/commit/44db8213d38c39877d2148eff6a72f4beccfb94e",
+    "commit_message": "patch 8.2.4219: reading before the start of the line\n\nProblem:    Reading before the start of the line.\nSolution:   Check boundary before trying to read the character.",
+    "cve": "CVE-2022-0407",
+    "cve_desc": "Heap-based Buffer Overflow in GitHub repository vim/vim prior to 8.2.",
+    "cwe": [
+      "CWE-787"
+    ],
+    "nvd_url": "https://nvd.nist.gov/vuln/detail/CVE-2022-0407",
+    "file_name": "register.c",
+    "func_hash": 329046653104270093704788517563971777510,
+    "file_hash": 197045442768005159362544298682780980387
+  },
+  "fixed": {
+    "idx": 240276,
+    "func_hash": 215111577434116975174543951046273639484,
+    "file_hash": 303069020104340496076924952267660178460
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "vulnerable": {
+    "idx": 210692,
+    "project": "ImageMagick6",
+    "commit_id": "b268ce7a59440972f4476b9fd98104b6a836d971",
+    "commit_url": "https://github.com/ImageMagick/ImageMagick6/commit/b268ce7a59440972f4476b9fd98104b6a836d971",
+    "commit_message": "https://github.com/ImageMagick/ImageMagick/issues/1337",
+    "cve": "CVE-2018-18024",
+    "cve_desc": "In ImageMagick 7.0.8-13 Q16, there is an infinite loop in the ReadBMPImage function of the coders/bmp.c file. Remote attackers could leverage this vulnerability to cause a denial of service via a crafted bmp file.",
+    "cwe": [
+      "CWE-835"
+    ],
+    "nvd_url": "https://nvd.nist.gov/vuln/detail/CVE-2018-18024",
+    "file_name": "bmp.c",
+    "func_hash": 219736517469656591803182113097996134338,
+    "file_hash": 111107907086942366665713567153559895973
+  },
+  "fixed": {
+    "idx": 439266,
+    "func_hash": 66356813508609166160965332796532041768,
+    "file_hash": 262370016928103197032695947461982198206
+  }
+}

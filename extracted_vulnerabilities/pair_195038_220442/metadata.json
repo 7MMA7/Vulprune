@@ -1,0 +1,23 @@
+{
+  "vulnerable": {
+    "idx": 195038,
+    "project": "mruby",
+    "commit_id": "27d1e0132a0804581dca28df042e7047fd27eaa8",
+    "commit_url": "https://github.com/mruby/mruby/commit/27d1e0132a0804581dca28df042e7047fd27eaa8",
+    "commit_message": "array.c: fix `mrb_ary_shift_m` initialization bug.\n\nThe `ARY_PTR` and `ARY_LEN` may be modified in `mrb_get_args`.",
+    "cve": "CVE-2021-4188",
+    "cve_desc": "mruby is vulnerable to NULL Pointer Dereference",
+    "cwe": [
+      "CWE-476"
+    ],
+    "nvd_url": "https://nvd.nist.gov/vuln/detail/CVE-2021-4188",
+    "file_name": "array.c",
+    "func_hash": 88987793594626442814152795226896894437,
+    "file_hash": 131985777969528154957566525214352537878
+  },
+  "fixed": {
+    "idx": 220442,
+    "func_hash": 336824346603495353101799104649854425750,
+    "file_hash": 295526445825727607536544634773604768998
+  }
+}

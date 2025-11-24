@@ -1,0 +1,20 @@
+extracted_vulnerabilities/pair_194994_218852/immutable_executor_state_vuln.cc:81:14: style: Local variable 'frame_name' shadows outer variable [shadowVariable]
+      string frame_name;
+             ^
+extracted_vulnerabilities/pair_194994_218852/immutable_executor_state_vuln.cc:40:19: note: Shadowed declaration
+    const string& frame_name = cf_info.frame_names[id];
+                  ^
+extracted_vulnerabilities/pair_194994_218852/immutable_executor_state_vuln.cc:81:14: note: Shadow variable
+      string frame_name;
+             ^
+extracted_vulnerabilities/pair_194994_218852/immutable_executor_state_vuln.cc:83:18: style: Local variable 'frame_info' shadows outer variable [shadowVariable]
+      FrameInfo* frame_info = frame_info_[frame_name].get();
+                 ^
+extracted_vulnerabilities/pair_194994_218852/immutable_executor_state_vuln.cc:41:16: note: Shadowed declaration
+    FrameInfo* frame_info = EnsureFrameInfo(frame_name);
+               ^
+extracted_vulnerabilities/pair_194994_218852/immutable_executor_state_vuln.cc:83:18: note: Shadow variable
+      FrameInfo* frame_info = frame_info_[frame_name].get();
+                 ^
+nofile:0:0: information: Active checkers: 172/592 (use --checkers-report=<filename> to see details) [checkersReport]
+

@@ -1,0 +1,5 @@
+extracted_vulnerabilities/pair_195294_224181/map_stage_op_fixed.cc:1:0: style: The function 'Compute' is never used. [unusedFunction]
+  void Compute(OpKernelContext* ctx) override {
+^
+nofile:0:0: information: Active checkers: 172/592 (use --checkers-report=<filename> to see details) [checkersReport]
+

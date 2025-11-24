@@ -1,0 +1,23 @@
+{
+  "vulnerable": {
+    "idx": 215038,
+    "project": "gst-plugins-good",
+    "commit_id": "b31c504645a814c59d91d49e4fe218acaf93f4ca",
+    "commit_url": "https://github.com/GStreamer/gst-plugins-good/commit/b31c504645a814c59d91d49e4fe218acaf93f4ca",
+    "commit_message": "flxdec: Don't unref() parent in the chain function\n\nWe don't own the reference here, it is owned by the caller and given to\nus for the scope of this function. Leftover mistake from 0.10 porting.\n\nhttps://bugzilla.gnome.org/show_bug.cgi?id=774897",
+    "cve": "CVE-2016-9810",
+    "cve_desc": "The gst_decode_chain_free_internal function in the flxdex decoder in gst-plugins-good in GStreamer before 1.10.2 allows remote attackers to cause a denial of service (invalid memory read and crash) via an invalid file, which triggers an incorrect unref call.",
+    "cwe": [
+      "CWE-125"
+    ],
+    "nvd_url": "https://nvd.nist.gov/vuln/detail/CVE-2016-9810",
+    "file_name": "gstflxdec.c",
+    "func_hash": 293682781429111556527181973502820056353,
+    "file_hash": 257993996858330004218595538099349772474
+  },
+  "fixed": {
+    "idx": 482692,
+    "func_hash": 307699482792832838844638071066338187796,
+    "file_hash": 15220895690601023240129213899493293437
+  }
+}

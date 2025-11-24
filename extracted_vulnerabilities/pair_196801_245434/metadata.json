@@ -1,0 +1,23 @@
+{
+  "vulnerable": {
+    "idx": 196801,
+    "project": "gpac",
+    "commit_id": "f5a038e6893019ee471b6a57490cf7a495673816",
+    "commit_url": "https://github.com/gpac/gpac/commit/f5a038e6893019ee471b6a57490cf7a495673816",
+    "commit_message": "fixed #1885",
+    "cve": "CVE-2021-40567",
+    "cve_desc": "Segmentation fault vulnerability exists in Gpac through 1.0.1 via the gf_odf_size_descriptor function in desc_private.c when using mp4box, which causes a denial of service.",
+    "cwe": [
+      "CWE-703"
+    ],
+    "nvd_url": "https://nvd.nist.gov/vuln/detail/CVE-2021-40567",
+    "file_name": "isom_hinter.c",
+    "func_hash": 123828913884454942556959015680908121097,
+    "file_hash": 94306079889139284150664165649647698827
+  },
+  "fixed": {
+    "idx": 245434,
+    "func_hash": 303417005627420629887148853980716072397,
+    "file_hash": 42590680344413091509080711519758588742
+  }
+}

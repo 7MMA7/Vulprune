@@ -1,0 +1,23 @@
+{
+  "vulnerable": {
+    "idx": 210420,
+    "project": "ghostpdl",
+    "commit_id": "362ec9daadb9992b0def3520cd1dc6fa52edd1c4",
+    "commit_url": "http://git.ghostscript.com/?p=ghostpdl.git;a=commit;h=362ec9daadb9992b0def3520cd1dc6fa52edd1c4",
+    "commit_message": "Fix bug 697459 Buffer overflow in fill_threshold_buffer\n\nThere was an overflow check for ht_buffer size, but none for the larger\nthreshold_buffer. Note that this file didn't fail on Windows because the\ncombination of the ht_buffer and the size of the (miscalculated due to\noverflow) threshold_buffer would have exceeded the 2Gb limit.",
+    "cve": "CVE-2016-10317",
+    "cve_desc": "The fill_threshhold_buffer function in base/gxht_thresh.c in Artifex Software, Inc. Ghostscript 9.20 allows remote attackers to cause a denial of service (heap-based buffer overflow and application crash) or possibly have unspecified other impact via a crafted PostScript document.",
+    "cwe": [
+      "CWE-119"
+    ],
+    "nvd_url": "https://nvd.nist.gov/vuln/detail/CVE-2016-10317",
+    "file_name": "gxht_thresh.c",
+    "func_hash": 275119302871668131072600871324331925714,
+    "file_hash": 55226233922377438981259129835747302773
+  },
+  "fixed": {
+    "idx": 434902,
+    "func_hash": 193585732429345138409504649279045778338,
+    "file_hash": 56725769697123827323251738198105594342
+  }
+}

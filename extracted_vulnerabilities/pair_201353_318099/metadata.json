@@ -1,0 +1,23 @@
+{
+  "vulnerable": {
+    "idx": 201353,
+    "project": "wireless-drivers",
+    "commit_id": "8b51dc7291473093c821195c4b6af85fadedbc2f",
+    "commit_url": "https://git.kernel.org/pub/scm/linux/kernel/git/kvalo/wireless-drivers.git/commit/?id=8b51dc7291473093c821195c4b6af85fadedbc2f",
+    "commit_message": "rsi: fix a double free bug in rsi_91x_deinit()\n\n`dev` (struct rsi_91x_usbdev *) field of adapter\n(struct rsi_91x_usbdev *) is allocated  and initialized in\n`rsi_init_usb_interface`. If any error is detected in information\nread from the device side,  `rsi_init_usb_interface` will be\nfreed. However, in the higher level error handling code in\n`rsi_probe`, if error is detected, `rsi_91x_deinit` is called\nagain, in which `dev` will be freed again, resulting double free.\n\nThis patch fixes the double free by removing the free operation on\n`dev` in `rsi_init_usb_interface`, because `rsi_91x_deinit` is also\nused in `rsi_disconnect`, in that code path, the `dev` field is not\n (and thus needs to be) freed.\n\nThis bug was found in v4.19, but is also present in the latest version\nof kernel. Fixes CVE-2019-15504.\n\nReported-by: Hui Peng <benquike@gmail.com>\nReported-by: Mathias Payer <mathias.payer@nebelwelt.net>\nSigned-off-by: Hui Peng <benquike@gmail.com>\nReviewed-by: Guenter Roeck <linux@roeck-us.net>\nSigned-off-by: Kalle Valo <kvalo@codeaurora.org>",
+    "cve": "CVE-2019-15504",
+    "cve_desc": "drivers/net/wireless/rsi/rsi_91x_usb.c in the Linux kernel through 5.2.9 has a Double Free via crafted USB device traffic (which may be remote via usbip or usbredir).",
+    "cwe": [
+      "CWE-415"
+    ],
+    "nvd_url": "https://nvd.nist.gov/vuln/detail/CVE-2019-15504",
+    "file_name": "rsi_91x_usb.c",
+    "func_hash": 38914523915054214786919182237560230029,
+    "file_hash": 337775591275050809530599688018008269692
+  },
+  "fixed": {
+    "idx": 318099,
+    "func_hash": 146493112175404963554656325384374694285,
+    "file_hash": 273043712433748171090882476377434422928
+  }
+}

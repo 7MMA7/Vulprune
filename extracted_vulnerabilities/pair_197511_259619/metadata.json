@@ -1,0 +1,23 @@
+{
+  "vulnerable": {
+    "idx": 197511,
+    "project": "libjpeg",
+    "commit_id": "187035b9726710b4fe11d565c7808975c930895d",
+    "commit_url": "https://github.com/thorfdbg/libjpeg/commit/187035b9726710b4fe11d565c7808975c930895d",
+    "commit_message": "The code now checks for consistency of the MCU sizes across\nhierarchical levels, and fails in case they are different.",
+    "cve": "CVE-2022-31796",
+    "cve_desc": "libjpeg 1.63 has a heap-based buffer over-read in HierarchicalBitmapRequester::FetchRegion in hierarchicalbitmaprequester.cpp because the MCU size can be different between allocation and use.",
+    "cwe": [
+      "CWE-787"
+    ],
+    "nvd_url": "https://nvd.nist.gov/vuln/detail/CVE-2022-31796",
+    "file_name": "hierarchicalbitmaprequester.cpp",
+    "func_hash": 63468052144489012470048601021040613418,
+    "file_hash": 34345221108539770458549868924228630502
+  },
+  "fixed": {
+    "idx": 259619,
+    "func_hash": 163837755851062573337491873573690435408,
+    "file_hash": 103246407112165898630439185486735063817
+  }
+}

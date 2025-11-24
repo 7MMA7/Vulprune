@@ -1,0 +1,23 @@
+{
+  "vulnerable": {
+    "idx": 213037,
+    "project": "php-src",
+    "commit_id": "2bcbc95f033c31b00595ed39f79c3a99b4ed0501",
+    "commit_url": "http://git.php.net/?p=php-src.git;a=commit;h=2bcbc95f033c31b00595ed39f79c3a99b4ed0501",
+    "commit_message": "Fix bug #79037 (global buffer-overflow in `mbfl_filt_conv_big5_wchar`)",
+    "cve": "CVE-2020-7060",
+    "cve_desc": "When using certain mbstring functions to convert multibyte encodings, in PHP versions 7.2.x below 7.2.27, 7.3.x below 7.3.14 and 7.4.x below 7.4.2 it is possible to supply data that will cause function mbfl_filt_conv_big5_wchar to read past the allocated buffer. This may lead to information disclosure or crash.",
+    "cwe": [
+      "CWE-125"
+    ],
+    "nvd_url": "https://nvd.nist.gov/vuln/detail/CVE-2020-7060",
+    "file_name": "mbfilter_big5.c",
+    "func_hash": 8283586201644887300915898295948875795,
+    "file_hash": 67113767760618335945735132719612525083
+  },
+  "fixed": {
+    "idx": 464942,
+    "func_hash": 324298547167958214830404594575086371894,
+    "file_hash": 135358838595920427772392870415942108469
+  }
+}

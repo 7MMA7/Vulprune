@@ -1,0 +1,23 @@
+{
+  "vulnerable": {
+    "idx": 196893,
+    "project": "envoy",
+    "commit_id": "e9f936d85dc1edc34fabd0a1725ec180f2316353",
+    "commit_url": "https://github.com/envoyproxy/envoy/commit/e9f936d85dc1edc34fabd0a1725ec180f2316353",
+    "commit_message": "CVE-2022-21654\n\ntls allows re-use when some cert validation settings have changed\n\nSigned-off-by: Yan Avlasov <yavlasov@google.com>",
+    "cve": "CVE-2022-21654",
+    "cve_desc": "Envoy is an open source edge and service proxy, designed for cloud-native applications. Envoy's tls allows re-use when some cert validation settings have changed from their default configuration. The only workaround for this issue is to ensure that default tls settings are used. Users are advised to upgrade.",
+    "cwe": [
+      "CWE-362"
+    ],
+    "nvd_url": "https://nvd.nist.gov/vuln/detail/CVE-2022-21654",
+    "file_name": "default_validator.cc",
+    "func_hash": 140411723524972581248505271605198365196,
+    "file_hash": 12469299547216327731154844869138538271
+  },
+  "fixed": {
+    "idx": 247550,
+    "func_hash": 325686322374262257116614301181972043862,
+    "file_hash": 261316308158712382898480668520478060002
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "vulnerable": {
+    "idx": 211785,
+    "project": "jasper",
+    "commit_id": "4cd52b5daac62b00a0a328451544807ddecf775f",
+    "commit_url": "https://github.com/jasper-software/jasper/commit/4cd52b5daac62b00a0a328451544807ddecf775f",
+    "commit_message": "Avoid maxrlvls more than upper bound to cause heap-buffer-overflow",
+    "cve": "CVE-2020-27828",
+    "cve_desc": "There's a flaw in jasper's jpc encoder in versions prior to 2.0.23. Crafted input provided to jasper by an attacker could cause an arbitrary out-of-bounds write. This could potentially affect data confidentiality, integrity, or application availability.",
+    "cwe": [
+      "CWE-20"
+    ],
+    "nvd_url": "https://nvd.nist.gov/vuln/detail/CVE-2020-27828",
+    "file_name": "jpc_enc.c",
+    "func_hash": 179213511260070262932724370978685731129,
+    "file_hash": 285191290025689593258555638021323781658
+  },
+  "fixed": {
+    "idx": 451888,
+    "func_hash": 258879101783368514234166952366199989021,
+    "file_hash": 134316338883827501672124248295180144242
+  }
+}

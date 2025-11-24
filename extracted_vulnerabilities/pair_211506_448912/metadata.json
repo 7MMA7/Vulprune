@@ -1,0 +1,23 @@
+{
+  "vulnerable": {
+    "idx": 211506,
+    "project": "zlib",
+    "commit_id": "eff308af425b67093bab25f80f1ae950166bece1",
+    "commit_url": "https://github.com/madler/zlib/commit/eff308af425b67093bab25f80f1ae950166bece1",
+    "commit_message": "Fix a bug when getting a gzip header extra field with inflate().\n\nIf the extra field was larger than the space the user provided with\ninflateGetHeader(), and if multiple calls of inflate() delivered\nthe extra header data, then there could be a buffer overflow of the\nprovided space. This commit assures that provided space is not\nexceeded.",
+    "cve": "CVE-2022-37434",
+    "cve_desc": "zlib through 1.2.12 has a heap-based buffer over-read or buffer overflow in inflate in inflate.c via a large gzip header extra field. NOTE: only applications that call inflateGetHeader are affected. Some common applications bundle the affected zlib source code but may be unable to call inflateGetHeader (e.g., see the nodejs/node reference).",
+    "cwe": [
+      "CWE-787"
+    ],
+    "nvd_url": "https://nvd.nist.gov/vuln/detail/CVE-2022-37434",
+    "file_name": "inflate.c",
+    "func_hash": 308042126203552622330885717948323954753,
+    "file_hash": 13307216410875362203864420162564887753
+  },
+  "fixed": {
+    "idx": 448912,
+    "func_hash": 77680460964707773234667939079956613143,
+    "file_hash": 53439547439920310595361050781327807541
+  }
+}

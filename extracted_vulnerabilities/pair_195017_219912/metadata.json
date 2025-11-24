@@ -1,0 +1,23 @@
+{
+  "vulnerable": {
+    "idx": 195017,
+    "project": "gpac",
+    "commit_id": "ad18ece95fa064efc0995c4ab2c985f77fb166ec",
+    "commit_url": "https://github.com/gpac/gpac/commit/ad18ece95fa064efc0995c4ab2c985f77fb166ec",
+    "commit_message": "fixed #1904",
+    "cve": "CVE-2021-40576",
+    "cve_desc": "The binary MP4Box in Gpac 1.0.1 has a null pointer dereference vulnerability in the gf_isom_get_payt_count function in hint_track.c, which allows attackers to cause a denial of service.",
+    "cwe": [
+      "CWE-476"
+    ],
+    "nvd_url": "https://nvd.nist.gov/vuln/detail/CVE-2021-40576",
+    "file_name": "hint_track.c",
+    "func_hash": 91218268849686441388880855658517990203,
+    "file_hash": 60176895274654779679144452624639678766
+  },
+  "fixed": {
+    "idx": 219912,
+    "func_hash": 240641657114030682383886931707833033482,
+    "file_hash": 28976036322661795345788739460485147148
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "vulnerable": {
+    "idx": 211845,
+    "project": "ImageMagick6",
+    "commit_id": "1aea203eb36409ce6903b9e41fe7cb70030e8750",
+    "commit_url": "https://github.com/ImageMagick/ImageMagick6/commit/1aea203eb36409ce6903b9e41fe7cb70030e8750",
+    "commit_message": "squash heap-buffer-overflow, PoC TIFF from Hardik",
+    "cve": "CVE-2022-3213",
+    "cve_desc": "A heap buffer overflow issue was found in ImageMagick. When an application processes a malformed TIFF file, it could lead to undefined behavior or a crash causing a denial of service.",
+    "cwe": [
+      "CWE-787"
+    ],
+    "nvd_url": "https://nvd.nist.gov/vuln/detail/CVE-2022-3213",
+    "file_name": "tiff.c",
+    "func_hash": 282124666378195634578988553119839535376,
+    "file_hash": 94999311171482042296542443921541591860
+  },
+  "fixed": {
+    "idx": 452391,
+    "func_hash": 299907120858996373991818547886083873911,
+    "file_hash": 106627250122948436089504190965714390547
+  }
+}

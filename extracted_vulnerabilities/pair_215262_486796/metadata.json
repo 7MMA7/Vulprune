@@ -1,0 +1,23 @@
+{
+  "vulnerable": {
+    "idx": 215262,
+    "project": "qemu",
+    "commit_id": "e73adfbeec9d4e008630c814759052ed945c3fed",
+    "commit_url": "https://git.qemu.org/?p=qemu.git;a=commit;h=e73adfbeec9d4e008630c814759052ed945c3fed",
+    "commit_message": "cadence_gem: switch to use qemu_receive_packet() for loopback\n\nThis patch switches to use qemu_receive_packet() which can detect\nreentrancy and return early.\n\nThis is intended to address CVE-2021-3416.\n\nCc: Prasad J Pandit <ppandit@redhat.com>\nCc: qemu-stable@nongnu.org\nReviewed-by: Philippe Mathieu-Daud\u00e9 <philmd@redhat.com>\nSigned-off-by: Alexander Bulekov <alxndr@bu.edu>\nSigned-off-by: Jason Wang <jasowang@redhat.com>",
+    "cve": "CVE-2021-3416",
+    "cve_desc": "A potential stack overflow via infinite loop issue was found in various NIC emulators of QEMU in versions up to and including 5.2.0. The issue occurs in loopback mode of a NIC wherein reentrant DMA checks get bypassed. A guest user/process may use this flaw to consume CPU cycles or crash the QEMU process on the host resulting in DoS scenario.",
+    "cwe": [
+      "CWE-835"
+    ],
+    "nvd_url": "https://nvd.nist.gov/vuln/detail/CVE-2021-3416",
+    "file_name": "cadence_gem.c",
+    "func_hash": 96949803014582607595727068395060090256,
+    "file_hash": 142576312399333534516163795241152257631
+  },
+  "fixed": {
+    "idx": 486796,
+    "func_hash": 333706942896596885696237067919896756767,
+    "file_hash": 35811516595388673046749961470018191104
+  }
+}

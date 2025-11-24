@@ -1,0 +1,5 @@
+extracted_vulnerabilities/pair_198545_276921/i2c_fixed.c:1:0: style: The function 'do_i2c_md' is never used. [unusedFunction]
+static int do_i2c_md(struct cmd_tbl *cmdtp, int flag, int argc,
+^
+nofile:0:0: information: Active checkers: 113/592 (use --checkers-report=<filename> to see details) [checkersReport]
+

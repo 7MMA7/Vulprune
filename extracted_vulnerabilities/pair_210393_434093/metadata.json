@@ -1,0 +1,23 @@
+{
+  "vulnerable": {
+    "idx": 210393,
+    "project": "vim",
+    "commit_id": "6f98371532fcff911b462d51bc64f2ce8a6ae682",
+    "commit_url": "https://github.com/vim/vim/commit/6f98371532fcff911b462d51bc64f2ce8a6ae682",
+    "commit_message": "patch 8.2.3884: crash when clearing the argument list while using it\n\nProblem:    Crash when clearing the argument list while using it.\nSolution:   Lock the argument list for \":all\".",
+    "cve": "CVE-2021-4166",
+    "cve_desc": "vim is vulnerable to Out-of-bounds Read",
+    "cwe": [
+      "CWE-416"
+    ],
+    "nvd_url": "https://nvd.nist.gov/vuln/detail/CVE-2021-4166",
+    "file_name": "arglist.c",
+    "func_hash": 231413303097445020226238674413950257364,
+    "file_hash": 299441320904377920044719346235855663984
+  },
+  "fixed": {
+    "idx": 434093,
+    "func_hash": 267745419662130579869831756599776775733,
+    "file_hash": 117785855197438392738154857809118603392
+  }
+}

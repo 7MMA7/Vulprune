@@ -1,0 +1,23 @@
+{
+  "vulnerable": {
+    "idx": 195391,
+    "project": "tensorflow",
+    "commit_id": "f68fdab93fb7f4ddb4eb438c8fe052753c9413e8",
+    "commit_url": "https://github.com/tensorflow/tensorflow/commit/f68fdab93fb7f4ddb4eb438c8fe052753c9413e8",
+    "commit_message": "Add a check for pad width to be a positive value.\n\nPiperOrigin-RevId: 413275853\nChange-Id: I261a8db9dabf5ce48a806a9e58129080c9fac619",
+    "cve": "CVE-2022-21733",
+    "cve_desc": "Tensorflow is an Open Source Machine Learning Framework. The implementation of `StringNGrams` can be used to trigger a denial of service attack by causing an out of memory condition after an integer overflow. We are missing a validation on `pad_witdh` and that result in computing a negative value for `ngram_width` which is later used to allocate parts of the output. The fix will be included in TensorFlow 2.8.0. We will also cherrypick this commit on TensorFlow 2.7.1, TensorFlow 2.6.3, and TensorFlow 2.5.3, as these are also affected and still in supported range.",
+    "cwe": [
+      "CWE-190"
+    ],
+    "nvd_url": "https://nvd.nist.gov/vuln/detail/CVE-2022-21733",
+    "file_name": "string_ngrams_op.cc",
+    "func_hash": 93012019628610956612764593105283326156,
+    "file_hash": 245905885483763938680185872776744444218
+  },
+  "fixed": {
+    "idx": 225125,
+    "func_hash": 39926051817459528222102206002528990438,
+    "file_hash": 275635386609741564508341080525906256433
+  }
+}

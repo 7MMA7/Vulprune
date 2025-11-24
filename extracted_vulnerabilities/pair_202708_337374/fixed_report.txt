@@ -1,0 +1,11 @@
+extracted_vulnerabilities/pair_202708_337374/buffer_fixed.c:1:1: portability: Omitted return type of function 'fname_match' defaults to int, this is not supported by ISO C99 and later standards. [returnImplicitInt]
+fname_match(
+^
+extracted_vulnerabilities/pair_202708_337374/buffer_fixed.c:7:13: style: The scope of the variable 'p' can be reduced. [variableScope]
+    char_u *p;
+            ^
+extracted_vulnerabilities/pair_202708_337374/buffer_fixed.c:1:0: style: The function 'fname_match' is never used. [unusedFunction]
+fname_match(
+^
+nofile:0:0: information: Active checkers: 113/592 (use --checkers-report=<filename> to see details) [checkersReport]
+

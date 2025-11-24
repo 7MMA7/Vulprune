@@ -1,0 +1,23 @@
+{
+  "vulnerable": {
+    "idx": 195665,
+    "project": "njs",
+    "commit_id": "2e00e95473861846aa8538be87db07699d9f676d",
+    "commit_url": "https://github.com/nginx/njs/commit/2e00e95473861846aa8538be87db07699d9f676d",
+    "commit_message": "Fixed Array.prototype.slice() with slow \"this\" argument.\n\nPreviously, when \"this\" argument was not a fast array, but the \"deleted\" array\nwas a fast array, the \"deleted\" array may be left in uninitialized state if\n\"this\" argument had gaps.\n\nThis fix is to ensure that \"deleted\" is properly initialized.\n\nThis fixes #485 issue on Github.",
+    "cve": "CVE-2022-29779",
+    "cve_desc": "Nginx NJS v0.7.2 was discovered to contain a segmentation violation in the function njs_value_own_enumerate at src/njs_value.c.",
+    "cwe": [
+      "CWE-703"
+    ],
+    "nvd_url": "https://nvd.nist.gov/vuln/detail/CVE-2022-29779",
+    "file_name": "njs_array.c",
+    "func_hash": 41889957200154277256182614621042854713,
+    "file_hash": 27861953644579332654826088207600556930
+  },
+  "fixed": {
+    "idx": 230302,
+    "func_hash": 91452857281463208584852927019432341939,
+    "file_hash": 127478727069540736637535553874506726763
+  }
+}

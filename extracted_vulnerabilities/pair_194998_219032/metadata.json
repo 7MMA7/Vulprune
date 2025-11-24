@@ -1,0 +1,23 @@
+{
+  "vulnerable": {
+    "idx": 194998,
+    "project": "tensorflow",
+    "commit_id": "240655511cd3e701155f944a972db71b6c0b1bb6",
+    "commit_url": "https://github.com/tensorflow/tensorflow/commit/240655511cd3e701155f944a972db71b6c0b1bb6",
+    "commit_message": "Eliminate `CHECK`-fails from `IsSimplifiableReshape` via `MakeShape(<invalid shape>)`\n\nPiperOrigin-RevId: 409166738\nChange-Id: I7f0a3590b8acae3f3e3e2fe636e1f5ef285693cf",
+    "cve": "CVE-2022-23581",
+    "cve_desc": "Tensorflow is an Open Source Machine Learning Framework. The Grappler optimizer in TensorFlow can be used to cause a denial of service by altering a `SavedModel` such that `IsSimplifiableReshape` would trigger `CHECK` failures. The fix will be included in TensorFlow 2.8.0. We will also cherrypick this commit on TensorFlow 2.7.1, TensorFlow 2.6.3, and TensorFlow 2.5.3, as these are also affected and still in supported range.",
+    "cwe": [
+      "CWE-617"
+    ],
+    "nvd_url": "https://nvd.nist.gov/vuln/detail/CVE-2022-23581",
+    "file_name": "constant_folding.cc",
+    "func_hash": 122664089420988233915419567191040959656,
+    "file_hash": 35061507297230918846503076104140700863
+  },
+  "fixed": {
+    "idx": 219032,
+    "func_hash": 262760907526734396914090099303096262406,
+    "file_hash": 271606694375277711450004865336349725435
+  }
+}

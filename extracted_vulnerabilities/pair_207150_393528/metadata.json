@@ -1,0 +1,23 @@
+{
+  "vulnerable": {
+    "idx": 207150,
+    "project": "squirrel",
+    "commit_id": "a6413aa690e0bdfef648c68693349a7b878fe60d",
+    "commit_url": "https://github.com/albertodemichelis/squirrel/commit/a6413aa690e0bdfef648c68693349a7b878fe60d",
+    "commit_message": "fix in thread.call",
+    "cve": "CVE-2022-30292",
+    "cve_desc": "Heap-based buffer overflow in sqbaselib.cpp in SQUIRREL 3.2 due to lack of a certain sq_reservestack call.",
+    "cwe": [
+      "CWE-703"
+    ],
+    "nvd_url": "https://nvd.nist.gov/vuln/detail/CVE-2022-30292",
+    "file_name": "sqbaselib.cpp",
+    "func_hash": 39783972208477930534182111058478291044,
+    "file_hash": 22214130882110251892898581176850711195
+  },
+  "fixed": {
+    "idx": 393528,
+    "func_hash": 185870701968227218426869749475686341047,
+    "file_hash": 167918424394936848193603192917033144376
+  }
+}

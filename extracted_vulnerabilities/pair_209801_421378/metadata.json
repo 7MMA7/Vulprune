@@ -1,0 +1,23 @@
+{
+  "vulnerable": {
+    "idx": 209801,
+    "project": "mujs",
+    "commit_id": "f5b3c703e18725e380b83427004632e744f85a6f",
+    "commit_url": "https://github.com/ccxvii/mujs/commit/f5b3c703e18725e380b83427004632e744f85a6f",
+    "commit_message": "Issue #161: Cope with empty programs in mujs-pp.",
+    "cve": "CVE-2022-30975",
+    "cve_desc": "In Artifex MuJS through 1.2.0, jsP_dumpsyntax in jsdump.c has a NULL pointer dereference, as demonstrated by mujs-pp.",
+    "cwe": [
+      "CWE-476"
+    ],
+    "nvd_url": "https://nvd.nist.gov/vuln/detail/CVE-2022-30975",
+    "file_name": "jsdump.c",
+    "func_hash": 236329653693817075818818411816465624514,
+    "file_hash": 195852189272926394340196020756121895406
+  },
+  "fixed": {
+    "idx": 421378,
+    "func_hash": 148093103302179844815401983905255483216,
+    "file_hash": 205390724250782891362749099686890673449
+  }
+}

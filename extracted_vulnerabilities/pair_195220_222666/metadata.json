@@ -1,0 +1,23 @@
+{
+  "vulnerable": {
+    "idx": 195220,
+    "project": "tmate-ssh-server",
+    "commit_id": "1c020d1f5ca462f5b150b46a027aaa1bbe3c9596",
+    "commit_url": "https://github.com/tmate-io/tmate-ssh-server/commit/1c020d1f5ca462f5b150b46a027aaa1bbe3c9596",
+    "commit_message": "Harden /tmp/tmate directory\n\nSuggested by Matthias Gerstner",
+    "cve": "CVE-2021-44512",
+    "cve_desc": "World-writable permissions on the /tmp/tmate/sessions directory in tmate-ssh-server 2.3.0 allow a local attacker to compromise the integrity of session handling, or obtain the read-write session ID from a read-only session symlink in this directory.",
+    "cwe": [
+      "CWE-362"
+    ],
+    "nvd_url": "https://nvd.nist.gov/vuln/detail/CVE-2021-44512",
+    "file_name": "tmate-main.c",
+    "func_hash": 154027151645284385944526585123822701001,
+    "file_hash": 280350825550794138629823084137678566150
+  },
+  "fixed": {
+    "idx": 222666,
+    "func_hash": 271664953315961811306024013861867052587,
+    "file_hash": 90810006588409733709876992634170493502
+  }
+}

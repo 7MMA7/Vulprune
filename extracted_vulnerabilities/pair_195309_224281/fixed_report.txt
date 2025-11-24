@@ -1,0 +1,5 @@
+extracted_vulnerabilities/pair_195309_224281/gopher_fixed.cc:1:1: error: syntax error [syntaxError]
+gopherToHTML(GopherStateData * gopherState, char *inbuf, int len)
+^
+nofile:0:0: information: Active checkers: There was critical errors (use --checkers-report=<filename> to see details) [checkersReport]
+

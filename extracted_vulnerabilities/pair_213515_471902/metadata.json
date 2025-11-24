@@ -1,0 +1,23 @@
+{
+  "vulnerable": {
+    "idx": 213515,
+    "project": "vim",
+    "commit_id": "5c68617d395f9d7b824f68475b24ce3e38d653a3",
+    "commit_url": "https://github.com/vim/vim/commit/5c68617d395f9d7b824f68475b24ce3e38d653a3",
+    "commit_message": "patch 8.2.4563: \"z=\" in Visual mode may go beyond the end of the line\n\nProblem:    \"z=\" in Visual mode may go beyond the end of the line.\nSolution:   Adjust \"badlen\".",
+    "cve": "CVE-2022-0943",
+    "cve_desc": "Heap-based Buffer Overflow occurs in vim in GitHub repository vim/vim prior to 8.2.4563.",
+    "cwe": [
+      "CWE-787"
+    ],
+    "nvd_url": "https://nvd.nist.gov/vuln/detail/CVE-2022-0943",
+    "file_name": "spellsuggest.c",
+    "func_hash": 283321822802394416488141327214287342104,
+    "file_hash": 284064000006918275605147443263550733278
+  },
+  "fixed": {
+    "idx": 471902,
+    "func_hash": 210769611717793726730537343470434116318,
+    "file_hash": 285304759407649884654167568930599876914
+  }
+}

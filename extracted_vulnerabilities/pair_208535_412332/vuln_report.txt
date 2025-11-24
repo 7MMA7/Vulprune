@@ -1,0 +1,5 @@
+extracted_vulnerabilities/pair_208535_412332/bin_qnx_vuln.c:1:0: style: The function 'relocs' is never used. [unusedFunction]
+static RzList *relocs(RzBinFile *bf) {
+^
+nofile:0:0: information: Active checkers: 113/592 (use --checkers-report=<filename> to see details) [checkersReport]
+

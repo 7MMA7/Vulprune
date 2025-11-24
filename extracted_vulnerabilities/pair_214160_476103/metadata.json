@@ -1,0 +1,23 @@
+{
+  "vulnerable": {
+    "idx": 214160,
+    "project": "linux",
+    "commit_id": "75e5b4849b81e19e9efe1654b30d7f3151c33c2c",
+    "commit_url": "https://github.com/torvalds/linux/commit/75e5b4849b81e19e9efe1654b30d7f3151c33c2c",
+    "commit_message": "USB: gadget: validate interface OS descriptor requests\n\nStall the control endpoint in case provided index exceeds array size of\nMAX_CONFIG_INTERFACES or when the retrieved function pointer is null.\n\nSigned-off-by: Szymon Heidrich <szymon.heidrich@gmail.com>\nCc: stable@kernel.org\nSigned-off-by: Greg Kroah-Hartman <gregkh@linuxfoundation.org>",
+    "cve": "CVE-2022-25258",
+    "cve_desc": "An issue was discovered in drivers/usb/gadget/composite.c in the Linux kernel before 5.16.10. The USB Gadget subsystem lacks certain validation of interface OS descriptor requests (ones with a large array index and ones associated with NULL function pointer retrieval). Memory corruption might occur.",
+    "cwe": [
+      "CWE-476"
+    ],
+    "nvd_url": "https://nvd.nist.gov/vuln/detail/CVE-2022-25258",
+    "file_name": "composite.c",
+    "func_hash": 303126640832251617876878392273862526744,
+    "file_hash": 18887355761308803276229129312051135602
+  },
+  "fixed": {
+    "idx": 476103,
+    "func_hash": 150169819708721543824384188358095206836,
+    "file_hash": 106311505474453071070186160185104780414
+  }
+}

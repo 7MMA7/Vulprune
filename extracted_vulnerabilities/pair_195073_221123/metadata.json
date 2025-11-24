@@ -1,0 +1,23 @@
+{
+  "vulnerable": {
+    "idx": 195073,
+    "project": "tensorflow",
+    "commit_id": "e746adbfcfee15e9cfdb391ff746c765b99bdf9b",
+    "commit_url": "https://github.com/tensorflow/tensorflow/commit/e746adbfcfee15e9cfdb391ff746c765b99bdf9b",
+    "commit_message": "Prevent use after free in `DecodePng` kernel.\n\nWe are cleaning up the memory in `decode` and then we are using an `OP_REQUIRES` to check an invariant on the `decode` data.\n\nPiperOrigin-RevId: 409299145\nChange-Id: I4eb93aaca52483eb202e89b78df07fbb2f6cb254",
+    "cve": "CVE-2022-23584",
+    "cve_desc": "Tensorflow is an Open Source Machine Learning Framework. A malicious user can cause a use after free behavior when decoding PNG images. After `png::CommonFreeDecode(&decode)` gets called, the values of `decode.width` and `decode.height` are in an unspecified state. The fix will be included in TensorFlow 2.8.0. We will also cherrypick this commit on TensorFlow 2.7.1, TensorFlow 2.6.3, and TensorFlow 2.5.3, as these are also affected and still in supported range.",
+    "cwe": [
+      "CWE-416"
+    ],
+    "nvd_url": "https://nvd.nist.gov/vuln/detail/CVE-2022-23584",
+    "file_name": "decode_image_op.cc",
+    "func_hash": 20785520030401878119367159260444796492,
+    "file_hash": 250237771010213788823348212493793467085
+  },
+  "fixed": {
+    "idx": 221123,
+    "func_hash": 197194550974667972193999280383190029027,
+    "file_hash": 250371192243587827698671199962137663449
+  }
+}

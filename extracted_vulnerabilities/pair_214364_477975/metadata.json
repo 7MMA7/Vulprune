@@ -1,0 +1,23 @@
+{
+  "vulnerable": {
+    "idx": 214364,
+    "project": "php-src",
+    "commit_id": "e6c48213c22ed50b2b987b479fcc1ac709394caa",
+    "commit_url": "http://git.php.net/?p=php-src.git;a=commit;h=e6c48213c22ed50b2b987b479fcc1ac709394caa",
+    "commit_message": "Fix bug #72606: heap-buffer-overflow (write) simplestring_addn simplestring.c",
+    "cve": "CVE-2016-6296",
+    "cve_desc": "Integer signedness error in the simplestring_addn function in simplestring.c in xmlrpc-epi through 0.54.2, as used in PHP before 5.5.38, 5.6.x before 5.6.24, and 7.x before 7.0.9, allows remote attackers to cause a denial of service (heap-based buffer overflow) or possibly have unspecified other impact via a long first argument to the PHP xmlrpc_encode_request function.",
+    "cwe": [
+      "CWE-119"
+    ],
+    "nvd_url": "https://nvd.nist.gov/vuln/detail/CVE-2016-6296",
+    "file_name": "simplestring.c",
+    "func_hash": 48339101902926135808878707654868204878,
+    "file_hash": 338610095237188637437183530843859723766
+  },
+  "fixed": {
+    "idx": 477975,
+    "func_hash": 17303339734462956863208308798642286429,
+    "file_hash": 335043387623274482983135088926291395510
+  }
+}

@@ -1,0 +1,20 @@
+extracted_vulnerabilities/pair_197359_257461/auto_parallel_fixed.cc:106:31: warning: Either the condition 'dequeue_node' is redundant or there is possible null pointer dereference: dequeue_node. [nullPointerRedundantCheck]
+    if (input_node->name() != dequeue_node->name()) {
+                              ^
+extracted_vulnerabilities/pair_197359_257461/auto_parallel_fixed.cc:88:7: note: Assuming that condition 'dequeue_node' is not redundant
+  if (dequeue_node) {
+      ^
+extracted_vulnerabilities/pair_197359_257461/auto_parallel_fixed.cc:96:49: note: Assuming container is not empty
+  for (const auto& variable : item.MainVariables()) {
+                                                ^
+extracted_vulnerabilities/pair_197359_257461/auto_parallel_fixed.cc:100:31: note: Assuming container is not empty
+  for (const auto& init : item.init_ops) {
+                              ^
+extracted_vulnerabilities/pair_197359_257461/auto_parallel_fixed.cc:105:33: note: Assuming container is not empty
+  for (const auto& input_node : input_nodes) {
+                                ^
+extracted_vulnerabilities/pair_197359_257461/auto_parallel_fixed.cc:106:31: note: Null pointer dereference
+    if (input_node->name() != dequeue_node->name()) {
+                              ^
+nofile:0:0: information: Active checkers: 172/592 (use --checkers-report=<filename> to see details) [checkersReport]
+

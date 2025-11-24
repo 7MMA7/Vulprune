@@ -1,0 +1,23 @@
+{
+  "vulnerable": {
+    "idx": 199833,
+    "project": "chafa",
+    "commit_id": "e4b777c7b7c144cd16a0ea96108267b1004fe6c9",
+    "commit_url": "https://github.com/hpjansson/chafa/commit/e4b777c7b7c144cd16a0ea96108267b1004fe6c9",
+    "commit_message": "libnsgif: Fix null pointer deref on frameless GIF input\n\nA crafted GIF file with no frame data could cause a null pointer\ndereference leading to denial of service (crash). Reported by\n@JieyongMa via huntr.dev.",
+    "cve": "CVE-2022-1507",
+    "cve_desc": "chafa: NULL Pointer Dereference in function gif_internal_decode_frame at libnsgif.c:599 allows attackers to cause a denial of service (crash) via a crafted input file. in GitHub repository hpjansson/chafa prior to 1.10.2. chafa: NULL Pointer Dereference in function gif_internal_decode_frame at libnsgif.c:599 allows attackers to cause a denial of service (crash) via a crafted input file.",
+    "cwe": [
+      "CWE-476"
+    ],
+    "nvd_url": "https://nvd.nist.gov/vuln/detail/CVE-2022-1507",
+    "file_name": "libnsgif.c",
+    "func_hash": 44351140165833891890072470559672892000,
+    "file_hash": 198094748346353506643883012228634204471
+  },
+  "fixed": {
+    "idx": 293496,
+    "func_hash": 289353344148943948893339832130354113499,
+    "file_hash": 172226271399464040769871629514764443605
+  }
+}

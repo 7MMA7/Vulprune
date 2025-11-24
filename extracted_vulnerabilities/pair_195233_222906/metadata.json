@@ -1,0 +1,23 @@
+{
+  "vulnerable": {
+    "idx": 195233,
+    "project": "tensorflow",
+    "commit_id": "97282c6d0d34476b6ba033f961590b783fa184cd",
+    "commit_url": "https://github.com/tensorflow/tensorflow/commit/97282c6d0d34476b6ba033f961590b783fa184cd",
+    "commit_message": "Prevent a crash due to heap OOB write in grappler.\n\nPiperOrigin-RevId: 408318417\nChange-Id: If095feb8c001e3a8ac4a85b7387b81e8309df47d",
+    "cve": "CVE-2022-23566",
+    "cve_desc": "Tensorflow is an Open Source Machine Learning Framework. TensorFlow is vulnerable to a heap OOB write in `Grappler`. The `set_output` function writes to an array at the specified index. Hence, this gives a malicious user a write primitive. The fix will be included in TensorFlow 2.8.0. We will also cherrypick this commit on TensorFlow 2.7.1, TensorFlow 2.6.3, and TensorFlow 2.5.3, as these are also affected and still in supported range.",
+    "cwe": [
+      "CWE-787"
+    ],
+    "nvd_url": "https://nvd.nist.gov/vuln/detail/CVE-2022-23566",
+    "file_name": "graph_properties.cc",
+    "func_hash": 128649942367020682781968122888762734954,
+    "file_hash": 2473148557397819170260688514824580473
+  },
+  "fixed": {
+    "idx": 222906,
+    "func_hash": 99847293040079140904834991959660799210,
+    "file_hash": 331642930758873609530408829371906855419
+  }
+}

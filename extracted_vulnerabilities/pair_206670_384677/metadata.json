@@ -1,0 +1,23 @@
+{
+  "vulnerable": {
+    "idx": 206670,
+    "project": "nbdkit",
+    "commit_id": "6c5faac6a37077cf2366388a80862bb00616d0d8",
+    "commit_url": "https://gitlab.com/nbdkit/nbdkit/-/commit/6c5faac6a37077cf2366388a80862bb00616d0d8",
+    "commit_message": "server: reset meta context replies on starttls\n\nRelated to CVE-2021-3716, but not as severe.  No compliant client will\nsend NBD_CMD_BLOCK_STATUS unless it first negotiates\nNBD_OPT_SET_META_CONTEXT.  If an attacker injects a premature\nSET_META_CONTEXT, either the client will never notice (because it\nnever uses BLOCK_STATUS), or the client will overwrite the attacker's\nattempt with the client's own SET_META_CONTEXT request after\nencryption is enabled.  So I don't class this as having the potential\nto trigger denial-of-service due to any protocol mismatch between\ncompliant client and server (I don't care what happens with\nnon-compliant clients).\n\nFixes: 26455d45 (server: protocol: Implement Block Status \"base:allocation\".)",
+    "cve": "CVE-2021-3716",
+    "cve_desc": "A flaw was found in nbdkit due to to improperly caching plaintext state across the STARTTLS encryption boundary. A MitM attacker could use this flaw to inject a plaintext NBD_OPT_STRUCTURED_REPLY before proxying everything else a client sends to the server, potentially leading the client to terminate the NBD session. The highest threat from this vulnerability is to system availability.",
+    "cwe": [
+      "CWE-924"
+    ],
+    "nvd_url": "https://nvd.nist.gov/vuln/detail/CVE-2021-3716",
+    "file_name": "protocol-handshake-newstyle.c",
+    "func_hash": 230092713719482299459555478858076762309,
+    "file_hash": 263209595426945567952192628081217546469
+  },
+  "fixed": {
+    "idx": 384677,
+    "func_hash": 13793654971535202622888110493636437287,
+    "file_hash": 210643238405506282504328455056206224474
+  }
+}

@@ -1,0 +1,5 @@
+extracted_vulnerabilities/pair_212414_459107/cls_api_vuln.c:1:0: style: The function 'tc_new_tfilter' is never used. [unusedFunction]
+static int tc_new_tfilter(struct sk_buff *skb, struct nlmsghdr *n,
+^
+nofile:0:0: information: Active checkers: 113/592 (use --checkers-report=<filename> to see details) [checkersReport]
+

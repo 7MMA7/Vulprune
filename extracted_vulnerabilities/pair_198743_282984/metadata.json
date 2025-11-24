@@ -1,0 +1,23 @@
+{
+  "vulnerable": {
+    "idx": 198743,
+    "project": "LuaJIT",
+    "commit_id": "53f82e6e2e858a0a62fd1a2ff47e9866693382e6",
+    "commit_url": "https://github.com/LuaJIT/LuaJIT/commit/53f82e6e2e858a0a62fd1a2ff47e9866693382e6",
+    "commit_message": "Fix frame traversal for __gc handler frames.\n\nReported by Changochen.",
+    "cve": "CVE-2020-15890",
+    "cve_desc": "LuaJit through 2.1.0-beta3 has an out-of-bounds read because __gc handler frame traversal is mishandled.",
+    "cwe": [
+      "CWE-125"
+    ],
+    "nvd_url": "https://nvd.nist.gov/vuln/detail/CVE-2020-15890",
+    "file_name": "lj_err.c",
+    "func_hash": 309200300493568288549157158368440611870,
+    "file_hash": 339549767514658029818043680727253046808
+  },
+  "fixed": {
+    "idx": 282984,
+    "func_hash": 135963737792819118980125175334737284274,
+    "file_hash": 198203473898814036407466574660463075188
+  }
+}

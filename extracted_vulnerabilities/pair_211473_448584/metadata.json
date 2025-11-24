@@ -1,0 +1,23 @@
+{
+  "vulnerable": {
+    "idx": 211473,
+    "project": "gdk-pixbuf",
+    "commit_id": "4f0f465f991cd454d03189497f923eb40c170c22",
+    "commit_url": "http://git.gnome.org/browse/gdk-pixbuf/commit/?id=4f0f465f991cd454d03189497f923eb40c170c22",
+    "commit_message": "Avoid an integer overflow in the xbm loader\n\nAt the same time, reject some silly input, such as negative\nwidth or height.\n\nhttps://bugzilla.gnome.org/show_bug.cgi?id=672811",
+    "cve": "CVE-2012-2370",
+    "cve_desc": "Multiple integer overflows in the read_bitmap_file_data function in io-xbm.c in gdk-pixbuf before 2.26.1 allow remote attackers to cause a denial of service (application crash) via a negative (1) height or (2) width in an XBM file, which triggers a heap-based buffer overflow.",
+    "cwe": [
+      "CWE-189"
+    ],
+    "nvd_url": "https://nvd.nist.gov/vuln/detail/CVE-2012-2370",
+    "file_name": "io-xbm.c",
+    "func_hash": 243317071642584588963963288402776213734,
+    "file_hash": 331454281510719411806234723168878735596
+  },
+  "fixed": {
+    "idx": 448584,
+    "func_hash": 77339480051751804955061545708983319434,
+    "file_hash": 72320400164573844701740100175045869458
+  }
+}

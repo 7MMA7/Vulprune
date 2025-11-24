@@ -1,0 +1,23 @@
+{
+  "vulnerable": {
+    "idx": 195565,
+    "project": "hhvm",
+    "commit_id": "dbeb9a56a638e3fdcef8b691c2a2967132dae692",
+    "commit_url": "https://github.com/facebook/hhvm/commit/dbeb9a56a638e3fdcef8b691c2a2967132dae692",
+    "commit_message": "string_number_format: Correctly handles return value of snprintf\n\nSummary: `snprintf` can return a value greater than the number of bytes copied. In case the first byte of the string is not a digit (could be '-'), size of `tmpstr` was being updated without checking `tmplen`. This resulted in either an assertion error or a heap overflow depending on whether the assertion is compiled or not.\n\nReviewed By: mofarrell, qianxuweiren\n\nDifferential Revision: D17327899\n\nfbshipit-source-id: ee53875d21e02608c6d870388eecf1464de24ff1",
+    "cve": "CVE-2019-11929",
+    "cve_desc": "Insufficient boundary checks when formatting numbers in number_format allows read/write access to out-of-bounds memory, potentially leading to remote code execution. This issue affects HHVM versions prior to 3.30.10, all versions between 4.0.0 and 4.8.5, all versions between 4.9.0 and 4.18.2, and versions 4.19.0, 4.19.1, 4.20.0, 4.20.1, 4.20.2, 4.21.0, 4.22.0, 4.23.0.",
+    "cwe": [
+      "CWE-119"
+    ],
+    "nvd_url": "https://nvd.nist.gov/vuln/detail/CVE-2019-11929",
+    "file_name": "zend-string.cpp",
+    "func_hash": 125018652199743804521817207176944376682,
+    "file_hash": 157727558891612041764030573186624095506
+  },
+  "fixed": {
+    "idx": 228563,
+    "func_hash": 113449506030420962381960959197350451885,
+    "file_hash": 48155053696740279281010358677614070619
+  }
+}

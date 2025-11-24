@@ -1,0 +1,26 @@
+extracted_vulnerabilities/pair_195565_228563/zend-string_fixed.cpp:24:21: warning: inconclusive: Either the condition 'tmpbuf==nullptr' is redundant or there is possible null pointer dereference: tmpbuf. [nullPointerRedundantCheck]
+  tmplen = snprintf(tmpbuf, 64, "%.*F", dec, d);
+                    ^
+extracted_vulnerabilities/pair_195565_228563/zend-string_fixed.cpp:29:30: note: Assuming that condition 'tmpbuf==nullptr' is not redundant
+  if (tmplen < 64 && (tmpbuf == nullptr || !isdigit((int)tmpbuf[0]))) {
+                             ^
+extracted_vulnerabilities/pair_195565_228563/zend-string_fixed.cpp:24:21: note: Null pointer dereference
+  tmplen = snprintf(tmpbuf, 64, "%.*F", dec, d);
+                    ^
+extracted_vulnerabilities/pair_195565_228563/zend-string_fixed.cpp:37:23: warning: inconclusive: Either the condition 'tmpbuf==nullptr' is redundant or there is possible null pointer dereference: tmpbuf. [nullPointerRedundantCheck]
+    tmplen = snprintf(tmpbuf, tmplen + 1, "%.*F", dec, d);
+                      ^
+extracted_vulnerabilities/pair_195565_228563/zend-string_fixed.cpp:39:16: note: Assuming that condition 'tmpbuf==nullptr' is not redundant
+    if (tmpbuf == nullptr || !isdigit((int)tmpbuf[0])) {
+               ^
+extracted_vulnerabilities/pair_195565_228563/zend-string_fixed.cpp:37:23: note: Null pointer dereference
+    tmplen = snprintf(tmpbuf, tmplen + 1, "%.*F", dec, d);
+                      ^
+extracted_vulnerabilities/pair_195565_228563/zend-string_fixed.cpp:6:9: style: Variable 'dp' can be declared as pointer to const [constVariablePointer]
+  char *dp;
+        ^
+extracted_vulnerabilities/pair_195565_228563/zend-string_fixed.cpp:1:0: style: The function 'string_number_format' is never used. [unusedFunction]
+String string_number_format(double d, int dec,
+^
+nofile:0:0: information: Active checkers: 172/592 (use --checkers-report=<filename> to see details) [checkersReport]
+

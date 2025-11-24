@@ -1,0 +1,5 @@
+extracted_vulnerabilities/pair_195073_221123/decode_image_op_fixed.cc:1:0: style: The function 'DecodePngV2' is never used. [unusedFunction]
+  void DecodePngV2(OpKernelContext* context, StringPiece input) {
+^
+nofile:0:0: information: Active checkers: 172/592 (use --checkers-report=<filename> to see details) [checkersReport]
+

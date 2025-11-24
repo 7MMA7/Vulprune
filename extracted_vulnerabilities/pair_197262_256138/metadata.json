@@ -1,0 +1,23 @@
+{
+  "vulnerable": {
+    "idx": 197262,
+    "project": "tensorflow",
+    "commit_id": "e6cf28c72ba2eb949ca950d834dd6d66bb01cfae",
+    "commit_url": "https://github.com/tensorflow/tensorflow/commit/e6cf28c72ba2eb949ca950d834dd6d66bb01cfae",
+    "commit_message": "Validate that matrix dimension sizes in SparseMatMul are positive.\n\nPiperOrigin-RevId: 401149683\nChange-Id: Ib33eafc561a39c8741ece80b2edce6d4aae9a57d",
+    "cve": "CVE-2021-41219",
+    "cve_desc": "TensorFlow is an open source platform for machine learning. In affected versions the code for sparse matrix multiplication is vulnerable to undefined behavior via binding a reference to `nullptr`. This occurs whenever the dimensions of `a` or `b` are 0 or less. In the case on one of these is 0, an empty output tensor should be allocated (to conserve the invariant that output tensors are always allocated when the operation is successful) but nothing should be written to it (that is, we should return early from the kernel implementation). Otherwise, attempts to write to this empty tensor would result in heap OOB access. The fix will be included in TensorFlow 2.7.0. We will also cherrypick this commit on TensorFlow 2.6.1, TensorFlow 2.5.2, and TensorFlow 2.4.4, as these are also affected and still in supported range.",
+    "cwe": [
+      "CWE-125"
+    ],
+    "nvd_url": "https://nvd.nist.gov/vuln/detail/CVE-2021-41219",
+    "file_name": "sparse_matmul_op.cc",
+    "func_hash": 281398484697111962957982643274603954439,
+    "file_hash": 108103579052154515117474451671828260520
+  },
+  "fixed": {
+    "idx": 256138,
+    "func_hash": 324184408352079066865576775824843839346,
+    "file_hash": 60640554660394807532445387638343536122
+  }
+}

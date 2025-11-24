@@ -1,0 +1,23 @@
+{
+  "vulnerable": {
+    "idx": 209955,
+    "project": "linux",
+    "commit_id": "8188a18ee2e48c9a7461139838048363bfce3fef",
+    "commit_url": "https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=8188a18ee2e48c9a7461139838048363bfce3fef",
+    "commit_message": "iwlwifi: pcie: fix rb_allocator workqueue allocation\n\nWe don't handle failures in the rb_allocator workqueue allocation\ncorrectly. To fix that, move the code earlier so the cleanup is\neasier and we don't have to undo all the interrupt allocations in\nthis case.\n\nSigned-off-by: Johannes Berg <johannes.berg@intel.com>\nSigned-off-by: Luca Coelho <luciano.coelho@intel.com>",
+    "cve": "CVE-2019-16234",
+    "cve_desc": "drivers/net/wireless/intel/iwlwifi/pcie/trans.c in the Linux kernel 5.2.14 does not check the alloc_workqueue return value, leading to a NULL pointer dereference.",
+    "cwe": [
+      "CWE-476"
+    ],
+    "nvd_url": "https://nvd.nist.gov/vuln/detail/CVE-2019-16234",
+    "file_name": "trans.c",
+    "func_hash": 68049028566925957329669846026640837120,
+    "file_hash": 121825087774406788902524077810084378083
+  },
+  "fixed": {
+    "idx": 424969,
+    "func_hash": 249581055441914689136534991194413858839,
+    "file_hash": 283396566562106139376150241807074258656
+  }
+}

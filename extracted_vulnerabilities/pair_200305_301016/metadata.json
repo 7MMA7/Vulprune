@@ -1,0 +1,23 @@
+{
+  "vulnerable": {
+    "idx": 200305,
+    "project": "ghostpdl",
+    "commit_id": "2793769ff107d8d22dadd30c6e68cd781b569550",
+    "commit_url": "https://git.ghostscript.com/?p=ghostpdl.git;a=commitdiff;h=2793769ff107d8d22dadd30c6e68cd781b569550",
+    "commit_message": "Bug 701819: fixed ordering in if expression to avoid out-of-bounds access.\n\nFixes:\n    ./sanbin/gs -dBATCH -dNOPAUSE -r965 -sOutputFile=tmp -sDEVICE=pcx16 ../bug-701819.pdf",
+    "cve": "CVE-2020-16305",
+    "cve_desc": "A buffer overflow vulnerability in pcx_write_rle() in contrib/japanese/gdev10v.c of Artifex Software GhostScript v9.50 allows a remote attacker to cause a denial of service via a crafted PDF file. This is fixed in v9.51.",
+    "cwe": [
+      "CWE-787"
+    ],
+    "nvd_url": "https://nvd.nist.gov/vuln/detail/CVE-2020-16305",
+    "file_name": "gdevpcx.c",
+    "func_hash": 302156343438902913796919673468889397004,
+    "file_hash": 193192744323180393354892924891696445092
+  },
+  "fixed": {
+    "idx": 301016,
+    "func_hash": 242406925449442075366182864127739162962,
+    "file_hash": 146911482994709759285318949799638474400
+  }
+}

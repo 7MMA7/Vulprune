@@ -1,0 +1,23 @@
+{
+  "vulnerable": {
+    "idx": 196328,
+    "project": "vim",
+    "commit_id": "409510c588b1eec1ae33511ae97a21eb8e110895",
+    "commit_url": "https://github.com/vim/vim/commit/409510c588b1eec1ae33511ae97a21eb8e110895",
+    "commit_message": "patch 8.2.5050: using freed memory when searching for pattern in path\n\nProblem:    Using freed memory when searching for pattern in path.\nSolution:   Make a copy of the line.",
+    "cve": "CVE-2022-1968",
+    "cve_desc": "Use After Free in GitHub repository vim/vim prior to 8.2.",
+    "cwe": [
+      "CWE-416"
+    ],
+    "nvd_url": "https://nvd.nist.gov/vuln/detail/CVE-2022-1968",
+    "file_name": "search.c",
+    "func_hash": 123923862521809134964983633516065480238,
+    "file_hash": 229512534202460810065416633781657256150
+  },
+  "fixed": {
+    "idx": 238803,
+    "func_hash": 332560855806865581562523893033870446906,
+    "file_hash": 30662263767422374466151794140989574879
+  }
+}

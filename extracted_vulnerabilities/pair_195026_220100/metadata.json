@@ -1,0 +1,23 @@
+{
+  "vulnerable": {
+    "idx": 195026,
+    "project": "linux",
+    "commit_id": "ab0fc21bc7105b54bafd85bd8b82742f9e68898a",
+    "commit_url": "https://github.com/torvalds/linux/commit/ab0fc21bc7105b54bafd85bd8b82742f9e68898a",
+    "commit_message": "Revert \"NFSv4: Handle the special Linux file open access mode\"\n\nThis reverts commit 44942b4e457beda00981f616402a1a791e8c616e.\n\nAfter secondly opening a file with O_ACCMODE|O_DIRECT flags,\nnfs4_valid_open_stateid() will dereference NULL nfs4_state when lseek().\n\nReproducer:\n  1. mount -t nfs -o vers=4.2 $server_ip:/ /mnt/\n  2. fd = open(\"/mnt/file\", O_ACCMODE|O_DIRECT|O_CREAT)\n  3. close(fd)\n  4. fd = open(\"/mnt/file\", O_ACCMODE|O_DIRECT)\n  5. lseek(fd)\n\nReported-by: Lyu Tao <tao.lyu@epfl.ch>\nSigned-off-by: ChenXiaoSong <chenxiaosong2@huawei.com>\nSigned-off-by: Trond Myklebust <trond.myklebust@hammerspace.com>",
+    "cve": "CVE-2022-24448",
+    "cve_desc": "An issue was discovered in fs/nfs/dir.c in the Linux kernel before 5.16.5. If an application sets the O_DIRECTORY flag, and tries to open a regular file, nfs_atomic_open() performs a regular lookup. If a regular file is found, ENOTDIR should occur, but the server instead returns uninitialized data in the file descriptor.",
+    "cwe": [
+      "CWE-909"
+    ],
+    "nvd_url": "https://nvd.nist.gov/vuln/detail/CVE-2022-24448",
+    "file_name": "nfs4file.c",
+    "func_hash": 67846125552854891508125900978071958871,
+    "file_hash": 109456154040292488452120321326967957719
+  },
+  "fixed": {
+    "idx": 220100,
+    "func_hash": 272987829557105540879962051296017178836,
+    "file_hash": 19160442996144037090827134285929888626
+  }
+}

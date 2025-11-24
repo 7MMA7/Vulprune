@@ -1,0 +1,23 @@
+{
+  "vulnerable": {
+    "idx": 210203,
+    "project": "linux",
+    "commit_id": "8cae8cd89f05f6de223d63e6d15e31c8ba9cf53b",
+    "commit_url": "https://github.com/torvalds/linux/commit/8cae8cd89f05f6de223d63e6d15e31c8ba9cf53b",
+    "commit_message": "seq_file: disallow extremely large seq buffer allocations\n\nThere is no reasonable need for a buffer larger than this, and it avoids\nint overflow pitfalls.\n\nFixes: 058504edd026 (\"fs/seq_file: fallback to vmalloc allocation\")\nSuggested-by: Al Viro <viro@zeniv.linux.org.uk>\nReported-by: Qualys Security Advisory <qsa@qualys.com>\nSigned-off-by: Eric Sandeen <sandeen@redhat.com>\nCc: stable@kernel.org\nSigned-off-by: Linus Torvalds <torvalds@linux-foundation.org>",
+    "cve": "CVE-2021-33909",
+    "cve_desc": "fs/seq_file.c in the Linux kernel 3.16 through 5.13.x before 5.13.4 does not properly restrict seq buffer allocations, leading to an integer overflow, an Out-of-bounds Write, and escalation to root by an unprivileged user, aka CID-8cae8cd89f05.",
+    "cwe": [
+      "CWE-787"
+    ],
+    "nvd_url": "https://nvd.nist.gov/vuln/detail/CVE-2021-33909",
+    "file_name": "seq_file.c",
+    "func_hash": 121083439970831812631280028038422882464,
+    "file_hash": 287921245214642386897154878925341860922
+  },
+  "fixed": {
+    "idx": 430335,
+    "func_hash": 42519385330734652300654935585720178837,
+    "file_hash": 306638086039455779110548582120243774574
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "vulnerable": {
+    "idx": 211773,
+    "project": "ntp",
+    "commit_id": "07a5b8141e354a998a52994c3c9cd547927e56ce",
+    "commit_url": "https://github.com/ntp-project/ntp/commit/07a5b8141e354a998a52994c3c9cd547927e56ce",
+    "commit_message": "[TALOS-CAN-0063] avoid buffer overrun in ntpq",
+    "cve": "CVE-2015-7852",
+    "cve_desc": "ntpq in NTP 4.2.x before 4.2.8p4, and 4.3.x before 4.3.77 allows remote attackers to cause a denial of service (crash) via crafted mode 6 response packets.",
+    "cwe": [
+      "CWE-20"
+    ],
+    "nvd_url": "https://nvd.nist.gov/vuln/detail/CVE-2015-7852",
+    "file_name": "ntpq.c",
+    "func_hash": 117019892599870517074003591750988787973,
+    "file_hash": 263164452008239257044928277190655422420
+  },
+  "fixed": {
+    "idx": 451731,
+    "func_hash": 286888330459003026331284434605345848005,
+    "file_hash": 291788569529258980351890148746025724022
+  }
+}

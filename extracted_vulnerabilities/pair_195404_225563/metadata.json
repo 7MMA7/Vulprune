@@ -1,0 +1,23 @@
+{
+  "vulnerable": {
+    "idx": 195404,
+    "project": "tensorflow",
+    "commit_id": "ba4e8ac4dc2991e350d5cc407f8598c8d4ee70fb",
+    "commit_url": "https://github.com/tensorflow/tensorflow/commit/ba4e8ac4dc2991e350d5cc407f8598c8d4ee70fb",
+    "commit_message": "Fix potential divide by zero error when executing FractionalMaxPool, when pooling ratio is higher than input size for a particular dimension.\n\nPiperOrigin-RevId: 412151722\nChange-Id: I06e57cbb8eca43816eff79eac264fa7aae8f7163",
+    "cve": "CVE-2022-21735",
+    "cve_desc": "Tensorflow is an Open Source Machine Learning Framework. The implementation of `FractionalMaxPool` can be made to crash a TensorFlow process via a division by 0. The fix will be included in TensorFlow 2.8.0. We will also cherrypick this commit on TensorFlow 2.7.1, TensorFlow 2.6.3, and TensorFlow 2.5.3, as these are also affected and still in supported range.",
+    "cwe": [
+      "CWE-369"
+    ],
+    "nvd_url": "https://nvd.nist.gov/vuln/detail/CVE-2022-21735",
+    "file_name": "fractional_max_pool_op.cc",
+    "func_hash": 329653208386215793548956261636203970964,
+    "file_hash": 38088244475067119710916669469162645605
+  },
+  "fixed": {
+    "idx": 225563,
+    "func_hash": 116843352571391588046661724660779526999,
+    "file_hash": 167950097941581661250535285107700244508
+  }
+}

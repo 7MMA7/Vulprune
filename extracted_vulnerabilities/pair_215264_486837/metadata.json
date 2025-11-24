@@ -1,0 +1,23 @@
+{
+  "vulnerable": {
+    "idx": 215264,
+    "project": "perl5",
+    "commit_id": "66bbb51b93253a3f87d11c2695cfb7bdb782184a",
+    "commit_url": "https://github.com/perl/perl5/commit/66bbb51b93253a3f87d11c2695cfb7bdb782184a",
+    "commit_message": "study_chunk: avoid mutating regexp program within GOSUB\n\ngh16947 and gh17743: studying GOSUB may restudy in an inner call\n(via a mix of recursion and enframing) something that an outer call\nis in the middle of looking at.  Let the outer frame deal with it.\n\n(CVE-2020-12723)\n\n(cherry picked from commit c4033e740bd18d9fbe3456a9db2ec2053cdc5271)",
+    "cve": "CVE-2020-12723",
+    "cve_desc": "regcomp.c in Perl before 5.30.3 allows a buffer overflow via a crafted regular expression because of recursive S_study_chunk calls.",
+    "cwe": [
+      "CWE-120"
+    ],
+    "nvd_url": "https://nvd.nist.gov/vuln/detail/CVE-2020-12723",
+    "file_name": "regcomp.c",
+    "func_hash": 124503767038519369207654054837018016597,
+    "file_hash": 257709146327047081328217382800700188887
+  },
+  "fixed": {
+    "idx": 486837,
+    "func_hash": 7575865277439549502998615595514633684,
+    "file_hash": 6878494453235899109541655885780527455
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "vulnerable": {
+    "idx": 202256,
+    "project": "qtbase",
+    "commit_id": "6b400e3147dcfd8cc3a393ace1bd118c93762e0c",
+    "commit_url": "https://github.com/qt/qtbase/commit/6b400e3147dcfd8cc3a393ace1bd118c93762e0c",
+    "commit_message": "Improve fix for avoiding huge number of tiny dashes\n\nSome pathological cases were not caught by the previous fix.\n\nFixes: QTBUG-95239\nPick-to: 6.2 6.1 5.15\nChange-Id: I0337ee3923ff93ccb36c4d7b810a9c0667354cc5\nReviewed-by: Robert L\u00f6hning <robert.loehning@qt.io>",
+    "cve": "CVE-2021-38593",
+    "cve_desc": "Qt 5.x before 5.15.6 and 6.x through 6.1.2 has an out-of-bounds write in QOutlineMapper::convertPath (called from QRasterPaintEngine::fill and QPaintEngineEx::stroke).",
+    "cwe": [
+      "CWE-787"
+    ],
+    "nvd_url": "https://nvd.nist.gov/vuln/detail/CVE-2021-38593",
+    "file_name": "qpaintengineex.cpp",
+    "func_hash": 209191742971544690982165605152005956873,
+    "file_hash": 121502439456016918324891600204397406142
+  },
+  "fixed": {
+    "idx": 331760,
+    "func_hash": 262258193863623717012890974299984432074,
+    "file_hash": 220664880987933761772605675716001859723
+  }
+}

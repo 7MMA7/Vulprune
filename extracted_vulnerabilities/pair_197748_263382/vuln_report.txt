@@ -1,0 +1,5 @@
+extracted_vulnerabilities/pair_197748_263382/array_ops_vuln.cc:1:0: style: The function 'TransposeShapeFn' is never used. [unusedFunction]
+Status TransposeShapeFn(InferenceContext* c) {
+^
+nofile:0:0: information: Active checkers: 172/592 (use --checkers-report=<filename> to see details) [checkersReport]
+

@@ -1,0 +1,23 @@
+{
+  "vulnerable": {
+    "idx": 206262,
+    "project": "vim",
+    "commit_id": "c6fdb15d423df22e1776844811d082322475e48a",
+    "commit_url": "https://github.com/vim/vim/commit/c6fdb15d423df22e1776844811d082322475e48a",
+    "commit_message": "patch 9.0.0025: accessing beyond allocated memory with the cmdline window\n\nProblem:    Accessing beyond allocated memory when using the cmdline window in\n            Ex mode.\nSolution:   Use \"*\" instead of \"'<,'>\" for Visual mode.",
+    "cve": "CVE-2022-2288",
+    "cve_desc": "Out-of-bounds Write in GitHub repository vim/vim prior to 9.0.",
+    "cwe": [
+      "CWE-787"
+    ],
+    "nvd_url": "https://nvd.nist.gov/vuln/detail/CVE-2022-2288",
+    "file_name": "ex_docmd.c",
+    "func_hash": 61928994098668347793112269457604758897,
+    "file_hash": 287878878694425028301990758845576774946
+  },
+  "fixed": {
+    "idx": 379334,
+    "func_hash": 128847198820720658441664267481456465295,
+    "file_hash": 80050062526332961104670632599823980115
+  }
+}

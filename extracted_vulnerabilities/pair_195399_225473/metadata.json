@@ -1,0 +1,23 @@
+{
+  "vulnerable": {
+    "idx": 195399,
+    "project": "tensorflow",
+    "commit_id": "045deec1cbdebb27d817008ad5df94d96a08b1bf",
+    "commit_url": "https://github.com/tensorflow/tensorflow/commit/045deec1cbdebb27d817008ad5df94d96a08b1bf",
+    "commit_message": "Prevent null pointer dereference in `mutable_graph_view`\n\nPiperOrigin-RevId: 409684472\nChange-Id: I577eb9d9ac470fcec0501423171e739a4ec0cb5c",
+    "cve": "CVE-2022-23589",
+    "cve_desc": "Tensorflow is an Open Source Machine Learning Framework. Under certain scenarios, Grappler component of TensorFlow can trigger a null pointer dereference. There are 2 places where this can occur, for the same malicious alteration of a `SavedModel` file (fixing the first one would trigger the same dereference in the second place). First, during constant folding, the `GraphDef` might not have the required nodes for the binary operation. If a node is missing, the correposning `mul_*child` would be null, and the dereference in the subsequent line would be incorrect. We have a similar issue during `IsIdentityConsumingSwitch`. The fix will be included in TensorFlow 2.8.0. We will also cherrypick this commit on TensorFlow 2.7.1, TensorFlow 2.6.3, and TensorFlow 2.5.3, as these are also affected and still in supported range.",
+    "cwe": [
+      "CWE-476"
+    ],
+    "nvd_url": "https://nvd.nist.gov/vuln/detail/CVE-2022-23589",
+    "file_name": "mutable_graph_view.cc",
+    "func_hash": 313619660222966312087557415210995637728,
+    "file_hash": 11824580899895481141820753687530297202
+  },
+  "fixed": {
+    "idx": 225473,
+    "func_hash": 186036134407007049668950369044144546274,
+    "file_hash": 183902084895507336616240181892029435869
+  }
+}

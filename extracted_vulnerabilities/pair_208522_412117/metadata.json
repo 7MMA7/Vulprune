@@ -1,0 +1,23 @@
+{
+  "vulnerable": {
+    "idx": 208522,
+    "project": "unbound",
+    "commit_id": "02080f6b180232f43b77f403d0c038e9360a460f",
+    "commit_url": "https://github.com/NLnetLabs/unbound/commit/02080f6b180232f43b77f403d0c038e9360a460f",
+    "commit_message": "- Fix Integer Overflows in Size Calculations,\n  reported by X41 D-Sec.",
+    "cve": "CVE-2019-25038",
+    "cve_desc": "Unbound before 1.9.5 allows an integer overflow in a size calculation in dnscrypt/dnscrypt.c. NOTE: The vendor disputes that this is a vulnerability. Although the code may be vulnerable, a running Unbound installation cannot be remotely or locally exploited",
+    "cwe": [
+      "CWE-190"
+    ],
+    "nvd_url": "https://nvd.nist.gov/vuln/detail/CVE-2019-25038",
+    "file_name": "dnscrypt.c",
+    "func_hash": 44451332163685602086826854088983200257,
+    "file_hash": 338731906376917706393921999097571082291
+  },
+  "fixed": {
+    "idx": 412117,
+    "func_hash": 220864762997315196932796822660985000469,
+    "file_hash": 151631660973156645492009635074477412124
+  }
+}

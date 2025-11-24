@@ -1,0 +1,23 @@
+{
+  "vulnerable": {
+    "idx": 198692,
+    "project": "ipsec",
+    "commit_id": "7bab09631c2a303f87a7eb7e3d69e888673b9b7e",
+    "commit_url": "https://git.kernel.org/pub/scm/linux/kernel/git/klassert/ipsec.git/commit/?id=7bab09631c2a303f87a7eb7e3d69e888673b9b7e",
+    "commit_message": "xfrm: policy: check policy direction value\n\nThe 'dir' parameter in xfrm_migrate() is a user-controlled byte which is used\nas an array index. This can lead to an out-of-bound access, kernel lockup and\nDoS. Add a check for the 'dir' value.\n\nThis fixes CVE-2017-11600.\n\nReferences: https://bugzilla.redhat.com/show_bug.cgi?id=1474928\nFixes: 80c9abaabf42 (\"[XFRM]: Extension for dynamic update of endpoint address(es)\")\nCc: <stable@vger.kernel.org> # v2.6.21-rc1\nReported-by: \"bo Zhang\" <zhangbo5891001@gmail.com>\nSigned-off-by: Vladis Dronov <vdronov@redhat.com>\nSigned-off-by: Steffen Klassert <steffen.klassert@secunet.com>",
+    "cve": "CVE-2017-11600",
+    "cve_desc": "net/xfrm/xfrm_policy.c in the Linux kernel through 4.12.3, when CONFIG_XFRM_MIGRATE is enabled, does not ensure that the dir value of xfrm_userpolicy_id is XFRM_POLICY_MAX or less, which allows local users to cause a denial of service (out-of-bounds access) or possibly have unspecified other impact via an XFRM_MSG_MIGRATE xfrm Netlink message.",
+    "cwe": [
+      "CWE-125"
+    ],
+    "nvd_url": "https://nvd.nist.gov/vuln/detail/CVE-2017-11600",
+    "file_name": "xfrm_policy.c",
+    "func_hash": 263415810499121443569228863944466057298,
+    "file_hash": 279839085612343169676292983391622616816
+  },
+  "fixed": {
+    "idx": 281119,
+    "func_hash": 215751416433603359127168568868479758173,
+    "file_hash": 14403382265138763697521162606727348451
+  }
+}

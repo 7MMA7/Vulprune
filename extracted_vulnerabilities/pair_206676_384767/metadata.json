@@ -1,0 +1,23 @@
+{
+  "vulnerable": {
+    "idx": 206676,
+    "project": "vim",
+    "commit_id": "777e7c21b7627be80961848ac560cb0a9978ff43",
+    "commit_url": "https://github.com/vim/vim/commit/777e7c21b7627be80961848ac560cb0a9978ff43",
+    "commit_message": "patch 8.2.3564: invalid memory access when scrolling without valid screen\n\nProblem:    Invalid memory access when scrolling without a valid screen.\nSolution:   Do not set VALID_BOTLINE in w_valid.",
+    "cve": "CVE-2021-3903",
+    "cve_desc": "vim is vulnerable to Heap-based Buffer Overflow",
+    "cwe": [
+      "CWE-122"
+    ],
+    "nvd_url": "https://nvd.nist.gov/vuln/detail/CVE-2021-3903",
+    "file_name": "move.c",
+    "func_hash": 228543629723963000813717359055705778977,
+    "file_hash": 235877722919937919149866597040080656666
+  },
+  "fixed": {
+    "idx": 384767,
+    "func_hash": 318695242827135485367008238388311307871,
+    "file_hash": 216110417083492209479100354226379064539
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "vulnerable": {
+    "idx": 211136,
+    "project": "rizin",
+    "commit_id": "556ca2f9eef01ec0f4a76d1fbacfcf3a87a44810",
+    "commit_url": "https://github.com/rizinorg/rizin/commit/556ca2f9eef01ec0f4a76d1fbacfcf3a87a44810",
+    "commit_message": "Fix oob write in dyldcache\n\nWhen the individual n_slide_infos were too high, the sum would overflow\nand too few entries would be allocated.",
+    "cve": "CVE-2022-36042",
+    "cve_desc": "Rizin is a UNIX-like reverse engineering framework and command-line toolset. Versions 0.4.0 and prior are vulnerable to an out-of-bounds write when getting data from dyld cache files. A user opening a malicious dyld cache file could be affected by this vulnerability, allowing an attacker to execute code on the user's machine. Commit number 556ca2f9eef01ec0f4a76d1fbacfcf3a87a44810 contains a patch.",
+    "cwe": [
+      "CWE-787"
+    ],
+    "nvd_url": "https://nvd.nist.gov/vuln/detail/CVE-2022-36042",
+    "file_name": "dyldcache.c",
+    "func_hash": 322670680444734680611953548583170676242,
+    "file_hash": 282393003255280688273305906326648900280
+  },
+  "fixed": {
+    "idx": 446416,
+    "func_hash": 118361840381472328590054655200772047943,
+    "file_hash": 6264328448164427099716487918952046116
+  }
+}

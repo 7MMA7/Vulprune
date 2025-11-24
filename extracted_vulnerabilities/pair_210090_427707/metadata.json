@@ -1,0 +1,23 @@
+{
+  "vulnerable": {
+    "idx": 210090,
+    "project": "file",
+    "commit_id": "46a8443f76cec4b41ec736eca396984c74664f84",
+    "commit_url": "https://github.com/file/file/commit/46a8443f76cec4b41ec736eca396984c74664f84",
+    "commit_message": "Limit the number of elements in a vector (found by oss-fuzz)",
+    "cve": "CVE-2019-18218",
+    "cve_desc": "cdf_read_property_info in cdf.c in file through 5.37 does not restrict the number of CDF_VECTOR elements, which allows a heap-based buffer overflow (4-byte out-of-bounds write).",
+    "cwe": [
+      "CWE-787"
+    ],
+    "nvd_url": "https://nvd.nist.gov/vuln/detail/CVE-2019-18218",
+    "file_name": "cdf.c",
+    "func_hash": 73614762820995961147947254465500450851,
+    "file_hash": 102975863888279484760686147789827176622
+  },
+  "fixed": {
+    "idx": 427707,
+    "func_hash": 150937506413080071452042228145771315015,
+    "file_hash": 54795377767819575688029736606662152773
+  }
+}

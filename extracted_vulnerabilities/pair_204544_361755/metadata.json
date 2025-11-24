@@ -1,0 +1,23 @@
+{
+  "vulnerable": {
+    "idx": 204544,
+    "project": "linux",
+    "commit_id": "c08eadca1bdfa099e20a32f8fa4b52b2f672236d",
+    "commit_url": "https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=c08eadca1bdfa099e20a32f8fa4b52b2f672236d",
+    "commit_message": "media: em28xx: initialize refcount before kref_get\n\nThe commit 47677e51e2a4(\"[media] em28xx: Only deallocate struct\nem28xx after finishing all extensions\") adds kref_get to many init\nfunctions (e.g., em28xx_audio_init). However, kref_init is called too\nlate in em28xx_usb_probe, since em28xx_init_dev before will invoke\nthose init functions and call kref_get function. Then refcount bug\noccurs in my local syzkaller instance.\n\nFix it by moving kref_init before em28xx_init_dev. This issue occurs\nnot only in dev but also dev->dev_next.\n\nFixes: 47677e51e2a4 (\"[media] em28xx: Only deallocate struct em28xx after finishing all extensions\")\nReported-by: syzkaller <syzkaller@googlegroups.com>\nSigned-off-by: Dongliang Mu <mudongliangabcd@gmail.com>\nSigned-off-by: Hans Verkuil <hverkuil-cisco@xs4all.nl>",
+    "cve": "CVE-2022-3239",
+    "cve_desc": "A flaw use after free in the Linux kernel video4linux driver was found in the way user triggers em28xx_usb_probe() for the Empia 28xx based TV cards. A local user could use this flaw to crash the system or potentially escalate their privileges on the system.",
+    "cwe": [
+      "CWE-416"
+    ],
+    "nvd_url": "https://nvd.nist.gov/vuln/detail/CVE-2022-3239",
+    "file_name": "em28xx-cards.c",
+    "func_hash": 76668846820258934149802408473302303407,
+    "file_hash": 309061862626800090542744203029600987742
+  },
+  "fixed": {
+    "idx": 361755,
+    "func_hash": 34268190257933110062727844673317729884,
+    "file_hash": 107764567079866010944769027860344599929
+  }
+}

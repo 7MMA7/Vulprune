@@ -1,0 +1,23 @@
+{
+  "vulnerable": {
+    "idx": 206946,
+    "project": "jasper",
+    "commit_id": "d99636fad60629785efd1ef72da772a8ef68f54c",
+    "commit_url": "https://github.com/jasper-software/jasper/commit/d99636fad60629785efd1ef72da772a8ef68f54c",
+    "commit_message": "fix memory leaks in function cmdopts_parse",
+    "cve": "CVE-2022-2963",
+    "cve_desc": "A vulnerability found in jasper. This security vulnerability happens because of a memory leak bug in function cmdopts_parse that can cause a crash or segmentation fault.",
+    "cwe": [
+      "CWE-703"
+    ],
+    "nvd_url": "https://nvd.nist.gov/vuln/detail/CVE-2022-2963",
+    "file_name": "jasper.c",
+    "func_hash": 93181291511681804073691200897709901657,
+    "file_hash": 221565924886298462326836957771233686713
+  },
+  "fixed": {
+    "idx": 389760,
+    "func_hash": 102932853856682606703676466444383538610,
+    "file_hash": 43318189901043805005058339060588403940
+  }
+}

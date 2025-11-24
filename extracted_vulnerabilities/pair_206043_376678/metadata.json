@@ -1,0 +1,23 @@
+{
+  "vulnerable": {
+    "idx": 206043,
+    "project": "gimp",
+    "commit_id": "c57f9dcf1934a9ab0cd67650f2dea18cb0902270",
+    "commit_url": "https://git.gnome.org/browse/gimp/commit/?id=c57f9dcf1934a9ab0cd67650f2dea18cb0902270",
+    "commit_message": "Bug 790784 - (CVE-2017-17784) heap overread in gbr parser / load_image.\n\nWe were assuming the input name was well formed, hence was\nnul-terminated. As any data coming from external input, this has to be\nthorougly checked.\nSimilar to commit 06d24a79af94837d615d0024916bb95a01bf3c59 but adapted\nto older gimp-2-8 code.",
+    "cve": "CVE-2017-17784",
+    "cve_desc": "In GIMP 2.8.22, there is a heap-based buffer over-read in load_image in plug-ins/common/file-gbr.c in the gbr import parser, related to mishandling of UTF-8 data.",
+    "cwe": [
+      "CWE-125"
+    ],
+    "nvd_url": "https://nvd.nist.gov/vuln/detail/CVE-2017-17784",
+    "file_name": "file-gbr.c",
+    "func_hash": 219487381392289910094593757172224969152,
+    "file_hash": 210537502330856952427982223109888523462
+  },
+  "fixed": {
+    "idx": 376678,
+    "func_hash": 269327823766609487068724383051357537961,
+    "file_hash": 146644042188037261041231342134151379601
+  }
+}

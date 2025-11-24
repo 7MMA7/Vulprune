@@ -1,0 +1,5 @@
+extracted_vulnerabilities/pair_195091_221631/tf_cpurt_symbolic_shape_optimization_vuln.cc:1:0: style: The function 'simplifyBroadcast' is never used. [unusedFunction]
+llvm::Optional<Value> simplifyBroadcast(ShapeComponentAnalysis& analysis,
+^
+nofile:0:0: information: Active checkers: 172/592 (use --checkers-report=<filename> to see details) [checkersReport]
+

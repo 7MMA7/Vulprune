@@ -1,0 +1,23 @@
+{
+  "vulnerable": {
+    "idx": 195022,
+    "project": "glewlwyd",
+    "commit_id": "125281f1c0d4b6a8b49f7e55a757205a2ef01fbe",
+    "commit_url": "https://github.com/babelouest/glewlwyd/commit/125281f1c0d4b6a8b49f7e55a757205a2ef01fbe",
+    "commit_message": "Fix update session when auth fail",
+    "cve": "CVE-2021-45379",
+    "cve_desc": "Glewlwyd 2.0.0, fixed in 2.6.1 is affected by an incorrect access control vulnerability. One user can attempt to log in as another user without its password.",
+    "cwe": [
+      "CWE-287"
+    ],
+    "nvd_url": "https://nvd.nist.gov/vuln/detail/CVE-2021-45379",
+    "file_name": "webservice.c",
+    "func_hash": 236114269060053642565806917047085397848,
+    "file_hash": 249878395356016662912854745569339968395
+  },
+  "fixed": {
+    "idx": 219947,
+    "func_hash": 155113792370707223407331204609439430532,
+    "file_hash": 287798817606377336444620654835011177393
+  }
+}

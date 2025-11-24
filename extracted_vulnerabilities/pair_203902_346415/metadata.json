@@ -1,0 +1,23 @@
+{
+  "vulnerable": {
+    "idx": 203902,
+    "project": "vim",
+    "commit_id": "4748c4bd64610cf943a431d215bb1aad51f8d0b4",
+    "commit_url": "https://github.com/vim/vim/commit/4748c4bd64610cf943a431d215bb1aad51f8d0b4",
+    "commit_message": "patch 8.2.4974: \":so\" command may read after end of buffer\n\nProblem:    \":so\" command may read after end of buffer.\nSolution:   Compute length of text properly.",
+    "cve": "CVE-2022-1769",
+    "cve_desc": "Buffer Over-read in GitHub repository vim/vim prior to 8.2.4974.",
+    "cwe": [
+      "CWE-703"
+    ],
+    "nvd_url": "https://nvd.nist.gov/vuln/detail/CVE-2022-1769",
+    "file_name": "scriptfile.c",
+    "func_hash": 227828882376561631125996314087212654807,
+    "file_hash": 113985695348083727862524217442557990815
+  },
+  "fixed": {
+    "idx": 346415,
+    "func_hash": 178235949916864624695352217723493381575,
+    "file_hash": 185541822912914842655555626416100401533
+  }
+}

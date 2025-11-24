@@ -1,0 +1,23 @@
+{
+  "vulnerable": {
+    "idx": 210904,
+    "project": "curl",
+    "commit_id": "70b1900dd13d16f2e83f571407a614541d5ac9ba",
+    "commit_url": "https://github.com/curl/curl/commit/70b1900dd13d16f2e83f571407a614541d5ac9ba",
+    "commit_message": "'mytx' in bug report #1723194 (http://curl.haxx.se/bug/view.cgi?id=1723194)\npointed out that the warnf() function in the curl tool didn't properly deal\nwith the cases when excessively long words were used in the string to chop\nup.",
+    "cve": "CVE-2018-16842",
+    "cve_desc": "Curl versions 7.14.1 through 7.61.1 are vulnerable to a heap-based buffer over-read in the tool_msgs.c:voutf() function that may result in information exposure and denial of service.",
+    "cwe": [
+      "CWE-125"
+    ],
+    "nvd_url": "https://nvd.nist.gov/vuln/detail/CVE-2018-16842",
+    "file_name": "main.c",
+    "func_hash": 84425875494863871647567570837033062033,
+    "file_hash": 117508051074384799366027341072623749818
+  },
+  "fixed": {
+    "idx": 442815,
+    "func_hash": 253014912777777803689145200879767407638,
+    "file_hash": 161085884624432597777110570993729624797
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "vulnerable": {
+    "idx": 195691,
+    "project": "mruby",
+    "commit_id": "a4d97934d51cb88954cc49161dc1d151f64afb6b",
+    "commit_url": "https://github.com/mruby/mruby/commit/a4d97934d51cb88954cc49161dc1d151f64afb6b",
+    "commit_message": "vm.c: check if target_class is NULL (when prepended).",
+    "cve": "CVE-2022-1427",
+    "cve_desc": "Out-of-bounds Read in mrb_obj_is_kind_of in in GitHub repository mruby/mruby prior to 3.2. # Impact: Possible arbitrary code execution if being exploited.",
+    "cwe": [
+      "CWE-703"
+    ],
+    "nvd_url": "https://nvd.nist.gov/vuln/detail/CVE-2022-1427",
+    "file_name": "vm.c",
+    "func_hash": 44658455618798852770197569753613577766,
+    "file_hash": 164058079299968555060167307813659313262
+  },
+  "fixed": {
+    "idx": 231012,
+    "func_hash": 104703994590688087058145131124808583742,
+    "file_hash": 126976644189338180144758453935885521875
+  }
+}

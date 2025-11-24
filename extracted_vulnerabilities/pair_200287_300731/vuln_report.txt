@@ -1,0 +1,8 @@
+extracted_vulnerabilities/pair_200287_300731/socket_vuln.c:10:21: style: Variable 'grp' can be declared as pointer to const [constVariablePointer]
+ struct tipc_group *grp = tsk->group;
+                    ^
+extracted_vulnerabilities/pair_200287_300731/socket_vuln.c:1:0: style: The function '__tipc_sendmsg' is never used. [unusedFunction]
+static int __tipc_sendmsg(struct socket *sock, struct msghdr *m, size_t dlen)
+^
+nofile:0:0: information: Active checkers: 113/592 (use --checkers-report=<filename> to see details) [checkersReport]
+

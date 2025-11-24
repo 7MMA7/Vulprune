@@ -1,0 +1,23 @@
+{
+  "vulnerable": {
+    "idx": 197015,
+    "project": "gpac",
+    "commit_id": "dae9900580a8888969481cd72035408091edb11b",
+    "commit_url": "https://github.com/gpac/gpac/commit/dae9900580a8888969481cd72035408091edb11b",
+    "commit_message": "fixed #1659",
+    "cve": "CVE-2020-35981",
+    "cve_desc": "An issue was discovered in GPAC version 0.8.0 and 1.0.1. There is an invalid pointer dereference in the function SetupWriters() in isomedia/isom_store.c.",
+    "cwe": [
+      "CWE-476"
+    ],
+    "nvd_url": "https://nvd.nist.gov/vuln/detail/CVE-2020-35981",
+    "file_name": "isom_store.c",
+    "func_hash": 186223260006462489135452631752417424978,
+    "file_hash": 163429096111764821481093789064862178187
+  },
+  "fixed": {
+    "idx": 249989,
+    "func_hash": 296089217308000127694937850240852623280,
+    "file_hash": 338457397792726647767624897587669032469
+  }
+}

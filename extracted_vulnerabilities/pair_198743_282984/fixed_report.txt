@@ -1,0 +1,8 @@
+extracted_vulnerabilities/pair_198743_282984/lj_err_fixed.c:3:32: style: Variable 'bot' can be declared as pointer to const [constVariablePointer]
+  cTValue *frame = L->base-1, *bot = tvref(L->stack);
+                               ^
+extracted_vulnerabilities/pair_198743_282984/lj_err_fixed.c:1:0: style: The function 'finderrfunc' is never used. [unusedFunction]
+static ptrdiff_t finderrfunc(lua_State *L)
+^
+nofile:0:0: information: Active checkers: 113/592 (use --checkers-report=<filename> to see details) [checkersReport]
+

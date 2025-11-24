@@ -1,0 +1,23 @@
+{
+  "vulnerable": {
+    "idx": 195040,
+    "project": "tensorflow",
+    "commit_id": "e21af685e1828f7ca65038307df5cc06de4479e8",
+    "commit_url": "https://github.com/tensorflow/tensorflow/commit/e21af685e1828f7ca65038307df5cc06de4479e8",
+    "commit_message": "Fix Null-pointer dereference in BuildXlaCompilationCache\n\nIf ConfigProto is not used, then use the default settings which is to allow all devices.\n\nPiperOrigin-RevId: 420391800\nChange-Id: I88161ad7042990aef678e77b597a2fb2c8f815be",
+    "cve": "CVE-2022-23595",
+    "cve_desc": "Tensorflow is an Open Source Machine Learning Framework. When building an XLA compilation cache, if default settings are used, TensorFlow triggers a null pointer dereference. In the default scenario, all devices are allowed, so `flr->config_proto` is `nullptr`. The fix will be included in TensorFlow 2.8.0. We will also cherrypick this commit on TensorFlow 2.7.1, TensorFlow 2.6.3, and TensorFlow 2.5.3, as these are also affected and still in supported range.",
+    "cwe": [
+      "CWE-476"
+    ],
+    "nvd_url": "https://nvd.nist.gov/vuln/detail/CVE-2022-23595",
+    "file_name": "xla_platform_info.cc",
+    "func_hash": 179065639871904945359341382009364285020,
+    "file_hash": 171804916137745205288117058026592469555
+  },
+  "fixed": {
+    "idx": 220463,
+    "func_hash": 150487232572114145456611052017035566512,
+    "file_hash": 318276067980065095571736754899104138947
+  }
+}

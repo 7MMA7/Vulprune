@@ -1,0 +1,23 @@
+{
+  "vulnerable": {
+    "idx": 195692,
+    "project": "FreeRTOS-Kernel",
+    "commit_id": "47338393f1f79558f6144213409f09f81d7c4837",
+    "commit_url": "https://github.com/FreeRTOS/FreeRTOS-Kernel/commit/47338393f1f79558f6144213409f09f81d7c4837",
+    "commit_message": "add assert for addition overflow on queue creation (#225)",
+    "cve": "CVE-2021-31571",
+    "cve_desc": "The kernel in Amazon Web Services FreeRTOS before 10.4.3 has an integer overflow in queue.c for queue creation.",
+    "cwe": [
+      "CWE-200"
+    ],
+    "nvd_url": "https://nvd.nist.gov/vuln/detail/CVE-2021-31571",
+    "file_name": "queue.c",
+    "func_hash": 278728915886701481135388633284092658774,
+    "file_hash": 44156660200315650828929819637760261927
+  },
+  "fixed": {
+    "idx": 231048,
+    "func_hash": 233309018517612713780199359033790626331,
+    "file_hash": 257322064233856588492480054392208384035
+  }
+}

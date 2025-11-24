@@ -1,0 +1,23 @@
+{
+  "vulnerable": {
+    "idx": 210453,
+    "project": "ghostpdl",
+    "commit_id": "366ad48d076c1aa4c8f83c65011258a04e348207",
+    "commit_url": "https://git.ghostscript.com/?p=ghostpdl.git;a=commitdiff;h=366ad48d076c1aa4c8f83c65011258a04e348207",
+    "commit_message": "Bug 701815: avoid uninitialised bytes being >7, which broke indexing.\n\nFixes:\n    ./sanbin/gs -dBATCH -dNOPAUSE -sOutputFile=tmp -sDEVICE=jetp3852 ../bug-701815.pdf",
+    "cve": "CVE-2020-16302",
+    "cve_desc": "A buffer overflow vulnerability in jetp3852_print_page() in devices/gdev3852.c of Artifex Software GhostScript v9.50 allows a remote attacker to escalate privileges via a crafted PDF file. This is fixed in v9.51.",
+    "cwe": [
+      "CWE-120"
+    ],
+    "nvd_url": "https://nvd.nist.gov/vuln/detail/CVE-2020-16302",
+    "file_name": "gdev3852.c",
+    "func_hash": 93148813029453334596229816591999204427,
+    "file_hash": 229444063869235911698513683887059150132
+  },
+  "fixed": {
+    "idx": 435409,
+    "func_hash": 85965008618432429994990471615914575554,
+    "file_hash": 93770144039043531856386464739578824717
+  }
+}

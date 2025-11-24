@@ -1,0 +1,23 @@
+{
+  "vulnerable": {
+    "idx": 196889,
+    "project": "rpm",
+    "commit_id": "bd36c5dc9fb6d90c46fbfed8c2d67516fc571ec8",
+    "commit_url": "https://github.com/rpm-software-management/rpm/commit/bd36c5dc9fb6d90c46fbfed8c2d67516fc571ec8",
+    "commit_message": "Validate and require subkey binding signatures on PGP public keys\n\nAll subkeys must be followed by a binding signature by the primary key\nas per the OpenPGP RFC, enforce the presence and validity in the parser.\n\nThe implementation is as kludgey as they come to work around our\nsimple-minded parser structure without touching API, to maximise\nbackportability. Store all the raw packets internally as we decode them\nto be able to access previous elements at will, needed to validate ordering\nand access the actual data. Add testcases for manipulated keys whose\nimport previously would succeed.\n\nDepends on the two previous commits:\n7b399fcb8f52566e6f3b4327197a85facd08db91 and\n236b802a4aa48711823a191d1b7f753c82a89ec5\n\nFixes CVE-2021-3521.",
+    "cve": "CVE-2021-3521",
+    "cve_desc": "There is a flaw in RPM's signature functionality. OpenPGP subkeys are associated with a primary key via a \"binding signature.\" RPM does not check the binding signature of subkeys prior to importing them. If an attacker is able to add or socially engineer another party to add a malicious subkey to a legitimate public key, RPM could wrongly trust a malicious signature. The greatest impact of this flaw is to data integrity. To exploit this flaw, an attacker must either compromise an RPM repository or convince an administrator to install an untrusted RPM or public key. It is strongly recommended to only use RPMs and public keys from trusted sources.",
+    "cwe": [
+      "CWE-284"
+    ],
+    "nvd_url": "https://nvd.nist.gov/vuln/detail/CVE-2021-3521",
+    "file_name": "rpmpgp.c",
+    "func_hash": 241902861702092358566393446057169117418,
+    "file_hash": 261680371397829724328332349939648686474
+  },
+  "fixed": {
+    "idx": 247337,
+    "func_hash": 60576529030332020496700497247000582633,
+    "file_hash": 239865202965429172751618330846379616622
+  }
+}

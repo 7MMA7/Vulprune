@@ -1,0 +1,23 @@
+{
+  "vulnerable": {
+    "idx": 211915,
+    "project": "jasper",
+    "commit_id": "839b1bcf0450ff036c28e8db40a7abf886e02891",
+    "commit_url": "https://github.com/jasper-software/jasper/commit/839b1bcf0450ff036c28e8db40a7abf886e02891",
+    "commit_message": "jp2_dec: fix `numchans` mixup\n\nWhen iterating over `dec->cdef->data.cdef.ents`, we need to use its\n`numchans` variable, not the one in `jp2_dec_t`.\n\nFixes CVE-2018-19543\nFixes CVE-2017-9782\n\nCloses https://github.com/jasper-maint/jasper/issues/13\nCloses https://github.com/jasper-maint/jasper/issues/18\nCloses https://github.com/mdadams/jasper/issues/140\nCloses https://github.com/mdadams/jasper/issues/182",
+    "cve": "CVE-2017-9782",
+    "cve_desc": "JasPer 2.0.12 allows remote attackers to cause a denial of service (heap-based buffer over-read and application crash) via a crafted image, related to the jp2_decode function in libjasper/jp2/jp2_dec.c.",
+    "cwe": [
+      "CWE-125"
+    ],
+    "nvd_url": "https://nvd.nist.gov/vuln/detail/CVE-2017-9782",
+    "file_name": "jp2_dec.c",
+    "func_hash": 59868521314205020877993173661951509362,
+    "file_hash": 93955147082917127962057718477708272955
+  },
+  "fixed": {
+    "idx": 453265,
+    "func_hash": 125813963803436339336182748178269813866,
+    "file_hash": 163023647028726236156493371179237582578
+  }
+}

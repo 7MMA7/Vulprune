@@ -1,0 +1,23 @@
+{
+  "vulnerable": {
+    "idx": 214124,
+    "project": "chafa",
+    "commit_id": "e6ce3746cdcf0836b9dae659a5aed15d73a080d8",
+    "commit_url": "https://github.com/hpjansson/chafa/commit/e6ce3746cdcf0836b9dae659a5aed15d73a080d8",
+    "commit_message": "libnsgif: fix oob in lzw_decode",
+    "cve": "CVE-2022-2061",
+    "cve_desc": "Heap-based Buffer Overflow in GitHub repository hpjansson/chafa prior to 1.12.0.",
+    "cwe": [
+      "CWE-125"
+    ],
+    "nvd_url": "https://nvd.nist.gov/vuln/detail/CVE-2022-2061",
+    "file_name": "lzw.c",
+    "func_hash": 197312030105469318680562726195282198881,
+    "file_hash": 206609516216923718063023254663769273017
+  },
+  "fixed": {
+    "idx": 475987,
+    "func_hash": 232258018845507324994493987384082077230,
+    "file_hash": 168965779407481929590316655829608211083
+  }
+}

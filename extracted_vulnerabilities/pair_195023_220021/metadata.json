@@ -1,0 +1,23 @@
+{
+  "vulnerable": {
+    "idx": 195023,
+    "project": "tensorflow",
+    "commit_id": "a68f68061e263a88321c104a6c911fe5598050a8",
+    "commit_url": "https://github.com/tensorflow/tensorflow/commit/a68f68061e263a88321c104a6c911fe5598050a8",
+    "commit_message": "Replace faulty overflow check with a builder for `TensorShape`.\n\nPrevents an integer overflow that was not caught before.\n\nPiperOrigin-RevId: 415381595\nChange-Id: I76585ddedc912bd9f4a390aeafa8e2ced1a28863",
+    "cve": "CVE-2022-23568",
+    "cve_desc": "Tensorflow is an Open Source Machine Learning Framework. The implementation of `AddManySparseToTensorsMap` is vulnerable to an integer overflow which results in a `CHECK`-fail when building new `TensorShape` objects (so, an assert failure based denial of service). We are missing some validation on the shapes of the input tensors as well as directly constructing a large `TensorShape` with user-provided dimensions. The fix will be included in TensorFlow 2.8.0. We will also cherrypick this commit on TensorFlow 2.7.1, TensorFlow 2.6.3, and TensorFlow 2.5.3, as these are also affected and still in supported range.",
+    "cwe": [
+      "CWE-190"
+    ],
+    "nvd_url": "https://nvd.nist.gov/vuln/detail/CVE-2022-23568",
+    "file_name": "sparse_tensors_map_ops.cc",
+    "func_hash": 160387063214720131730960354923232758630,
+    "file_hash": 224775123349374780251651202891389866533
+  },
+  "fixed": {
+    "idx": 220021,
+    "func_hash": 294930600730557371611113946400120075396,
+    "file_hash": 5591389034837291700501932002893322459
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "vulnerable": {
+    "idx": 195984,
+    "project": "gpac",
+    "commit_id": "3dbe11b37d65c8472faf0654410068e5500b3adb",
+    "commit_url": "https://github.com/gpac/gpac/commit/3dbe11b37d65c8472faf0654410068e5500b3adb",
+    "commit_message": "fixed #2175",
+    "cve": "CVE-2022-1441",
+    "cve_desc": "MP4Box is a component of GPAC-2.0.0, which is a widely-used third-party package on RPM Fusion. When MP4Box tries to parse a MP4 file, it calls the function `diST_box_read()` to read from video. In this function, it allocates a buffer `str` with fixed length. However, content read from `bs` is controllable by user, so is the length, which causes a buffer overflow.",
+    "cwe": [
+      "CWE-703"
+    ],
+    "nvd_url": "https://nvd.nist.gov/vuln/detail/CVE-2022-1441",
+    "file_name": "box_code_3gpp.c",
+    "func_hash": 337508066102203205232219987774332438264,
+    "file_hash": 236995747067078276861335410375287788449
+  },
+  "fixed": {
+    "idx": 236125,
+    "func_hash": 296645158113148498272091333023062986276,
+    "file_hash": 53964259103061248299506412136196602333
+  }
+}

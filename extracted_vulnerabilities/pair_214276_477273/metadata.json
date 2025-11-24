@@ -1,0 +1,23 @@
+{
+  "vulnerable": {
+    "idx": 214276,
+    "project": "linux",
+    "commit_id": "fa40d9734a57bcbfa79a280189799f76c88f7bb0",
+    "commit_url": "https://github.com/torvalds/linux/commit/fa40d9734a57bcbfa79a280189799f76c88f7bb0",
+    "commit_message": "tipc: fix size validations for the MSG_CRYPTO type\n\nThe function tipc_crypto_key_rcv is used to parse MSG_CRYPTO messages\nto receive keys from other nodes in the cluster in order to decrypt any\nfurther messages from them.\nThis patch verifies that any supplied sizes in the message body are\nvalid for the received message.\n\nFixes: 1ef6f7c9390f (\"tipc: add automatic session key exchange\")\nSigned-off-by: Max VA <maxv@sentinelone.com>\nAcked-by: Ying Xue <ying.xue@windriver.com>\nSigned-off-by: Greg Kroah-Hartman <gregkh@linuxfoundation.org>\nAcked-by: Jon Maloy <jmaloy@redhat.com>\nSigned-off-by: David S. Miller <davem@davemloft.net>",
+    "cve": "CVE-2021-43267",
+    "cve_desc": "An issue was discovered in net/tipc/crypto.c in the Linux kernel before 5.14.16. The Transparent Inter-Process Communication (TIPC) functionality allows remote attackers to exploit insufficient validation of user-supplied sizes for the MSG_CRYPTO message type.",
+    "cwe": [
+      "CWE-20"
+    ],
+    "nvd_url": "https://nvd.nist.gov/vuln/detail/CVE-2021-43267",
+    "file_name": "crypto.c",
+    "func_hash": 150450145750082729683403565650901445106,
+    "file_hash": 58733917967082493268842355411939930161
+  },
+  "fixed": {
+    "idx": 477273,
+    "func_hash": 21444025468428283247999063273803236471,
+    "file_hash": 97644738698722030133364122587095840919
+  }
+}

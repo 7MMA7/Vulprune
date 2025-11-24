@@ -1,0 +1,23 @@
+{
+  "vulnerable": {
+    "idx": 197142,
+    "project": "tensorflow",
+    "commit_id": "6da6620efad397c85493b8f8667b821403516708",
+    "commit_url": "https://github.com/tensorflow/tensorflow/commit/6da6620efad397c85493b8f8667b821403516708",
+    "commit_message": "Secure tf.raw_ops.QuantizeV2\n\nValidate size and shape of min_range and max_range\nEnsure axis is within input dims limits\n\nPiperOrigin-RevId: 387232799\nChange-Id: I36975281f7b5758e9e31a8dcc73fe610ef456318",
+    "cve": "CVE-2021-37663",
+    "cve_desc": "TensorFlow is an end-to-end open source platform for machine learning. In affected versions due to incomplete validation in `tf.raw_ops.QuantizeV2`, an attacker can trigger undefined behavior via binding a reference to a null pointer or can access data outside the bounds of heap allocated arrays. The [implementation](https://github.com/tensorflow/tensorflow/blob/84d053187cb80d975ef2b9684d4b61981bca0c41/tensorflow/core/kernels/quantize_op.cc#L59) has some validation but does not check that `min_range` and `max_range` both have the same non-zero number of elements. If `axis` is provided (i.e., not `-1`), then validation should check that it is a value in range for the rank of `input` tensor and then the lengths of `min_range` and `max_range` inputs match the `axis` dimension of the `input` tensor. We have patched the issue in GitHub commit 6da6620efad397c85493b8f8667b821403516708. The fix will be included in TensorFlow 2.6.0. We will also cherrypick this commit on TensorFlow 2.5.1, TensorFlow 2.4.3, and TensorFlow 2.3.4, as these are also affected and still in supported range.",
+    "cwe": [
+      "CWE-476"
+    ],
+    "nvd_url": "https://nvd.nist.gov/vuln/detail/CVE-2021-37663",
+    "file_name": "quantize_op.cc",
+    "func_hash": 175054869100587978050053791864843631748,
+    "file_hash": 45910676002815731564213734124644481802
+  },
+  "fixed": {
+    "idx": 253970,
+    "func_hash": 245467204964919391793075021199596127255,
+    "file_hash": 256130062942264695553473842652666995281
+  }
+}

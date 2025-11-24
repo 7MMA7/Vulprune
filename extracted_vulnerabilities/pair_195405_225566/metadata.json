@@ -1,0 +1,23 @@
+{
+  "vulnerable": {
+    "idx": 195405,
+    "project": "ImageMagick6",
+    "commit_id": "29c8abce0da56b536542f76a9ddfebdaab5b2943",
+    "commit_url": "https://github.com/ImageMagick/ImageMagick6/commit/29c8abce0da56b536542f76a9ddfebdaab5b2943",
+    "commit_message": "https://github.com/ImageMagick/ImageMagick/pull/4986",
+    "cve": "CVE-2022-32546",
+    "cve_desc": "A vulnerability was found in ImageMagick, causing an outside the range of representable values of type 'unsigned long' at coders/pcl.c, when crafted or untrusted input is processed. This leads to a negative impact to application availability or other problems related to undefined behavior.",
+    "cwe": [
+      "CWE-190"
+    ],
+    "nvd_url": "https://nvd.nist.gov/vuln/detail/CVE-2022-32546",
+    "file_name": "pcl.c",
+    "func_hash": 285956846610376765198872183403915882061,
+    "file_hash": 338547174937023730341471137685130471169
+  },
+  "fixed": {
+    "idx": 225566,
+    "func_hash": 83929363874861063792960158581169163951,
+    "file_hash": 19401947442598835469700605981025281430
+  }
+}

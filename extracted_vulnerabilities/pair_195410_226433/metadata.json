@@ -1,0 +1,23 @@
+{
+  "vulnerable": {
+    "idx": 195410,
+    "project": "tensorflow",
+    "commit_id": "965b97e4a9650495cda5a8c210ef6684b4b9eceb",
+    "commit_url": "https://github.com/tensorflow/tensorflow/commit/965b97e4a9650495cda5a8c210ef6684b4b9eceb",
+    "commit_message": "Properly validate sparse tensor in `SparseTensorSliceDataset`\n\nExisting validation was incomplete.\n\nPiperOrigin-RevId: 415375048\nChange-Id: I14cd18f29ede73286f3ffac35171bd15828997e9",
+    "cve": "CVE-2022-21736",
+    "cve_desc": "Tensorflow is an Open Source Machine Learning Framework. The implementation of `SparseTensorSliceDataset` has an undefined behavior: under certain condition it can be made to dereference a `nullptr` value. The 3 input arguments to `SparseTensorSliceDataset` represent a sparse tensor. However, there are some preconditions that these arguments must satisfy but these are not validated in the implementation. The fix will be included in TensorFlow 2.8.0. We will also cherrypick this commit on TensorFlow 2.7.1, TensorFlow 2.6.3, and TensorFlow 2.5.3, as these are also affected and still in supported range.",
+    "cwe": [
+      "CWE-476"
+    ],
+    "nvd_url": "https://nvd.nist.gov/vuln/detail/CVE-2022-21736",
+    "file_name": "sparse_tensor_slice_dataset_op.cc",
+    "func_hash": 232798786480644222523895580158118045723,
+    "file_hash": 20179985196620256343354076777909821072
+  },
+  "fixed": {
+    "idx": 226433,
+    "func_hash": 227797014623034241967270311347340556143,
+    "file_hash": 223168035118292217298610217555690212472
+  }
+}

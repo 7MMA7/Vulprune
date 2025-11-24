@@ -1,0 +1,23 @@
+{
+  "vulnerable": {
+    "idx": 195800,
+    "project": "deark",
+    "commit_id": "62acb7753b0e3c0d3ab3c15057b0a65222313334",
+    "commit_url": "https://github.com/jsummers/deark/commit/62acb7753b0e3c0d3ab3c15057b0a65222313334",
+    "commit_message": "pict,macrsrc: Fixed a bug that could cause division by 0\n\nFound by F. \u00c7elik.",
+    "cve": "CVE-2021-28856",
+    "cve_desc": "In Deark before v1.5.8, a specially crafted input file can cause a division by zero in (src/fmtutil.c) because of the value of pixelsize.",
+    "cwe": [
+      "CWE-369"
+    ],
+    "nvd_url": "https://nvd.nist.gov/vuln/detail/CVE-2021-28856",
+    "file_name": "fmtutil.c",
+    "func_hash": 203544519943268578056087775697493086183,
+    "file_hash": 198892381443353894699781903058114971913
+  },
+  "fixed": {
+    "idx": 233862,
+    "func_hash": 165750695801886950946994956858448129756,
+    "file_hash": 134744298134309373748233562166931104409
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "vulnerable": {
+    "idx": 213528,
+    "project": "linux",
+    "commit_id": "3b0462726e7ef281c35a7a4ae33e93ee2bc9975b",
+    "commit_url": "https://github.com/torvalds/linux/commit/3b0462726e7ef281c35a7a4ae33e93ee2bc9975b",
+    "commit_message": "cgroup: verify that source is a string\n\nThe following sequence can be used to trigger a UAF:\n\n    int fscontext_fd = fsopen(\"cgroup\");\n    int fd_null = open(\"/dev/null, O_RDONLY);\n    int fsconfig(fscontext_fd, FSCONFIG_SET_FD, \"source\", fd_null);\n    close_range(3, ~0U, 0);\n\nThe cgroup v1 specific fs parser expects a string for the \"source\"\nparameter.  However, it is perfectly legitimate to e.g.  specify a file\ndescriptor for the \"source\" parameter.  The fs parser doesn't know what\na filesystem allows there.  So it's a bug to assume that \"source\" is\nalways of type fs_value_is_string when it can reasonably also be\nfs_value_is_file.\n\nThis assumption in the cgroup code causes a UAF because struct\nfs_parameter uses a union for the actual value.  Access to that union is\nguarded by the param->type member.  Since the cgroup paramter parser\ndidn't check param->type but unconditionally moved param->string into\nfc->source a close on the fscontext_fd would trigger a UAF during\nput_fs_context() which frees fc->source thereby freeing the file stashed\nin param->file causing a UAF during a close of the fd_null.\n\nFix this by verifying that param->type is actually a string and report\nan error if not.\n\nIn follow up patches I'll add a new generic helper that can be used here\nand by other filesystems instead of this error-prone copy-pasta fix.\nBut fixing it in here first makes backporting a it to stable a lot\neasier.\n\nFixes: 8d2451f4994f (\"cgroup1: switch to option-by-option parsing\")\nReported-by: syzbot+283ce5a46486d6acdbaf@syzkaller.appspotmail.com\nCc: Christoph Hellwig <hch@lst.de>\nCc: Alexander Viro <viro@zeniv.linux.org.uk>\nCc: Dmitry Vyukov <dvyukov@google.com>\nCc: <stable@kernel.org>\nCc: syzkaller-bugs <syzkaller-bugs@googlegroups.com>\nSigned-off-by: Christian Brauner <christian.brauner@ubuntu.com>\nSigned-off-by: Linus Torvalds <torvalds@linux-foundation.org>",
+    "cve": "CVE-2021-4154",
+    "cve_desc": "A use-after-free flaw was found in cgroup1_parse_param in kernel/cgroup/cgroup-v1.c in the Linux kernel's cgroup v1 parser. A local attacker with a user privilege could cause a privilege escalation by exploiting the fsconfig syscall parameter leading to a container breakout and a denial of service on the system.",
+    "cwe": [
+      "CWE-416"
+    ],
+    "nvd_url": "https://nvd.nist.gov/vuln/detail/CVE-2021-4154",
+    "file_name": "cgroup-v1.c",
+    "func_hash": 2447930720327269598694221319559062155,
+    "file_hash": 304027161926251240992448703175506915313
+  },
+  "fixed": {
+    "idx": 472123,
+    "func_hash": 334870785845210346899642963550735857549,
+    "file_hash": 43168048456517404384153301721017353964
+  }
+}

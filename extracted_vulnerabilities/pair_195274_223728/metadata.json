@@ -1,0 +1,23 @@
+{
+  "vulnerable": {
+    "idx": 195274,
+    "project": "tensorflow",
+    "commit_id": "0a365c029e437be0349c31f8d4c9926b69fa3fa1",
+    "commit_url": "https://github.com/tensorflow/tensorflow/commit/0a365c029e437be0349c31f8d4c9926b69fa3fa1",
+    "commit_message": "Prevent null pointer dereference in constant folding.\n\nUnder certain conditions, an invalid protobuf saved model with invalid nodes would be loaded. During optimization phase, Grappler optimizer will then dereference a null pointer.\n\nPiperOrigin-RevId: 409683530\nChange-Id: I1f10340a7ec384bc9bc587300390f1078cf5caa0",
+    "cve": "CVE-2022-23589",
+    "cve_desc": "Tensorflow is an Open Source Machine Learning Framework. Under certain scenarios, Grappler component of TensorFlow can trigger a null pointer dereference. There are 2 places where this can occur, for the same malicious alteration of a `SavedModel` file (fixing the first one would trigger the same dereference in the second place). First, during constant folding, the `GraphDef` might not have the required nodes for the binary operation. If a node is missing, the correposning `mul_*child` would be null, and the dereference in the subsequent line would be incorrect. We have a similar issue during `IsIdentityConsumingSwitch`. The fix will be included in TensorFlow 2.8.0. We will also cherrypick this commit on TensorFlow 2.7.1, TensorFlow 2.6.3, and TensorFlow 2.5.3, as these are also affected and still in supported range.",
+    "cwe": [
+      "CWE-476"
+    ],
+    "nvd_url": "https://nvd.nist.gov/vuln/detail/CVE-2022-23589",
+    "file_name": "constant_folding.cc",
+    "func_hash": 134451371039665673916173676790439576039,
+    "file_hash": 221573695858123615640237954647315751120
+  },
+  "fixed": {
+    "idx": 223728,
+    "func_hash": 283045777051933437914385494105493059717,
+    "file_hash": 149567017925135188078420823730624272905
+  }
+}

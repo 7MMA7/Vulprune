@@ -1,0 +1,23 @@
+{
+  "vulnerable": {
+    "idx": 196885,
+    "project": "tensorflow",
+    "commit_id": "9e62869465573cb2d9b5053f1fa02a81fce21d69",
+    "commit_url": "https://github.com/tensorflow/tensorflow/commit/9e62869465573cb2d9b5053f1fa02a81fce21d69",
+    "commit_message": "Add more validation to `RequantizationRangePerChannel`.\n\nPiperOrigin-RevId: 387693946\nChange-Id: Ife8dcbdb021bec4787eef6a4361dd08f17c14bd6",
+    "cve": "CVE-2021-37665",
+    "cve_desc": "TensorFlow is an end-to-end open source platform for machine learning. In affected versions due to incomplete validation in MKL implementation of requantization, an attacker can trigger undefined behavior via binding a reference to a null pointer or can access data outside the bounds of heap allocated arrays. The [implementation](https://github.com/tensorflow/tensorflow/blob/460e000de3a83278fb00b61a16d161b1964f15f4/tensorflow/core/kernels/mkl/mkl_requantization_range_per_channel_op.cc) does not validate the dimensions of the `input` tensor. A similar issue occurs in `MklRequantizePerChannelOp`. The [implementation](https://github.com/tensorflow/tensorflow/blob/460e000de3a83278fb00b61a16d161b1964f15f4/tensorflow/core/kernels/mkl/mkl_requantize_per_channel_op.cc) does not perform full validation for all the input arguments. We have patched the issue in GitHub commit 9e62869465573cb2d9b5053f1fa02a81fce21d69 and in the Github commit 203214568f5bc237603dbab6e1fd389f1572f5c9. The fix will be included in TensorFlow 2.6.0. We will also cherrypick this commit on TensorFlow 2.5.1, TensorFlow 2.4.3, and TensorFlow 2.3.4, as these are also affected and still in supported range.",
+    "cwe": [
+      "CWE-703"
+    ],
+    "nvd_url": "https://nvd.nist.gov/vuln/detail/CVE-2021-37665",
+    "file_name": "mkl_requantization_range_per_channel_op.cc",
+    "func_hash": 260350269729869693096839937488434150493,
+    "file_hash": 184757242449876370761844438653930390458
+  },
+  "fixed": {
+    "idx": 247290,
+    "func_hash": 65335252627103993681002050942452280098,
+    "file_hash": 130833376136830385582561054482718538709
+  }
+}

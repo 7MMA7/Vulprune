@@ -1,0 +1,23 @@
+{
+  "vulnerable": {
+    "idx": 195398,
+    "project": "v4l2loopback",
+    "commit_id": "e4cd225557486c420f6a34411f98c575effd43dd",
+    "commit_url": "https://github.com/umlaeute/v4l2loopback/commit/e4cd225557486c420f6a34411f98c575effd43dd",
+    "commit_message": "add explicit format specifier to printf() invocations\n\nCWE-134",
+    "cve": "CVE-2022-2652",
+    "cve_desc": "Depending on the way the format strings in the card label are crafted it's possible to leak kernel stack memory. There is also the possibility for DoS due to the v4l2loopback kernel module crashing when providing the card label on request (reproduce e.g. with many %s modifiers in a row).",
+    "cwe": [
+      "CWE-134"
+    ],
+    "nvd_url": "https://nvd.nist.gov/vuln/detail/CVE-2022-2652",
+    "file_name": "v4l2loopback.c",
+    "func_hash": 275249025528691740507199336736969659771,
+    "file_hash": 113113223463037707180278012059265756483
+  },
+  "fixed": {
+    "idx": 225383,
+    "func_hash": 178769376518603723181418371440757147493,
+    "file_hash": 138252299614112344688826607831650943411
+  }
+}

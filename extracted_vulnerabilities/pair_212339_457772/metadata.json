@@ -1,0 +1,23 @@
+{
+  "vulnerable": {
+    "idx": 212339,
+    "project": "icecast-server",
+    "commit_id": "03ea74c04a5966114c2fe66e4e6892d11a68181e",
+    "commit_url": "https://gitlab.xiph.org/xiph/icecast-server/commit/03ea74c04a5966114c2fe66e4e6892d11a68181e",
+    "commit_message": "Fix: Worked around buffer overflows in URL auth's cURL interface\n\nThis is only a workaround that keeps compatibility with 2.4.x mainline.\nA real fix has been implemented in 2.5.x (master).",
+    "cve": "CVE-2018-18820",
+    "cve_desc": "A buffer overflow was discovered in the URL-authentication backend of the Icecast before 2.4.4. If the backend is enabled, then any malicious HTTP client can send a request for that specific resource including a crafted header, leading to denial of service and potentially remote code execution.",
+    "cwe": [
+      "CWE-119"
+    ],
+    "nvd_url": "https://nvd.nist.gov/vuln/detail/CVE-2018-18820",
+    "file_name": "auth_url.c",
+    "func_hash": 172813813159602330520810310060333400473,
+    "file_hash": 1122861942142437056113331349516615132
+  },
+  "fixed": {
+    "idx": 457772,
+    "func_hash": 325925920263284522777628774415448931953,
+    "file_hash": 331866999271559721275349792045163085611
+  }
+}

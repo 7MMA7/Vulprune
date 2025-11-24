@@ -1,0 +1,23 @@
+{
+  "vulnerable": {
+    "idx": 198013,
+    "project": "tensorflow",
+    "commit_id": "3150642acbbe254e3c3c5d2232143fa591855ac9",
+    "commit_url": "https://github.com/tensorflow/tensorflow/commit/3150642acbbe254e3c3c5d2232143fa591855ac9",
+    "commit_message": "Fix tf.raw_ops.LoadAndRemapMatrix vulnerability with invalid `row_remapping`.\n\nCheck that `row_remapping` has the correct dims().\n\nPiperOrigin-RevId: 445522800",
+    "cve": "CVE-2022-29199",
+    "cve_desc": "TensorFlow is an open source platform for machine learning. Prior to versions 2.9.0, 2.8.1, 2.7.2, and 2.6.4, the implementation of `tf.raw_ops.LoadAndRemapMatrix does not fully validate the input arguments. This results in a `CHECK`-failure which can be used to trigger a denial of service attack. The code assumes `initializing_values` is a vector but there is no validation for this before accessing its value. Versions 2.9.0, 2.8.1, 2.7.2, and 2.6.4 contain a patch for this issue.",
+    "cwe": [
+      "CWE-703"
+    ],
+    "nvd_url": "https://nvd.nist.gov/vuln/detail/CVE-2022-29199",
+    "file_name": "load_and_remap_matrix_op.cc",
+    "func_hash": 219722258688637064068607537553301810412,
+    "file_hash": 213297145030896672862854801534820332645
+  },
+  "fixed": {
+    "idx": 268104,
+    "func_hash": 327012646245116178249898912195700700283,
+    "file_hash": 176825367634149624360733361050584878598
+  }
+}

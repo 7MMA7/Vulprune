@@ -1,0 +1,23 @@
+{
+  "vulnerable": {
+    "idx": 195264,
+    "project": "pcre2",
+    "commit_id": "d4fa336fbcc388f89095b184ba6d99422cfc676c",
+    "commit_url": "https://github.com/PCRE2Project/pcre2/commit/d4fa336fbcc388f89095b184ba6d99422cfc676c",
+    "commit_message": "Fix incorrect value reading in JIT.",
+    "cve": "CVE-2022-1586",
+    "cve_desc": "An out-of-bounds read vulnerability was discovered in the PCRE2 library in the compile_xclass_matchingpath() function of the pcre2_jit_compile.c file. This involves a unicode property matching issue in JIT-compiled regular expressions. The issue occurs because the character was not fully read in case-less matching within JIT.",
+    "cwe": [
+      "CWE-125"
+    ],
+    "nvd_url": "https://nvd.nist.gov/vuln/detail/CVE-2022-1586",
+    "file_name": "pcre2_jit_compile.c",
+    "func_hash": 183419698766008283102134937176756315954,
+    "file_hash": 284265016287060690142505784626516203619
+  },
+  "fixed": {
+    "idx": 223368,
+    "func_hash": 144276531294134211562638848702422655084,
+    "file_hash": 52374969195278947710795935639555031915
+  }
+}

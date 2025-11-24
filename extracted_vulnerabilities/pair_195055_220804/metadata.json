@@ -1,0 +1,23 @@
+{
+  "vulnerable": {
+    "idx": 195055,
+    "project": "tensorflow",
+    "commit_id": "2b7100d6cdff36aa21010a82269bc05a6d1cc74a",
+    "commit_url": "https://github.com/tensorflow/tensorflow/commit/2b7100d6cdff36aa21010a82269bc05a6d1cc74a",
+    "commit_message": "Cleanup and remove duplicate validation in `SparseCount`.\n\nWe have valdiation that is duplicated, checking different conditions, in different formats and failing to capture all cases. This should fix all the previous bugs.\n\nPiperOrigin-RevId: 414886981\nChange-Id: Ibf0bba0beb057b76d505324bb9487565daf95f01",
+    "cve": "CVE-2022-21740",
+    "cve_desc": "Tensorflow is an Open Source Machine Learning Framework. The implementation of `SparseCountSparseOutput` is vulnerable to a heap overflow. The fix will be included in TensorFlow 2.8.0. We will also cherrypick this commit on TensorFlow 2.7.1, TensorFlow 2.6.3, and TensorFlow 2.5.3, as these are also affected and still in supported range.",
+    "cwe": [
+      "CWE-787"
+    ],
+    "nvd_url": "https://nvd.nist.gov/vuln/detail/CVE-2022-21740",
+    "file_name": "count_ops.cc",
+    "func_hash": 115744370413617881150207979427400512016,
+    "file_hash": 290832582717285970119064032382621433475
+  },
+  "fixed": {
+    "idx": 220804,
+    "func_hash": 321329284400462468105618833406255634390,
+    "file_hash": 221778566959720819887290009238961995785
+  }
+}

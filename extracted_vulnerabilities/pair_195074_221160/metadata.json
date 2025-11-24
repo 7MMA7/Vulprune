@@ -1,0 +1,23 @@
+{
+  "vulnerable": {
+    "idx": 195074,
+    "project": "gpac",
+    "commit_id": "a69b567b8c95c72f9560c873c5ab348be058f340",
+    "commit_url": "https://github.com/gpac/gpac/commit/a69b567b8c95c72f9560c873c5ab348be058f340",
+    "commit_message": "fixed #1895",
+    "cve": "CVE-2021-40571",
+    "cve_desc": "The binary MP4Box in Gpac 1.0.1 has a double-free vulnerability in the ilst_box_read function in box_code_apple.c, which allows attackers to cause a denial of service, even code execution and escalation of privileges.",
+    "cwe": [
+      "CWE-415"
+    ],
+    "nvd_url": "https://nvd.nist.gov/vuln/detail/CVE-2021-40571",
+    "file_name": "descriptors.c",
+    "func_hash": 270972574846681061752900592460657064315,
+    "file_hash": 100253523943266503998746709370742625478
+  },
+  "fixed": {
+    "idx": 221160,
+    "func_hash": 161782515383812350901831460771265303089,
+    "file_hash": 86476492964393375980272696403064975409
+  }
+}

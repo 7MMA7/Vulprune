@@ -1,0 +1,23 @@
+{
+  "vulnerable": {
+    "idx": 204115,
+    "project": "openldap",
+    "commit_id": "3539fc33212b528c56b716584f2c2994af7c30b0",
+    "commit_url": "https://git.openldap.org/openldap/openldap/-/commit/3539fc33212b528c56b716584f2c2994af7c30b0",
+    "commit_message": "ITS#9454 fix issuerAndThisUpdateCheck",
+    "cve": "CVE-2021-27212",
+    "cve_desc": "In OpenLDAP through 2.4.57 and 2.5.x through 2.5.1alpha, an assertion failure in slapd can occur in the issuerAndThisUpdateCheck function via a crafted packet, resulting in a denial of service (daemon exit) via a short timestamp. This is related to schema_init.c and checkTime.",
+    "cwe": [
+      "CWE-617"
+    ],
+    "nvd_url": "https://nvd.nist.gov/vuln/detail/CVE-2021-27212",
+    "file_name": "schema_init.c",
+    "func_hash": 320953270427993363171410441809926002124,
+    "file_hash": 177224706623297221858931327325567866275
+  },
+  "fixed": {
+    "idx": 353015,
+    "func_hash": 298149048073642841250394521193700631288,
+    "file_hash": 127214091536244192150172242805699646468
+  }
+}

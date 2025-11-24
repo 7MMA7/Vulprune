@@ -1,0 +1,23 @@
+{
+  "vulnerable": {
+    "idx": 209931,
+    "project": "FreeRDP",
+    "commit_id": "06c32f170093a6ecde93e3bc07fed6a706bfbeb3",
+    "commit_url": "https://github.com/FreeRDP/FreeRDP/commit/06c32f170093a6ecde93e3bc07fed6a706bfbeb3",
+    "commit_message": "Fixed int overflow in PresentationContext_new\n\nThanks to hac425 CVE-2020-11038",
+    "cve": "CVE-2020-11038",
+    "cve_desc": "In FreeRDP less than or equal to 2.0.0, an Integer Overflow to Buffer Overflow exists. When using /video redirection, a manipulated server can instruct the client to allocate a buffer with a smaller size than requested due to an integer overflow in size calculation. With later messages, the server can manipulate the client to write data out of bound to the previously allocated buffer. This has been patched in 2.1.0.",
+    "cwe": [
+      "CWE-190"
+    ],
+    "nvd_url": "https://nvd.nist.gov/vuln/detail/CVE-2020-11038",
+    "file_name": "video_main.c",
+    "func_hash": 224995587751156021898591769013429196502,
+    "file_hash": 35095058952192226011309281398214943960
+  },
+  "fixed": {
+    "idx": 424522,
+    "func_hash": 30972982164738968156907836977573699400,
+    "file_hash": 287292368132527375714918493211433818803
+  }
+}

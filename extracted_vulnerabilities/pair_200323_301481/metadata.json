@@ -1,0 +1,23 @@
+{
+  "vulnerable": {
+    "idx": 200323,
+    "project": "vim",
+    "commit_id": "156d3911952d73b03d7420dc3540215247db0fe8",
+    "commit_url": "https://github.com/vim/vim/commit/156d3911952d73b03d7420dc3540215247db0fe8",
+    "commit_message": "patch 8.2.5123: using invalid index when looking for spell suggestions\n\nProblem:    Using invalid index when looking for spell suggestions.\nSolution:   Do not decrement the index when it is zero.",
+    "cve": "CVE-2022-2126",
+    "cve_desc": "Out-of-bounds Read in GitHub repository vim/vim prior to 8.2.",
+    "cwe": [
+      "CWE-787"
+    ],
+    "nvd_url": "https://nvd.nist.gov/vuln/detail/CVE-2022-2126",
+    "file_name": "spellsuggest.c",
+    "func_hash": 86190004113264578506184029642372711349,
+    "file_hash": 224942464208559430024115846607965193151
+  },
+  "fixed": {
+    "idx": 301481,
+    "func_hash": 165297537933585359474732803706192755392,
+    "file_hash": 24915610722049363928699434605775326954
+  }
+}

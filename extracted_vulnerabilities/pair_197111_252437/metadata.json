@@ -1,0 +1,23 @@
+{
+  "vulnerable": {
+    "idx": 197111,
+    "project": "tinyexr",
+    "commit_id": "a685e3332f61cd4e59324bf3f669d36973d64270",
+    "commit_url": "https://github.com/syoyo/tinyexr/commit/a685e3332f61cd4e59324bf3f669d36973d64270",
+    "commit_message": "Make line_no with too large value(2**20) invalid. Fixes #124",
+    "cve": "CVE-2020-19490",
+    "cve_desc": "tinyexr 0.9.5 has a integer overflow over-write in tinyexr::DecodePixelData in tinyexr.h, related to OpenEXR code.",
+    "cwe": [
+      "CWE-20"
+    ],
+    "nvd_url": "https://nvd.nist.gov/vuln/detail/CVE-2020-19490",
+    "file_name": "tinyexr.h",
+    "func_hash": 204576660378471471312302041175468111939,
+    "file_hash": 28581937103314011160798682220091501322
+  },
+  "fixed": {
+    "idx": 252437,
+    "func_hash": 151063885227112731774220545683650954280,
+    "file_hash": 117099710183052888477970990927407043374
+  }
+}

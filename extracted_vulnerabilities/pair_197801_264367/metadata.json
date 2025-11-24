@@ -1,0 +1,23 @@
+{
+  "vulnerable": {
+    "idx": 197801,
+    "project": "tensorflow",
+    "commit_id": "368af875869a204b4ac552b9ddda59f6a46a56ec",
+    "commit_url": "https://github.com/tensorflow/tensorflow/commit/368af875869a204b4ac552b9ddda59f6a46a56ec",
+    "commit_message": "Avoid buffer overflow when loading tensors with insufficient data from checkpoints.\n\n`CopyDataFromTensorSliceToTensorSlice` does not (and cannot conveniently)\nprovide any bounds checking on its own, so the size is instead checked prior\nto passing unvalidated data to that function.\n\nPiperOrigin-RevId: 392971286\nChange-Id: If2073b36d4d5eedd386329f56729395fd7effee1",
+    "cve": "CVE-2021-41203",
+    "cve_desc": "TensorFlow is an open source platform for machine learning. In affected versions an attacker can trigger undefined behavior, integer overflows, segfaults and `CHECK`-fail crashes if they can change saved checkpoints from outside of TensorFlow. This is because the checkpoints loading infrastructure is missing validation for invalid file formats. The fixes will be included in TensorFlow 2.7.0. We will also cherrypick these commits on TensorFlow 2.6.1, TensorFlow 2.5.2, and TensorFlow 2.4.4, as these are also affected and still in supported range.",
+    "cwe": [
+      "CWE-345"
+    ],
+    "nvd_url": "https://nvd.nist.gov/vuln/detail/CVE-2021-41203",
+    "file_name": "tensor_slice_reader.h",
+    "func_hash": 253938811692403617918500480067513726895,
+    "file_hash": 240433137636754905402215095789731366712
+  },
+  "fixed": {
+    "idx": 264367,
+    "func_hash": 260958144262557057718377368328924715257,
+    "file_hash": 20474431130261957581302899955079552996
+  }
+}

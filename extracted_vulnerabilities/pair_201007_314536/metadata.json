@@ -1,0 +1,23 @@
+{
+  "vulnerable": {
+    "idx": 201007,
+    "project": "pjproject",
+    "commit_id": "560a1346f87aabe126509bb24930106dea292b00",
+    "commit_url": "https://github.com/pjsip/pjproject/commit/560a1346f87aabe126509bb24930106dea292b00",
+    "commit_message": "Merge pull request from GHSA-f5qg-pqcg-765m",
+    "cve": "CVE-2022-24764",
+    "cve_desc": "PJSIP is a free and open source multimedia communication library written in C. Versions 2.12 and prior contain a stack buffer overflow vulnerability that affects PJSUA2 users or users that call the API `pjmedia_sdp_print(), pjmedia_sdp_media_print()`. Applications that do not use PJSUA2 and do not directly call `pjmedia_sdp_print()` or `pjmedia_sdp_media_print()` should not be affected. A patch is available on the `master` branch of the `pjsip/pjproject` GitHub repository. There are currently no known workarounds.",
+    "cwe": [
+      "CWE-787"
+    ],
+    "nvd_url": "https://nvd.nist.gov/vuln/detail/CVE-2022-24764",
+    "file_name": "sdp.c",
+    "func_hash": 243109353869436532488614405590479215364,
+    "file_hash": 204440288713003047579803744169338279171
+  },
+  "fixed": {
+    "idx": 314536,
+    "func_hash": 281187495727100348867210742014490000849,
+    "file_hash": 260444738794842919556316298921063524881
+  }
+}

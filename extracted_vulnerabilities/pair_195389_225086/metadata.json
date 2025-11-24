@@ -1,0 +1,23 @@
+{
+  "vulnerable": {
+    "idx": 195389,
+    "project": "tensorflow",
+    "commit_id": "c2b31ff2d3151acb230edc3f5b1832d2c713a9e0",
+    "commit_url": "https://github.com/tensorflow/tensorflow/commit/c2b31ff2d3151acb230edc3f5b1832d2c713a9e0",
+    "commit_message": "Remove a `DCHECK`-fail, log an error instead.\n\n`DCHECK` in debug mode results in crashes. TensorFlow has had multiple vulnerabilities due to this.\n\nOutside of debug mode, `DCHECK` is a no-op.\n\nA better alternative is to report an error to the log buffer and continue. This should happen both in debug mode and in prod mode.\n\nPiperOrigin-RevId: 408375925\nChange-Id: Id5b3e19c73f3fbe0cc4bba26ca44ff9607bb6356",
+    "cve": "CVE-2022-23565",
+    "cve_desc": "Tensorflow is an Open Source Machine Learning Framework. An attacker can trigger denial of service via assertion failure by altering a `SavedModel` on disk such that `AttrDef`s of some operation are duplicated. The fix will be included in TensorFlow 2.8.0. We will also cherrypick this commit on TensorFlow 2.7.1, TensorFlow 2.6.3, and TensorFlow 2.5.3, as these are also affected and still in supported range.",
+    "cwe": [
+      "CWE-617"
+    ],
+    "nvd_url": "https://nvd.nist.gov/vuln/detail/CVE-2022-23565",
+    "file_name": "op_def_util.cc",
+    "func_hash": 228350956694349821922378909162368693155,
+    "file_hash": 43202597261631718571985626227626810269
+  },
+  "fixed": {
+    "idx": 225086,
+    "func_hash": 7221108948147885063916901261116103162,
+    "file_hash": 99670691263177784698689977477403265008
+  }
+}

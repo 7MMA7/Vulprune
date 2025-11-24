@@ -1,0 +1,14 @@
+extracted_vulnerabilities/pair_211471_448562/bgp_packet_fixed.c:6:28: style: The scope of the variable 'hdr' can be reduced. [variableScope]
+ struct capability_header *hdr;
+                           ^
+extracted_vulnerabilities/pair_211471_448562/bgp_packet_fixed.c:7:10: style: The scope of the variable 'action' can be reduced. [variableScope]
+ uint8_t action;
+         ^
+extracted_vulnerabilities/pair_211471_448562/bgp_packet_fixed.c:4:11: style: Variable 'end' can be declared as pointer to const [constVariablePointer]
+ uint8_t *end;
+          ^
+extracted_vulnerabilities/pair_211471_448562/bgp_packet_fixed.c:1:0: style: The function 'bgp_capability_msg_parse' is never used. [unusedFunction]
+static int bgp_capability_msg_parse(struct peer *peer, uint8_t *pnt,
+^
+nofile:0:0: information: Active checkers: 113/592 (use --checkers-report=<filename> to see details) [checkersReport]
+

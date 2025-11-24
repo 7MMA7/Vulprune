@@ -1,0 +1,23 @@
+{
+  "vulnerable": {
+    "idx": 195091,
+    "project": "tensorflow",
+    "commit_id": "35f0fabb4c178253a964d7aabdbb15c6a398b69a",
+    "commit_url": "https://github.com/tensorflow/tensorflow/commit/35f0fabb4c178253a964d7aabdbb15c6a398b69a",
+    "commit_message": "Avoid Segfault for scalar shapes.\n\nCalling tensor::FromElementsOp with an empty vector of elements and no type\ncauses a segfault. We need to let the FromElementsOp know which scalar type it\nshould have.\nAlso add back the DynamicBroadcastInDimOp canonicalization patterns, which\npreviously prevented this bug from happening.\nAdd a regression test that demonstrates the bug.\n\nPiperOrigin-RevId: 417561444\nChange-Id: I6d1d6cfb71aabbad6102422625a00bbe253ac95a",
+    "cve": "CVE-2022-23593",
+    "cve_desc": "Tensorflow is an Open Source Machine Learning Framework. The `simplifyBroadcast` function in the MLIR-TFRT infrastructure in TensorFlow is vulnerable to a segfault (hence, denial of service), if called with scalar shapes. If all shapes are scalar, then `maxRank` is 0, so we build an empty `SmallVector`. The fix will be included in TensorFlow 2.8.0. This is the only affected version.",
+    "cwe": [
+      "CWE-754"
+    ],
+    "nvd_url": "https://nvd.nist.gov/vuln/detail/CVE-2022-23593",
+    "file_name": "tf_cpurt_symbolic_shape_optimization.cc",
+    "func_hash": 84683486121098934971147990908524528886,
+    "file_hash": 183860206963562900623001205261417288221
+  },
+  "fixed": {
+    "idx": 221631,
+    "func_hash": 131837408517580503230068988683463768929,
+    "file_hash": 61127670286277963749447708912499557476
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "vulnerable": {
+    "idx": 195295,
+    "project": "mruby",
+    "commit_id": "c8c083cb750606b2da81582cd8e43b442bb143e6",
+    "commit_url": "https://github.com/mruby/mruby/commit/c8c083cb750606b2da81582cd8e43b442bb143e6",
+    "commit_message": "codegen.c: need to pack argument when `n==13` too.\n\nBecause we have extra 2 arguments coming (kw and rhs).",
+    "cve": "CVE-2022-1276",
+    "cve_desc": "Out-of-bounds Read in mrb_get_args in GitHub repository mruby/mruby prior to 3.2. Possible arbitrary code execution if being exploited.",
+    "cwe": [
+      "CWE-125"
+    ],
+    "nvd_url": "https://nvd.nist.gov/vuln/detail/CVE-2022-1276",
+    "file_name": "codegen.c",
+    "func_hash": 41954898060187653186067747247923282324,
+    "file_hash": 166306575091061367964033452033729491771
+  },
+  "fixed": {
+    "idx": 224192,
+    "func_hash": 72719402367551467019466616883888506134,
+    "file_hash": 21664036215001583958906059719703447460
+  }
+}

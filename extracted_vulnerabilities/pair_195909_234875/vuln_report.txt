@@ -1,0 +1,59 @@
+extracted_vulnerabilities/pair_195909_234875/png_vuln.c:3:1: information: Limiting ValueFlow analysis in function 'ReadOneMNGImage' since it is too complex. Please specify --check-level=exhaustive to perform full analysis. [checkLevelNormal]
+{
+^
+extracted_vulnerabilities/pair_195909_234875/png_vuln.c:799:15: style: The scope of the variable 'first_object' can be reduced. [variableScope]
+              first_object,
+              ^
+extracted_vulnerabilities/pair_195909_234875/png_vuln.c:800:15: style: The scope of the variable 'last_object' can be reduced. [variableScope]
+              last_object;
+              ^
+extracted_vulnerabilities/pair_195909_234875/png_vuln.c:879:15: style: The scope of the variable 'first_object' can be reduced. [variableScope]
+              first_object,
+              ^
+extracted_vulnerabilities/pair_195909_234875/png_vuln.c:880:15: style: The scope of the variable 'last_object' can be reduced. [variableScope]
+              last_object;
+              ^
+extracted_vulnerabilities/pair_195909_234875/png_vuln.c:919:21: style: The scope of the variable 'loop_iters' can be reduced. [variableScope]
+            ssize_t loop_iters=1;
+                    ^
+extracted_vulnerabilities/pair_195909_234875/png_vuln.c:1486:16: warning: Uninitialized variable: type [uninitvar]
+    if (memcmp(type,mng_IHDR,4) == 0)
+               ^
+extracted_vulnerabilities/pair_195909_234875/png_vuln.c:150:49: note: Assuming condition is false
+    if (LocaleCompare(image_info->magick,"MNG") == 0)
+                                                ^
+extracted_vulnerabilities/pair_195909_234875/png_vuln.c:1486:16: note: Uninitialized variable: type
+    if (memcmp(type,mng_IHDR,4) == 0)
+               ^
+extracted_vulnerabilities/pair_195909_234875/png_vuln.c:109:12: style: Variable 'count' is assigned a value that is never used. [unreadVariable]
+      count=(size_t) ReadBlob(image,8,(unsigned char *) magic_number);
+           ^
+extracted_vulnerabilities/pair_195909_234875/png_vuln.c:170:19: style: Variable 'status' is assigned a value that is never used. [unreadVariable]
+            status=MagickFalse;
+                  ^
+extracted_vulnerabilities/pair_195909_234875/png_vuln.c:1315:14: style: Variable 'chunk' is assigned a value that is never used. [unreadVariable]
+        chunk=(unsigned char *) RelinquishMagickMemory(chunk);
+             ^
+extracted_vulnerabilities/pair_195909_234875/png_vuln.c:1688:18: style: Variable 'm' is assigned a value that is never used. [unreadVariable]
+                m=(ssize_t) mng_info->magn_mt;
+                 ^
+extracted_vulnerabilities/pair_195909_234875/png_vuln.c:2107:23: style: Variable 'im' is assigned a value that is never used. [unreadVariable]
+                    im=DestroyImage(im);
+                      ^
+extracted_vulnerabilities/pair_195909_234875/png_vuln.c:522:43: style: Variable 'mng_info->global_plte_length' is reassigned a value before the old one has been used. [redundantAssignment]
+              mng_info->global_plte_length=256;
+                                          ^
+extracted_vulnerabilities/pair_195909_234875/png_vuln.c:511:45: note: mng_info->global_plte_length is assigned
+                mng_info->global_plte_length=(unsigned int) (length/3);
+                                            ^
+extracted_vulnerabilities/pair_195909_234875/png_vuln.c:522:43: note: mng_info->global_plte_length is overwritten
+              mng_info->global_plte_length=256;
+                                          ^
+extracted_vulnerabilities/pair_195909_234875/png_vuln.c:60:5: style: Variable 'mng_background_object' is assigned a value that is never used. [unreadVariable]
+    mng_background_object=0,
+    ^
+extracted_vulnerabilities/pair_195909_234875/png_vuln.c:1:0: style: The function 'ReadOneMNGImage' is never used. [unusedFunction]
+static Image *ReadOneMNGImage(MngInfo* mng_info, const ImageInfo *image_info,
+^
+nofile:0:0: information: Active checkers: 113/592 (use --checkers-report=<filename> to see details) [checkersReport]
+

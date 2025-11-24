@@ -1,0 +1,23 @@
+extracted_vulnerabilities/pair_215264_486837/regcomp_fixed.c:17:1: error: Unmatched '{'. Configuration: ''. [syntaxError]
+{
+^
+extracted_vulnerabilities/pair_215264_486837/regcomp_fixed.c:17:1: error: Unmatched '{'. Configuration: 'DEBUGGING'. [syntaxError]
+{
+^
+extracted_vulnerabilities/pair_215264_486837/regcomp_fixed.c:17:1: error: Unmatched '{'. Configuration: 'DEBUGGING;NOJUMPTRIE'. [syntaxError]
+{
+^
+extracted_vulnerabilities/pair_215264_486837/regcomp_fixed.c:17:1: error: Unmatched '{'. Configuration: 'FULL_TRIE_STUDY;TRIE_STUDY_OPT'. [syntaxError]
+{
+^
+extracted_vulnerabilities/pair_215264_486837/regcomp_fixed.c:17:1: error: Unmatched '{'. Configuration: 'NOJUMPTRIE'. [syntaxError]
+{
+^
+extracted_vulnerabilities/pair_215264_486837/regcomp_fixed.c:17:1: error: Unmatched '{'. Configuration: 'PERL_ENABLE_POSITIVE_ASSERTION_STUDY'. [syntaxError]
+{
+^
+extracted_vulnerabilities/pair_215264_486837/regcomp_fixed.c:17:1: error: Unmatched '{'. Configuration: 'TRIE_STUDY_OPT'. [syntaxError]
+{
+^
+nofile:0:0: information: Active checkers: There was critical errors (use --checkers-report=<filename> to see details) [checkersReport]
+

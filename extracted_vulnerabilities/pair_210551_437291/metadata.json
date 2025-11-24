@@ -1,0 +1,23 @@
+{
+  "vulnerable": {
+    "idx": 210551,
+    "project": "oniguruma",
+    "commit_id": "4d461376bd85e7994835677b2ff453a43c49cd28",
+    "commit_url": "https://github.com/kkos/oniguruma/commit/4d461376bd85e7994835677b2ff453a43c49cd28",
+    "commit_message": "don't expand string case folds to alternatives if code length == 1 and byte length is same",
+    "cve": "CVE-2019-19246",
+    "cve_desc": "Oniguruma through 6.9.3, as used in PHP 7.3.x and other products, has a heap-based buffer over-read in str_lower_case_match in regexec.c.",
+    "cwe": [
+      "CWE-125"
+    ],
+    "nvd_url": "https://nvd.nist.gov/vuln/detail/CVE-2019-19246",
+    "file_name": "regcomp.c",
+    "func_hash": 183402285676240178400514858197717953400,
+    "file_hash": 30592731921158278474590718116243340454
+  },
+  "fixed": {
+    "idx": 437291,
+    "func_hash": 98258741045227921109976574238500358148,
+    "file_hash": 65059023969392718812527129333061905098
+  }
+}

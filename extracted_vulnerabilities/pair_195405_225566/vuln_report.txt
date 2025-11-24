@@ -1,0 +1,17 @@
+extracted_vulnerabilities/pair_195405_225566/pcl_vuln.c:67:12: style: Variable 'image' is assigned a value that is never used. [unreadVariable]
+      image=DestroyImageList(image);
+           ^
+extracted_vulnerabilities/pair_195405_225566/pcl_vuln.c:75:12: style: Variable 'image' is assigned a value that is never used. [unreadVariable]
+      image=DestroyImageList(image);
+           ^
+extracted_vulnerabilities/pair_195405_225566/pcl_vuln.c:179:12: style: Variable 'image' is assigned a value that is never used. [unreadVariable]
+      image=DestroyImage(image);
+           ^
+extracted_vulnerabilities/pair_195405_225566/pcl_vuln.c:223:9: style: Variable 'status' is assigned a value that is never used. [unreadVariable]
+  status=ExternalDelegateCommand(MagickFalse,read_info->verbose,command,
+        ^
+extracted_vulnerabilities/pair_195405_225566/pcl_vuln.c:1:0: style: The function 'ReadPCLImage' is never used. [unusedFunction]
+static Image *ReadPCLImage(const ImageInfo *image_info,ExceptionInfo *exception)
+^
+nofile:0:0: information: Active checkers: 113/592 (use --checkers-report=<filename> to see details) [checkersReport]
+

@@ -1,0 +1,5 @@
+extracted_vulnerabilities/pair_208535_412332/bin_qnx_fixed.c:1:0: style: The function 'maps' is never used. [unusedFunction]
+static RzList *maps(RzBinFile *bf) {
+^
+nofile:0:0: information: Active checkers: 113/592 (use --checkers-report=<filename> to see details) [checkersReport]
+

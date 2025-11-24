@@ -1,0 +1,23 @@
+{
+  "vulnerable": {
+    "idx": 195083,
+    "project": "tensorflow",
+    "commit_id": "5b491cd5e41ad63735161cec9c2a568172c8b6a3",
+    "commit_url": "https://github.com/tensorflow/tensorflow/commit/5b491cd5e41ad63735161cec9c2a568172c8b6a3",
+    "commit_message": "Validate `proto.dtype()` before calling `set_dtype()`.\n\nThis prevents a `DCHECK`-fail when the proto contains an invalid dtype for a tensor shape with 0 elements or for an incomplete tensor shape.\n\nPiperOrigin-RevId: 408369083\nChange-Id: Ia21a3e3d62a90d642a4561f08f3b543e5ad00c46",
+    "cve": "CVE-2022-23571",
+    "cve_desc": "Tensorflow is an Open Source Machine Learning Framework. When decoding a tensor from protobuf, a TensorFlow process can encounter cases where a `CHECK` assertion is invalidated based on user controlled arguments, if the tensors have an invalid `dtype` and 0 elements or an invalid shape. This allows attackers to cause denial of services in TensorFlow processes. The fix will be included in TensorFlow 2.8.0. We will also cherrypick this commit on TensorFlow 2.7.1, TensorFlow 2.6.3, and TensorFlow 2.5.3, as these are also affected and still in supported range.",
+    "cwe": [
+      "CWE-617"
+    ],
+    "nvd_url": "https://nvd.nist.gov/vuln/detail/CVE-2022-23571",
+    "file_name": "tensor.cc",
+    "func_hash": 112719252128622113589892906952570683457,
+    "file_hash": 289613009517546867193769314060658742037
+  },
+  "fixed": {
+    "idx": 221428,
+    "func_hash": 12020279702191708342972381802829194549,
+    "file_hash": 303884711858139014412460575672580480868
+  }
+}

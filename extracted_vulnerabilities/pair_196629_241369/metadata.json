@@ -1,0 +1,23 @@
+{
+  "vulnerable": {
+    "idx": 196629,
+    "project": "tensorflow",
+    "commit_id": "579261dcd446385831fe4f7457d802a59685121d",
+    "commit_url": "https://github.com/tensorflow/tensorflow/commit/579261dcd446385831fe4f7457d802a59685121d",
+    "commit_message": "Fix crash in MatrixSolve when inputs have different batch dimensions.\n\nBefore, the process would crash or certain elements would be silently ignored. Now an InvalidArgument is raised.\n\nPiperOrigin-RevId: 384844020\nChange-Id: Iba44417e383bdd0e1abc4012bfca83b2377dd335",
+    "cve": "CVE-2021-41206",
+    "cve_desc": "TensorFlow is an open source platform for machine learning. In affected versions several TensorFlow operations are missing validation for the shapes of the tensor arguments involved in the call. Depending on the API, this can result in undefined behavior and segfault or `CHECK`-fail related crashes but in some scenarios writes and reads from heap populated arrays are also possible. We have discovered these issues internally via tooling while working on improving/testing GPU op determinism. As such, we don't have reproducers and there will be multiple fixes for these issues. These fixes will be included in TensorFlow 2.7.0. We will also cherrypick these commits on TensorFlow 2.6.1, TensorFlow 2.5.2, and TensorFlow 2.4.4, as these are also affected and still in supported range.",
+    "cwe": [
+      "CWE-354"
+    ],
+    "nvd_url": "https://nvd.nist.gov/vuln/detail/CVE-2021-41206",
+    "file_name": "matrix_solve_op.cc",
+    "func_hash": 232512673394609281083836207268567643755,
+    "file_hash": 18056043033202767652193305242094140715
+  },
+  "fixed": {
+    "idx": 241369,
+    "func_hash": 213027909579375149223707117272594449042,
+    "file_hash": 56729187938743390978402639550963026335
+  }
+}

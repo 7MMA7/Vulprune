@@ -1,0 +1,23 @@
+{
+  "vulnerable": {
+    "idx": 198161,
+    "project": "ImageMagick",
+    "commit_id": "a6240a163cb787909703d9fc649cf861f60ddd7c",
+    "commit_url": "https://github.com/ImageMagick/ImageMagick/commit/a6240a163cb787909703d9fc649cf861f60ddd7c",
+    "commit_message": "https://github.com/ImageMagick/ImageMagick/issues/131",
+    "cve": "CVE-2016-10070",
+    "cve_desc": "Heap-based buffer overflow in the CalcMinMax function in coders/mat.c in ImageMagick before 6.9.4-0 allows remote attackers to cause a denial of service (out-of-bounds read and application crash) via a crafted mat file.",
+    "cwe": [
+      "CWE-125"
+    ],
+    "nvd_url": "https://nvd.nist.gov/vuln/detail/CVE-2016-10070",
+    "file_name": "mat.c",
+    "func_hash": 123189732868835832469086799441508888909,
+    "file_hash": 184758751839368977736100938972533937602
+  },
+  "fixed": {
+    "idx": 269941,
+    "func_hash": 205922153843401929123471609593284641539,
+    "file_hash": 33852343362379814248025234856365636680
+  }
+}

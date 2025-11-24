@@ -1,0 +1,23 @@
+{
+  "vulnerable": {
+    "idx": 211695,
+    "project": "vim",
+    "commit_id": "4c13e5e6763c6eb36a343a2b8235ea227202e952",
+    "commit_url": "https://github.com/vim/vim/commit/4c13e5e6763c6eb36a343a2b8235ea227202e952",
+    "commit_message": "patch 8.2.3949: using freed memory with /\\%V\n\nProblem:    Using freed memory with /\\%V.\nSolution:   Get the line again after getvvcol().",
+    "cve": "CVE-2021-4192",
+    "cve_desc": "vim is vulnerable to Use After Free",
+    "cwe": [
+      "CWE-416"
+    ],
+    "nvd_url": "https://nvd.nist.gov/vuln/detail/CVE-2021-4192",
+    "file_name": "regexp.c",
+    "func_hash": 213127434587581742033304075177767787021,
+    "file_hash": 154178765544405999260732501141990227321
+  },
+  "fixed": {
+    "idx": 450764,
+    "func_hash": 273404837920170490390239404652231965596,
+    "file_hash": 323022444375597496724509829879656182542
+  }
+}

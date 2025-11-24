@@ -1,0 +1,23 @@
+{
+  "vulnerable": {
+    "idx": 206639,
+    "project": "linux",
+    "commit_id": "e02f0d3970404bfea385b6edb86f2d936db0ea2b",
+    "commit_url": "https://github.com/torvalds/linux/commit/e02f0d3970404bfea385b6edb86f2d936db0ea2b",
+    "commit_message": "netfilter: nf_tables: disallow binding to already bound chain\n\nUpdate nft_data_init() to report EINVAL if chain is already bound.\n\nFixes: d0e2c7de92c7 (\"netfilter: nf_tables: add NFT_CHAIN_BINDING\")\nReported-by: Gwangun Jung <exsociety@gmail.com>\nSigned-off-by: Pablo Neira Ayuso <pablo@netfilter.org>",
+    "cve": "CVE-2022-39190",
+    "cve_desc": "An issue was discovered in net/netfilter/nf_tables_api.c in the Linux kernel before 5.19.6. A denial of service can occur upon binding to an already bound chain.",
+    "cwe": [
+      "CWE-703"
+    ],
+    "nvd_url": "https://nvd.nist.gov/vuln/detail/CVE-2022-39190",
+    "file_name": "nf_tables_api.c",
+    "func_hash": 76294390154807140346030498178733770308,
+    "file_hash": 280373467088228575441623327249382307245
+  },
+  "fixed": {
+    "idx": 384201,
+    "func_hash": 189225679685979204194302814541477257663,
+    "file_hash": 161585463478410786724773068235961577198
+  }
+}

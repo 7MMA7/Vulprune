@@ -1,0 +1,23 @@
+{
+  "vulnerable": {
+    "idx": 208115,
+    "project": "linux",
+    "commit_id": "d0d62baa7f505bd4c59cd169692ff07ec49dde37",
+    "commit_url": "https://github.com/torvalds/linux/commit/d0d62baa7f505bd4c59cd169692ff07ec49dde37",
+    "commit_message": "net: xilinx_emaclite: Do not print real IOMEM pointer\n\nPrinting kernel pointers is discouraged because they might leak kernel\nmemory layout.  This fixes smatch warning:\n\ndrivers/net/ethernet/xilinx/xilinx_emaclite.c:1191 xemaclite_of_probe() warn:\n argument 4 to %08lX specifier is cast from pointer\n\nSigned-off-by: YueHaibing <yuehaibing@huawei.com>\nSigned-off-by: David S. Miller <davem@davemloft.net>",
+    "cve": "CVE-2021-38205",
+    "cve_desc": "drivers/net/ethernet/xilinx/xilinx_emaclite.c in the Linux kernel before 5.13.3 makes it easier for attackers to defeat an ASLR protection mechanism because it prints a kernel pointer (i.e., the real IOMEM pointer).",
+    "cwe": [
+      "CWE-703"
+    ],
+    "nvd_url": "https://nvd.nist.gov/vuln/detail/CVE-2021-38205",
+    "file_name": "xilinx_emaclite.c",
+    "func_hash": 7539144956808128275181130217400039273,
+    "file_hash": 195328153780575985681144288401844286686
+  },
+  "fixed": {
+    "idx": 405698,
+    "func_hash": 304374419764415204432847844541033449466,
+    "file_hash": 308517377946216969047380117029804691833
+  }
+}

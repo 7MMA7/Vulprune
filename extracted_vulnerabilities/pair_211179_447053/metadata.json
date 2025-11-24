@@ -1,0 +1,23 @@
+{
+  "vulnerable": {
+    "idx": 211179,
+    "project": "exiv2",
+    "commit_id": "6e3855aed7ba8bb4731fc4087ca7f9078b2f3d97",
+    "commit_url": "https://github.com/Exiv2/exiv2/commit/6e3855aed7ba8bb4731fc4087ca7f9078b2f3d97",
+    "commit_message": "Fix https://github.com/Exiv2/exiv2/issues/55",
+    "cve": "CVE-2017-17723",
+    "cve_desc": "In Exiv2 0.26, there is a heap-based buffer over-read in the Exiv2::Image::byteSwap4 function in image.cpp. Remote attackers can exploit this vulnerability to disclose memory data or cause a denial of service via a crafted TIFF file.",
+    "cwe": [
+      "CWE-125"
+    ],
+    "nvd_url": "https://nvd.nist.gov/vuln/detail/CVE-2017-17723",
+    "file_name": "image.cpp",
+    "func_hash": 34928413875325993015079651771204457360,
+    "file_hash": 9570858013269078968090500181487179730
+  },
+  "fixed": {
+    "idx": 447053,
+    "func_hash": 135908904515753765989749270271712491869,
+    "file_hash": 158908380717507532391090050859668456498
+  }
+}

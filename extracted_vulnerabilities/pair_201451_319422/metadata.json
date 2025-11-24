@@ -1,0 +1,23 @@
+{
+  "vulnerable": {
+    "idx": 201451,
+    "project": "ImageMagick6",
+    "commit_id": "e6ea5876e0228165ee3abc6e959aa174cee06680",
+    "commit_url": "https://github.com/ImageMagick/ImageMagick6/commit/e6ea5876e0228165ee3abc6e959aa174cee06680",
+    "commit_message": "https://github.com/ImageMagick/ImageMagick/issues/4988",
+    "cve": "CVE-2022-28463",
+    "cve_desc": "ImageMagick 7.1.0-27 is vulnerable to Buffer Overflow.",
+    "cwe": [
+      "CWE-787"
+    ],
+    "nvd_url": "https://nvd.nist.gov/vuln/detail/CVE-2022-28463",
+    "file_name": "cin.c",
+    "func_hash": 230911711267539175049972905344313345647,
+    "file_hash": 249228869233078232834553857521337694406
+  },
+  "fixed": {
+    "idx": 319422,
+    "func_hash": 125198761122342315192980410159814316224,
+    "file_hash": 162029268319562364339376626172641683991
+  }
+}

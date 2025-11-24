@@ -1,0 +1,23 @@
+{
+  "vulnerable": {
+    "idx": 198566,
+    "project": "libmobi",
+    "commit_id": "eafc415bc6067e72577f70d6dd5acbf057ce6e6f",
+    "commit_url": "https://github.com/bfabiszewski/libmobi/commit/eafc415bc6067e72577f70d6dd5acbf057ce6e6f",
+    "commit_message": "Fix wrong boundary checks in inflections parser resulting in stack buffer over-read with corrupt input",
+    "cve": "CVE-2022-1533",
+    "cve_desc": "Buffer Over-read in GitHub repository bfabiszewski/libmobi prior to 0.11. This vulnerability is capable of arbitrary code execution.",
+    "cwe": [
+      "CWE-787"
+    ],
+    "nvd_url": "https://nvd.nist.gov/vuln/detail/CVE-2022-1533",
+    "file_name": "index.c",
+    "func_hash": 38529228609046084805262566640890540140,
+    "file_hash": 309095437889005741044332361577356993393
+  },
+  "fixed": {
+    "idx": 277489,
+    "func_hash": 110952141184880818056037191705831585689,
+    "file_hash": 108195340824579059268746364836110051712
+  }
+}

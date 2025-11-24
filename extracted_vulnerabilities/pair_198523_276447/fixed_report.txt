@@ -1,0 +1,8 @@
+extracted_vulnerabilities/pair_198523_276447/resource_ops_fixed.cc:16:14: warning: Return value of function result.release() is not used. [ignoredReturnValue]
+      result.release();  // Needed due to the `->Unref` above, to prevent UAF
+             ^
+extracted_vulnerabilities/pair_198523_276447/resource_ops_fixed.cc:1:0: style: The function 'Compute' is never used. [unusedFunction]
+  void Compute(OpKernelContext* context) override {
+^
+nofile:0:0: information: Active checkers: 172/592 (use --checkers-report=<filename> to see details) [checkersReport]
+

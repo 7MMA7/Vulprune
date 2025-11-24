@@ -1,0 +1,23 @@
+{
+  "vulnerable": {
+    "idx": 195028,
+    "project": "tensorflow",
+    "commit_id": "ab51e5b813573dc9f51efa335aebcf2994125ee9",
+    "commit_url": "https://github.com/tensorflow/tensorflow/commit/ab51e5b813573dc9f51efa335aebcf2994125ee9",
+    "commit_message": "Prevent memory leak in decoding PNG images.\n\nPiperOrigin-RevId: 409300653\nChange-Id: I6182124c545989cef80cefd439b659095920763b",
+    "cve": "CVE-2022-23585",
+    "cve_desc": "Tensorflow is an Open Source Machine Learning Framework. When decoding PNG images TensorFlow can produce a memory leak if the image is invalid. After calling `png::CommonInitDecode(..., &decode)`, the `decode` value contains allocated buffers which can only be freed by calling `png::CommonFreeDecode(&decode)`. However, several error case in the function implementation invoke the `OP_REQUIRES` macro which immediately terminates the execution of the function, without allowing for the memory free to occur. The fix will be included in TensorFlow 2.8.0. We will also cherrypick this commit on TensorFlow 2.7.1, TensorFlow 2.6.3, and TensorFlow 2.5.3, as these are also affected and still in supported range.",
+    "cwe": [
+      "CWE-401"
+    ],
+    "nvd_url": "https://nvd.nist.gov/vuln/detail/CVE-2022-23585",
+    "file_name": "decode_image_op.cc",
+    "func_hash": 67814436772398534036630434647873886403,
+    "file_hash": 283519422605879710361255065504339887165
+  },
+  "fixed": {
+    "idx": 220168,
+    "func_hash": 183944225263640230240348550837981668390,
+    "file_hash": 140340118421060830961361158847913918052
+  }
+}

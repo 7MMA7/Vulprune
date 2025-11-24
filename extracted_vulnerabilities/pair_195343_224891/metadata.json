@@ -1,0 +1,23 @@
+{
+  "vulnerable": {
+    "idx": 195343,
+    "project": "tensorflow",
+    "commit_id": "002408c3696b173863228223d535f9de72a101a9",
+    "commit_url": "https://github.com/tensorflow/tensorflow/commit/002408c3696b173863228223d535f9de72a101a9",
+    "commit_message": "Add negative bound check for row and column pooling_sequence in FractionalAvgPoolGrad op to avoid out of bound heap access\n\nPiperOrigin-RevId: 413837346\nChange-Id: I2b86034101df31bee161abcb781755e236c7bccd",
+    "cve": "CVE-2022-21730",
+    "cve_desc": "Tensorflow is an Open Source Machine Learning Framework. The implementation of `FractionalAvgPoolGrad` does not consider cases where the input tensors are invalid allowing an attacker to read from outside of bounds of heap. The fix will be included in TensorFlow 2.8.0. We will also cherrypick this commit on TensorFlow 2.7.1, TensorFlow 2.6.3, and TensorFlow 2.5.3, as these are also affected and still in supported range.",
+    "cwe": [
+      "CWE-125"
+    ],
+    "nvd_url": "https://nvd.nist.gov/vuln/detail/CVE-2022-21730",
+    "file_name": "fractional_avg_pool_op.cc",
+    "func_hash": 91555834572386312187860770421206034544,
+    "file_hash": 221866619851129952189561551151828727755
+  },
+  "fixed": {
+    "idx": 224891,
+    "func_hash": 7916647560171328705762237734439424087,
+    "file_hash": 273616659727040190050886150342189772450
+  }
+}

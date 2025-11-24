@@ -1,0 +1,23 @@
+{
+  "vulnerable": {
+    "idx": 198662,
+    "project": "vim",
+    "commit_id": "dc5490e2cbc8c16022a23b449b48c1bd0083f366",
+    "commit_url": "https://github.com/vim/vim/commit/dc5490e2cbc8c16022a23b449b48c1bd0083f366",
+    "commit_message": "patch 8.2.4215: illegal memory access when copying lines in Visual mode\n\nProblem:    Illegal memory access when copying lines in Visual mode.\nSolution:   Adjust the Visual position after copying lines.",
+    "cve": "CVE-2022-0361",
+    "cve_desc": "Heap-based Buffer Overflow in GitHub repository vim/vim prior to 8.2.",
+    "cwe": [
+      "CWE-787"
+    ],
+    "nvd_url": "https://nvd.nist.gov/vuln/detail/CVE-2022-0361",
+    "file_name": "ex_cmds.c",
+    "func_hash": 97186272074546929960699343746519426256,
+    "file_hash": 233687213068218474878856624724146444666
+  },
+  "fixed": {
+    "idx": 279948,
+    "func_hash": 145586714597549785258872355387518968620,
+    "file_hash": 316790051330868655972553819181856040285
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "vulnerable": {
+    "idx": 195019,
+    "project": "tensorflow",
+    "commit_id": "6b5adc0877de832b2a7c189532dbbbc64622eeb6",
+    "commit_url": "https://github.com/tensorflow/tensorflow/commit/6b5adc0877de832b2a7c189532dbbbc64622eeb6",
+    "commit_message": "Prevent `CHECK`-fail when building reference tensor.\n\nThe tensor constructor does not allow reference dtypes, as these should not show up explicitly. However, when passed these invalid types instead of building an invalid object the constructor crashes via a `CHECK`-fail. We have a static builder that properly handles this case but is not applicable given current usage.\n\nInstead, before calling the constructor, we can check that the dtype is not a reference type and return an error otherwise, given that the dtype is user controlled so malicious users can trigger denial of service.\n\nPiperOrigin-RevId: 409662503\nChange-Id: I5892f831fde7f276cd7ab34519cf6b8061c71a59",
+    "cve": "CVE-2022-23588",
+    "cve_desc": "Tensorflow is an Open Source Machine Learning Framework. A malicious user can cause a denial of service by altering a `SavedModel` such that Grappler optimizer would attempt to build a tensor using a reference `dtype`. This would result in a crash due to a `CHECK`-fail in the `Tensor` constructor as reference types are not allowed. The fix will be included in TensorFlow 2.8.0. We will also cherrypick this commit on TensorFlow 2.7.1, TensorFlow 2.6.3, and TensorFlow 2.5.3, as these are also affected and still in supported range.",
+    "cwe": [
+      "CWE-617"
+    ],
+    "nvd_url": "https://nvd.nist.gov/vuln/detail/CVE-2022-23588",
+    "file_name": "constant_folding.cc",
+    "func_hash": 33937240667530924395323323412961833143,
+    "file_hash": 221573695858123615640237954647315751120
+  },
+  "fixed": {
+    "idx": 219931,
+    "func_hash": 111779981092160670584101984885423453823,
+    "file_hash": 271606694375277711450004865336349725435
+  }
+}

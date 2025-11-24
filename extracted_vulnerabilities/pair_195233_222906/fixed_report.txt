@@ -1,0 +1,5 @@
+extracted_vulnerabilities/pair_195233_222906/graph_properties_fixed.cc:1:0: style: The function 'SetUnknownShape' is never used. [unusedFunction]
+  Status SetUnknownShape(const NodeDef* node, int output_port) {
+^
+nofile:0:0: information: Active checkers: 172/592 (use --checkers-report=<filename> to see details) [checkersReport]
+

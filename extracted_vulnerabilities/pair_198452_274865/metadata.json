@@ -1,0 +1,23 @@
+{
+  "vulnerable": {
+    "idx": 198452,
+    "project": "tensorflow",
+    "commit_id": "a989426ee1346693cc015792f11d715f6944f2b8",
+    "commit_url": "https://github.com/tensorflow/tensorflow/commit/a989426ee1346693cc015792f11d715f6944f2b8",
+    "commit_message": "Improve to cover scale value greater than one\n\nPiperOrigin-RevId: 433050921",
+    "cve": "CVE-2022-29212",
+    "cve_desc": "TensorFlow is an open source platform for machine learning. Prior to versions 2.9.0, 2.8.1, 2.7.2, and 2.6.4, certain TFLite models that were created using TFLite model converter would crash when loaded in the TFLite interpreter. The culprit is that during quantization the scale of values could be greater than 1 but code was always assuming sub-unit scaling. Thus, since code was calling `QuantizeMultiplierSmallerThanOneExp`, the `TFLITE_CHECK_LT` assertion would trigger and abort the process. Versions 2.9.0, 2.8.1, 2.7.2, and 2.6.4 contain a patch for this issue.",
+    "cwe": [
+      "CWE-703"
+    ],
+    "nvd_url": "https://nvd.nist.gov/vuln/detail/CVE-2022-29212",
+    "file_name": "comparisons.cc",
+    "func_hash": 284336502909303651692457957640037138117,
+    "file_hash": 224870261654956140630544765652331160875
+  },
+  "fixed": {
+    "idx": 274865,
+    "func_hash": 213386004946249159247710639352470904167,
+    "file_hash": 191046017812634874260331571010514719419
+  }
+}

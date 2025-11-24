@@ -1,0 +1,5 @@
+extracted_vulnerabilities/pair_197824_264657/memory_decoder_vuln.c:1:0: style: The function 'BM_ParseGlobalQuantizer' is never used. [unusedFunction]
+static GF_Err BM_ParseGlobalQuantizer(GF_BifsDecoder *codec, GF_BitStream *bs, GF_List *com_list)
+^
+nofile:0:0: information: Active checkers: 113/592 (use --checkers-report=<filename> to see details) [checkersReport]
+

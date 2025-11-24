@@ -1,0 +1,23 @@
+{
+  "vulnerable": {
+    "idx": 195069,
+    "project": "gpac",
+    "commit_id": "f1ae01d745200a258cdf62622f71754c37cb6c30",
+    "commit_url": "https://github.com/gpac/gpac/commit/f1ae01d745200a258cdf62622f71754c37cb6c30",
+    "commit_message": "fixed #1900",
+    "cve": "CVE-2021-40568",
+    "cve_desc": "A buffer overflow vulnerability exists in Gpac through 1.0.1 via a malformed MP4 file in the svc_parse_slice function in av_parsers.c, which allows attackers to cause a denial of service, even code execution and escalation of privileges.",
+    "cwe": [
+      "CWE-120"
+    ],
+    "nvd_url": "https://nvd.nist.gov/vuln/detail/CVE-2021-40568",
+    "file_name": "av_parsers.c",
+    "func_hash": 32918828304584753556059241288811637938,
+    "file_hash": 168517587328341017594269375399465893964
+  },
+  "fixed": {
+    "idx": 221079,
+    "func_hash": 185903137648833315964702797768717766367,
+    "file_hash": 336095072032702615903888752582747164805
+  }
+}

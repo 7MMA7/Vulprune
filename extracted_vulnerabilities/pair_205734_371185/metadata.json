@@ -1,0 +1,23 @@
+{
+  "vulnerable": {
+    "idx": 205734,
+    "project": "rizin",
+    "commit_id": "38d8006cd609ac75de82b705891d3508d2c218d5",
+    "commit_url": "https://github.com/rizinorg/rizin/commit/38d8006cd609ac75de82b705891d3508d2c218d5",
+    "commit_message": "fix #2963 - oob write (1 byte) in pyc/marshal.c",
+    "cve": "CVE-2022-36040",
+    "cve_desc": "Rizin is a UNIX-like reverse engineering framework and command-line toolset. Versions 0.4.0 and prior are vulnerable to an out-of-bounds write when getting data from PYC(python) files. A user opening a malicious PYC file could be affected by this vulnerability, allowing an attacker to execute code on the user's machine. Commit number 68948017423a12786704e54227b8b2f918c2fd27 contains a patch.",
+    "cwe": [
+      "CWE-787"
+    ],
+    "nvd_url": "https://nvd.nist.gov/vuln/detail/CVE-2022-36040",
+    "file_name": "marshal.c",
+    "func_hash": 339221193473342829219562491579233996408,
+    "file_hash": 62206307764182880841643297994357401149
+  },
+  "fixed": {
+    "idx": 371185,
+    "func_hash": 99548148027118090642314481180057035575,
+    "file_hash": 23141269581653768082758645127626248017
+  }
+}
