@@ -1,8 +1,0 @@
-ftpcmd.c:1:45: style: Parameter 'str' can be declared as pointer to const [constParameterPointer]
-static void handle_PORT(ctrl_t *ctrl, char *str)
-                                            ^
-ftpcmd.c:1:0: style: The function 'handle_PORT' is never used. [unusedFunction]
-static void handle_PORT(ctrl_t *ctrl, char *str)
-^
-nofile:0:0: information: Active checkers: 113/592 (use --checkers-report=<filename> to see details) [checkersReport]
-

@@ -1,5 +1,0 @@
-se.c:1:0: style: The function 'st21nfca_connectivity_event_received' is never used. [unusedFunction]
-int st21nfca_connectivity_event_received(struct nfc_hci_dev *hdev, u8 host,
-^
-nofile:0:0: information: Active checkers: 113/592 (use --checkers-report=<filename> to see details) [checkersReport]
-

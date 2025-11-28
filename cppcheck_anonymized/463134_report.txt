@@ -1,8 +1,0 @@
-annotate.c:88:82: error: There is an unknown macro here somewhere. Configuration is required. If MODSEQ_FMT is a macro then please configure it. [unknownMacro]
-        syslog(LOG_ERR, "write_entry: storing key %s (value: %s) to %s (modseq=" MODSEQ_FMT ")",
-                                                                                 ^
-annotate.c:1:0: style: The function 'write_entry' is never used. [unusedFunction]
-static int write_entry(struct mailbox *mailbox,
-^
-nofile:0:0: information: Active checkers: There was critical errors (use --checkers-report=<filename> to see details) [checkersReport]
-

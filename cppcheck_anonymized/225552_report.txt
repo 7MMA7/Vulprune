@@ -1,8 +1,0 @@
-common.c:3:18: style: Checking if unsigned expression 'alloc_size' is less than zero. [unsignedLessThanZero]
-  if (alloc_size <= 0) return NULL;
-                 ^
-common.c:1:0: style: The function 'TfLiteIntArrayCreate' is never used. [unusedFunction]
-TfLiteIntArray* TfLiteIntArrayCreate(int size) {
-^
-nofile:0:0: information: Active checkers: 113/592 (use --checkers-report=<filename> to see details) [checkersReport]
-

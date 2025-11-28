@@ -1,5 +1,0 @@
-book3s_rtas.c:1:0: style: The function 'kvmppc_rtas_hcall' is never used. [unusedFunction]
-int kvmppc_rtas_hcall(struct kvm_vcpu *vcpu)
-^
-nofile:0:0: information: Active checkers: 113/592 (use --checkers-report=<filename> to see details) [checkersReport]
-

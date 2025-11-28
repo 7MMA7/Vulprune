@@ -1,5 +1,0 @@
-xla_platform_info.cc:1:0: style: The function 'BuildXlaCompilationCache' is never used. [unusedFunction]
-Status BuildXlaCompilationCache(DeviceBase* device, FunctionLibraryRuntime* flr,
-^
-nofile:0:0: information: Active checkers: 172/592 (use --checkers-report=<filename> to see details) [checkersReport]
-

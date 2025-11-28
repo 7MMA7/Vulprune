@@ -1,8 +1,0 @@
-xmlparse.c:1:1: portability: Omitted return type of function 'addBinding' defaults to int, this is not supported by ISO C99 and later standards. [returnImplicitInt]
-addBinding(XML_Parser parser, PREFIX *prefix, const ATTRIBUTE_ID *attId,
-^
-xmlparse.c:1:0: style: The function 'addBinding' is never used. [unusedFunction]
-addBinding(XML_Parser parser, PREFIX *prefix, const ATTRIBUTE_ID *attId,
-^
-nofile:0:0: information: Active checkers: 113/592 (use --checkers-report=<filename> to see details) [checkersReport]
-

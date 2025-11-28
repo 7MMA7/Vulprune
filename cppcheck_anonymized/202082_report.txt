@@ -1,8 +1,0 @@
-class.c:2:9: style: Variable 'i' is assigned a value that is never used. [unreadVariable]
- ut32 i = 0;
-        ^
-class.c:1:0: style: The function 'r_bin_java_bootstrap_methods_attr_new' is never used. [unusedFunction]
-R_API RBinJavaAttrInfo *r_bin_java_bootstrap_methods_attr_new(RBinJavaObj *bin, ut8 *buffer, ut64 sz, ut64 buf_offset) {
-^
-nofile:0:0: information: Active checkers: 113/592 (use --checkers-report=<filename> to see details) [checkersReport]
-

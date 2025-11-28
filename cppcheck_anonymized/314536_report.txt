@@ -1,8 +1,0 @@
-sdp.c:4:11: style: Variable 'end' can be declared as pointer to const [constVariablePointer]
-    char *end = buf+len;
-          ^
-sdp.c:1:0: style: The function 'print_media_desc' is never used. [unusedFunction]
-static int print_media_desc(const pjmedia_sdp_media *m, char *buf, pj_size_t len)
-^
-nofile:0:0: information: Active checkers: 113/592 (use --checkers-report=<filename> to see details) [checkersReport]
-

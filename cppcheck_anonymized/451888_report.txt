@@ -1,5 +1,0 @@
-jpc_enc.c:1:0: style: The function 'cp_create' is never used. [unusedFunction]
-static jpc_enc_cp_t *cp_create(const char *optstr, jas_image_t *image)
-^
-nofile:0:0: information: Active checkers: 113/592 (use --checkers-report=<filename> to see details) [checkersReport]
-

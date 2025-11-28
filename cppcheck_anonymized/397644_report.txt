@@ -1,8 +1,0 @@
-input-bmp.c:324:3: warning: %u in format string (no. 7) requires 'unsigned int' but the argument type is 'signed int'. [invalidPrintfArgType_uint]
-  printf("\nSize: %u, Colors: %u, Bits: %u, Width: %u, Height: %u, Comp: %u, Zeile: %u\n", Bitmap_File_Head.bfSize, Bitmap_Head.biClrUsed, Bitmap_Head.biBitCnt, Bitmap_Head.biWidth, Bitmap_Head.biHeight, Bitmap_Head.biCompr, rowbytes);
-  ^
-input-bmp.c:1:0: style: The function 'input_bmp_reader' is never used. [unusedFunction]
-at_bitmap input_bmp_reader(gchar * filename, at_input_opts_type * opts, at_msg_func msg_func, gpointer msg_data, gpointer user_data)
-^
-nofile:0:0: information: Active checkers: 113/592 (use --checkers-report=<filename> to see details) [checkersReport]
-

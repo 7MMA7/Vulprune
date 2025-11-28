@@ -1,5 +1,0 @@
-i2c-ddc.c:1:0: style: The function 'i2c_ddc_rx' is never used. [unusedFunction]
-static int i2c_ddc_rx(I2CSlave *i2c)
-^
-nofile:0:0: information: Active checkers: 113/592 (use --checkers-report=<filename> to see details) [checkersReport]
-

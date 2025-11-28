@@ -1,8 +1,0 @@
-inbound.c:1:1: portability: Omitted return type of function 'inbound_cap_ls' defaults to int, this is not supported by ISO C99 and later standards. [returnImplicitInt]
-inbound_cap_ls (server *serv, char *nick, char *extensions_str,
-^
-inbound.c:1:0: style: The function 'inbound_cap_ls' is never used. [unusedFunction]
-inbound_cap_ls (server *serv, char *nick, char *extensions_str,
-^
-nofile:0:0: information: Active checkers: 113/592 (use --checkers-report=<filename> to see details) [checkersReport]
-

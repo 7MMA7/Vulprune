@@ -1,5 +1,0 @@
-ne.c:1:0: style: The function 'r_bin_ne_get_entrypoints' is never used. [unusedFunction]
-RList *r_bin_ne_get_entrypoints(r_bin_ne_obj_t *bin) {
-^
-nofile:0:0: information: Active checkers: 113/592 (use --checkers-report=<filename> to see details) [checkersReport]
-

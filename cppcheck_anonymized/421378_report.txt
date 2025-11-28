@@ -1,5 +1,0 @@
-jsdump.c:1:0: style: The function 'jsP_dumpsyntax' is never used. [unusedFunction]
-void jsP_dumpsyntax(js_State *J, js_Ast *prog, int dominify)
-^
-nofile:0:0: information: Active checkers: 113/592 (use --checkers-report=<filename> to see details) [checkersReport]
-

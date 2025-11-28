@@ -1,8 +1,0 @@
-raptor_xml_writer.c:1:1: portability: Omitted return type of function 'raptor_xml_writer_start_element_common' defaults to int, this is not supported by ISO C99 and later standards. [returnImplicitInt]
-raptor_xml_writer_start_element_common(raptor_xml_writer* xml_writer,
-^
-raptor_xml_writer.c:1:0: style: The function 'raptor_xml_writer_start_element_common' is never used. [unusedFunction]
-raptor_xml_writer_start_element_common(raptor_xml_writer* xml_writer,
-^
-nofile:0:0: information: Active checkers: 113/592 (use --checkers-report=<filename> to see details) [checkersReport]
-

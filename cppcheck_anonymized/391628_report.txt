@@ -1,5 +1,0 @@
-rpadlpar_sysfs.c:1:0: style: The function 'add_slot_store' is never used. [unusedFunction]
-static ssize_t add_slot_store(struct kobject *kobj, struct kobj_attribute *attr,
-^
-nofile:0:0: information: Active checkers: 113/592 (use --checkers-report=<filename> to see details) [checkersReport]
-

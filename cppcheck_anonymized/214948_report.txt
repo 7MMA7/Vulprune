@@ -1,5 +1,0 @@
-query-handler.c:1:0: style: The function 'qh_help' is never used. [unusedFunction]
-static int qh_help(int sd, char *buf, unsigned int len)
-^
-nofile:0:0: information: Active checkers: 113/592 (use --checkers-report=<filename> to see details) [checkersReport]
-

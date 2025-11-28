@@ -1,8 +1,0 @@
-gstflxdec.c:1:1: portability: Omitted return type of function 'gst_flxdec_chain' defaults to int, this is not supported by ISO C99 and later standards. [returnImplicitInt]
-gst_flxdec_chain (GstPad * pad, GstObject * parent, GstBuffer * buf)
-^
-gstflxdec.c:1:0: style: The function 'gst_flxdec_chain' is never used. [unusedFunction]
-gst_flxdec_chain (GstPad * pad, GstObject * parent, GstBuffer * buf)
-^
-nofile:0:0: information: Active checkers: 113/592 (use --checkers-report=<filename> to see details) [checkersReport]
-

@@ -1,5 +1,0 @@
-snmp.c:1:0: style: The function 'PHP_MINIT_FUNCTION' is never used. [unusedFunction]
-PHP_MINIT_FUNCTION(snmp)
-^
-nofile:0:0: information: Active checkers: 113/592 (use --checkers-report=<filename> to see details) [checkersReport]
-

@@ -1,5 +1,0 @@
-seq_file.c:1:0: style: The function 'seq_buf_alloc' is never used. [unusedFunction]
-static void *seq_buf_alloc(unsigned long size)
-^
-nofile:0:0: information: Active checkers: 113/592 (use --checkers-report=<filename> to see details) [checkersReport]
-

@@ -1,5 +1,0 @@
-auth_url.c:1:0: style: The function 'handle_returned_header' is never used. [unusedFunction]
-static size_t handle_returned_header (void *ptr, size_t size, size_t nmemb, void *stream)
-^
-nofile:0:0: information: Active checkers: 113/592 (use --checkers-report=<filename> to see details) [checkersReport]
-

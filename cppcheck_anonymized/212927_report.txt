@@ -1,5 +1,0 @@
-sungem.c:1:0: style: The function 'sungem_send_packet' is never used. [unusedFunction]
-static void sungem_send_packet(SunGEMState *s, const uint8_t *buf,
-^
-nofile:0:0: information: Active checkers: 113/592 (use --checkers-report=<filename> to see details) [checkersReport]
-

@@ -1,5 +1,0 @@
-xfrm_policy.c:1:0: style: The function 'xfrm_migrate' is never used. [unusedFunction]
-int xfrm_migrate(const struct xfrm_selector *sel, u8 dir, u8 type,
-^
-nofile:0:0: information: Active checkers: 113/592 (use --checkers-report=<filename> to see details) [checkersReport]
-

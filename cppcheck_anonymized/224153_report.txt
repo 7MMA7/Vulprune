@@ -1,5 +1,0 @@
-assign_op.h:62:9: error: Code 'std::unique_ptr' is invalid C code. Use --std or --language to configure the language. [syntaxError]
-        std::unique_ptr<Tensor> input_alias = context->forward_input(
-        ^
-nofile:0:0: information: Active checkers: There was critical errors (use --checkers-report=<filename> to see details) [checkersReport]
-

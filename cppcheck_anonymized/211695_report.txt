@@ -1,8 +1,0 @@
-regexp.c:1:1: portability: Omitted return type of function 'reg_match_visual' defaults to int, this is not supported by ISO C99 and later standards. [returnImplicitInt]
-reg_match_visual(void)
-^
-regexp.c:1:0: style: The function 'reg_match_visual' is never used. [unusedFunction]
-reg_match_visual(void)
-^
-nofile:0:0: information: Active checkers: 113/592 (use --checkers-report=<filename> to see details) [checkersReport]
-

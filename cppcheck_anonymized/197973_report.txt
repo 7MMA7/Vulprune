@@ -1,8 +1,0 @@
-exec.c:1:1: portability: Omitted return type of function 'crun_command_exec' defaults to int, this is not supported by ISO C99 and later standards. [returnImplicitInt]
-crun_command_exec (struct crun_global_arguments *global_args, int argc, char **argv, libcrun_error_t *err)
-^
-exec.c:1:0: style: The function 'crun_command_exec' is never used. [unusedFunction]
-crun_command_exec (struct crun_global_arguments *global_args, int argc, char **argv, libcrun_error_t *err)
-^
-nofile:0:0: information: Active checkers: 113/592 (use --checkers-report=<filename> to see details) [checkersReport]
-

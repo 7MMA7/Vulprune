@@ -1,5 +1,0 @@
-spellsuggest.c:120:3: error: There is an unknown macro here somewhere. Configuration is required. If PROF_STORE is a macro then please configure it. [unknownMacro]
-  PROF_STORE(sp->ts_state)
-  ^
-nofile:0:0: information: Active checkers: There was critical errors (use --checkers-report=<filename> to see details) [checkersReport]
-

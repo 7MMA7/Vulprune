@@ -1,5 +1,0 @@
-index.c:1:0: style: The function 'mobi_decode_infl' is never used. [unusedFunction]
-MOBI_RET mobi_decode_infl(unsigned char *decoded, int *decoded_size, const unsigned char *rule) {
-^
-nofile:0:0: information: Active checkers: 113/592 (use --checkers-report=<filename> to see details) [checkersReport]
-

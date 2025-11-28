@@ -1,5 +1,0 @@
-constant_folding.cc:1:0: style: The function 'IsConstantFoldable' is never used. [unusedFunction]
-bool IsConstantFoldable(
-^
-nofile:0:0: information: Active checkers: 172/592 (use --checkers-report=<filename> to see details) [checkersReport]
-

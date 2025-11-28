@@ -1,8 +1,0 @@
-isom_store.c:13:22: style: Variable 'stbl' can be declared as pointer to const [constVariablePointer]
-  GF_SampleTableBox *stbl;
-                     ^
-isom_store.c:1:0: style: The function 'SetupWriters' is never used. [unusedFunction]
-GF_Err SetupWriters(MovieWriter *mw, GF_List *writers, u8 interleaving)
-^
-nofile:0:0: information: Active checkers: 113/592 (use --checkers-report=<filename> to see details) [checkersReport]
-

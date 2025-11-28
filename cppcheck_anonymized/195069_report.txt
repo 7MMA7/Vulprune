@@ -1,5 +1,0 @@
-av_parsers.c:1:0: style: The function 'svc_parse_slice' is never used. [unusedFunction]
-static s32 svc_parse_slice(GF_BitStream *bs, AVCState *avc, AVCSliceInfo *si)
-^
-nofile:0:0: information: Active checkers: 113/592 (use --checkers-report=<filename> to see details) [checkersReport]
-

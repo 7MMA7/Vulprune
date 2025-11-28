@@ -1,8 +1,0 @@
-virstoragetest.c:1:1: portability: Omitted return type of function 'testBackingParse' defaults to int, this is not supported by ISO C99 and later standards. [returnImplicitInt]
-testBackingParse(const void *args)
-^
-virstoragetest.c:1:0: style: The function 'testBackingParse' is never used. [unusedFunction]
-testBackingParse(const void *args)
-^
-nofile:0:0: information: Active checkers: 113/592 (use --checkers-report=<filename> to see details) [checkersReport]
-

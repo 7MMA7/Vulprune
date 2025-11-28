@@ -1,8 +1,0 @@
-gd_interpolation.c:30:13: style: Unsigned expression 'u' can't be negative so it is unnecessary to test it. [unsignedPositive]
-   while (u >= 0) {
-            ^
-gd_interpolation.c:1:0: style: The function '_gdContributionsAlloc' is never used. [unusedFunction]
-static inline LineContribType * _gdContributionsAlloc(unsigned int line_length, unsigned int windows_size)
-^
-nofile:0:0: information: Active checkers: 113/592 (use --checkers-report=<filename> to see details) [checkersReport]
-

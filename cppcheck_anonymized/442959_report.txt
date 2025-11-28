@@ -1,8 +1,0 @@
-drawscreen.c:1:1: portability: Omitted return type of function 'win_redr_status' defaults to int, this is not supported by ISO C99 and later standards. [returnImplicitInt]
-win_redr_status(win_T *wp, int ignore_pum UNUSED)
-^
-drawscreen.c:1:0: style: The function 'win_redr_status' is never used. [unusedFunction]
-win_redr_status(win_T *wp, int ignore_pum UNUSED)
-^
-nofile:0:0: information: Active checkers: 113/592 (use --checkers-report=<filename> to see details) [checkersReport]
-

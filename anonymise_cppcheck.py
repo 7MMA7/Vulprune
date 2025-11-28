@@ -2,7 +2,7 @@ from pathlib import Path
 import re
 
 REPORT_DIR = Path("extracted_vulnerabilities")
-ANON_REPORT_DIR = Path("cppcheck_anonymized")
+ANON_REPORT_DIR = Path("cppcheck")
 ANON_REPORT_DIR.mkdir(exist_ok=True)
 
 def anonymize_filename(file_path: str) -> str:

@@ -1,5 +1,0 @@
-i2c.c:1:0: style: The function 'do_i2c_md' is never used. [unusedFunction]
-static int do_i2c_md(struct cmd_tbl *cmdtp, int flag, int argc,
-^
-nofile:0:0: information: Active checkers: 113/592 (use --checkers-report=<filename> to see details) [checkersReport]
-

@@ -1,5 +1,0 @@
-iov_iter.c:1:0: style: The function 'push_pipe' is never used. [unusedFunction]
-static size_t push_pipe(struct iov_iter *i, size_t size,
-^
-nofile:0:0: information: Active checkers: 113/592 (use --checkers-report=<filename> to see details) [checkersReport]
-

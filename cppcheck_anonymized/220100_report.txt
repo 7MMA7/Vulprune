@@ -1,8 +1,0 @@
-nfs4file.c:1:1: portability: Omitted return type of function 'nfs4_file_open' defaults to int, this is not supported by ISO C99 and later standards. [returnImplicitInt]
-nfs4_file_open(struct inode *inode, struct file *filp)
-^
-nfs4file.c:1:0: style: The function 'nfs4_file_open' is never used. [unusedFunction]
-nfs4_file_open(struct inode *inode, struct file *filp)
-^
-nofile:0:0: information: Active checkers: 113/592 (use --checkers-report=<filename> to see details) [checkersReport]
-

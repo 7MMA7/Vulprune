@@ -1,5 +1,0 @@
-isom_store.c:1:0: style: The function 'SetupWriters' is never used. [unusedFunction]
-GF_Err SetupWriters(MovieWriter *mw, GF_List *writers, u8 interleaving)
-^
-nofile:0:0: information: Active checkers: 113/592 (use --checkers-report=<filename> to see details) [checkersReport]
-

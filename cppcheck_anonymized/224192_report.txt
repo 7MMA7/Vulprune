@@ -1,8 +1,0 @@
-codegen.c:1:1: portability: Omitted return type of function 'gen_assignment' defaults to int, this is not supported by ISO C99 and later standards. [returnImplicitInt]
-gen_assignment(codegen_scope *s, node *tree, node *rhs, int sp, int val)
-^
-codegen.c:1:0: style: The function 'gen_assignment' is never used. [unusedFunction]
-gen_assignment(codegen_scope *s, node *tree, node *rhs, int sp, int val)
-^
-nofile:0:0: information: Active checkers: 113/592 (use --checkers-report=<filename> to see details) [checkersReport]
-

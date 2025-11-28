@@ -1,8 +1,0 @@
-pxa3xx-gcu.c:1:1: portability: Omitted return type of function 'pxa3xx_gcu_write' defaults to int, this is not supported by ISO C99 and later standards. [returnImplicitInt]
-pxa3xx_gcu_write(struct file *file, const char *buff,
-^
-pxa3xx-gcu.c:1:0: style: The function 'pxa3xx_gcu_write' is never used. [unusedFunction]
-pxa3xx_gcu_write(struct file *file, const char *buff,
-^
-nofile:0:0: information: Active checkers: 113/592 (use --checkers-report=<filename> to see details) [checkersReport]
-

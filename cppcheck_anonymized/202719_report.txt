@@ -1,5 +1,0 @@
-sm_make_chunk.c:1:0: style: The function 'sctp_make_strreset_req' is never used. [unusedFunction]
-struct sctp_chunk *sctp_make_strreset_req(
-^
-nofile:0:0: information: Active checkers: 113/592 (use --checkers-report=<filename> to see details) [checkersReport]
-

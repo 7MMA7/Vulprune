@@ -1,5 +1,0 @@
-matrix_solve_op.cc:1:0: style: The function 'ComputeAsync' is never used. [unusedFunction]
-  void ComputeAsync(OpKernelContext* context, DoneCallback done) final {
-^
-nofile:0:0: information: Active checkers: 172/592 (use --checkers-report=<filename> to see details) [checkersReport]
-

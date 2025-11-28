@@ -1,8 +1,0 @@
-njs_module.c:1:1: portability: Omitted return type of function 'njs_module_path' defaults to int, this is not supported by ISO C99 and later standards. [returnImplicitInt]
-njs_module_path(njs_vm_t *vm, const njs_str_t *dir, njs_module_info_t *info)
-^
-njs_module.c:1:0: style: The function 'njs_module_path' is never used. [unusedFunction]
-njs_module_path(njs_vm_t *vm, const njs_str_t *dir, njs_module_info_t *info)
-^
-nofile:0:0: information: Active checkers: 113/592 (use --checkers-report=<filename> to see details) [checkersReport]
-

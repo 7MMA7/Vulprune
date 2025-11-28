@@ -1,5 +1,0 @@
-filepath.c:1:1: portability: Omitted return type of function 'unix_expandpath' defaults to int, this is not supported by ISO C99 and later standards. [returnImplicitInt]
-unix_expandpath(
-^
-nofile:0:0: information: Active checkers: 113/592 (use --checkers-report=<filename> to see details) [checkersReport]
-

@@ -1,8 +1,0 @@
-gdevpcx.c:1:1: portability: Omitted return type of function 'pcx_write_rle' defaults to int, this is not supported by ISO C99 and later standards. [returnImplicitInt]
-pcx_write_rle(const byte * from, const byte * end, int step, gp_file * file)
-^
-gdevpcx.c:1:0: style: The function 'pcx_write_rle' is never used. [unusedFunction]
-pcx_write_rle(const byte * from, const byte * end, int step, gp_file * file)
-^
-nofile:0:0: information: Active checkers: 113/592 (use --checkers-report=<filename> to see details) [checkersReport]
-

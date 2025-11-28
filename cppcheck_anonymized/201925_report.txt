@@ -1,5 +1,0 @@
-vidtv_s302m.c:1:1: error: syntax error [syntaxError]
-*vidtv_s302m_encoder_init(struct vidtv_s302m_encoder_init_args args)
-^
-nofile:0:0: information: Active checkers: There was critical errors (use --checkers-report=<filename> to see details) [checkersReport]
-

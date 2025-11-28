@@ -1,5 +1,0 @@
-flow_netlink.c:1:0: style: The function 'reserve_sfa_size' is never used. [unusedFunction]
-static struct nlattr *reserve_sfa_size(struct sw_flow_actions **sfa,
-^
-nofile:0:0: information: Active checkers: 113/592 (use --checkers-report=<filename> to see details) [checkersReport]
-

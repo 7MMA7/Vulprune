@@ -1,5 +1,0 @@
-cdf.c:52:16: error: There is an unknown macro here somewhere. Configuration is required. If SIZE_T_FORMAT is a macro then please configure it. [unknownMacro]
-  DPRINTF(("%" SIZE_T_FORMAT "u) id=%#x type=%#x offs=%#tx,%#x\n",
-               ^
-nofile:0:0: information: Active checkers: There was critical errors (use --checkers-report=<filename> to see details) [checkersReport]
-

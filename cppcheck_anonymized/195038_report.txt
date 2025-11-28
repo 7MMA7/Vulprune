@@ -1,8 +1,0 @@
-array.c:1:1: portability: Omitted return type of function 'mrb_ary_shift_m' defaults to int, this is not supported by ISO C99 and later standards. [returnImplicitInt]
-mrb_ary_shift_m(mrb_state *mrb, mrb_value self)
-^
-array.c:1:0: style: The function 'mrb_ary_shift_m' is never used. [unusedFunction]
-mrb_ary_shift_m(mrb_state *mrb, mrb_value self)
-^
-nofile:0:0: information: Active checkers: 113/592 (use --checkers-report=<filename> to see details) [checkersReport]
-

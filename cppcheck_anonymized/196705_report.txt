@@ -1,5 +1,0 @@
-sparse_tensor_dense_add_op.cc:1:0: style: The function 'ValidateInputs' is never used. [unusedFunction]
-Status ValidateInputs(const Tensor *a_indices, const Tensor *a_values,
-^
-nofile:0:0: information: Active checkers: 172/592 (use --checkers-report=<filename> to see details) [checkersReport]
-

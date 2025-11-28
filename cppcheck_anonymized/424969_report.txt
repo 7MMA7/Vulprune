@@ -1,5 +1,0 @@
-trans.c:1:0: style: The function 'iwl_trans_pcie_alloc' is never used. [unusedFunction]
-struct iwl_trans *iwl_trans_pcie_alloc(struct pci_dev *pdev,
-^
-nofile:0:0: information: Active checkers: 113/592 (use --checkers-report=<filename> to see details) [checkersReport]
-

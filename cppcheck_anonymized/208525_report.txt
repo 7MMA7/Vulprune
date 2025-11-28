@@ -1,8 +1,0 @@
-ex_getln.c:1:1: portability: Omitted return type of function 'cmdline_insert_reg' defaults to int, this is not supported by ISO C99 and later standards. [returnImplicitInt]
-cmdline_insert_reg(int *gotesc UNUSED)
-^
-ex_getln.c:1:0: style: The function 'cmdline_insert_reg' is never used. [unusedFunction]
-cmdline_insert_reg(int *gotesc UNUSED)
-^
-nofile:0:0: information: Active checkers: 113/592 (use --checkers-report=<filename> to see details) [checkersReport]
-

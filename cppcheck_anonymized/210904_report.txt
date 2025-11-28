@@ -1,8 +1,0 @@
-main.c:10:5: error: va_start() or va_copy() called subsequently on 'ap' without va_end() in between. [va_start_subsequentCalls]
-    va_start(ap, fmt);
-    ^
-main.c:1:0: style: The function 'warnf' is never used. [unusedFunction]
-static void warnf(struct Configurable *config, const char *fmt, ...)
-^
-nofile:0:0: information: Active checkers: 113/592 (use --checkers-report=<filename> to see details) [checkersReport]
-

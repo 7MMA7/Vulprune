@@ -1,5 +1,0 @@
-dl_dxf.cpp:30:59: style: Same expression 'vertexIndex>=0' found multiple times in chain of '&&' operators. [duplicateExpression]
-            if (vertexIndex>=0 && vertexIndex<maxVertices && vertexIndex>=0) {
-                                                          ^
-nofile:0:0: information: Active checkers: 172/592 (use --checkers-report=<filename> to see details) [checkersReport]
-

@@ -1,5 +1,0 @@
-composite.c:346:4: error: There is an unknown macro here somewhere. Configuration is required. If list_for_each_entry is a macro then please configure it. [unknownMacro]
-   list_for_each_entry(c, &cdev->configs, list)
-   ^
-nofile:0:0: information: Active checkers: There was critical errors (use --checkers-report=<filename> to see details) [checkersReport]
-

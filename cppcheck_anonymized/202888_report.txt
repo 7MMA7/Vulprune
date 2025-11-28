@@ -1,5 +1,0 @@
-esp4.c:1:0: style: The function 'esp_output_head' is never used. [unusedFunction]
-int esp_output_head(struct xfrm_state *x, struct sk_buff *skb, struct esp_info *esp)
-^
-nofile:0:0: information: Active checkers: 113/592 (use --checkers-report=<filename> to see details) [checkersReport]
-

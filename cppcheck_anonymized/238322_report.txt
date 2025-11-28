@@ -1,5 +1,0 @@
-digest.c:1:0: style: The function 'digest_generic_verify' is never used. [unusedFunction]
-int digest_generic_verify(struct digest *d, const unsigned char *md)
-^
-nofile:0:0: information: Active checkers: 113/592 (use --checkers-report=<filename> to see details) [checkersReport]
-

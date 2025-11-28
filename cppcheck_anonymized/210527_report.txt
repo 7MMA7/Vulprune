@@ -1,5 +1,0 @@
-mcba_usb.c:1:0: style: The function 'mcba_usb_start_xmit' is never used. [unusedFunction]
-static netdev_tx_t mcba_usb_start_xmit(struct sk_buff *skb,
-^
-nofile:0:0: information: Active checkers: 113/592 (use --checkers-report=<filename> to see details) [checkersReport]
-

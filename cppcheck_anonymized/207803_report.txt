@@ -1,5 +1,0 @@
-random.c:1:0: style: The function 'add_interrupt_randomness' is never used. [unusedFunction]
-void add_interrupt_randomness(int irq, int irq_flags)
-^
-nofile:0:0: information: Active checkers: 113/592 (use --checkers-report=<filename> to see details) [checkersReport]
-

@@ -1,8 +1,0 @@
-indent.c:1:1: portability: Omitted return type of function 'ex_retab' defaults to int, this is not supported by ISO C99 and later standards. [returnImplicitInt]
-ex_retab(exarg_T *eap)
-^
-indent.c:1:0: style: The function 'ex_retab' is never used. [unusedFunction]
-ex_retab(exarg_T *eap)
-^
-nofile:0:0: information: Active checkers: 113/592 (use --checkers-report=<filename> to see details) [checkersReport]
-

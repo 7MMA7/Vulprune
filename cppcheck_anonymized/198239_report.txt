@@ -1,8 +1,0 @@
-password.c:39:9: style: Variable 'key' can be declared as pointer to const [constVariablePointer]
-  char *key = passwd2_sum + PBKDF2_SALT_LEN;
-        ^
-password.c:1:0: style: The function 'check_passwd' is never used. [unusedFunction]
-static int check_passwd(unsigned char *passwd, size_t length)
-^
-nofile:0:0: information: Active checkers: 113/592 (use --checkers-report=<filename> to see details) [checkersReport]
-

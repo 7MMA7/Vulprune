@@ -1,8 +1,0 @@
-ipf.c:1:1: portability: Omitted return type of function 'ipf_extract_frags_from_batch' defaults to int, this is not supported by ISO C99 and later standards. [returnImplicitInt]
-ipf_extract_frags_from_batch(struct ipf *ipf, struct dp_packet_batch *pb,
-^
-ipf.c:1:0: style: The function 'ipf_extract_frags_from_batch' is never used. [unusedFunction]
-ipf_extract_frags_from_batch(struct ipf *ipf, struct dp_packet_batch *pb,
-^
-nofile:0:0: information: Active checkers: 113/592 (use --checkers-report=<filename> to see details) [checkersReport]
-

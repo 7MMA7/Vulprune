@@ -1,5 +1,0 @@
-rtcp_fb.c:1:1: error: There is an unknown macro here somewhere. Configuration is required. If PJ_DEF is a macro then please configure it. [unknownMacro]
-PJ_DEF(pj_status_t) pjmedia_rtcp_fb_parse_rpsi(
-^
-nofile:0:0: information: Active checkers: There was critical errors (use --checkers-report=<filename> to see details) [checkersReport]
-

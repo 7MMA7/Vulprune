@@ -1,8 +1,0 @@
-connect.c:1:1: portability: Omitted return type of function 'stl_update_connects_remove_1' defaults to int, this is not supported by ISO C99 and later standards. [returnImplicitInt]
-stl_update_connects_remove_1(stl_file *stl, int facet_num) {
-^
-connect.c:1:0: style: The function 'stl_update_connects_remove_1' is never used. [unusedFunction]
-stl_update_connects_remove_1(stl_file *stl, int facet_num) {
-^
-nofile:0:0: information: Active checkers: 113/592 (use --checkers-report=<filename> to see details) [checkersReport]
-

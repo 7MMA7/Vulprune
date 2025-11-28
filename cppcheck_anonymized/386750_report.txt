@@ -1,5 +1,0 @@
-inode.c:1:0: style: The function 'udf_expand_file_adinicb' is never used. [unusedFunction]
-int udf_expand_file_adinicb(struct inode *inode)
-^
-nofile:0:0: information: Active checkers: 113/592 (use --checkers-report=<filename> to see details) [checkersReport]
-

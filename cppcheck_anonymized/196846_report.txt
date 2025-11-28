@@ -1,5 +1,0 @@
-div.cc:1:0: style: The function 'Eval' is never used. [unusedFunction]
-TfLiteStatus Eval(TfLiteContext* context, TfLiteNode* node) {
-^
-nofile:0:0: information: Active checkers: 172/592 (use --checkers-report=<filename> to see details) [checkersReport]
-

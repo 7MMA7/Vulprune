@@ -1,5 +1,0 @@
-cx23888-ir.c:1:0: style: The function 'cx23888_ir_probe' is never used. [unusedFunction]
-int cx23888_ir_probe(struct cx23885_dev *dev)
-^
-nofile:0:0: information: Active checkers: 113/592 (use --checkers-report=<filename> to see details) [checkersReport]
-

@@ -1,5 +1,0 @@
-virtio_bt.c:1:0: style: The function 'virtbt_rx_handle' is never used. [unusedFunction]
-static void virtbt_rx_handle(struct virtio_bluetooth *vbt, struct sk_buff *skb)
-^
-nofile:0:0: information: Active checkers: 113/592 (use --checkers-report=<filename> to see details) [checkersReport]
-

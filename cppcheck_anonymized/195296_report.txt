@@ -1,5 +1,0 @@
-TopicTree.h:10:13: error: Code 'std::string_view' is invalid C code. Use --std or --language to configure the language. [syntaxError]
-            std::string_view segment = topic.substr(start, stop - start);
-            ^
-nofile:0:0: information: Active checkers: There was critical errors (use --checkers-report=<filename> to see details) [checkersReport]
-

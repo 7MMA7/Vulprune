@@ -1,5 +1,0 @@
-main.c:1:0: style: The function 'nfcmrvl_nci_unregister_dev' is never used. [unusedFunction]
-void nfcmrvl_nci_unregister_dev(struct nfcmrvl_private *priv)
-^
-nofile:0:0: information: Active checkers: 113/592 (use --checkers-report=<filename> to see details) [checkersReport]
-

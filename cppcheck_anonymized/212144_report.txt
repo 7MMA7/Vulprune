@@ -1,5 +1,0 @@
-read.c:1:0: style: The function 'mobi_parse_huffdic' is never used. [unusedFunction]
-MOBI_RET mobi_parse_huffdic(const MOBIData *m, MOBIHuffCdic *huffcdic) {
-^
-nofile:0:0: information: Active checkers: 113/592 (use --checkers-report=<filename> to see details) [checkersReport]
-

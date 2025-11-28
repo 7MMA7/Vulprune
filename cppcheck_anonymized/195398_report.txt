@@ -1,5 +1,0 @@
-v4l2loopback.c:1:0: style: The function 'vidioc_querycap' is never used. [unusedFunction]
-static int vidioc_querycap(struct file *file, void *priv,
-^
-nofile:0:0: information: Active checkers: 113/592 (use --checkers-report=<filename> to see details) [checkersReport]
-

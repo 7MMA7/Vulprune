@@ -1,5 +1,0 @@
-resource_variable_ops.cc:1:0: style: The function 'DoCompute' is never used. [unusedFunction]
-  void DoCompute(OpKernelContext* c) {
-^
-nofile:0:0: information: Active checkers: 172/592 (use --checkers-report=<filename> to see details) [checkersReport]
-

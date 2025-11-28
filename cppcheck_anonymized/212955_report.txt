@@ -1,5 +1,0 @@
-af_ax25.c:1:0: style: The function 'ax25_release' is never used. [unusedFunction]
-static int ax25_release(struct socket *sock)
-^
-nofile:0:0: information: Active checkers: 113/592 (use --checkers-report=<filename> to see details) [checkersReport]
-

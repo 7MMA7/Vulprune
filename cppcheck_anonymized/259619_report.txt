@@ -1,8 +1,0 @@
-hierarchicalbitmaprequester.cpp:8:24: style: C-style pointer casting [cstyleCast]
-    m_ppEncodingMCU = (struct Line **)m_pEnviron->AllocMem(sizeof(struct Line *) * m_ucCount *8);
-                       ^
-hierarchicalbitmaprequester.cpp:13:24: style: C-style pointer casting [cstyleCast]
-    m_ppDownsampler = (class DownsamplerBase **)m_pEnviron->AllocMem(sizeof(class DownsamplerBase *) * m_ucCount);
-                       ^
-nofile:0:0: information: Active checkers: 172/592 (use --checkers-report=<filename> to see details) [checkersReport]
-

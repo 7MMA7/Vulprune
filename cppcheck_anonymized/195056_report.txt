@@ -1,8 +1,0 @@
-common.h:12:10: style: Variable 'array_end_ptr' can be declared as pointer to const [constVariablePointer]
-  float* array_end_ptr = array_ptr + array_size;
-         ^
-common.h:1:0: style: The function 'BiasAndClamp' is never used. [unusedFunction]
-inline void BiasAndClamp(float clamp_min, float clamp_max, int bias_size,
-^
-nofile:0:0: information: Active checkers: 143/592 (use --checkers-report=<filename> to see details) [checkersReport]
-

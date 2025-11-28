@@ -1,5 +1,0 @@
-rtrs-clt.c:1:0: style: The function 'rtrs_clt_dev_release' is never used. [unusedFunction]
-static void rtrs_clt_dev_release(struct device *dev)
-^
-nofile:0:0: information: Active checkers: 113/592 (use --checkers-report=<filename> to see details) [checkersReport]
-

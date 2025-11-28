@@ -1,5 +1,0 @@
-bfile.c:19:47: error: There is an unknown macro here somewhere. Configuration is required. If PFMT64x is a macro then please configure it. [unknownMacro]
-  eprintf ("Invalid range to find strings 0x%"PFMT64x" .. 0x%"PFMT64x"\n", from, to);
-                                              ^
-nofile:0:0: information: Active checkers: There was critical errors (use --checkers-report=<filename> to see details) [checkersReport]
-

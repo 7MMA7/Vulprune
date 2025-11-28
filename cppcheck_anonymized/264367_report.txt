@@ -1,5 +1,0 @@
-tensor_slice_reader.h:3:3: error: Code 'std::vector' is invalid C code. Use --std or --language to configure the language. [syntaxError]
-  std::vector<std::pair<TensorSlice, string>> details;
-  ^
-nofile:0:0: information: Active checkers: There was critical errors (use --checkers-report=<filename> to see details) [checkersReport]
-

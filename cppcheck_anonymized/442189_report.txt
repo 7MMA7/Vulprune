@@ -1,8 +1,0 @@
-e1000.c:1:1: portability: Omitted return type of function 'e1000_send_packet' defaults to int, this is not supported by ISO C99 and later standards. [returnImplicitInt]
-e1000_send_packet(E1000State *s, const uint8_t *buf, int size)
-^
-e1000.c:1:0: style: The function 'e1000_send_packet' is never used. [unusedFunction]
-e1000_send_packet(E1000State *s, const uint8_t *buf, int size)
-^
-nofile:0:0: information: Active checkers: 113/592 (use --checkers-report=<filename> to see details) [checkersReport]
-

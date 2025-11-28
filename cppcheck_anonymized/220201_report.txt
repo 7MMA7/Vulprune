@@ -1,5 +1,0 @@
-graph.cc:25:26: style: Consider using std::any_of algorithm instead of a raw loop. [useStlAlgorithm]
-    if (node == nullptr) {
-                         ^
-nofile:0:0: information: Active checkers: 172/592 (use --checkers-report=<filename> to see details) [checkersReport]
-

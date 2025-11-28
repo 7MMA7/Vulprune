@@ -1,8 +1,0 @@
-webservice.c:6:10: style: The scope of the variable 'session_uid' can be reduced. [variableScope]
-  char * session_uid, expires[129];
-         ^
-webservice.c:1:0: style: The function 'callback_glewlwyd_user_auth' is never used. [unusedFunction]
-int callback_glewlwyd_user_auth (const struct _u_request * request, struct _u_response * response, void * user_data) {
-^
-nofile:0:0: information: Active checkers: 113/592 (use --checkers-report=<filename> to see details) [checkersReport]
-

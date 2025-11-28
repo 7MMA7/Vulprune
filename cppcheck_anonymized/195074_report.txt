@@ -1,8 +1,0 @@
-descriptors.c:50:88: error: There is an unknown macro here somewhere. Configuration is required. If LLU is a macro then please configure it. [unknownMacro]
-   GF_LOG(GF_LOG_ERROR, GF_LOG_CONTAINER, ("[AV1] could not parse AV1 OBU at position "LLU". Leaving parsing.\n", pos));
-                                                                                       ^
-descriptors.c:1:0: style: The function 'gf_odf_av1_cfg_read_bs_size' is never used. [unusedFunction]
-GF_AV1Config *gf_odf_av1_cfg_read_bs_size(GF_BitStream *bs, u32 size)
-^
-nofile:0:0: information: Active checkers: There was critical errors (use --checkers-report=<filename> to see details) [checkersReport]
-

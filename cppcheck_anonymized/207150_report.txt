@@ -1,5 +1,0 @@
-sqbaselib.cpp:1:0: style: The function 'thread_call' is never used. [unusedFunction]
-static SQInteger thread_call(HSQUIRRELVM v)
-^
-nofile:0:0: information: Active checkers: 172/592 (use --checkers-report=<filename> to see details) [checkersReport]
-

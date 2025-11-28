@@ -1,8 +1,0 @@
-ccp-ops.c:1:1: portability: Omitted return type of function 'ccp_run_aes_gcm_cmd' defaults to int, this is not supported by ISO C99 and later standards. [returnImplicitInt]
-ccp_run_aes_gcm_cmd(struct ccp_cmd_queue *cmd_q, struct ccp_cmd *cmd)
-^
-ccp-ops.c:1:0: style: The function 'ccp_run_aes_gcm_cmd' is never used. [unusedFunction]
-ccp_run_aes_gcm_cmd(struct ccp_cmd_queue *cmd_q, struct ccp_cmd *cmd)
-^
-nofile:0:0: information: Active checkers: 113/592 (use --checkers-report=<filename> to see details) [checkersReport]
-

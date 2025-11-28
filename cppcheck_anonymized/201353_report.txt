@@ -1,5 +1,0 @@
-rsi_91x_usb.c:1:0: style: The function 'rsi_init_usb_interface' is never used. [unusedFunction]
-static int rsi_init_usb_interface(struct rsi_hw *adapter,
-^
-nofile:0:0: information: Active checkers: 113/592 (use --checkers-report=<filename> to see details) [checkersReport]
-

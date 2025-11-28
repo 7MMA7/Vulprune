@@ -1,5 +1,0 @@
-mqtt_client.c:1:0: style: The function 'MqttClient_WaitType' is never used. [unusedFunction]
-static int MqttClient_WaitType(MqttClient *client, void *packet_obj,
-^
-nofile:0:0: information: Active checkers: 113/592 (use --checkers-report=<filename> to see details) [checkersReport]
-

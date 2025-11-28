@@ -1,5 +1,0 @@
-load_text.c:1:0: style: The function 'gf_text_get_utf8_line' is never used. [unusedFunction]
-char *gf_text_get_utf8_line(char *szLine, u32 lineSize, FILE *txt_in, s32 unicode_type)
-^
-nofile:0:0: information: Active checkers: 113/592 (use --checkers-report=<filename> to see details) [checkersReport]
-

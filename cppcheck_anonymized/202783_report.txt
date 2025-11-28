@@ -1,8 +1,0 @@
-zend_strtod.c:3:6: style: The scope of the variable 'x' can be reduced. [variableScope]
- int x;
-     ^
-zend_strtod.c:1:0: style: The function 'Balloc' is never used. [unusedFunction]
-static Bigint * Balloc(int k)
-^
-nofile:0:0: information: Active checkers: 113/592 (use --checkers-report=<filename> to see details) [checkersReport]
-

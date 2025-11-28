@@ -1,5 +1,0 @@
-tmate-main.c:68:24: error: There is an unknown macro here somewhere. Configuration is required. If TMATE_WORKDIR is a macro then please configure it. [unknownMacro]
-       "Try deleting " TMATE_WORKDIR " and try again");
-                       ^
-nofile:0:0: information: Active checkers: There was critical errors (use --checkers-report=<filename> to see details) [checkersReport]
-

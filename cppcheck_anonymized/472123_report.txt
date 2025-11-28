@@ -1,8 +1,0 @@
-cgroup-v1.c:4:24: style: The scope of the variable 'ss' can be reduced. [variableScope]
- struct cgroup_subsys *ss;
-                       ^
-cgroup-v1.c:1:0: style: The function 'cgroup1_parse_param' is never used. [unusedFunction]
-int cgroup1_parse_param(struct fs_context *fc, struct fs_parameter *param)
-^
-nofile:0:0: information: Active checkers: 113/592 (use --checkers-report=<filename> to see details) [checkersReport]
-

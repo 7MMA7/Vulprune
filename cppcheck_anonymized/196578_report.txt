@@ -1,8 +1,0 @@
-register.c:1:1: portability: Omitted return type of function 'yank_copy_line' defaults to int, this is not supported by ISO C99 and later standards. [returnImplicitInt]
-yank_copy_line(struct block_def *bd, long y_idx, int exclude_trailing_space)
-^
-register.c:1:0: style: The function 'yank_copy_line' is never used. [unusedFunction]
-yank_copy_line(struct block_def *bd, long y_idx, int exclude_trailing_space)
-^
-nofile:0:0: information: Active checkers: 113/592 (use --checkers-report=<filename> to see details) [checkersReport]
-

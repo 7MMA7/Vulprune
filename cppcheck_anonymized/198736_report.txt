@@ -1,5 +1,0 @@
-rsi_91x_mgmt.c:1:0: style: The function 'rsi_send_beacon' is never used. [unusedFunction]
-static int rsi_send_beacon(struct rsi_common *common)
-^
-nofile:0:0: information: Active checkers: 113/592 (use --checkers-report=<filename> to see details) [checkersReport]
-

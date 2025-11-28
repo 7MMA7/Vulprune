@@ -1,5 +1,0 @@
-rpmpgp.c:1:0: style: The function 'pgpPrtParams' is never used. [unusedFunction]
-int pgpPrtParams(const uint8_t * pkts, size_t pktlen, unsigned int pkttype,
-^
-nofile:0:0: information: Active checkers: 113/592 (use --checkers-report=<filename> to see details) [checkersReport]
-

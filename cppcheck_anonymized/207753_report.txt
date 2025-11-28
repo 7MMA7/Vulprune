@@ -1,5 +1,0 @@
-iov_iter.c:1:0: style: The function 'copy_page_to_iter_pipe' is never used. [unusedFunction]
-static size_t copy_page_to_iter_pipe(struct page *page, size_t offset, size_t bytes,
-^
-nofile:0:0: information: Active checkers: 113/592 (use --checkers-report=<filename> to see details) [checkersReport]
-

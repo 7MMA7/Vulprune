@@ -1,5 +1,0 @@
-stackmap.c:1:0: style: The function 'prealloc_elems_and_freelist' is never used. [unusedFunction]
-static int prealloc_elems_and_freelist(struct bpf_stack_map *smap)
-^
-nofile:0:0: information: Active checkers: 113/592 (use --checkers-report=<filename> to see details) [checkersReport]
-

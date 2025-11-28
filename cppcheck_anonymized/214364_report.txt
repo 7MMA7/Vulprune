@@ -1,5 +1,0 @@
-simplestring.c:1:0: style: The function 'simplestring_addn' is never used. [unusedFunction]
-void simplestring_addn(simplestring* target, const char* source, int add_len) {
-^
-nofile:0:0: information: Active checkers: 113/592 (use --checkers-report=<filename> to see details) [checkersReport]
-

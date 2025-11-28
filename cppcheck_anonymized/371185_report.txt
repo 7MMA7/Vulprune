@@ -1,8 +1,0 @@
-marshal.c:1:52: style: Parameter 'pyc' can be declared as pointer to const [constParameterPointer]
-static pyc_object *get_complex_object(RzBinPycObj *pyc, RzBuffer *buffer) {
-                                                   ^
-marshal.c:1:0: style: The function 'get_complex_object' is never used. [unusedFunction]
-static pyc_object *get_complex_object(RzBinPycObj *pyc, RzBuffer *buffer) {
-^
-nofile:0:0: information: Active checkers: 113/592 (use --checkers-report=<filename> to see details) [checkersReport]
-

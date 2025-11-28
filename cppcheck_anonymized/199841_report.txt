@@ -1,5 +1,0 @@
-bin_xnu_kernelcache.c:1:0: style: The function 'load_buffer' is never used. [unusedFunction]
-static bool load_buffer(RBinFile *bf, void **bin_obj, RBuffer *buf, ut64 loadaddr, Sdb *sdb) {
-^
-nofile:0:0: information: Active checkers: 113/592 (use --checkers-report=<filename> to see details) [checkersReport]
-

@@ -1,5 +1,0 @@
-dwarf.c:1:0: style: The function 'parse_die' is never used. [unusedFunction]
-static const ut8 *parse_die(const ut8 *buf, const ut8 *buf_end, RzBinDwarfDebugInfo *info, RzBinDwarfAbbrevDecl *abbrev,
-^
-nofile:0:0: information: Active checkers: 113/592 (use --checkers-report=<filename> to see details) [checkersReport]
-

@@ -1,5 +1,0 @@
-PipeSocketHandler.cpp:18:26: style: C-style pointer casting [cstyleCast]
-  FATAL_FAIL(::bind(fd, (struct sockaddr*)&local, sizeof(sockaddr_un)));
-                         ^
-nofile:0:0: information: Active checkers: 172/592 (use --checkers-report=<filename> to see details) [checkersReport]
-

@@ -1,5 +1,0 @@
-i2c-ismt.c:1:0: style: The function 'ismt_access' is never used. [unusedFunction]
-static int ismt_access(struct i2c_adapter *adap, u16 addr,
-^
-nofile:0:0: information: Active checkers: 113/592 (use --checkers-report=<filename> to see details) [checkersReport]
-

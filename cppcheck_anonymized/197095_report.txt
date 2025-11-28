@@ -1,5 +1,0 @@
-optimized_ops.h:1:0: style: The function 'BinaryBroadcastFiveFold' is never used. [unusedFunction]
-inline void BinaryBroadcastFiveFold(const ArithmeticParams& unswitched_params,
-^
-nofile:0:0: information: Active checkers: 143/592 (use --checkers-report=<filename> to see details) [checkersReport]
-

@@ -1,5 +1,0 @@
-dyldcache.c:1:0: style: The function 'get_rebase_infos' is never used. [unusedFunction]
-static RzDyldRebaseInfos *get_rebase_infos(RzDyldCache *cache) {
-^
-nofile:0:0: information: Active checkers: 113/592 (use --checkers-report=<filename> to see details) [checkersReport]
-

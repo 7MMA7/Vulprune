@@ -1,8 +1,0 @@
-lzw.c:73:32: style: Variable 'entry' can be declared as pointer to const [constVariablePointer]
-  struct lzw_dictionary_entry *entry = table + code_out;
-                               ^
-lzw.c:1:0: style: The function 'lzw_decode' is never used. [unusedFunction]
-lzw_result lzw_decode(struct lzw_ctx *ctx,
-^
-nofile:0:0: information: Active checkers: 113/592 (use --checkers-report=<filename> to see details) [checkersReport]
-

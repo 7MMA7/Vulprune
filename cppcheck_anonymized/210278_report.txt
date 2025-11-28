@@ -1,5 +1,0 @@
-exec.c:1:0: style: The function 'qemu_ram_free' is never used. [unusedFunction]
-void qemu_ram_free(struct uc_struct *uc, RAMBlock *block)
-^
-nofile:0:0: information: Active checkers: 113/592 (use --checkers-report=<filename> to see details) [checkersReport]
-

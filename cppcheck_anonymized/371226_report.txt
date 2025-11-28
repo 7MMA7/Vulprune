@@ -1,5 +1,0 @@
-fuse_i.h:1:0: style: The function 'fuse_make_bad' is never used. [unusedFunction]
-static inline void fuse_make_bad(struct inode *inode)
-^
-nofile:0:0: information: Active checkers: 143/592 (use --checkers-report=<filename> to see details) [checkersReport]
-

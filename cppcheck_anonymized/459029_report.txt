@@ -1,8 +1,0 @@
-cache_http.c:1:1: portability: Omitted return type of function 'http_isfiltered' defaults to int, this is not supported by ISO C99 and later standards. [returnImplicitInt]
-http_isfiltered(const struct http *fm, unsigned u, unsigned how)
-^
-cache_http.c:1:0: style: The function 'http_isfiltered' is never used. [unusedFunction]
-http_isfiltered(const struct http *fm, unsigned u, unsigned how)
-^
-nofile:0:0: information: Active checkers: 113/592 (use --checkers-report=<filename> to see details) [checkersReport]
-
