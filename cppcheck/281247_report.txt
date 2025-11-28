@@ -19,5 +19,3 @@ LoaderS3M.cpp:316:12: note: Shadow variable
 LoaderS3M.cpp:318:9: style: Variable 'i' is assigned a value that is never used. [unreadVariable]
        i--;
         ^
-nofile:0:0: information: Active checkers: 172/592 (use --checkers-report=<filename> to see details) [checkersReport]
-

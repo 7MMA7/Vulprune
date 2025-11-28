@@ -34,5 +34,3 @@ bmp.c:68:12: style: Variable 'image' is assigned a value that is never used. [un
 bmp.c:1:0: style: The function 'ReadBMPImage' is never used. [unusedFunction]
 static Image *ReadBMPImage(const ImageInfo *image_info,ExceptionInfo *exception)
 ^
-nofile:0:0: information: Active checkers: 113/592 (use --checkers-report=<filename> to see details) [checkersReport]
-

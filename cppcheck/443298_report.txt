@@ -13,5 +13,3 @@ ex_docmd.c:247:19: note: Second condition
 ex_docmd.c:1:0: style: The function 'do_cmdline' is never used. [unusedFunction]
 do_cmdline(
 ^
-nofile:0:0: information: Active checkers: 113/592 (use --checkers-report=<filename> to see details) [checkersReport]
-

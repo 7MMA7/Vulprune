@@ -4,5 +4,3 @@ inbound_cap_ls (server *serv, char *nick, char *extensions_str,
 inbound.c:1:0: style: The function 'inbound_cap_ls' is never used. [unusedFunction]
 inbound_cap_ls (server *serv, char *nick, char *extensions_str,
 ^
-nofile:0:0: information: Active checkers: 113/592 (use --checkers-report=<filename> to see details) [checkersReport]
-

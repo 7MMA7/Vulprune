@@ -13,5 +13,3 @@ mouse.c:759:13: style: Variable 'pos' can be declared as pointer to const [const
 mouse.c:1:0: style: The function 'do_mouse' is never used. [unusedFunction]
 do_mouse(
 ^
-nofile:0:0: information: Active checkers: 113/592 (use --checkers-report=<filename> to see details) [checkersReport]
-

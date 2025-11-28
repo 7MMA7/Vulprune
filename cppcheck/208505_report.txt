@@ -40,5 +40,3 @@ routerparse.c:371:11: note: Shadow variable
 routerparse.c:1:0: style: The function 'networkstatus_parse_vote_from_string' is never used. [unusedFunction]
 networkstatus_parse_vote_from_string(const char *s, const char **eos_out,
 ^
-nofile:0:0: information: Active checkers: 113/592 (use --checkers-report=<filename> to see details) [checkersReport]
-

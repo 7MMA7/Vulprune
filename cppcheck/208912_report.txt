@@ -13,5 +13,3 @@ ex_getln.c:236:12: note: The comparison 'clen == ccline.cmdlen' is always true b
 ex_getln.c:1:0: style: The function 'getcmdline_int' is never used. [unusedFunction]
 getcmdline_int(
 ^
-nofile:0:0: information: Active checkers: 113/592 (use --checkers-report=<filename> to see details) [checkersReport]
-

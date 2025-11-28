@@ -196,5 +196,3 @@ vm.c:1766:7: style: inconclusive: Statements following noreturn function 'abort(
 vm.c:1:0: style: The function 'mrb_vm_exec' is never used. [unusedFunction]
 mrb_vm_exec(mrb_state *mrb, const struct RProc *proc, const mrb_code *pc)
 ^
-nofile:0:0: information: Active checkers: 113/592 (use --checkers-report=<filename> to see details) [checkersReport]
-

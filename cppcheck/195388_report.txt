@@ -22,5 +22,3 @@ fe-connect.c:2:1: information: Limiting ValueFlow analysis in function 'PQconnec
 fe-connect.c:1:0: style: The function 'PQconnectPoll' is never used. [unusedFunction]
 PQconnectPoll(PGconn *conn)
 ^
-nofile:0:0: information: Active checkers: 113/592 (use --checkers-report=<filename> to see details) [checkersReport]
-

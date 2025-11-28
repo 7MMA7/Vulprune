@@ -7,5 +7,3 @@ ex_docmd.c:90:18: style: Variable 'n' can be declared as pointer to const [const
 ex_docmd.c:1:0: style: The function 'parse_command_modifiers' is never used. [unusedFunction]
 parse_command_modifiers(
 ^
-nofile:0:0: information: Active checkers: 113/592 (use --checkers-report=<filename> to see details) [checkersReport]
-

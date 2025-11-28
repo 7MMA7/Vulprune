@@ -13,5 +13,3 @@ tga.c:265:7: style: Variable 'real' is assigned a value that is never used. [unr
 tga.c:1:0: style: The function 'ReadTGAImage' is never used. [unusedFunction]
 static Image *ReadTGAImage(const ImageInfo *image_info,
 ^
-nofile:0:0: information: Active checkers: 113/592 (use --checkers-report=<filename> to see details) [checkersReport]
-

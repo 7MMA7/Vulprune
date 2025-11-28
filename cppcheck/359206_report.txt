@@ -7,5 +7,3 @@ ringbuf.c:44:21: portability: '(void*)hdr' is of type 'void *'. When using void 
 ringbuf.c:1:0: style: The function '__bpf_ringbuf_reserve' is never used. [unusedFunction]
 static void *__bpf_ringbuf_reserve(struct bpf_ringbuf *rb, u64 size)
 ^
-nofile:0:0: information: Active checkers: 113/592 (use --checkers-report=<filename> to see details) [checkersReport]
-

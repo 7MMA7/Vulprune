@@ -4,5 +4,3 @@ setup_seccomp (FlatpakBwrap   *bwrap,
 flatpak-run.c:1:0: style: The function 'setup_seccomp' is never used. [unusedFunction]
 setup_seccomp (FlatpakBwrap   *bwrap,
 ^
-nofile:0:0: information: Active checkers: 113/592 (use --checkers-report=<filename> to see details) [checkersReport]
-

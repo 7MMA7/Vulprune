@@ -16,5 +16,3 @@ cin.c:384:9: style: Variable 'status' is assigned a value that is never used. [u
 cin.c:1:0: style: The function 'ReadCINImage' is never used. [unusedFunction]
 static Image *ReadCINImage(const ImageInfo *image_info,ExceptionInfo *exception)
 ^
-nofile:0:0: information: Active checkers: 113/592 (use --checkers-report=<filename> to see details) [checkersReport]
-

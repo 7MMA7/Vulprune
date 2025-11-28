@@ -73,5 +73,3 @@ pcre2_jit_compile.c:166:5: note: Shadow variable
 pcre2_jit_compile.c:1:0: style: The function 'get_recurse_data_length' is never used. [unusedFunction]
 static int get_recurse_data_length(compiler_common *common, PCRE2_SPTR cc, PCRE2_SPTR ccend,
 ^
-nofile:0:0: information: Active checkers: 113/592 (use --checkers-report=<filename> to see details) [checkersReport]
-

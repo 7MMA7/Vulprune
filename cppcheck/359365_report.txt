@@ -13,5 +13,3 @@ bgp_packet.c:3:11: style: Variable 'end' can be declared as pointer to const [co
 bgp_packet.c:1:0: style: The function 'bgp_capability_msg_parse' is never used. [unusedFunction]
 bgp_capability_msg_parse (struct peer *peer, u_char *pnt, bgp_size_t length)
 ^
-nofile:0:0: information: Active checkers: 113/592 (use --checkers-report=<filename> to see details) [checkersReport]
-

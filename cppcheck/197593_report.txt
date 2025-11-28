@@ -7,5 +7,3 @@ njs_function.c:4:26: style: Variable 'start' can be declared as pointer to const
 njs_function.c:1:0: style: The function 'njs_function_frame_save' is never used. [unusedFunction]
 njs_function_frame_save(njs_vm_t *vm, njs_frame_t *frame, u_char *pc)
 ^
-nofile:0:0: information: Active checkers: 113/592 (use --checkers-report=<filename> to see details) [checkersReport]
-

@@ -4,5 +4,3 @@ add_mtab(char *devname, char *mountpoint, unsigned long flags, const char *fstyp
 mount.cifs.c:1:0: style: The function 'add_mtab' is never used. [unusedFunction]
 add_mtab(char *devname, char *mountpoint, unsigned long flags, const char *fstype)
 ^
-nofile:0:0: information: Active checkers: 113/592 (use --checkers-report=<filename> to see details) [checkersReport]
-

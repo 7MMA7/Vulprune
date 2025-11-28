@@ -16,5 +16,3 @@ ex_cmds.c:960:15: note: nmatch is overwritten
 ex_cmds.c:1:0: style: The function 'ex_substitute' is never used. [unusedFunction]
 ex_substitute(exarg_T *eap)
 ^
-nofile:0:0: information: Active checkers: 113/592 (use --checkers-report=<filename> to see details) [checkersReport]
-

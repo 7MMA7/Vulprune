@@ -247,5 +247,3 @@ compileTranslationTable.c:1197:32: style: Variable 'c' can be declared as pointe
 compileTranslationTable.c:31:16: style: Unused variable: macro [unusedVariable]
   const Macro *macro;
                ^
-nofile:0:0: information: Active checkers: 113/592 (use --checkers-report=<filename> to see details) [checkersReport]
-

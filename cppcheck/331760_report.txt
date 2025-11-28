@@ -31,5 +31,3 @@ qpaintengineex.cpp:203:25: note: Shadowed declaration
 qpaintengineex.cpp:207:29: note: Shadow variable
                     QPointF p = ((const QPointF *)points)[0] * state()->matrix;
                             ^
-nofile:0:0: information: Active checkers: 172/592 (use --checkers-report=<filename> to see details) [checkersReport]
-

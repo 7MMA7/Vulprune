@@ -10,5 +10,3 @@ hint_track.c:4:6: note: Null pointer dereference
 hint_track.c:1:0: style: The function 'GetHintFormat' is never used. [unusedFunction]
 u32 GetHintFormat(GF_TrackBox *trak)
 ^
-nofile:0:0: information: Active checkers: 113/592 (use --checkers-report=<filename> to see details) [checkersReport]
-

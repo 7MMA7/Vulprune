@@ -10,5 +10,3 @@ ntpq.c:13:6: style: The scope of the variable 'fmt' can be reduced. [variableSco
 ntpq.c:1:0: style: The function 'cookedprint' is never used. [unusedFunction]
 cookedprint(
 ^
-nofile:0:0: information: Active checkers: 113/592 (use --checkers-report=<filename> to see details) [checkersReport]
-

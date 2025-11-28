@@ -4,5 +4,3 @@ ins_bs(
 edit.c:1:0: style: The function 'ins_bs' is never used. [unusedFunction]
 ins_bs(
 ^
-nofile:0:0: information: Active checkers: 113/592 (use --checkers-report=<filename> to see details) [checkersReport]
-

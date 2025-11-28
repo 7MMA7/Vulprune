@@ -4,5 +4,3 @@ eval7(
 eval.c:1:0: style: The function 'eval7' is never used. [unusedFunction]
 eval7(
 ^
-nofile:0:0: information: Active checkers: 113/592 (use --checkers-report=<filename> to see details) [checkersReport]
-

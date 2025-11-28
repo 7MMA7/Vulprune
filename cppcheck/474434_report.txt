@@ -7,5 +7,3 @@ Object.c:6:26: style: The scope of the variable 'object' can be reduced. [variab
 Object.c:1:0: style: The function 'FindEmptyObjectSlot' is never used. [unusedFunction]
 FindEmptyObjectSlot(
 ^
-nofile:0:0: information: Active checkers: 113/592 (use --checkers-report=<filename> to see details) [checkersReport]
-

@@ -28,5 +28,3 @@ mat.c:226:31: style: Variable 'ThrowReaderException' is assigned a value that is
 mat.c:1:0: style: The function 'ReadMATImage' is never used. [unusedFunction]
 static Image *ReadMATImage(const ImageInfo *image_info,ExceptionInfo *exception)
 ^
-nofile:0:0: information: Active checkers: 113/592 (use --checkers-report=<filename> to see details) [checkersReport]
-

@@ -16,5 +16,3 @@ immutable_executor_state.cc:41:16: note: Shadowed declaration
 immutable_executor_state.cc:83:18: note: Shadow variable
       FrameInfo* frame_info = frame_info_[frame_name].get();
                  ^
-nofile:0:0: information: Active checkers: 172/592 (use --checkers-report=<filename> to see details) [checkersReport]
-

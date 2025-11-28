@@ -10,5 +10,3 @@ arglist.c:24:16: style: Variable 'old_curtab' can be declared as pointer to cons
 arglist.c:1:0: style: The function 'do_arg_all' is never used. [unusedFunction]
 do_arg_all(
 ^
-nofile:0:0: information: Active checkers: 113/592 (use --checkers-report=<filename> to see details) [checkersReport]
-

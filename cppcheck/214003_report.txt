@@ -16,5 +16,3 @@ corre.c:7:18: style: The scope of the variable 'h' can be reduced. [variableScop
 corre.c:1:0: style: The function 'HandleCoRREBPP' is never used. [unusedFunction]
 HandleCoRREBPP (rfbClient* client, int rx, int ry, int rw, int rh)
 ^
-nofile:0:0: information: Active checkers: 113/592 (use --checkers-report=<filename> to see details) [checkersReport]
-

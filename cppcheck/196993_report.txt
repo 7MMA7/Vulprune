@@ -64,5 +64,3 @@ codec_apng.cc:112:32: style: Variable 'f' can be declared as pointer to const [c
 codec_apng.cc:1:0: style: The function 'DecodeImageAPNG' is never used. [unusedFunction]
 Status DecodeImageAPNG(Span<const uint8_t> bytes, ThreadPool* pool,
 ^
-nofile:0:0: information: Active checkers: 172/592 (use --checkers-report=<filename> to see details) [checkersReport]
-

@@ -7,5 +7,3 @@ indent.c:18:13: style: The scope of the variable 'new_line' can be reduced. [var
 indent.c:1:0: style: The function 'change_indent' is never used. [unusedFunction]
 change_indent(
 ^
-nofile:0:0: information: Active checkers: 113/592 (use --checkers-report=<filename> to see details) [checkersReport]
-

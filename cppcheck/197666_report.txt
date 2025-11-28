@@ -7,5 +7,3 @@ njs_iterator.c:68:13: error: Address of local auto-variable assigned to a functi
 njs_iterator.c:1:0: style: The function 'njs_object_iterate_reverse' is never used. [unusedFunction]
 njs_object_iterate_reverse(njs_vm_t *vm, njs_iterator_args_t *args,
 ^
-nofile:0:0: information: Active checkers: 113/592 (use --checkers-report=<filename> to see details) [checkersReport]
-

@@ -10,5 +10,3 @@ regexp_bt.c:499:18: style: The scope of the variable 'inpc' can be reduced. [var
 regexp_bt.c:1:0: style: The function 'regmatch' is never used. [unusedFunction]
 regmatch(
 ^
-nofile:0:0: information: Active checkers: 113/592 (use --checkers-report=<filename> to see details) [checkersReport]
-

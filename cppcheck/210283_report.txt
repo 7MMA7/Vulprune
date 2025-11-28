@@ -16,5 +16,3 @@ vhost_user.c:9:26: style: The scope of the variable 'vq' can be reduced. [variab
 vhost_user.c:1:0: style: The function 'vhost_user_set_inflight_fd' is never used. [unusedFunction]
 vhost_user_set_inflight_fd(struct virtio_net **pdev,
 ^
-nofile:0:0: information: Active checkers: 113/592 (use --checkers-report=<filename> to see details) [checkersReport]
-

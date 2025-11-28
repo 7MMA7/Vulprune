@@ -16,5 +16,3 @@ auto_parallel.cc:105:33: note: Assuming container is not empty
 auto_parallel.cc:106:31: note: Null pointer dereference
     if (input_node->name() != dequeue_node->name()) {
                               ^
-nofile:0:0: information: Active checkers: 172/592 (use --checkers-report=<filename> to see details) [checkersReport]
-

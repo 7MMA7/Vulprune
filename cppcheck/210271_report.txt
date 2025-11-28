@@ -7,5 +7,3 @@ spellfile.c:3:13: style: Variable 'byts' can be declared as pointer to const [co
 spellfile.c:1:0: style: The function 'sug_filltree' is never used. [unusedFunction]
 sug_filltree(spellinfo_T *spin, slang_T *slang)
 ^
-nofile:0:0: information: Active checkers: 113/592 (use --checkers-report=<filename> to see details) [checkersReport]
-

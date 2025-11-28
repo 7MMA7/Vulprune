@@ -7,5 +7,3 @@ em28xx-cards.c:282:9: style: Variable 'retval' is assigned a value that is never
 em28xx-cards.c:1:0: style: The function 'em28xx_usb_probe' is never used. [unusedFunction]
 static int em28xx_usb_probe(struct usb_interface *intf,
 ^
-nofile:0:0: information: Active checkers: 113/592 (use --checkers-report=<filename> to see details) [checkersReport]
-

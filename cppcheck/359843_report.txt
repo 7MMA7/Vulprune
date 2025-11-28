@@ -10,5 +10,3 @@ operation.c:469:9: style: Variable 'arg2' is assigned a value that is never used
 operation.c:1:0: style: The function 'CLINoImageOperator' is never used. [unusedFunction]
 WandPrivate void CLINoImageOperator(MagickCLI *cli_wand,
 ^
-nofile:0:0: information: Active checkers: 113/592 (use --checkers-report=<filename> to see details) [checkersReport]
-

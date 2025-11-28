@@ -13,5 +13,3 @@ inflate.c:19:19: style: Unused variable: hbuf [unusedVariable]
 inflate.c:1:0: style: The function 'inflate' is never used. [unusedFunction]
 int ZEXPORT inflate(strm, flush)
 ^
-nofile:0:0: information: Active checkers: 113/592 (use --checkers-report=<filename> to see details) [checkersReport]
-

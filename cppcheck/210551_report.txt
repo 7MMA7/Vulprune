@@ -7,5 +7,3 @@ regcomp.c:9:12: style: Variable 'sn' can be declared as pointer to const [constV
 regcomp.c:1:0: style: The function 'expand_case_fold_string' is never used. [unusedFunction]
 expand_case_fold_string(Node* node, regex_t* reg)
 ^
-nofile:0:0: information: Active checkers: 113/592 (use --checkers-report=<filename> to see details) [checkersReport]
-

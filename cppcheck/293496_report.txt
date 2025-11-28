@@ -28,5 +28,3 @@ libnsgif.c:198:44: note: gif->decoded_frame is assigned
 libnsgif.c:246:36: note: gif->decoded_frame is overwritten
                 gif->decoded_frame = frame;
                                    ^
-nofile:0:0: information: Active checkers: 113/592 (use --checkers-report=<filename> to see details) [checkersReport]
-

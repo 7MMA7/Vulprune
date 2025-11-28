@@ -13,5 +13,3 @@ pcl.c:223:9: style: Variable 'status' is assigned a value that is never used. [u
 pcl.c:1:0: style: The function 'ReadPCLImage' is never used. [unusedFunction]
 static Image *ReadPCLImage(const ImageInfo *image_info,ExceptionInfo *exception)
 ^
-nofile:0:0: information: Active checkers: 113/592 (use --checkers-report=<filename> to see details) [checkersReport]
-

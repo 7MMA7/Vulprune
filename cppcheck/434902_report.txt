@@ -7,5 +7,3 @@ fill_threshold_buffer(byte *dest_strip, byte *src_strip, int src_width,
 gxht_thresh.c:1:0: style: The function 'fill_threshold_buffer' is never used. [unusedFunction]
 fill_threshold_buffer(byte *dest_strip, byte *src_strip, int src_width,
 ^
-nofile:0:0: information: Active checkers: 113/592 (use --checkers-report=<filename> to see details) [checkersReport]
-

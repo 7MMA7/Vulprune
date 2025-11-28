@@ -79,5 +79,3 @@ tiff.c:378:14: note: Shadow variable
 tiff.c:1:0: style: The function 'ReadTIFFImage' is never used. [unusedFunction]
 static Image *ReadTIFFImage(const ImageInfo *image_info,
 ^
-nofile:0:0: information: Active checkers: 113/592 (use --checkers-report=<filename> to see details) [checkersReport]
-

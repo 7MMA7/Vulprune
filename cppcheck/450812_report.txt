@@ -13,5 +13,3 @@ glob.c:347:29: style: Unused variable: pwbuf [unusedVariable]
 glob.c:336:31: warning: Obsolete function 'alloca' called. In C99 and later it is recommended to use a variable length array instead. [allocaCalled]
                   char *mem = alloca (home_drive_len + home_path_len + 1);
                               ^
-nofile:0:0: information: Active checkers: 113/592 (use --checkers-report=<filename> to see details) [checkersReport]
-

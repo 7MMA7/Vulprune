@@ -22,5 +22,3 @@ zend-string.cpp:6:9: style: Variable 'dp' can be declared as pointer to const [c
 zend-string.cpp:1:0: style: The function 'string_number_format' is never used. [unusedFunction]
 String string_number_format(double d, int dec,
 ^
-nofile:0:0: information: Active checkers: 172/592 (use --checkers-report=<filename> to see details) [checkersReport]
-

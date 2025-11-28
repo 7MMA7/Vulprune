@@ -10,5 +10,3 @@ term.c:504:11: style: The scope of the variable 'num_bytes' can be reduced. [var
 term.c:1:0: style: The function 'check_termcode' is never used. [unusedFunction]
 check_termcode(
 ^
-nofile:0:0: information: Active checkers: 113/592 (use --checkers-report=<filename> to see details) [checkersReport]
-

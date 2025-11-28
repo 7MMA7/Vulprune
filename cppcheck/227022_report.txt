@@ -13,5 +13,3 @@ irc-protocol.c:4:20: style: The scope of the variable 'length' can be reduced. [
 irc-protocol.c:1:0: style: The function 'IRC_PROTOCOL_CALLBACK' is never used. [unusedFunction]
 IRC_PROTOCOL_CALLBACK(352)
 ^
-nofile:0:0: information: Active checkers: 113/592 (use --checkers-report=<filename> to see details) [checkersReport]
-

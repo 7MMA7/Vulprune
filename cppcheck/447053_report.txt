@@ -40,5 +40,3 @@ image.cpp:136:34: note: Shadowed declaration
 image.cpp:143:35: note: Shadow variable
                             byte* bytes=new byte[count-jump] ;  // allocate memory
                                   ^
-nofile:0:0: information: Active checkers: 172/592 (use --checkers-report=<filename> to see details) [checkersReport]
-
