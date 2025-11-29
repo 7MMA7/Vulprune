@@ -1,8 +1,8 @@
 import json
 from collections import defaultdict
 
-input_path = "PrimeVul/primevul_test_paired_enriched.jsonl"
-output_path = "PrimeVul/primevul_filtered.jsonl"
+input_path = "../PrimeVul/primevul_test_paired_enriched.jsonl"
+output_path = "../PrimeVul/primevul_filtered.jsonl"
 
 entries_by_key = defaultdict(list)
 

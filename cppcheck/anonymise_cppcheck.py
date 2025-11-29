@@ -1,8 +1,8 @@
 from pathlib import Path
 import re
 
-REPORT_DIR = Path("extracted_vulnerabilities")
-ANON_REPORT_DIR = Path("flawfinder")
+REPORT_DIR = Path("../extracted_vulnerabilities")
+ANON_REPORT_DIR = Path("raw_cppcheck")
 ANON_REPORT_DIR.mkdir(exist_ok=True)
 
 def anonymize_filename(file_path: str) -> str:
@@ -39,8 +39,8 @@ for pair_dir in REPORT_DIR.iterdir():
         continue
     idx1, idx2 = match.groups()
 
-    vuln_report = next(pair_dir.glob("*vuln_flawfinder.txt"), None)
-    fixed_report = next(pair_dir.glob("*fixed_flawfinder.txt"), None)
+    vuln_report = next(pair_dir.glob("*vuln_report.txt"), None)
+    fixed_report = next(pair_dir.glob("*fixed_report.txt"), None)
 
     if vuln_report:
         out_file = ANON_REPORT_DIR / f"{idx1}_report.txt"

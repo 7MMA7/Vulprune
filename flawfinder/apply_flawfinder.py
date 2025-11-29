@@ -1,23 +1,19 @@
 import subprocess
 from pathlib import Path
 
-BASE_DIR = Path("extracted_vulnerabilities")
+BASE_DIR = Path("../extracted_vulnerabilities")
 
-def run_cppcheck(src_file: Path, out_file: Path):
-    std_flag = "--std=c11" if src_file.suffix == ".c" else "--std=c++17"
+def run_flawfinder(src_file: Path, out_file: Path):
     with open(out_file, "w", encoding="utf-8") as f:
         subprocess.run(
             [
-                "cppcheck",
-                "--enable=all",
-                "--inconclusive",
-                std_flag,
-                "--force",
-                "--inline-suppr",
-                "--quiet",
+                "flawfinder",
+                "--singleline",
+                "--minlevel", "1",
                 str(src_file)
             ],
-            stderr=f, stdout=f
+            stderr=f,
+            stdout=f
         )
     print(f"Analysis written to {out_file}")
 
@@ -42,11 +38,11 @@ def process_all_pairs():
             print(f"Vuln/fixed files not found in {pair_dir}")
             continue
 
-        vuln_report = pair_dir / "vuln_report.txt"
-        fixed_report = pair_dir / "fixed_report.txt"
+        vuln_report = pair_dir / "vuln_flawfinder.txt"
+        fixed_report = pair_dir / "fixed_flawfinder.txt"
 
-        run_cppcheck(vuln_file, vuln_report)
-        run_cppcheck(fixed_file, fixed_report)
+        run_flawfinder(vuln_file, vuln_report)
+        run_flawfinder(fixed_file, fixed_report)
 
 if __name__ == "__main__":
     process_all_pairs()

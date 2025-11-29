@@ -1,7 +1,7 @@
 from pathlib import Path
 
-CPP_DIR = Path("cppcheck_anonymized")
-FLAW_DIR = Path("flawfinder_anonymized")
+CPP_DIR = Path("cppcheck/reports")
+FLAW_DIR = Path("flawfinder/reports")
 OUT = Path("comparison_table.txt")
 
 def load_hit_status(path):
@@ -9,7 +9,7 @@ def load_hit_status(path):
         return None
     with open(path, "r", encoding="utf-8") as f:
         lines = [l.strip() for l in f.readlines() if l.strip()]
-    if len(lines) == 1 and "nofile:0:0: information: Active checkers" in lines[0]:
+    if len(lines) == 1 and "No detected issues" in lines[0]:
         return 0
     if any("No hits found." in l for l in lines):
         return 0

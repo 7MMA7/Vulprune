@@ -2,7 +2,7 @@ import os
 import re
 
 indir="raw_flawfinder"
-outdir="flawfinder"
+outdir="reports"
 os.makedirs(outdir,exist_ok=True)
 
 hit_re=re.compile(r"^[^:]+:\d+:")

@@ -2,7 +2,7 @@ import os
 import re
 
 indir="raw_cppcheck"
-outdir="cppcheck"
+outdir="reports"
 os.makedirs(outdir,exist_ok=True)
 
 critical_re=re.compile(r"^nofile:0:0: information: Active checkers: There was critical errors \(use --checkers-report=<filename> to see details\) \[checkersReport\]$")

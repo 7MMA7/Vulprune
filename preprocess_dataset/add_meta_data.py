@@ -3,8 +3,8 @@ import subprocess
 import os
 from pathlib import Path
 
-INPUT_JSONL = Path("PrimeVul/primevul_test_filtered.jsonl")
-OUTPUT_JSONL = Path("PrimeVul/primevul_test_paired_enriched.jsonl")
+INPUT_JSONL = Path("../PrimeVul/primevul_test_filtered.jsonl")
+OUTPUT_JSONL = Path("../PrimeVul/primevul_test_paired_enriched.jsonl")
 TMP_REPOS = Path("tmp_repos")
 TMP_REPOS.mkdir(exist_ok=True)
 
